@@ -39,7 +39,7 @@ struct TreeNode
         struct TreeNode *head_node = NewNode(nums[middle]);
     
      head_node->right = sortedArrayToBST1(nums,start_value,middle-1);
-     head_node->right = sortedArrayToBST1(nums,middle,end_value);
+     head_node->left = sortedArrayToBST1(nums,middle,end_value);
      return head_node;
      }
      return NULL;

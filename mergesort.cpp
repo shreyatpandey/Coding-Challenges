@@ -9,8 +9,8 @@ void merge(int arr[],int low,int mid,int high)
    n2 = high - mid;
    cout<<"Value of n2:"<<n2<<endl;
    int i=0; int j=0;
-   int L1[n1];
-   int L2[n2];
+   int *L1 = new int[n1];
+   int *L2 = new int[n2];
    for(i=0;i<n1;i++)
 {  
     L1[i] = arr[low+i];
@@ -49,7 +49,8 @@ void merge(int arr[],int low,int mid,int high)
     arr[k] = L2[j];
     k++; j++;
   }
-
+delete(L1);
+delete(L2);
 }
 void mergesort(int arr[],int low,int high)
 {

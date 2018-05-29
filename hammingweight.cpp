@@ -32,7 +32,7 @@ class Solution
 }
 }; 
 
-/*Brian Kernigham's algorithm*/
+/*Brian Kernighan's algorithm*/
 class Solution2
 {
   public:
@@ -59,6 +59,6 @@ int main()
   size_t result_naive = s.hammingweight(11);
   size_t result_bkalgo = s2.hammingweight(11);
   cout<<"Naive Approach:"<<result_naive<<endl;
-  cout<<"Brian Kernigham's Algorithm:"<<result_bkalgo<<endl;
+  cout<<"Brian Kernighan's Algorithm:"<<result_bkalgo<<endl;
   return 0;
 }        

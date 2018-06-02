@@ -40,6 +40,8 @@ class Solution
                  vector<int>num1 = bits(nums[i]);
                  vector<int>num2 = bits(nums[j]);
                  hamming_insert_zero_bits( num2.size() - num1.size(), num1);
+                  reverse(num1.begin(),num1.end());
+                 reverse(num2.begin(),num2.end());
                  for(size_t k = 0;k<num2.size();k++)
                   {
                     if(!(num1[k] == num2[k]))

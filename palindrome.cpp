@@ -24,23 +24,23 @@ class Solution
           reverse(hold.begin(),hold.end());	
 	  return ((hold == s)? true:false);
 	}
-	bool palindrome_number(int input)
+	bool palindrome_number(long long input)
 	{
-	  if(input<0)
+	  if(input<0 || input>INT_MAX)
 	  {
 	    return false;
 	    exit(1);
 	  }
-	  size_t hold = input;
-	  size_t hold_1 = input;
-	  size_t result = 0;
-	  int count = 0;
+	  long long hold = input;
+	  long long hold_1 = input;
+	  long long result = 0;
+	  long long count = 0;
 	  while(hold)
 	{
 	 hold /= 10;
 	count += 1;
 	}
-	int i = count;
+	long long i = count;
 	 while(hold_1)
 	{
 	  int remainder = hold_1%10;

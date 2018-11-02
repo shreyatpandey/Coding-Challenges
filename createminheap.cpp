@@ -5,15 +5,16 @@ using namespace std;
 
 int main()
 {
-	srand(time(0));
-	priority_queue<int,vector<int>,greater<int>> pq;
-	for(int i=0;i <5;i +=1)
-	pq.push(rand()%10);
+	//srand(time(0));
+	priority_queue<int,vector<int>,greater<int>> pq = {5,10,2,8,4};
+	//for(int i=0;i <5;i +=1)
+	//pq.push(rand()%10);
+	cout<<"[";
 	while(!pq.empty())
 	{
-	 cout<<pq.top()<<" ";
+	 cout<<pq.top()<<",";
 	 pq.pop();
 	}
-	cout<<endl;
+	cout<<"]"<<endl;
 	return 0;
 }

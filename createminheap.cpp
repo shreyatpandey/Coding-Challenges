@@ -6,9 +6,12 @@ using namespace std;
 int main()
 {
 	//srand(time(0));
-	priority_queue<int,vector<int>,greater<int>> pq = {5,10,2,8,4};
-	//for(int i=0;i <5;i +=1)
-	//pq.push(rand()%10);
+	priority_queue<int,vector<int>,greater<int>> pq;
+	pq.push_back(5);
+	pq.push_back(10);
+	pq.push_back(2);
+	pq.push_back(8);
+	pq.push_back(4);
 	cout<<"[";
 	while(!pq.empty())
 	{

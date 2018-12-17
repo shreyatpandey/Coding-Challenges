@@ -11,13 +11,10 @@ struct Interval
 class Solution {
 public:
     int minMeetingRooms(vector<Interval>& intervals) {
-        //cout<<"intervals_size:"<<intervals.size()<<endl;
         vector<int>start_time;
         vector<int>end_time;
         for(int i=0;i<intervals.size();i++)
         {
-            //cout<<"start_time:"<<intervals[i].start<<endl;
-            //cout<<"end_time:"<<intervals[i].end<<endl;
             start_time.emplace_back(intervals[i].start);
             end_time.emplace_back(intervals[i].end);
         }  

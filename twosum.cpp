@@ -20,7 +20,7 @@ class Solution
     }
   vector<int>twosum_2(vector<int>&nums,int target)
   {
-   nordered_map<int,int>hash_map;
+   unordered_map<int,int>hash_map;
 			vector<int>return_1;
 			for(int i=0;i<nums.size();i++)
 			{

@@ -1,6 +1,7 @@
 class Solution {
 public:
     char findTheDifference(string s, string t) {
+        /* s = "aabcd" ; t="aabcda" */
         unordered_map<char,int>hash_string;
         char temp;
         for(int i=0;i<s.length();i++)

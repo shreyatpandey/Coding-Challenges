@@ -27,13 +27,16 @@ class Solution
     public:
         vector<int>largestValues(ListNode* root)
         {
+           vector<int>result;
+          if(root == NULL)
+            return result;
           
             queue<ListNode*>input_node;
             input_node.push(root);
-            vector<int>hold_values;
-            vector<int>result;
+           
             while(!input_node.empty())
             {
+                vector<int>hold_values;
                 /*node count at current level*/
                 int node_monitor = input_node.size();
                 while( node_monitor)

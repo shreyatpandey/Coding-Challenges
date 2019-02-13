@@ -4,7 +4,7 @@ using namespace std;
 class Solution
 {
 	public:
-	   int removeDuplicates(vector<int>& nums)
+	   int removeduplicates_1(vector<int>& nums) /*Minimum memory complexity*/
 	   {
 	     int index_store_number=0;
 	     int i,z;
@@ -30,6 +30,22 @@ class Solution
 	     return (nums.size());
 
 	   }
+	int removeduplicates_2(vector<int>& nums)
+	{
+		vector<int>return_list;
+		vector<int>::iterator it;
+    		for(int i=0;i<nums.size();i++)
+    		{
+        		it = find(return_list.begin(),return_list.end(),nums[i]);
+        		if(!(it != return_list.end()))
+        		{
+            			return_list.emplace_back(nums[i]);
+        		}
+    		}
+    	return return_list.size();	
+	
+	}
+	
 };
 
 int main()
@@ -42,8 +58,10 @@ int main()
 	  v.push_back(4);
 
 	  Solution s;
-	  int answer = s.removeDuplicates(v);  //this is how you pass vector as a function
-	  cout<<"Length:"<<answer<<endl;
+	  int answer = s.removeduplicates_1(v);
+	  int answer_1 = s.removeduplicates_2(v);
+	  cout<<"Length_1:"<<answer<<endl;
+	  cout<<"Length_2:"<<answer_1<<endl;
 	  return 0;
 
 

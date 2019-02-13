@@ -27,8 +27,7 @@ class Solution
     public:
         vector<int>largestValues(ListNode* root)
         {
-            //if (root == NULL)
-             //   return;
+          
             queue<ListNode*>input_node;
             input_node.push(root);
             vector<int>hold_values;

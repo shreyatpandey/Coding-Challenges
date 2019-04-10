@@ -1,6 +1,7 @@
 class Solution {
 public:
-    int singleNumber(vector<int>& nums) {
+    int singleNumber(vector<int>& nums) /* faster than only 5.19 % of C++ implementation */
+    {
         if (nums.size() == 0)
         {
             return 0;
@@ -22,5 +23,18 @@ public:
         }
         return -1;
         
+    }
+    int singleNumber_2(vector<int>& nums) /*faster than 97.18% of C++ submission = bitwise operation is faster */
+    {
+      if((nums.size()) == 0)
+      {
+          return 0;
+      }
+        int store_element = nums[0];
+        for(int i=1;i<nums.size();i++)
+        {
+            store_element ^= nums[i];
+        }
+        return store_element;
     }
 };

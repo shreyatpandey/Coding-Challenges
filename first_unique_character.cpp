@@ -27,18 +27,18 @@ return -1;
 	int firstuniquechar_2(string s)
 	{
 		map<char,int>hash_map ;
-	    for(int i=0;i<input.length();i++)
+	    for(int i=0;i<s.length();i++)
 	    {
-		hash_map.emplace(input[i],0);
-		auto it = hash_map.find(input[i]);
+		hash_map.emplace(s[i],0);
+		auto it = hash_map.find(s[i]);
 		++it->second;
-		hash_map.emplace(input[i],it->second);
+		hash_map.emplace(s[i],it->second);
 	    }
 		for(auto& x:hash_map)
 	    {
 		if(x.second == 1)
 		{
-		    size_t index_found = input.find(x.first);
+		    size_t index_found = s.find(x.first);
 		    cout<<"index_found_at:"<<index_found<<endl;
 		    cout<<"first_non_repeating_character:"<<x.first<<endl;
 		    return index_found;

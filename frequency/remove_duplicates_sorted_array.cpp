@@ -23,4 +23,9 @@ public:
         return nums.size();
         
     }
+    int removeDuplicates_2(vector<int>& nums)
+    {
+    nums.erase(std::unique(nums.begin(), nums.end()), nums.end());
+    return nums.size();
+    }
 };

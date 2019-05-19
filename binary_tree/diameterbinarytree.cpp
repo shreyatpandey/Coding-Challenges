@@ -1,69 +1,49 @@
-/* Number of nodes on the longest path between any leaves of the binary tree */
+/*Given a binary tree, you need to compute the length of the diameter of the tree. 
+The diameter of a binary tree is the length of the longest path between any two nodes in a tree.
+This path may or may not pass through the root.
 
-#include<bits/stdc++.h>
-using namespace std;
+Example:
+Given a binary tree 
+          1
+         / \
+        2   3
+       / \     
+      4   5    
+Return 3, which is the length of the path [4,2,1,3] or [5,2,1,3].*/
 
-struct TreeNode
-{
-  int data;
-  struct TreeNode* right;
-  struct TreeNode* left;
+
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+class Solution {
+    public:
+        int height_of_binary_tree(TreeNode* root)
+        {
+            if(root == NULL)
+                return 0;
+           
+           return(1+ max(height_of_binary_tree(root->right),height_of_binary_tree(root->left)));
+        }
+public:
+    int diameterOfBinaryTree(TreeNode* root) {
+        if(root == NULL)
+            return 0;
+        int left_side_tree = height_of_binary_tree(root->left);
+        int right_side_tree = height_of_binary_tree(root->right);
+        
+        int left_side_diameter = diameterOfBinaryTree(root->left);
+        int right_side_diameter = diameterOfBinaryTree(root->right);
+        
+        return (max(left_side_tree + right_side_tree ,max(left_side_diameter,right_side_diameter)));
+        
+        
+        
+    }
 };
-struct TreeNode* insert_node(int value)
-{
-  struct TreeNode* temp = new TreeNode;
-  temp->data = value;
-  temp->right = NULL;
-  temp->left = NULL;
-  return temp;
-};
-
-int height(TreeNode* root)
-{
-  if(root == NULL)
-  return 0;
-  
-  else
-  {
-    return (1 + max(height(root->left),height(root->right)));
-  }
-}
-  
-  
-
-class Solution
-{
-  public:
-  int diameterofBinaryTree(TreeNode* root)
-  {
-    if (root == NULL)
-    return 0;
-   
-     int left_ht_tree = height(root->left);
-     int right_ht_tree = height(root->right);
-     
-     int left_diameter = diameterofBinaryTree(root->left);
-     int right_diameter = diameterofBinaryTree(root->right);
-    
-     return (max(left_ht_tree + right_ht_tree + 1, max(left_diameter,right_diameter)));
- 
-   }
-
-};
-
-
-
-int main()
-{
-  struct TreeNode* temp = insert_node(1);
-  temp->left = insert_node(2);
-  temp->right = insert_node(3);
-  temp->left->left = insert_node(4);
-  temp->left->left = insert_node(5);
-  Solution s;
-  int result_diameter = s.diameterofBinaryTree(temp);
-  cout<<"Diameter_binary_tree:"<<result_diameter<<endl;  
-
-  return 0;
-}
 

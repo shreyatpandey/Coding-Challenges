@@ -27,8 +27,10 @@ class Solution {
         {
             if(root == NULL)
                 return 0;
+          int left_hand_side = height_of_binary_tree(root->left);
+          int right_hand_side = height_of_binary_tree(root->right);
            
-           return(1+ max(height_of_binary_tree(root->right),height_of_binary_tree(root->left)));
+           return(left_hand_side>right_hand_side?1+left_hand_side:1+right_hand_side);
         }
 public:
     int diameterOfBinaryTree(TreeNode* root) {

@@ -60,29 +60,11 @@ public:
                 else
                 {match_string[input[i]] = 1;}
             }
-            int flag = 1;
-            for(auto&x : match_string)
-            {
-                if( !(anagram_string.find(x.first) != anagram_string.end()))
-                {
-                    flag = 0;
-                    break;
-                } 
-                else if(anagram_string.find(x.first) != anagram_string.end())
-                {
-                    if(anagram_string[x.first] != x.second)
-                    {
-                        flag = 0;
-                        break;
-                    }
-                }
-            }
-            if (flag)
+            if( anagram_string == match_string)
             {
                 result.emplace_back(i-(p.length()-1));
-                
             }
-                
+           
         }
        
        return result;

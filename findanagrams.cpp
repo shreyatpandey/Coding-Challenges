@@ -30,22 +30,61 @@ class Solution
 }
 };
 
-int main()
-{
- Solution s;
- string word1 = "cbaebabacd";
- string word2 = "abc";
- vector<int>hold_result;
- hold_result = s.findAnagrams(word1,word2);
- cout<<"[";
- for(size_t i=0;i<hold_result.size();i++)
-  {
-     cout<<hold_result[i];
-       if(i!=hold_result.size()-1)
-        cout<<",";
-   }
- cout<<"]";
-  cout<<endl;
- 
-  return 0;
-}
+/*Solution- Time Limit Exceeded */
+class Solution {
+public:
+    vector<int> findAnagrams(string s, string p) {
+     vector<int>result;
+    if (s.length() < p.length())
+        return result; 
+      map<char,int>anagram_string;
+        for (int c = 0;c<p.length();c++)
+        {
+            if (anagram_string.find(p[c]) != anagram_string.end())
+            {
+                anagram_string[p[c]]++;
+            }
+            else
+            { anagram_string[p[c]] = 1;}
+        }
+        for(int i=p.length()-1;i<s.length();i++)
+        {
+            string input = s.substr(i-(p.length()-1),p.length());
+            map<char,int>match_string;
+            for(int i=0;i<input.length();i++)
+            {
+                if (match_string.find(input[i]) != match_string.end())
+            {
+                    ++match_string[input[i]];
+            }
+                else
+                {match_string[input[i]] = 1;}
+            }
+            int flag = 1;
+            for(auto&x : match_string)
+            {
+                if( !(anagram_string.find(x.first) != anagram_string.end()))
+                {
+                    flag = 0;
+                    break;
+                } 
+                else if(anagram_string.find(x.first) != anagram_string.end())
+                {
+                    if(anagram_string[x.first] != x.second)
+                    {
+                        flag = 0;
+                        break;
+                    }
+                }
+            }
+            if (flag)
+            {
+                result.emplace_back(i-(p.length()-1));
+                
+            }
+                
+        }
+       
+       return result;
+    }
+};

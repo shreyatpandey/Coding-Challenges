@@ -21,8 +21,11 @@ public:
         vector <ListNode*> res;
         ListNode* tmp;
         // push to result vector
-        for(ListNode* node = head; node;node= node->next){
-            res.push_back(node);
+        ListNode* node = head;
+        while(node)
+        {
+            res.emplace_back(node);
+            node = node->next;
         }
         // swap 0 & 1 index value, 2 & 3, 4 & 5 ...... n-1 & n
         for(int i=0; i<res.size()-1; i=i+2){

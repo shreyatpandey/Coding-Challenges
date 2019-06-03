@@ -25,8 +25,6 @@ public:
             return head;
         int length_link = length_link_list(head);
         int i=0;
-        if(length_link% 2 != 0)
-        {
             while(i<length_link/2)     
             {
                // cout<<"val:"<<temp->val;
@@ -35,21 +33,6 @@ public:
                 
             }
             return temp;
-            
-        }
-        else
-        {
-             while(i<length_link/2)     
-            {
-               // cout<<"val:"<<temp->val;
-                temp = temp->next;
-                i++;
-                
-            }
-            return temp;
-        }
-    
-        
     }
 };
 

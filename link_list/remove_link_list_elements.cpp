@@ -15,6 +15,7 @@ public:
       ListNode* temp = head;
         while(temp)
         {
+            /*Remove Node */
             while(temp->next && temp->next->val == val)
             {
                 temp->next = temp->next->next;

@@ -40,15 +40,13 @@ class Solution {
             }
             int new_length = length - n;
             ListNode* temp = head;
-            ListNode* temp_next = NULL;
             int i =0;
-            while(i<new_length)
+            while(i<new_length-1)
             {
                 i ++;
-                temp_next = temp; 
                 temp = temp->next;
             }
-            temp_next->next = temp->next;
+            temp->next = temp->next->next;
             return head;    
             
         }

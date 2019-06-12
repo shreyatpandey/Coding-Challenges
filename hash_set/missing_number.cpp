@@ -2,6 +2,7 @@ class Solution {
 public:
     int missingNumber(vector<int>& nums) {
         int temp = nums.size();
+        /* i= 0 and i = 1 will make a difference */
         for(int i=0;i<nums.size();i++)
         {
             temp ^= i^nums[i];

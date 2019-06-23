@@ -1,3 +1,8 @@
+
+
+
+
+
 int length_string(char *input)
 {
     int length_count = 0;
@@ -8,7 +13,37 @@ int length_string(char *input)
     return length_count;
 }
 
+/*Solution- 1 */
+int strStr(char * haystack, char * needle)
+{
+ // Function to implement strstr() function using KMP algorithm
+    
+    int haystack_length = length_string(haystack);
+    int needle_length = length_string(needle);
+	
+    // Base Case 1: Y is NULL or empty
+	if (*needle == '\0' || needle_length == 0)
+		return 0;
 
+	// Base Case 2: X is NULL or X's length is less than that of Y's
+	if (*haystack == '\0' || needle_length > haystack_length)
+		return -1;
+    
+    //Base Case 3: length is same
+    if (needle_length == haystack_length && haystack[0] == needle[0])
+        return 0;
+
+	for(int i=0;i<haystack_length;i++)
+    {
+        if(strncmp(haystack+i,needle,needle_length)==0)
+            return i;
+    }
+
+	return -1;
+
+}
+
+/*Solution-2*/
 int strStr(char * haystack, char * needle)
 {
     int lenh = length_string(haystack), lenn = length_string(needle);

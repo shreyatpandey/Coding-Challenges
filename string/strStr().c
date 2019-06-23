@@ -1,8 +1,3 @@
-
-
-
-
-
 int length_string(char *input)
 {
     int length_count = 0;

@@ -1,4 +1,4 @@
-Class Solution
+class Solution
 {
 public:
 int shortestsubstring(string s)

@@ -1,4 +1,4 @@
-lass MyQueue {
+class MyQueue {
     private:
         stack<int>stack_new;
         stack<int>stack_old;

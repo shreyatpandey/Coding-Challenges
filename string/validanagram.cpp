@@ -18,9 +18,3 @@ class Solution
 
 };
 
-int main()
-{
-  Solution s;
-  cout<<"Is_it_valid_anagram:"<<boolalpha<<s.isAnagram("anagram","nagaram")<<endl;
-  return 0;
-}

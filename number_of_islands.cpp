@@ -11,11 +11,9 @@ bool is_valid(int i, int j) {
 void dfs(vector<vector<char>>& grid, int i, int j) {
     if (grid[i][j] == '0') 
     {
-        //cout<<"how_many_times_here:"<<endl;
         return;
     }
     grid[i][j] = '0';
-    //cout<<"i_rec:"<<i<<" and "<<"j_rec:"<<j<<endl;
     if (is_valid(i-1, j)) dfs(grid, i-1, j);
     if (is_valid(i+1, j)) dfs(grid, i+1, j);
     if (is_valid(i, j-1)) dfs(grid, i, j-1);

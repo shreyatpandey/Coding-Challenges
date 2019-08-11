@@ -1,3 +1,7 @@
+/*Given a linked list. arrange the linked list in manner of alternate first and last element.*/
+/*Given a singly linked list L0 -> L1 -> … -> Ln-1 -> Ln.
+Rearrange the nodes in the list so that the new formed list is : L0 -> Ln -> L1 -> Ln-1 -> L2 -> Ln-2 …*/
+
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -6,6 +10,7 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+
 class Solution {
 public:
     void reorderList(ListNode* head) {

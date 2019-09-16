@@ -23,10 +23,9 @@ public:
         for(auto word:wordDict)
         {
             max_length_each_word_in_dictionary = max(max_length_each_word_in_dictionary , (int)word.size());
-            min_length_each_word_in_dictionary = min(min_length_each_word_in_dictionary ,               (int)word.size());            
+            min_length_each_word_in_dictionary = min(min_length_each_word_in_dictionary , (int)word.size());            
         }
-        
-        cout<<"s[1]:"<<s[1]<<endl;
+ 
         for(int i=1;i<=input_string_length ;++i)
         {
             

@@ -10,7 +10,6 @@ Output: true
 Explanation: Return true because "leetcode" can be segmented as "leet code".
 Input: s = "catsandog", wordDict = ["cats", "dog", "sand", "and", "cat"]
 Output: false
-
 */
 class Solution {
     private:

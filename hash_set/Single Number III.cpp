@@ -28,11 +28,12 @@ public:
                 frequencyofeachnumber[num] = 1;
             }
         }
-        for(auto num:nums)
+       for(auto &num:frequencyofeachnumber)
         {
-            if(frequencyofeachnumber[num] == )
+            if(num.second == 1)
+                storeresult.emplace_back(num.first);
         }
-        
-        
+        return storeresult;
     }
+    
 };

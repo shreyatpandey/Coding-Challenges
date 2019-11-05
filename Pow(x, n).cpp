@@ -18,7 +18,7 @@ public:
         double current_product = x;
         for (long long i = N; i>0 ; i /= 2) 
         {
-            if ((i % 2) == 1) 
+            if ((i & 1) == 1)  /* Odd number */ 
             {
                 ans = ans * current_product;
             }

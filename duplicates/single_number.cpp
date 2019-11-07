@@ -1,3 +1,9 @@
+/*Given a non-empty array of integers, every element appears twice except for one. Find that single one.
+Unsorted Array 
+Input: [2,2,1]
+Output: 1
+*/
+
 class Solution {
 public:
     int singleNumber(vector<int>& nums) /* faster than only 5.19 % of C++ implementation */

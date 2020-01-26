@@ -1,3 +1,4 @@
+//TC:- O(n)
 class Solution {
     private:
         stack<TreeNode*>storenode;

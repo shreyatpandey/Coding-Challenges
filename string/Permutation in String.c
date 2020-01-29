@@ -43,7 +43,7 @@ bool check_equal_character(int *array_1,int *array_2)
     return true;
 }
 
-Approach-2:
+//Approach-2:
 bool check_equal_character(int *array_1,int *array_2);
 
 bool checkInclusion(char * s1, char * s2)

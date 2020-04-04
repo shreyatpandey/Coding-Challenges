@@ -1,3 +1,4 @@
+//Approach-1: 99 % faster
 class MinStack {    
     vector<int>input_stack;
     vector<int>min_stack;
@@ -37,6 +38,48 @@ public:
         
     }
 };
+// Approach 2: Using Stack , 22.19% faster
+class MinStack {
+    stack<int>MinValStack ;
+    stack<int>InputStack;
+public:
+    /** initialize your data structure here. */
+    MinStack() {
+        
+    }
+    
+    void push(int x) {
+        InputStack.push(x) ;
+        if ( MinValStack.size() == 0)
+        {
+            MinValStack.push(x);
+        }
+        else
+        {
+            int MinValue = min(MinValStack.top(),x);
+            MinValStack.push(MinValue) ;
+        }
+        
+    }
+    
+    void pop() {
+        MinValStack.pop();
+        InputStack.pop();
+    }
+    
+    int top() 
+    {
+        return InputStack.top() ;
+        
+    }
+    
+    int getMin() {
+        return MinValStack.top() ;
+        
+        
+    }
+};
+
 
 /**
  * Your MinStack object will be instantiated and called as such:

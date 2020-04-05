@@ -7,6 +7,9 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
+//Time : O(height)
+//Space : O(height)
+
 class Solution {
     private:
         queue<TreeNode*>store_node;

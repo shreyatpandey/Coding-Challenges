@@ -1,4 +1,6 @@
 /* GeekforGeeks */
+//TC: O(N^2)
+//SC: O(N)
 #include <bits/stdc++.h> 
 using namespace std; 
   

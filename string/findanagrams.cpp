@@ -30,6 +30,55 @@ class Solution
 }
 };
 
+/*Another Approach through Sliding Window*/
+#define Max 20100
+class Solution {
+    private:
+     bool compare(char Input[],char Pattern[]) ;
+public:
+    vector<int> findAnagrams(string s, string p) { 
+        vector<int>ResultIndex;
+        if ( p.length() > s.length())
+            return ResultIndex;
+        char InputMap[Max] = {0};
+        char PatternMap[Max] = {0} ;
+        
+        /*Initial fillup of frequenecy*/
+        for(int i=0;i<p.length();i++)
+        {
+            InputMap[s[i]]++;
+            PatternMap[p[i]]++;
+        }
+        
+        /*Traversal through the length of string s*/
+        for(int i=p.length();i<s.length();i++)
+        {
+            if( compare(InputMap,PatternMap))
+            {
+                ResultIndex.push_back(i-p.length());
+            }
+            /* Increment window of PatternMap by one*/
+            InputMap[s[i]]++;
+            
+            /*Remove the first character in the window*/
+            InputMap[s[i-p.length()]]--;
+        }
+        /*Check for last index*/
+        if ( compare(InputMap,PatternMap) )
+            ResultIndex.emplace_back((s.length()-p.length()));
+    return ResultIndex;
+    }
+                                     
+};
+
+bool Solution :: compare(char Input[], char Pattern[])
+{
+    for(int i=0;i<Max;i++)
+        if ( Input[i] != Pattern[i])
+            return false;
+    return true;
+}
+
 /*Solution- Time Limit Exceeded */
 class Solution {
 public:

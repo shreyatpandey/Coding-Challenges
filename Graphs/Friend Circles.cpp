@@ -17,6 +17,7 @@ Explanation:The 0th and 1st students are direct friends, so they are in a friend
 The 2nd student himself is in a friend circle. So return 2.
 */
 
+//Approach - 1
 //Recursion
 //TC: O(TotalFriends + NumberOfFriends) ; O(V+E)
 //SC: O(1)
@@ -50,6 +51,45 @@ void Solution::HelperFriendCircle(vector<vector<int>>&Input, int Index)
         {
             Input[Index][i] = 0;
             HelperFriendCircle(Input,i);
+        }
+    }
+    
+}
+
+//Approach - 2
+//DFS + Visited Set
+//TC: O(TotalNumberOfFriends)
+//SC: O(NumberOfFriends) for Visited Set
+class Solution {
+    private:
+        int i_MatrixSize ;
+        int i_NumberOfFriends ;
+        void HelperFriendCircle(vector<vector<int>>&Input,vector<bool>&Visited, int Index);
+public:
+    int findCircleNum(vector<vector<int>>& M) {
+        i_MatrixSize = M.size();
+        vector<bool>Visited(i_MatrixSize,false);
+        for(int i=0;i<i_MatrixSize;i++)
+        {
+            if ( Visited[i] == false)
+            {
+                
+                    i_NumberOfFriends += 1;
+                    HelperFriendCircle(M,Visited,i);
+                
+            }
+        }
+        return i_NumberOfFriends ;         
+    }
+};
+void Solution::HelperFriendCircle(vector<vector<int>>&Input,vector<bool>&Visited, int Index)
+{
+    Visited[Index] = true;
+    for(int i=0;i<i_MatrixSize;i++)
+    {
+        if ( Input[Index][i] == 1 && Visited[i] == false)
+        {
+            HelperFriendCircle(Input,Visited, i);
         }
     }
     

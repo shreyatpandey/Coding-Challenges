@@ -94,3 +94,49 @@ void Solution::HelperFriendCircle(vector<vector<int>>&Input,vector<bool>&Visited
     }
     
 }
+
+//Approach-3 
+//Union-Find
+class Solution {
+    private:
+        int i_MatrixSize ;
+        int i_NumberOfFriends ;
+        int HelperFriendCircle(vector<int>&Visited, int Index);
+public:
+    int findCircleNum(vector<vector<int>>& M) {
+        i_MatrixSize = M.size();
+        i_NumberOfFriends = i_MatrixSize ;
+        vector<int>Visited(i_MatrixSize,0);
+        for(int i = 0 ; i<i_MatrixSize;i++)
+        {
+            Visited[i] = i;
+        }
+        for(int i=0;i<i_MatrixSize;i++)
+        {
+           for(int j=0;j<i_MatrixSize;j++)
+           {
+               if(i!=j && M[i][j] == 1)
+               {
+                   int Index1 = HelperFriendCircle(Visited,i);
+                   int Index2 = HelperFriendCircle(Visited,j);
+                   if ( Index1 != Index2)
+                   {
+                       i_NumberOfFriends -= 1;
+                       Visited[Index2] = Index1 ;
+                       
+                   }
+               }
+           }
+        }
+        return i_NumberOfFriends ;         
+    }
+};
+int Solution::HelperFriendCircle(vector<int>&Visited, int Index)
+{
+    while( Visited[Index] != Index)
+    {
+        Visited[Index] = Visited[Visited[Index]];
+        Index = Visited[Index];
+    }
+    return Index;
+}

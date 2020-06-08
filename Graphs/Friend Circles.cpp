@@ -18,6 +18,8 @@ The 2nd student himself is in a friend circle. So return 2.
 */
 
 //Recursion
+//TC: O(TotalFriends + NumberOfFriends) ; O(V+E)
+//SC: O(1)
 class Solution {
     private:
         int i_MatrixSize ;

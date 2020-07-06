@@ -84,8 +84,8 @@ int main()
         for(int j=15;j>=0;j--)
         {
             number += (SingleArray[m++]*pow(2,j)) ;
-            InputArray[n++] = number;
         }
+        InputArray[n++] = number;
         printf("number:%u\n",number);
     }
     //Print InputArray

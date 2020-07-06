@@ -33,24 +33,7 @@ public:
                 l2 = l2->next;       
             }
         }
-        if(l1!=NULL)
-        {
-            while(l1)
-            {
-                tail->next = l1;
-                tail = tail->next;
-                l1 = l1->next;
-            }
-        }
-        else
-        {
-            while(l2)
-            {
-               tail->next = l2;
-               tail = tail->next;
-               l2 = l2->next;  
-            }
-        }
+        tail->next = l1?l1:l2 ;
         return dummy_node->next;
     }
 };

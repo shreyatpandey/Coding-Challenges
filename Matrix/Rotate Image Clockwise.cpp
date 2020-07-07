@@ -10,7 +10,7 @@ public:
                 swap(matrix[i][j],matrix[j][i]);
             }
         }
-        /*swap rows*/
+        /*swap columns excluding the middle column of the matrix*/
         for(int i=0;i<length_matrix;i++)
         {
             for(int j=0;j<(length_matrix)/2;j++)

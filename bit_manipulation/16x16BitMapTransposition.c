@@ -47,7 +47,7 @@ int main()
     //Transpose this 2DArray;
     for(int i=0;i<16;i++)
     {
-        for(int j=i+1;j<16;j++)
+        for(int j=0;j<i;j++)
         {
             uint32_t temp = Array2D[i][j];
             Array2D[i][j] = Array2D[j][i];

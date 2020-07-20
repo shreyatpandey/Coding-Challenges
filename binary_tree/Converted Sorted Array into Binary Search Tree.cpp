@@ -12,7 +12,6 @@ class Solution {
     TreeNode* construct_BST(vector<int>&nums,int left,int right)
     {
         int mid_value = left + (right-left)/2;
-        cout<<"mid_value:"<<nums[mid_value]<<endl;
         TreeNode* root = new TreeNode(nums[mid_value]);
         
         if( left <= mid_value-1) //if this is not there, time limit exceeded

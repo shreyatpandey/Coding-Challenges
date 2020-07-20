@@ -1,3 +1,35 @@
+//Approach-1: Recursion
+//TC:- O(N)
+//SC:- O(N)
+class Solution {
+    private:
+        TreeNode* BuildBST(vector<int>&preorder,int lower, int upper);
+        int Index = 0;
+        int SizeOfPreorder = 0;
+public:
+    TreeNode* bstFromPreorder(vector<int>& preorder) {
+       SizeOfPreorder = preorder.size();
+        return BuildBST(preorder,INT_MIN,INT_MAX);
+        
+    }
+};
+TreeNode* Solution::BuildBST(vector<int>&preorder,int lower,int upper)
+{
+    if ( Index == SizeOfPreorder)
+        return NULL;
+    int value = preorder[Index] ;
+     if (value < lower || value > upper) 
+         return nullptr;
+
+    Index ++;
+    TreeNode* root = new TreeNode(value);
+    root->left = BuildBST(preorder,lower, value);
+    root->right = BuildBST(preorder,value, upper);
+    return root;
+}
+
+
+//Approach:- 2 Using Stack
 //TC:- O(n)
 class Solution {
     private:

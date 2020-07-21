@@ -38,3 +38,41 @@ int main()
     cout<<boolalpha<<palindrome_permutation("Tact Coa")<<endl;
     return 0;
 }
+
+/*Another Implementation*/
+#include<bits/stdc++.h>
+using namespace std;
+
+bool palindrome_permutation(string s)
+{
+    
+    int frequency_count[26] = {0};
+    int odd_char = 0;
+    for(int i=0;i<s.length();i++)
+    {
+         if((s[i] >= 'A' && s[i] <= 'Z') || (s[i] >= 'a' && s[i] <= 'z'))
+        {
+            char temp = tolower(s[i]);
+            frequency_count[temp-'a']++;
+        }
+    }
+    for(int i=0;i<26;i++)
+    {
+        if ( frequency_count[i]%2 != 0)
+        {
+            odd_char += 1;
+        }
+         if(odd_char > 1)
+        {
+            return false;
+        }
+        
+    }
+    return true;
+}
+    
+int main()
+{
+    cout<<boolalpha<<palindrome_permutation("Tacte Coa")<<endl;
+    return 0;
+}

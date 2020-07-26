@@ -13,6 +13,7 @@ Given tree t:
   / \
  1   2
 Return true, because t has the same structure and node values with a subtree of s.*/
+/* Approach - 1*/
 class Solution {
     private:
         bool equals(TreeNode* s,TreeNode* t)
@@ -34,3 +35,28 @@ public:
     }
 
 };
+/* Approach - 2*/
+class Solution {
+    private:
+        bool isIdentical ( TreeNode* s, TreeNode* t);
+public:
+    bool isSubtree(TreeNode* s, TreeNode* t) {
+        if ( s == NULL && t == NULL)
+            return true;
+        if ( t == NULL )
+            return true;
+        if ( s == NULL || t == NULL)
+            return false;
+        return ( isIdentical(s,t) or isSubtree(s->left,t)or isSubtree(s->right,t)) ;
+        
+    }
+};
+bool Solution :: isIdentical ( TreeNode* s, TreeNode* t)
+{
+    if ( s == NULL && t == NULL)
+        return true;
+    if( s == NULL || t == NULL)
+        return false;
+    return ( s->val == t->val && isIdentical(s->left,t->left) && isIdentical(s->right,t->right)) ;
+    
+}

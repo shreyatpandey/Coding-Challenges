@@ -32,7 +32,7 @@ int main()
   }
   IntegerToChar[LengthString] = '\0' ;
   ReverseInteger(IntegerToChar,LengthString);
- 
- return 0;
+  printf("IntegerToChar:%s\n",IntegerToChar);
+  return 0;
 }
 

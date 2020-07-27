@@ -1,5 +1,16 @@
 #include<stdio.h>
-#define Max 25600
+#define MAX 25600
+
+void ReverseHexaDecimal ( char InputStr[],int length)
+{
+  for(int i=0;i<length/2;i++)
+  {
+    char temp = InputStr[i];
+    InputStr[i] = InputStr[length-i-1];
+    InputStr[length-i-1] = temp;
+  }
+
+}
 
 int main()
 {
@@ -21,6 +32,7 @@ int main()
   
   }
 HexaDecimal[HexaDecimalLength] = '\0';
+ReverseHexaDecimal ( HexaDecimal, HexaDecimalLength );
 printf("HexaDecimal:%s\n",HexaDecimal);
 return 0;
 }

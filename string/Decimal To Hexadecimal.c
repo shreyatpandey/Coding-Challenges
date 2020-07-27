@@ -21,5 +21,6 @@ int main()
   
   }
 HexaDecimal[HexaDecimalLength] = '\0';
+printf("HexaDecimal:%s\n",HexaDecimal);
 return 0;
 }

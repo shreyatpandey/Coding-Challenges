@@ -1,4 +1,5 @@
 /* itoa */
+#include<stdio.h>
 #define MAX 25600
 void ReverseInteger ( char InputStr[],int length)
 {

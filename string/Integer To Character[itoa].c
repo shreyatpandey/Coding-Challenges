@@ -6,8 +6,8 @@ void ReverseInteger ( char InputStr[],int length)
   for(int i=0;i<length/2;i++)
   {
     char temp = InputStr[i];
-    Input[i] = InputStr[length-i-1];
-    Input[length-i-1] = temp;
+    InputStr[i] = InputStr[length-i-1];
+    InputStr[length-i-1] = temp;
   }
 
 }

@@ -57,3 +57,35 @@ int main()
    }
   return 0;
 }
+
+/* Approach - 2*/
+lass Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        int index1 = 0, index2 = 0;
+        auto process_and_lookup = ( [ m = unordered_map<int,int>(),
+                                    i = 0,
+                                    target,
+                                    &index1,&index2 ] ( const auto item) mutable {
+            auto iter = m.find(target-item) ;
+            if (iter == cend(m))
+            {
+                m[item] = i++;
+                return false;
+            }
+            index1 = iter->second;
+            index2 = i ;
+            return true;
+        }) ;
+        
+        auto iter = find_if(cbegin(nums),cend(nums),process_and_lookup);
+        if( iter != cend(nums))
+        {
+            return {index1,index2};
+        
+        }
+                                   
+        return {index1,index2};                              
+        
+    }
+};

@@ -26,7 +26,7 @@ public:
         BFSQueue.push({root,column});
         while ( BFSQueue.size() > 0)
         {
-            pair<TreeNode*,int>LevelOrder  = BFSQueue.front();
+            auto LevelOrder  = BFSQueue.front();
             BFSQueue.pop();
             root = LevelOrder.first;
             column = LevelOrder.second;

@@ -9,7 +9,7 @@ int main()
     std::cout<<"----|Print 77 in Binary|----"<<std::endl;
     std::cout<<NetworkInput<<std::endl;
     std::cout<<"----|Perform Necessary Operation|----"<<std::endl;
-    int ResultantOperation = (Number[1]&0x7C)<<1;
+    int ResultantOperation = (Number[1]&0x7C)>>2;
     std::bitset<8>Result(ResultantOperation);
     std::cout<<Result<<std::endl;
     return 0;

@@ -34,3 +34,21 @@ int Solution::NumberOfOnes(int num)
     }
     return Count;
 }
+/* 
+Approach - 2
+TC:- O(nlogn)
+*/
+class Solution {
+public:
+    vector<int> sortByBits(vector<int>& arr) {
+        sort( arr.begin(),arr.end(),[](const int a,const int b){
+            bitset<64>b1(a);
+            bitset<64>b2(b);
+            int Value1 = b1.count() ; 
+            int Value2 = b2.count() ;
+            return ( Value1==Value2)?a<b : Value1 < Value2;
+            
+        });
+        return arr;
+    }
+};

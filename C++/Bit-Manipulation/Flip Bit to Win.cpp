@@ -11,7 +11,7 @@ class Solution
     {
       int currentlength = 0;
       int previouslength = 0;
-      int maxLength = 1;
+      int maxlength = 1;
       while ( a!= 0)
       {
         if ( (a&1)==1) //current bit is 1

@@ -24,24 +24,27 @@ class Solution {
     private:
         vector<int>SumOfWeights;
 public:
-    Solution(vector<int>& nums) {
-         this->SumOfWeights = nums;
-    }
-    
-    int pick(int target) {
-       int count = 0, res = -1;
-      for (int i = 0; i <SumOfWeights.size(); ++i)
-      {
-          if(SumOfWeights[i] == target && (!(rand()%++count))) 
-          {
-              std::cout<<"rand()%count:"<<rand()%count<<std::endl;
-              res=i;
-          }
-      }
-    return res;    
+    Solution(vector<int>& w) {
+        int sum  = 0;
+        for( int num:w)
+        {
+            sum += num ;
+            SumOfWeights.emplace_back(sum);
+        }
         
     }
+    
+    int pickIndex() {
+        int RandomNumber = (int)(SumOfWeights[SumOfWeights.size()-1]*((double)rand()/(RAND_MAX)));
+        for(int i =0;i<SumOfWeights.size();i++)
+        {
+            if ( RandomNumber < SumOfWeights[i] )
+                return i;
+        }
+        return 0;   
+    }
 };
+
 
 /**
  * Your Solution object will be instantiated and called as such:

@@ -14,34 +14,27 @@ Given 1->2->3->4, you should return the list as 2->1->4->3.
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+//Approach - 1
+// TC:- O(n)
+// SC:- O(1)
 class Solution {
 public:
     ListNode* swapPairs(ListNode* head) {
-         if (!head || !head->next) return head;
-        vector <ListNode*> res;
-        ListNode* tmp;
-        // push to result vector
-        ListNode* node = head;
-        while(node)
+        ListNode* dummynode = new ListNode(0);
+        dummynode->next = head ;
+        ListNode* temp = dummynode;
+        while ( temp && temp->next && temp->next->next)
         {
-            res.emplace_back(node);
-            node = node->next;
+            ListNode* first = temp ; //first is dummynode
+            ListNode* second = temp->next; //second is head
+            ListNode* third = temp->next->next;
+            first->next = third;
+            second->next = third->next;
+            third->next  = second;
+            temp = second;
         }
-        // swap 0 & 1 index value, 2 & 3, 4 & 5 ...... n-1 & n
-        for(int i=0; i<res.size()-1; i=i+2){
-            tmp = res[i];
-            res[i] = res[i+1];
-            res[i+1] = tmp;
-        }
-        // link lists to the next index node
-        for(int i=0; i< res.size()-1; i++){
-            res[i] -> next = res[i+1];
-        }
-        // set null for last node
-        res[res.size()-1] -> next = nullptr;
+        return dummynode->next;
         
-        // return first node of the list
-        return res[0];
     }
-    
 };
+

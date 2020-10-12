@@ -18,7 +18,7 @@ class Solution
         Value >>= 1;
       }
       /*Error case for Integer Overflow */
-      if ( NumberOfZeros + NumberOfOnes == 31 || NumberOfZeros + NumberOfOnes == 1)
+      if ( NumberOfZeros + NumberOfOnes == 31 || NumberOfZeros + NumberOfOnes == 0)
       {
         return -1;
       }

@@ -29,6 +29,30 @@ class Solution
       return Input;
       
      }
+    int PrevSmallest ( int Input)
+    {
+            int temp = Input;
+            int c0 = 0;
+            int c1 = 0;
+            while ( temp & 1 == 1)
+            {
+                c1 += 1;
+                temp >>= 1;
+            }
+            if ( temp == 0 ) return -1;
+            while (((temp&1) == 0) && ( temp != 0))
+            {
+                c0 += 1;
+                temp >>= 1;
+            }
+            int p = c0 + c1; //position of rightmost non-trailing one
+            Input &= ((~0)<<(p+1)); //clears from bit p onwards
+            std::cout<<"Input:"<Input<<std::endl;
+            int mask = (1<<(c1+1))-1; // Sequence of (c1+1) ones
+            std::cout<<"mask:"<<mask<<std::endl;
+            Input |= mask<<(c0-1);
+            return Input;
+    }
       
   };
     

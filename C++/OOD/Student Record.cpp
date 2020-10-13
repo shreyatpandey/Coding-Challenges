@@ -11,13 +11,13 @@ using namespace std;
 class Student
 {
     private:
-        string _student_name ;
+        string StudentName ;
         vector<int>Grades ;
         double Average ;
     public:
         Student(string _student_name)
         {
-            this->_student_name = _student_name;
+            this->StudentName = _student_name;
         }
         string GetName ()
         {
@@ -45,6 +45,7 @@ class Student
 int main()
 {
     string HoldStudentName;
+    /*key is student and value is the object of that class */
     unordered_map<string,Student>StudentToGradeMap ;
     /* Approach-1 Input Student Name */
     /*

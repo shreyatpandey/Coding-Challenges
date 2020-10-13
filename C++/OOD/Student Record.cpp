@@ -8,6 +8,7 @@ using namespace std;
 
 /* Approach-1 */
 /* Use hash_map */
+/* Microsoft - Interview*/
 class Student
 {
     private:
@@ -18,10 +19,11 @@ class Student
         Student(string _student_name)
         {
             this->StudentName = _student_name;
+            Average = 0;
         }
         string GetName ()
         {
-            return this->_student_name ;
+            return this->StudentName ;
         }
         void AddGrades (vector<int>&grades) /*clarify if only the grades as given as input or courses as well */
         {

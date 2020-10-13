@@ -13,7 +13,7 @@ class Student
     private:
         string _student_name ;
         vector<int>Grades ;
-        
+        double Average ;
     public:
         Student(string _student_name)
         {
@@ -30,6 +30,16 @@ class Student
         vector<int>GetGrades()
         {
             return (this->Grades);
+        }
+        double AverageOfGrades()
+        {
+            int sum = 0;
+            for(int num:Grades)
+            {
+                sum += num;
+            }
+            this->Average = (double)sum/Grades.size();
+            return (this->Average);
         }
 } ;
 int main()
@@ -76,11 +86,11 @@ int main()
     else
     {
         /* There has to be a loop |cannot avoid that*/
-        cout<<"Marks:"<<endl;
         for(auto &x:StudentToGradeMap)
         {
             if(x.first == HoldStudentName)
             {
+                cout<<"Marks:"<<endl;
                 Student Object = x.second;
                 auto GradesResult = Object.GetGrades();
                 for(int num:GradesResult)
@@ -88,6 +98,7 @@ int main()
                     cout<<num<<" ";
                 }
                 cout<<"\n";
+                cout<<"CumulativeGrade:"<<Object.AverageOfGrades()<<endl;
             }
         }
         
@@ -97,3 +108,4 @@ int main()
     return 0;
     
 }
+

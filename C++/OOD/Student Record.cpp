@@ -54,14 +54,14 @@ int main()
     cout<<"---Input Student Name---"<<endl;
     cin>>HoldStudentName;
     */
-    Student s1("Shreyat");
+    Student s1("Adam");
     vector<int>GradeInput = {100,90,80};
     s1.AddGrades(GradeInput);
-    StudentToGradeMap.emplace("Shreyat",s1);
-    Student s2("Jamie");
+    StudentToGradeMap.emplace("Adam",s1);
+    Student s2("James");
     GradeInput = {50,60,70} ;
     s2.AddGrades(GradeInput);
-    StudentToGradeMap.emplace("Jamie",s2);
+    StudentToGradeMap.emplace("James",s2);
     
     /*Display Content*/
     cout<<"Student     "<<"|"<<" Grades"<<endl;

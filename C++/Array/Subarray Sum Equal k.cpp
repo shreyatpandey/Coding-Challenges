@@ -2,6 +2,8 @@
 Given an array of integers and an integer k, you need to find the total number of continuous subarrays whose sum equals to k.
 Input:-nums = [1,1,1], k = 2
 Output: 2
+Input:- nums = [9, 4, 20, 3, 10, 5], k = 33
+Output:- 2
 */
 
 //Approach-1

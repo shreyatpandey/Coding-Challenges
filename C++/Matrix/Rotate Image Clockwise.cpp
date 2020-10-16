@@ -1,7 +1,7 @@
 class Solution {
 public:
     void rotate(vector<vector<int>>& matrix) {
-        /*transpose matrix In-Place , this will not work for generalized transpose matrix*/
+        /*transpose matrix In-Place :- Only Valid for SQUARE Matrix and not RECTANGULAR Matrix*/
         int length_matrix = matrix.size();
         for(int i=0;i<length_matrix;i++)
         {

@@ -1,4 +1,5 @@
 //Picked from one of LeetCode Solution
+#define KNIGHT_MOVES 8
 class Solution {
 public:
     double knightProbability(int N, int K, int r, int c) {
@@ -23,7 +24,7 @@ public:
    double knightInBoardProb(int N, vector<vector<double>> &prev, vector<vector<double>> &curr)
     {
         
-        static int dirs[][2] = {{-2, 1}, {-1, 2}, {1, 2}, {2, 1}, {2, -1}, {1,-2}, {-1,-2},{-2, -1}};
+        vector<pair<int,int>>dirs = {{-2, 1}, {-1, 2}, {1, 2}, {2, 1}, {2, -1}, {1,-2}, {-1,-2},{-2, -1}};
         
         double prob = 0;
         
@@ -33,15 +34,15 @@ public:
             {
                 if(prev[i][j] != 0)
                 {
-                    for(int m = 0; m<sizeof(dirs)/sizeof(dirs[0]); m++)
+                    for(auto &traversal:dirs)
                     {
-                        int x = i + dirs[m][0];
-                        int y = j + dirs[m][1];
+                        int x = i + traversal.first;
+                        int y = j + traversal.second;
                         
                         if(isInBoard(N, x, y))
                         {
-                            curr[x][y] += prev[i][j]/8.0;
-                            prob += prev[i][j]/8.0;
+                            curr[x][y] += prev[i][j]/KNIGHT_MOVES;
+                            prob += prev[i][j]/KNIGHT_MOVES;
                         }
                     }
                 }

@@ -38,7 +38,6 @@ public:
                 dict[sum].emplace_back(matrix[i][j]);
             }
         }
-        int ctr=0;
         for(auto &entry:dict)
         {
             vector<int>temp_list; 

@@ -26,17 +26,23 @@ Explanation: The LCA of nodes 2 and 4 is 2, since a node can be a descendant of 
 class Solution {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        int parent_value = root->val;
-        int p_value = p->val;
-        int q_value = q->val;
-        
-        if(p_value > parent_value && q_value > parent_value)
-            return lowestCommonAncestor(root->right,p,q);
-        else if(p_value<parent_value && q_value<parent_value)
-            return lowestCommonAncestor(root->left,p,q);
-        else
+        if ( root == NULL )
+        {
+            return NULL;
+        }
+        if ( root == p || root == q)    
+        {
             return root;
-            
-        
+        }
+        root->left = lowestCommonAncestor( root->left, p, q);
+        root->right = lowestCommonAncestor(root->right,p,q);
+        if ( root->left != NULL && root->right != NULL)
+        {
+            return root;
+        }
+        else
+        {
+            return ( root->left ? root->left : root->right);
+        }        
     }
 };

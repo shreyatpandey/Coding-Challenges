@@ -2,6 +2,7 @@
 Reverse bits of a given 32 bits unsigned integer
 */
 /* Without Using For-Loop*/
+//Appraoch-1
 //Faster than 60.11% of C++
 class Solution
 {
@@ -16,5 +17,26 @@ class Solution
         return n;	  
 	  
   }
+};
+
+/* Using For-Loop */
+//Approach - 2
+//faster than 60.11% of Solution
+class Solution {
+public:
+    uint32_t reverseBits(uint32_t n) {
+       int CountBits = 31;
+        uint32_t temp = 0;
+       for(int Loop = 0;Loop<=CountBits;Loop++)
+       {
+           if(n&(1<<Loop))
+           {
+               int maskvalue = (1<<(CountBits-Loop));
+               temp |= maskvalue;
+           }
+       }
+        
+        return temp;
+    }
 };
 

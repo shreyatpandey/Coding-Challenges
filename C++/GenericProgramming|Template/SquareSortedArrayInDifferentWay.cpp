@@ -1,6 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 using Array = std::vector<int> ;
+void Print(int value)
+{
+    cout<<value<<" ";
+}
 
 int main()
 {
@@ -22,10 +26,7 @@ int main()
           StartIndex += 1 ;
         }
     }
-    for(auto &x:SquareSortedArray)
-    {
-        cout<<x<<" ";
-    }
+    for_each(SquareSortedArray.begin(),SquareSortedArray.end(), Print ) ; 
     cout<<endl;
     return 0;
     

@@ -1,4 +1,5 @@
 /*to implement a LRU cache */
+//Most Recently used page would be in the front and least recently used page would be int the last
 //Approach 
 //TC: O(1)
 //Space Complexity: O(m+n) where m is the space for hashmap and n is the space for list

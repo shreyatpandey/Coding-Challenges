@@ -49,3 +49,47 @@ int main()
     printf("%s", res); 
     getchar(); 
 } 
+
+//Approach-2 :
+//TC:- O(N^2)
+char* RunLengthEncoding(const char* Input)
+{
+    static char Output [ 256 ]; //static is imp , else compiler would complain only address is returned
+    size_t CharFreq = 0;
+    for(int i=0;i<strlen(Input);i++)
+    {
+        int j = i;
+        size_t count = 0;
+        while(Input[i] == Input[j])
+        {
+            count += 1;
+            j += 1;
+        }
+        Output[CharFreq++] = Input[i] ;
+        if ( count > 9)
+        {
+            while( count > 9)
+            {
+                int quotient = count/10;
+                Output[CharFreq++] = quotient + (int)'0';
+                count = count%10;
+            }
+            Output[CharFreq++] = count+(int)'0';
+        }
+        else
+        {
+            Output[CharFreq++] = count + (int)'0';
+        }
+        
+        i = j-1;
+    }
+    return Output;
+}
+
+int main()
+{
+    const char * Input = "aaaaaaaaaabb" ;
+    char* ResultString = RunLengthEncoding(Input);
+    return 0;
+}
+

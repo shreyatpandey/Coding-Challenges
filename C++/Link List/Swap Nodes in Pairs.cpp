@@ -38,3 +38,49 @@ public:
     }
 };
 
+//Approach-2
+//Faster than 100%
+//TC:- O(n)
+class Solution {
+    ListNode* current = nullptr;
+    ListNode* previous = nullptr;
+    ListNode* dummynode = nullptr;
+    ListNode* next = nullptr;
+    void FindLengthLinkList(ListNode* head) ;
+    int LengthLinkList = 0 ;
+    int PairNode = 2;
+public:
+    ListNode* swapPairs(ListNode* head) {
+        ListNode* temp = head ;
+        FindLengthLinkList(temp);
+        dummynode = new ListNode(-1,nullptr);
+        dummynode->next = head;
+        previous = dummynode ;
+        next,current = dummynode; 
+        while(LengthLinkList>=PairNode)
+        {
+            current = previous->next ;
+            next = current->next ;
+            for(int i=1;i<PairNode;i++)
+            {
+                current->next = next->next ;
+                next->next = previous->next ;
+                previous->next = next ;
+                next = current->next ;
+            }
+            previous = current ;
+            LengthLinkList -= PairNode ;
+        }
+        return dummynode->next ;
+    }
+};
+void Solution::FindLengthLinkList(ListNode* head)
+{
+    
+    while(head)
+    {
+        head = head->next ;
+        LengthLinkList += 1;
+    }
+}
+

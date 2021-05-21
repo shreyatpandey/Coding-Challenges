@@ -10,8 +10,9 @@ struct Node
 void AddNode(Node**Headref,int Val)
 {
     Node* new_node = new Node(Val);
-    new_node->Value = Val;
+   /* new_node->Value = Val; Dont require this as constructor of node initializes value and nullptr
     new_node->next = nullptr;
+    */
      if (*Headref == NULL) 
     {
         *Headref = new_node; 

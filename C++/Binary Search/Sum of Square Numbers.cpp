@@ -24,7 +24,7 @@ public:
         return false;
     }
 };
-bool Solution::BinarySearchHelper(long Start, long End, int n)
+bool Solution::BinarySearchHelper(long Start, long End, int n) //recursive
 {
     if ( Start > End )
         return false;
@@ -39,6 +39,25 @@ bool Solution::BinarySearchHelper(long Start, long End, int n)
     }
     return BinarySearchHelper(Mid+1,End,n);
 }
+bool Solution::BinarySearchHelper(long Start, long End, int n) //iterative
+{
+    while ( Start<=End)
+    {
+        long Mid = Start+(End-Start)/2;
+        if ( Mid*Mid == n)
+            return true;
+        if ( Mid*Mid>n)
+            {
+                End = Mid-1;
+            }
+        else
+        {
+            Start = Mid+1;
+        }
+    }
+    return false;
+}
+
 
 //Approach-2: Using sqrt function
 class Solution {

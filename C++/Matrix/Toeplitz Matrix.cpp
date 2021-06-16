@@ -20,3 +20,25 @@ public:
         return true;
     }
 };
+
+//Hash-Map
+//TC:- O(M*N)
+//SC:- O(M+N)
+
+class Solution {
+public:
+    bool isToeplitzMatrix(vector<vector<int>>& matrix) {
+       unordered_map<int, int>Map;
+        for(int Row=0; Row < matrix.size(); Row++) {
+            for(int Column=0; Column < matrix[0].size(); Column++) {
+                if (Map.count(Row-Column) == 0 ) {
+                    Map.insert({Row-Column, matrix[Row][Column]});
+                } 
+                else if (Map[Row-Column] != matrix[Row][Column]) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+};

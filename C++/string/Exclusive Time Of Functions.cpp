@@ -1,4 +1,4 @@
-/Damnit C++ does not have split functions
+//Damnit C++ does not have split functions
 class Solution {
     private:
         vector<string>Split(const string &Input,const char &delim);

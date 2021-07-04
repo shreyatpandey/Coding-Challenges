@@ -6,7 +6,7 @@ int MaxRepeatingElements(vector<int>&Input)
 {
  int Size = Input.size();
  int MaxCount = 0;
- int MaxIndex = 0;
+ int MaxNumber = 0;
  for(int i=0;i<Size;i++)
  {
   int Index = Input[i]%Size;
@@ -17,7 +17,7 @@ int MaxRepeatingElements(vector<int>&Input)
          if(Input[i]/Size>MaxCount)
             {
                 MaxCount = Input[i]/Size;
-                MaxIndex = i;
+                MaxNumber = i;
             }
     }
  return MaxCount ; //quesiton can be twisted to return MaxIndex or MaxCount 

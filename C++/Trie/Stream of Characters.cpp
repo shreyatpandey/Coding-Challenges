@@ -50,6 +50,11 @@ public:
         return p_QueryNode->word;
         
     }
+    ~StreamChecker()
+    {
+        delete p_TrieNode;
+        stream.clear();
+    }
 };
 
 /**

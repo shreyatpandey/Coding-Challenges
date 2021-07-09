@@ -36,12 +36,5 @@ bool isCyclic(int N,vector<vector<int>>AdjList)
     return false;
     
     return true;
-
   }
 
-
-
-
-
-
-}

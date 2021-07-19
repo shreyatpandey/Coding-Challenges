@@ -25,25 +25,29 @@ public:
 //TC:- O(n)
 //SC:- O(h)
 class Solution {
+    private:
+        Node * prev = NULL;
+        void InOrder(Node* root);
 public:
-  Node* treeToDoublyList(Node* root) {
-        if (!root) {
-            return nullptr;
-        }
-        Node *left_head = root, *left_tail = root;
-        Node *right_head = root, *right_tail = root;
-        if (root->left) {
-            left_head = treeToDoublyList(root->left);
-            left_tail = left_head->left;
-        }
-        if (root->right) {
-            right_head = treeToDoublyList(root->right);
-            right_tail = right_head->left;
-        }
-        left_tail->right = root, right_head->left = root;
-        root->left = left_tail, root->right = right_head;
-        left_head->left = right_tail, right_tail->right = left_head;
-        return left_head;
+    Node* treeToDoublyList(Node* root) {
+        if ( !root )
+            return NULL;
+        Node* dummy = new Node(0,NULL,NULL);
+        prev = dummy;
+        InOrder(root);
+        
+        prev->right = dummy->right;
+        dummy->right->left = prev;
+        return dummy->right;
     }
-    
 };
+
+void Solution::InOrder(Node* root)
+{
+    if ( !root ) return ;
+    InOrder(root->left);
+    prev->right = root;
+    root->left = prev;
+    prev = root;
+    InOrder(root->right);
+}

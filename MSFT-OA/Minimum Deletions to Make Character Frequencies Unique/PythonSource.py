@@ -22,4 +22,3 @@ class Solution(object):
                     heapq.heappush(maxheap,currentFreq+1)
                 ans += 1
         return ans
-        return 0

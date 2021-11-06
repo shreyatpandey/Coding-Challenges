@@ -1,3 +1,5 @@
+#Time-Complexity:- O(2^N) for all possible combination of string
+#Space-Complexity:- O(N) for stack frame with length of string
 class Solution(object):
     def maxLength(self, arr): #dont need backtrack
         """

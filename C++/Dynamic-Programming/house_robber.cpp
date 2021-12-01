@@ -1,3 +1,30 @@
+//Top-Down + Memoization
+//TC:- O(n)
+//SC:- O(n)
+class Solution {
+    int RobMoney(vector<int>&nums,vector<int>&Memoize,int startIndex);
+public:
+    int rob(vector<int>& nums) {
+        vector<int>Memoize(100,-1); //why 100 , the length of nums is 100 and why -1 , because nums[i] >=0
+        return RobMoney(nums,Memoize,0);
+    }
+};
+
+int Solution::RobMoney(vector<int>&nums,vector<int>&Memoize,int startIndex)
+{
+    if ( startIndex >= nums.size())
+        return 0;
+    
+    if (Memoize[startIndex] > -1)
+        return Memoize[startIndex];
+    
+    int answer = max(RobMoney(nums,Memoize,startIndex+1),RobMoney(nums,Memoize,startIndex+2)+ nums[startIndex]);
+    Memoize[startIndex] = answer;
+    return answer;
+}
+
+
+//Bottom-Up
 class Solution {
 public:
     int rob(vector<int>& nums) {

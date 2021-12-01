@@ -58,3 +58,74 @@ public:
         add(key, value);
     }
 };
+
+//Using Doubly Link List
+class Node
+{
+	public:
+	int key;
+	int value;
+	Node* prev, *next;
+	Node(int Key,int Value):key(Key),value(Value),prev(nullptr),next(nullptr){}
+};
+
+class LRUCache
+{
+	private:
+		int Capacity;
+		unordered_map<int,Node*>Cache;
+		Node* head ;
+		Node* tail;
+	public:
+		LRUCache(int capacity)
+		{
+			Capacity = capacity;
+			head = new Node(-1,-1);
+			tail = new Node(-1,-1);
+			head->next = tail;
+			tail->prev = head;
+		}
+		void  remove(Node* remove)
+		{
+			Node* Previous = remove->prev ;
+			Node* Next = remove->next;
+			Previous->next = Next;
+			Next->prev = Previous;
+		}
+		void add(Node* addNode)
+		{
+			Node* secondLast  = tail->prev;
+			Node* last = tail;
+			secondLast->next = addNode;
+			addNode->prev = secondLast;
+			last->prev = addNode;
+			addNode->next = last; 
+		}
+		int get(int key)
+		{
+			if(Cache.count(key) == 0)
+			{
+				return -1;
+			}
+			remove(Cache[key]);
+			add(Cache[key]);
+			return Cache[key]->value;
+		}
+		void put(int key,int value)
+		{
+			if (Cache.count(key))
+			{
+				remove(Cache[key]);
+			}
+			Cache[key] = new Node(key,value);
+			add(Cache[key]);
+			if (Cache.size()>Capacity)
+			{
+				Node* lruNode = head->next;
+				remove(lruNode);
+				Cache.erase(lruNode->key); //vs Cache.erase(key)
+			}
+			
+		}
+		
+};

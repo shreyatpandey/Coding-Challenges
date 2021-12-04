@@ -18,7 +18,21 @@ class LinkList(object):
         last.next = newNode
         return 
     
-    def RemoveNode(self,index):
+    def AddNodeAtGivenPosition(self,index,val):
+        newNode =Node(val)
+        if index == 0:
+            newNode.next = self.head
+            self.head = newNode
+            return
+        else:
+            current = self.head
+            for i in range(0,index-1):
+                current = current.next
+            newNode.next =current.next
+            current.next = newNode
+        
+    
+    def RemoveNodeAtGivenPosition(self,index):
         if (index == 0):
             deleteNode = self.head.next
             self.head = deleteNode
@@ -40,7 +54,7 @@ class LinkList(object):
             print(current.val)
             current = current.next
         return
-if __name__ == '__main__':
+   if __name__ == '__main__':
     linkList = LinkList()
     print("|---|Test Case-1|---|")
     linkList.AppendNode(5)
@@ -48,9 +62,16 @@ if __name__ == '__main__':
     linkList.AppendNode(7)
     linkList.AppendNode(8)
     linkList.Print()
+    
     print("|---|Test Case-2|---|")
-    linkList.RemoveNode(0)
+    linkList.RemoveNodeAtGivenPosition(0)
     linkList.Print()
+    
     print("|---|Test Case-3|---|")
-    linkList.RemoveNode(2)
+    linkList.RemoveNodeAtGivenPosition(2)
+    linkList.Print()
+    
+    print("|---|Test Case-4|---|")
+    linkList.AddNodeAtGivenPosition(0,1)
+    linkList.AddNodeAtGivenPosition(1,10)
     linkList.Print()

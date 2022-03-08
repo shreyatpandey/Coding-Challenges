@@ -1,0 +1,56 @@
+'''
+TC:- O(N)
+SC:- O(N)
+'''
+'''
+Given a string s of '(' , ')' and lowercase English characters.
+
+Your task is to remove the minimum number of parentheses ( '(' or ')', in any positions ) 
+so that the resulting parentheses string is valid and return any valid string.
+
+Example 1:
+
+Input: s = "lee(t(c)o)de)"
+Output: "lee(t(c)o)de"
+Explanation: "lee(t(co)de)" , "lee(t(c)ode)" would also be accepted.
+Example 2:
+
+Input: s = "a)b(c)d"
+Output: "ab(c)d"
+Example 3:
+
+Input: s = "))(("
+Output: ""
+Explanation: An empty string is also valid.
+
+
+'''
+
+class Solution:
+    def minRemoveToMakeValid(self, s: str) -> str:
+        '''
+        Keep a tracker for parenthesis
+        '''
+        balance = 0
+        seen = 0
+        charLeft = []
+        for char in s:
+            if char == '(':
+                balance += 1
+                seen += 1
+            elif char == ')':
+                if balance == 0:
+                    continue
+                balance -= 1
+            
+            charLeft.append(char)
+        
+        stringResult = []
+        diff = seen - balance
+        for char in charLeft:
+            if char =='(':
+                diff -= 1
+                if diff < 0:
+                    continue
+            stringResult.append(char)
+        return "".join(stringResult)

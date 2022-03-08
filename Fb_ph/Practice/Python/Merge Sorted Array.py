@@ -51,3 +51,30 @@ class Solution:
             else:
                 nums1[p] = nums2[p2]
                 p2 -= 1
+  '''
+  My Solution
+  '''
+class Solution(object):
+    def merge(self, nums1, m, nums2, n):
+        """
+        :type nums1: List[int]
+        :type m: int
+        :type nums2: List[int]
+        :type n: int
+        :rtype: None Do not return anything, modify nums1 in-place instead.
+        """
+        i,j = 0,0
+        while i<m and j<n:
+            if nums1[i] <= nums2[j]:
+                nums1.append(nums1[i])
+                i += 1
+            else:
+                nums1.append(nums2[j])
+                j += 1
+        while i<m:
+            nums1.append(nums1[i])
+            i += 1
+        while j<n:
+            nums1.append(nums2[j])
+            j += 1
+        del nums1[0:m+n]

@@ -21,5 +21,5 @@ class Solution:
             K, A[i] = divmod(A[i] + K, 10)
         while K:
             K, a = divmod(K, 10)
-            A = [a] + A
+            A = [a] + A #this is nothing but insert into front:- A.insert(0,a)
         return A

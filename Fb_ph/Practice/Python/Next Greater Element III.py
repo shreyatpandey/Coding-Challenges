@@ -1,6 +1,10 @@
 '''
 TC:- O(len(str))
 SC:- O(1)
+
+Input:- 1234
+Output:- 1243
+
 '''
 class Solution:
     def nextGreaterElement(self, n: int) -> int:

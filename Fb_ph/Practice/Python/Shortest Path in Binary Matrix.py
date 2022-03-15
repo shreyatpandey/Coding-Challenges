@@ -15,6 +15,12 @@ Output: 2
 '''
 Comment:- To avoid revisiting we can securely set the visiting grid as non-empty
 '''
+'''
+TC:- O(N)
+as each space cell is visited only once
+SC:- O(N)
+for the visited list for each space cell
+'''
 
 def shortestPathBinaryMatrix(grid):
 	n = len(grid)

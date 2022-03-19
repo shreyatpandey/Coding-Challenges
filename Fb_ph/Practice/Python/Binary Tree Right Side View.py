@@ -6,7 +6,38 @@
 #         self.right = right
 
 '''
-Approach:- BFS
+Approach-1: Using deque
+RunTime:- 98.01% fast
+'''
+from collections import deque
+class Solution(object):
+    def rightSideView(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
+        queue = deque([root])
+        BinaryTreeRightSideView = []
+        if not root:
+            return BinaryTreeRightSideView
+        while len(queue) != 0:
+            LenQueue = len(queue)
+            for i in range(LenQueue):
+                node = queue.popleft()
+                if i == LenQueue -1 :
+                    BinaryTreeRightSideView.append(node.val)
+                if node.left:
+                    queue.append(node.left)
+                if node.right:
+                    queue.append(node.right)
+        return BinaryTreeRightSideView
+ 
+ '''
+
+
+
+'''
+Approach:- BFS without using Deque
 TC:- O(N) where N is the number of nodes
 SC:- O(N) is the space of Queue/Deque
 '''

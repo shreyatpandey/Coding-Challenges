@@ -35,4 +35,28 @@ class Solution:
             res.append(carry)
         res.reverse()        
         return ''.join(str(x) for x in res)
+'''
+Along the lines of Add Binary
+Faster than 90.58%
+'''
+class Solution:
+    def addStrings(self, strA: str, strB: str) -> str:
+        maxLen = max(len(strA),len(strB))
+        carry = 0
+        Result = []
+        strA = strA.zfill(maxLen)
+        strB = strB.zfill(maxLen)
+        for i in range(maxLen-1,-1,-1):
+            numA,numB  = 0,0
+            numA = ord(strA[i]) - ord('0')
+            numB = ord(strB[i]) - ord('0')
+
+            total = numA + numB + carry
+            rem = total%10
+            carry = total//10
+            Result.append(rem)
+        if carry:
+            Result.append(carry)
+        Result.reverse()
+        return ''.join(str(x) for x in Result)
         

@@ -56,11 +56,13 @@ class Solution:
         :type w: List[int]
         """
         self.prefix_sums = []
+	#this prefix_sums would be sorted, hence Binary Search could be applied
         prefix_sum = 0
         for weight in w:
             prefix_sum += weight
             self.prefix_sums.append(prefix_sum)
         self.total_sum = prefix_sum
+	#why do we use totalSum? I know this
 
     def pickIndex(self) -> int:
         """

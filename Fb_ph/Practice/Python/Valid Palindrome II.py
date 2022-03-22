@@ -29,6 +29,29 @@ def validPalindrone(s):
 
 '''
 TC:- O(len(inputString))
+SC:- O(1)
+'''
+class Solution:
+    def validPalindrome(self, s: str) -> bool:
+        i,j = 0,len(s)-1
+        def checkPalindrome(index1,index2):
+            while index1 < index2:
+                if s[index1] != s[index2]:
+                    return False
+                index1 += 1
+                index2 -= 1
+            return True
+    
+        while i<j:
+            if s[i] != s[j] :
+                return checkPalindrome(i+1,j) or checkPalindrome(i,j-1)
+            i += 1
+            j -= 1
+        
+        return True
+
+'''
+TC:- O(len(inputString))
 SC:- O(n)
 '''
 

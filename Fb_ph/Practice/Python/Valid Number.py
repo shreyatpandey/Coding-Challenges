@@ -65,3 +65,43 @@ class Solution:
             currentState = state[currentState][c]
         if currentState not in [3,5,8,9]:
             return False
+''''
+Follow this approach
+Without the need of blank
+Clarify if the string has leading spaces
+
+s consists of only English letters (both uppercase and lowercase), digits (0-9), plus '+', minus '-', or dot '.'.
+'''
+'''
+TC:- O(N)
+SC:- O(1)
+'''
+class Solution:
+    def isNumber(self, s: str) -> bool:
+        #define a DFA
+        state = [{},
+              {'sign': 2, 'digit':3, 'dot':4}, 
+              {'digit':3, 'dot':4},
+              {'digit':3, 'dot':5, 'exponent':6,},
+              {'digit':5},
+              {'digit':5, 'exponent':6,},
+              {'sign':7, 'digit':8},
+              {'digit':8},
+              {'digit':8}
+                ]
+        currentState = 1
+        for c in s:
+            if c >= '0' and c<='9':
+                c = 'digit'
+            elif c in ['+', '-']:
+                c = 'sign'
+            elif c in ["e","E"]:
+                c = 'exponent'
+            elif c =='.':
+                c = 'dot'
+            if c not in state[currentState].keys():
+                return False
+            currentState = state[currentState][c]
+        if currentState not in [3,5,8,9]:
+            return False
+        return True

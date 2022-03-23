@@ -24,9 +24,13 @@ class Solution:
     def maximumSwap(self, num: int) -> int:
         s = list(str(num))
         n = len(s)
-        for i in range(n-1):                                # find index where s[i] < s[i+1], meaning a chance to flip
-            if s[i] < s[i+1]: break
-        else: return num                                    # if nothing find, return num
+        i = 0
+        while i < n-1:                                    # find index where s[i] < s[i+1], meaning a chance to flip
+            if s[i] < s[i+1]: 
+                break
+            i += 1
+        if i == n-1:
+            return num                                      # if nothing find, return num
         max_idx, max_val = i+1, s[i+1]                      # keep going right, find the maximum value index
         for j in range(i+1, n):
             if max_val <= s[j]: max_idx, max_val = j, s[j]

@@ -13,12 +13,15 @@ class Solution:
         return dfs(root)
         
    
-        stack = [root]
+        Queue = deque([root])
         ans = 0
-        while(stack):
-            node = stack.pop()
-            if node:
-                if L <= node.val <= R: ans += node.val
-                if L < node.val: stack.append(node.left)
-                if R > node.val: stack.append(node.right)
+        while Queue:
+            node = Queue.popleft()
+            if low <= node.val <= high:
+                ans += node.val
+            if node.left:
+                Queue.append(node.left)
+            if node.right:
+                Queue.append(node.right)
+        
         return ans

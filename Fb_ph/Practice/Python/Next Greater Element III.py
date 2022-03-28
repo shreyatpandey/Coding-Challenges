@@ -9,6 +9,7 @@ Output:- 1243
 class Solution:
     def nextGreaterElement(self, n: int) -> int:
         n = [x for x in str(n)]
+        # n = list(str(n))
         size = len(n)
         ans = -1
         for i in range(size-1,-1,-1):

@@ -44,7 +44,7 @@ class Solution(object):
                     if 0 <= yp < m and 0 <= xp < n and grid[yp][xp] == 0 and seen[yp][xp] == 0:
                         seen[yp][xp] = 1
                         if not rec[yp][xp]:
-                            rec[yp][xp] = [d+1]
+                            rec[yp][xp] = [d+1] #why [], we would be storing list in that particular coordinate
                         else:
                             rec[yp][xp].append(d+1)
                         q.append((yp, xp, d+1))

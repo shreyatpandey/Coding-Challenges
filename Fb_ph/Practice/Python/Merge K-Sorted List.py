@@ -50,7 +50,7 @@ class Solution(object):
             interval *= 2
         return lists[0] if amount > 0 else None
 
-    def merge2Lists(self, l1, l2):
+    def merge2Lists(self, l1, l2): #give directly this solution for Merge two sorted List
         head = point = ListNode(0)
         while l1 and l2:
             if l1.val <= l2.val:

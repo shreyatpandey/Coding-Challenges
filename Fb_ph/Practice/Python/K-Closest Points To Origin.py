@@ -4,6 +4,9 @@ Time-Complexity:- O(NLogK)
 Space-Complexity:- O(k)
 Python has min heap
 '''
+import heapq
+import math
+h = []
 for x,y in points:
    	dist=math.sqrt(x**2+y**2)
    	if len(h)<k:
@@ -18,8 +21,6 @@ Time-Complexity:- O(N) best-case
 Worst-Case:- O(N^2)
 Space-Complexity:- O(1)
 '''
-import heapq
-import math
 class Solution:
     def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
         

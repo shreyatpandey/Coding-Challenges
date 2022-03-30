@@ -19,6 +19,11 @@ Explanation: A ship capacity of 15 is the minimum to ship all the packages in 5 
 5th day: 10
 
 '''
+'''
+[1,2,3,1,1]
+4
+Output: 3
+'''
 
 class Solution:
     def shipWithinDays(self, weights: List[int], days: int) -> int:

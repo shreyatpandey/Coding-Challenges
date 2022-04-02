@@ -7,7 +7,7 @@ class Solution:
     def removeDuplicates(self, S: str) -> str:
         stack = []
         for ch in S:
-            if stack and stack == output[-1]: 
+            if stack and char == stack[-1]: 
                 stack.pop()
             else: 
                 stack.append(ch)

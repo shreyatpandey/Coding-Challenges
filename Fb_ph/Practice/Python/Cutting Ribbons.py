@@ -26,13 +26,18 @@ Now you have 3 ribbons of length 5.
 
 '''
 
+'''
+Clarifying Questions:-
+Q] What if the sumOfRibbons is less than k ?
 
+'''
 class Solution:
     def maxLength(self, ribbons: List[int], k: int) -> int:
         sumOfRibbons = sum(ribbons)
         if sumOfRibbons < k:
             return 0
-        def isBisect(target):
+      
+       def isBisect(target):
             nonlocal ribbons,k
             count = 0
             for rib in ribbons:
@@ -40,6 +45,9 @@ class Solution:
             return count>=k
         
         left,right = 1,max(ribbons)
+        # left = 1 because the min length of ribbon we can cut is 1
+        # right we can have max length of ribbon
+        # in the binary search we are trying to go through the origin list to figure out which integer is the desired length for the target k pieces
         while left <= right:
             midVal = (left+right)//2
             if isBisect(midVal):

@@ -11,7 +11,7 @@ then each index should have an equal probability of returning.
 '''
 Input:- [1,2,3,3,3]
 Is the given array sorted? No
-Use Reservoir Sampling
+Use Reservoir Sampling - Key Word
 Create a random set, and then iterate through the set. If the value of the set is equal to target, increment count.
 
 2 : It's probability of selection is 1 * (1/2) * (2/3) = 1/3

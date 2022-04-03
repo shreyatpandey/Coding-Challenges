@@ -22,6 +22,7 @@ class SparseVector:
     '''
     Without HashMap
     FB interview accept this solution
+    -Just going by the formula and without doing any prepocessing like whether elements are 0 or not
     TC:- O(n) for the result of calculating dot product or vector
     SC:- O(1) 
     '''

@@ -19,23 +19,36 @@ For example, all the following are valid numbers:
 while the following are not valid numbers: ["abc", "1a", "1e", "e3", "99e2.5", "--6", "-+3", "95a54e53"].
 
 Given a string s, return true if s is a valid number.
+Rules:-
+    Digits (one of ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"])
 
-Digits (one of ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"])
+    Both decimal numbers and integers must contain at least one digit.
+        A sign ("+" or "-")
 
-Both decimal numbers and integers must contain at least one digit.
-A sign ("+" or "-")
+    Sign characters are optional for both decimal numbers and integers, but if one is present, it will always be the first character. Note, this means that a sign character can also appear immediately after an exponent.
+    An exponent ("e" or "E")
 
-Sign characters are optional for both decimal numbers and integers, but if one is present, it will always be the first character. Note, this means that a sign character can also appear immediately after an exponent.
-An exponent ("e" or "E")
+    Exponents are also optional, but if the string contains one then it must be after a decimal number or an integer.
+    An integer must follow the exponent.
+    A dot (".")
 
-Exponents are also optional, but if the string contains one then it must be after a decimal number or an integer.
-An integer must follow the exponent.
-A dot (".")
+    A decimal number should only contain one dot. Integers cannot contain dots.
+    Anything else
 
-A decimal number should only contain one dot. Integers cannot contain dots.
-Anything else
+    There will never be anything else in a valid number.
 
-There will never be anything else in a valid number.
+'''
+'''
+The first step is to design our DFA. 
+Picture the DFA as a directed graph, where each node is a state, 
+and each edge is a transition labeled with a character group (digit, exponent, sign, or dot). 
+There are two key steps to designing it.
+
+Identify all valid combinations that the aforementioned boolean variables can be in. 
+Each combination is a state. Draw a circle for each state, and label what it means.
+For each state, consider what a character from each group would mean in the context of that state. 
+Each group will either cause a transition into another state, or it will signify that the string is invalid. 
+For each valid transition, draw a directed arrow between the two states and write the group next to the arrow.
 
 '''
 

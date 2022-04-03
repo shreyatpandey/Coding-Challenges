@@ -20,16 +20,38 @@ while the following are not valid numbers: ["abc", "1a", "1e", "e3", "99e2.5", "
 
 Given a string s, return true if s is a valid number.
 
- 
+Digits (one of ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"])
 
+Both decimal numbers and integers must contain at least one digit.
+A sign ("+" or "-")
+
+Sign characters are optional for both decimal numbers and integers, but if one is present, it will always be the first character. Note, this means that a sign character can also appear immediately after an exponent.
+An exponent ("e" or "E")
+
+Exponents are also optional, but if the string contains one then it must be after a decimal number or an integer.
+An integer must follow the exponent.
+A dot (".")
+
+A decimal number should only contain one dot. Integers cannot contain dots.
+Anything else
+
+There will never be anything else in a valid number.
+
+'''
+
+'''
 Example 1:
 
 Input: s = "0"
+Output:- True
 
 Example 2:
-Inpit: s ="1E9"
+Input: s ="1E9"
+Output:- True
 
-
+Example 3:
+Input:- s = "."
+Output:- False
 '''
 
 '''

@@ -49,7 +49,7 @@ Its combination of Approach 1 + 2
 We need to use Hash Map along with Tuple
 When we are calculating dot product we would use two pointer 
 TC:- O(n)
-SC:- O(1)
+SC:- O(n)
 '''
 class Solution(object):
     def __init__(self,nums):

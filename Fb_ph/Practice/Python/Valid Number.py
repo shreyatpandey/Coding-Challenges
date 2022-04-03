@@ -50,6 +50,14 @@ For each state, consider what a character from each group would mean in the cont
 Each group will either cause a transition into another state, or it will signify that the string is invalid. 
 For each valid transition, draw a directed arrow between the two states and write the group next to the arrow.
 
+Detailed Algorithm:-
+Initialize the DFA as an array of hash tables. 
+Each hash table's keys will be a character group, and the values will be the state it should transition to. 
+We can use the indexes of the array to handle state transitions. Set the currentState = 0.
+
+Iterate through the input. For each character, first determine what group it belongs to. 
+Then, check if that group exists in the current state's hash table. If it does, transition to the next state. Otherwise, return false.
+
 '''
 
 '''

@@ -24,6 +24,12 @@ Then we iterate over all empty lands and find for each land its sum of shortest 
 and record the minimum value of such sums. Finally, we return the minimum value we recorded.
 '''
 '''
+More Explanation:-
+Undirected Graph
+Starting from 0 to 1
+Extra 2-D Array to keep record of how many bui;lding can be reached
+'''
+'''
 Time complexity: O(k*l)
 Space complexity: O(m*n*k), 
 where m = len(grid), n = len(grid[0]) 

@@ -49,7 +49,6 @@ class Solution:
             prev, curr = prev.next, curr.next
 
         # Insert node.
-        #Where we cannot insert node in the loop
         node.next = curr
         prev.next = node           
         

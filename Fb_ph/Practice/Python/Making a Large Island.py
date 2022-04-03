@@ -47,7 +47,7 @@ class Solution:
                 if grid[x][y] == 1:
                     dfs(count, x, y)
                     count += 1
-                
+               
         for x in range(m):
             for y in range(n):
                 if grid[x][y] != 0: continue
@@ -58,3 +58,16 @@ class Solution:
                 ans = max(ans, sum(islands[i] for i in neibs) + 1)
             
         return ans if ans != 0 else m*n
+if __name__ == '__main__':
+    s = Solution()
+    Grid = [[1,0],[0,1]]
+    print("Test Case-1:")
+    print(s.largestIsland(Grid))
+'''
+Test Case-1:
+Count: 4
+islands: Counter({2: 1, 3: 1})
+Grid: [[2, 0], [0, 3]]
+3
+'''
+    

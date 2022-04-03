@@ -9,6 +9,30 @@ int pick(int target) Picks a random index i from nums where nums[i] == target. I
 then each index should have an equal probability of returning.
 '''
 '''
+Input:- [1,2,3,3,3]
+Is the given array sorted? No
+Use Reservoir Sampling
+Create a random set, and then iterate through the set. If the value of the set is equal to target, increment count.
+
+2 : It's probability of selection is 1 * (1/2) * (2/3) = 1/3
+3 : It's probability of selection is (1/2) * (2/3) = 1/3
+4 : It's probability of selection is just 1/3
+
+Formula:-
+(1 / i) * (1 - 1/ (i + 1)) * (1 - 1/(i + 2)) * ... * (1 - 1 / n) = 1/n
+
+'''
+'''
+["Solution","pick","pick","pick","pick"]
+[[[1,2,3,3,3]],[3],[1],[3],[2]]
+Output:
+idx,cnt: 4 3
+idx,cnt: 0 1
+idx,cnt: 2 3
+idx,cnt: 1 1
+
+'''
+'''
 TC:- 
 init :- O(1) or O(n)
 pic:- O(n)

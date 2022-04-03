@@ -12,7 +12,15 @@ Otherwise, you should return the originally given node.
 '''
 '''
 Wording:-
-
+Key-Word - Two pointer iteration with something like previous and current
+How to traverse the circular link list?
+Couple of Approach:-
+    a.Slow and Fast Pointer
+    b. Two pointer iteration
+Take Couple of Case 
+Let input circular link list = [1,4,3] 
+First insertval = 2
+Second insertval = 0
 
 '''
 '''
@@ -41,6 +49,7 @@ class Solution:
             prev, curr = prev.next, curr.next
 
         # Insert node.
+        #Where we cannot insert node in the loop
         node.next = curr
         prev.next = node           
         

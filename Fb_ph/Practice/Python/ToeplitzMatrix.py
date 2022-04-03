@@ -29,6 +29,24 @@ def isToeplitzMatrix(self, m):
   return all(r1[:-1] == r2[1:] for r1,r2 in zip(m, m[1:]))
 
 
+'''
+Most Optimal Solution to take care of follow-up
+TC:- O(M*N)
+SC:- O(M+N)
+'''
+class Solution:
+    def isToeplitzMatrix(self, matrix: List[List[int]]) -> bool:
+        Map = {}
+        for row in range(len(matrix)):
+            for col in range(len(matrix[0])):
+                Diag = row - col
+                if  Diag not in Map:
+                    Map[Diag] = matrix[row][col]
+                else:
+                    if Map[Diag] != matrix[row][col]:
+                        return False
+        return True
+
 ''''
 Answer To Follow-Up 
 Questions

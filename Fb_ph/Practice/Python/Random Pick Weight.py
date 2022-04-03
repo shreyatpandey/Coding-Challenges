@@ -72,6 +72,12 @@ Pseudocode
 4. put weights on the number line
 5. If a uniform varialbe falls in the range of a value that value is returned
 '''
+'''
+Prefix Sum - Key Word that needs to be maintained and then we can perform Binary Search on them
+Take small example like:- [1,3]
+Selecting 1 <-> 1/4 = 25 %
+Selecting 3 <-> 3/4 = 75%
+'''
 
 '''
 Time-Complexity:- 

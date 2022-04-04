@@ -35,6 +35,11 @@ SC:- O(n)
 Key-Word:- Keep track of moving window
 Sum of moving window
 '''
+'''
+Question to ask:-
+Q] Will the number exceed INT_MAX or INT_MIN or will lead to Integer overflow?
+Q] Will the input size be INT_MAX?
+'''
 from collections import deque
 class MovingAverage:
     def __init__(self, size: int):

@@ -31,6 +31,10 @@ Approach-1: Using Deque
 TC:- O(1)
 SC:- O(n)
 '''
+'''
+Key-Word:- Keep track of moving window
+Sum of moving window
+'''
 from collections import deque
 class MovingAverage:
     def __init__(self, size: int):

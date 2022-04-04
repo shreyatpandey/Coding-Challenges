@@ -11,6 +11,11 @@ For example, a string such as "substitution" could be abbreviated as (but not li
 "substitution" (no substrings replaced)
 
 '''
+'''
+Approach:- Two Pointer 
+TC:- O(max(word,abbr) <=> O(N)
+SC:- O(1)
+'''
 
 class Solution:
     def validWordAbbreviation(self, word: str, abbr: str) -> bool:

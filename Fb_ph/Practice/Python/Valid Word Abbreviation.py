@@ -16,6 +16,16 @@ Approach:- Two Pointer
 TC:- O(max(word,abbr) <=> O(N)
 SC:- O(1)
 '''
+'''
+Wording:-
+Two pointer approach
+We check for the first matching character from word and abbr
+Consequently we traverse the abbreviation to get all the numeric digits from the previous matching character
+We consquently update the index in word and abbr 
+Also check if the word at str matches with word at abbr for that particular index
+If not we return false
+In the end we just check for whether we have traversed entire word and abbr or not
+'''
 
 class Solution:
     def validWordAbbreviation(self, word: str, abbr: str) -> bool:

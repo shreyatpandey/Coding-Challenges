@@ -22,8 +22,9 @@ Sequence of the number:-
 '''
 '''
 Wording
-Do a linear traversal and find the index for the last ascending position
-by comparing the element with element on its right since we are traversing in reverse order
+Do a linear reverse traversal and find the index for the last ascending position
+    - Intuition :- Break into sorted order
+By comparing the element with element on its right since we are traversing in reverse order
 swap the numbers between the last index and the index for the last ascending position
 Perform the reversal of the from the index for the last ascending position to the last
 '''

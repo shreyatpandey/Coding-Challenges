@@ -5,7 +5,7 @@ so for say 2^10 = 2^5.2^5
 for x^n = x^n/2.x^n/2
 To avoid duplicating work, we can keep dividing it by 2 and from above we can keep multiplying the number by itself
 Question arises for say odd integer, and modification would be required to check if the power is odd or not
-One way is recursion, or binary search .
+One way is recursion but the space complexity is O(n)
 However we can still use bit operation as they are faster
 '''
 

@@ -18,10 +18,12 @@ class Solution:
             right = dfs(root.right)
             result[0] = max(result[0],2+left+right) #why 2? because there is always an edge from the node
             
-            return 1 + max(left,right) # this is to find the height of the tree
+            return 1 + max(left,right) # this is to find the height of the tree, 1 for extra edge
         dfs(root)
         return result[0]
 #diameter of leaf nodes is 0
 #height of null root is -1
 #we dont only want the diameter of the node rather height of the node as well
 #we will return the height of the tree
+#Why O(N) , visit the node only once
+# max running through the left substree

@@ -12,6 +12,15 @@ Input: nums = [3,2,1]
 Output: [1,2,3]
 '''
 '''
+Sequence of the number:-
+123
+132
+213
+231
+312
+321
+'''
+'''
 Wording
 Do a linear traversal and find the index for the last ascending position
 by comparing the element with element on its right since we are traversing in reverse order

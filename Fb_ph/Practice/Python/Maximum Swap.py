@@ -19,7 +19,16 @@ Clarifying questions:-
 What if num < 10 ? Return the num
 are the numbers negative?
 '''
+'''
+Wording:-
+Do a linear traversal and find that index where the s[index] < s[index+1] indicating there is a chance of flip let say its flip index
+Of course if the nums are monotically decreasing , then return that num
+Once we find that index, do linear from that flip index to get that index which has ,maximum value lets say MaxIndex
+#left traversal 
+When I say left traversal , start traversing from flip index in reverse order and the find that index which is less that MaxVal obtained from maxIndex
+Just swap the value after flip-index and most left less tham MaxIndex
 
+'''
 '''
 Approach:- Greedy/Math
 TC:- O(N)

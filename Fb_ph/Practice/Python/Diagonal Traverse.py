@@ -9,6 +9,24 @@ The only tricky part is updating the boundaries after we've added a diagonal, bu
 TC:- O(n*m)
 SC:- O(1)
 '''
+'''
+Key-Word:-
+Simulation
+matrix[i][j], we will use the direction to progress along the diagonal and process its elements.
+
+For an upwards going diagonal, the next element in the diagonal would be matrix[i - 1][j + 1]
+For a downwards going diagonal, the next element would be matrix[i + 1][j - 1].
+
+Keep processing the next elements
+
+Next head when going UP:-
+The head would be the node directly below the tail of the previous diagonal. 
+Unless the tail lies in the last row of the matrix in which case the head would be the node right next to the tail.
+
+Next when head going DOWN:-
+The head would be the node to the right of the tail of the previous diagonal. 
+Unless the tail lies in the last column of the matrix in which case the head would be the node directly below the tail.
+'''
 
 class Solution:
     def findDiagonalOrder(self, matrix: List[List[int]]) -> List[int]:

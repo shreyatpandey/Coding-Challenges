@@ -16,6 +16,7 @@ class Solution(object):
     def treeToDoublyList(self, root):
         if not root: return None
         self.treeToDoublyListHelper(root)
+        #final linking of the head and and last node
         self.prev.right = self.head
         self.head.left = self.prev
         return self.head

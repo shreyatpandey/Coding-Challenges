@@ -39,6 +39,10 @@ class Solution:
 Along the lines of Add Binary
 Faster than 90.58%
 '''
+'''
+TC:- O(max(len(strA),len(strB))
+SC:- O(max(len(strA),len(strB))
+'''
 class Solution:
     def addStrings(self, strA: str, strB: str) -> str:
         maxLen = max(len(strA),len(strB))

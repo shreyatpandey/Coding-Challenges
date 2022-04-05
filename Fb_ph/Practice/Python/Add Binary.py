@@ -31,7 +31,8 @@ class Solution:
 Give this apporach only when asked 
 TC same as above
 '''
-'''Algorithm
+'''
+Algorithm
 
 Convert a and b into integers x and y, x will be used to keep an answer, and y for the carry.
 

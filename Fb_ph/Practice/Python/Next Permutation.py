@@ -12,6 +12,13 @@ Input: nums = [3,2,1]
 Output: [1,2,3]
 '''
 '''
+Wording
+Do a linear traversal and find the index for the last ascending position
+by comparing the element with element on its right since we are traversing in reverse order
+swap the numbers between the last index and the index for the last ascending position
+Perform the reversal of the second part
+'''
+'''
 Time-Complexity:- O(N)
 Space-Complexity :- O(1)
 '''

@@ -27,3 +27,4 @@ class Solution:
 #we will return the height of the tree
 #Why O(N) , visit the node only once
 # max running through the left substree
+#Diameter for any given node = heigth of left subtree + height of right sub tree + 2 [ edge]

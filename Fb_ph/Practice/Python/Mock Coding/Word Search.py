@@ -1,6 +1,6 @@
 '''
-TC:- O(N.4^L)
-where N is the number of cells in the board
+TC:- O(n*m*4^L)
+where m,n are the length of row and col in the board
 L is the length of word to match
 and 4^L is the number of directions it has to move
 SC:-O(L) for the recursion stack and L is the length of the word

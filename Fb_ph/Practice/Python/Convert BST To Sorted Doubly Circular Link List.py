@@ -3,6 +3,7 @@ Python InOrder Traversal
 Time-Complexoty:- O(n)
 Just use inorder traversal, which finds the nodes in ascending order, and store the head and previous node in global variables. 
 After the traversal is finished, prev is the "tail" of the double linked list so just connect it to the head.
+Why InOrder? The Inorder traversal of a BT would always give elements in sorted order
 Time-Complexity:- O(N)
 Space-Complexioty:- O(N) for the recursion stack
 

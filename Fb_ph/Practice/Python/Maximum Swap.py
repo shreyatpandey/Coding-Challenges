@@ -14,6 +14,11 @@ Input: num = 9973
 Output: 9973
 Explanation: No swap.
 '''
+'''
+Clarifying questions:-
+What if num < 10 ? Return the num
+are the numbers negative?
+'''
 
 '''
 Approach:- Greedy/Math

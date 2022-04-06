@@ -59,7 +59,7 @@ class Solution:
  '''
 def wordBreak(s,wordDict):
     dp = [False]*len(s)+1
-    dp[len(s) = True #Base Case
+    dp[len(s)] = True #Base Case
     for i in range(len(s)-1,-1,-1):
        for w in wordDict:
             if(i+len(w))<=len(s) and s[i:i+len(s)] == w:

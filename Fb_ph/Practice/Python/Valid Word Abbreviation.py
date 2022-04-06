@@ -10,6 +10,14 @@ For example, a string such as "substitution" could be abbreviated as (but not li
 "su3i1u2on" ("su bst i t u ti on")
 "substitution" (no substrings replaced)
 
+Constraints:
+
+1 <= word.length <= 20
+word consists of only lowercase English letters.
+1 <= abbr.length <= 10
+abbr consists of lowercase English letters and digits.
+All the integers in abbr will fit in a 32-bit integer.
+
 '''
 '''
 Approach:- Two Pointer 

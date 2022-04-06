@@ -1,4 +1,8 @@
 '''
+Note the same word in word dict would be used multiple times
+'''
+
+'''
 Input: s = "leetcode", wordDict = ["leet","code"]
 Output: true
 Explanation: Return true because "leetcode" can be segmented as "leet code".

@@ -13,6 +13,8 @@ Example 2:
 Input: num = 9973
 Output: 9973
 Explanation: No swap.
+
+0 <= num <= 108
 '''
 '''
 Clarifying questions:-

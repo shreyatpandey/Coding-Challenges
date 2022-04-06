@@ -1,4 +1,13 @@
 '''
+Constraints:
+
+-100.0 < x < 100.0
+-231 <= n <= 231-1
+-104 <= xn <= 104
+
+'''
+
+'''
 Wording:-
 In multpilication , there is a repetitive word 
 so for say 2^10 = 2^5.2^5

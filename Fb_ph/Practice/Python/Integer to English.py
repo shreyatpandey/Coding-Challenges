@@ -15,6 +15,12 @@ Output: "One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"
 
 '''
 '''
+Approach:-
+Simulation type based question
+
+
+'''
+'''
 TC:- O(n)
 SC:- O(1)
 '''

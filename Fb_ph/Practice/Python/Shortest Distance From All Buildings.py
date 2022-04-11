@@ -27,7 +27,7 @@ and record the minimum value of such sums. Finally, we return the minimum value 
 More Explanation:-
 Undirected Graph
 Starting from 0 to 1
-Extra 2-D Array to keep record of how many bui;lding can be reached
+Extra 2-D Array to keep record of how many building can be reached
 '''
 '''
 Time complexity: O(k*l)
@@ -57,7 +57,7 @@ class Solution(object):
                         
         m = len(grid)
         n = len(grid[0])
-        rec = [[None]*n for _ in range(m)]  
+        rec = [[None]*n for _ in range(m)]  #2-D Array to keep track of how many building has been reached
         building_count = 0
         for i in range(m):
             for j in range(n):

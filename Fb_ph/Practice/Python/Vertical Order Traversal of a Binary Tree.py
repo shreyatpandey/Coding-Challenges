@@ -11,6 +11,11 @@ There may be multiple nodes in the same row and same column. In such a case, sor
 Return the vertical order traversal of the binary tree.
 
 '''
+'''
+Only difference between this question and Binary Tree Vertical Order Traversal is that:-
+In Binary Tree Vertical Order Traversal we dont need to sort the array
+
+'''
 
 
 '''

@@ -15,6 +15,9 @@ Output: "One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"
 
 '''
 '''
+Input Constaint:- 0 <= num <= 2**31 - 1
+'''
+'''
 Approach:-
 Simulation type based question
 Also it is important to append the space before and after constructing the string

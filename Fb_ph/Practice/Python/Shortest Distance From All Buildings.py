@@ -61,7 +61,7 @@ class Solution(object):
         building_count = 0
         for i in range(m):
             for j in range(n):
-                if grid[i][j] == 1:
+                if grid[i][j] == 1: # Do a BFS from each building to find empty lands
                     building_count += 1
                     bfs(i, j)
         minimum = float('inf')

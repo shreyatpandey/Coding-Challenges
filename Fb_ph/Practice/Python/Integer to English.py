@@ -100,7 +100,7 @@ class Solution:
             result = get_three_digit_num(billion) + ' Billion'
         if million:
             # space only when prev result is not None
-            result += ' ' if result else ''    
+            result += ' ' if result else ''   # this is required for space between the digits 
             result += get_three_digit_num(million) + ' Million'
         if thousand:
             result += ' ' if result else ''

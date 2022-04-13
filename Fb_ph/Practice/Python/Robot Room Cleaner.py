@@ -94,7 +94,7 @@ class Solution:
             robot.clean()
             # going clockwise : 0: 'up', 1: 'right', 2: 'down', 3: 'left'
             for i in range(4):
-                new_d = (d + i) % 4
+                new_d = (d + i) % 4 #why %4 , to make robot in the range of [0,3]
                 new_cell = (cell[0] + directions[new_d][0], 
                             cell[1] + directions[new_d][1])
                 

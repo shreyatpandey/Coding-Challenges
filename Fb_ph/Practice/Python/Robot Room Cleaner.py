@@ -98,7 +98,7 @@ class Solution:
                 new_cell = (cell[0] + directions[new_d][0], 
                             cell[1] + directions[new_d][1])
                 
-                if not new_cell in visited and robot.move():
+                if not new_cell in visited and robot.move(): #why robot.move() because just check if the robot can move
                     backtrack(new_cell, new_d)
                     go_back()
                 # turn the robot following chosen direction : clockwise

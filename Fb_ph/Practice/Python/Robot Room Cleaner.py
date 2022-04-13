@@ -68,3 +68,45 @@ All the empty cells can be visited from the starting position.
 #        Clean the current cell.
 #        :rtype void
 #        """
+'''
+Wording:-
+In goBack()
+->Either turnLeft() or turnRight() could be used? But it should be done twice to change the direction through 180 degree
+->We are rotating robot clockwise the direction[coordinates] of directions would matter
+'''
+class Solution:
+    def cleanRoom(self, robot):
+        """
+        :type robot: Robot
+        :rtype: None
+        """
+        def go_back():
+            robot.turnLeft()
+            robot.turnLeft()
+            #Robot will turn twice why?
+            #to get back to the original directions
+            robot.move()
+            robot.turnLeft()
+            robot.turnLeft()
+            
+        def backtrack(cell, d):
+            visited.add(cell)
+            robot.clean()
+            # going clockwise : 0: 'up', 1: 'right', 2: 'down', 3: 'left'
+            for i in range(4):
+                new_d = (d + i) % 4
+                new_cell = (cell[0] + directions[new_d][0], 
+                            cell[1] + directions[new_d][1])
+                
+                if not new_cell in visited and robot.move():
+                    backtrack(new_cell, new_d)
+                    go_back()
+                # turn the robot following chosen direction : clockwise
+                robot.turnLeft()
+    
+        # going clockwise : 0: 'up', 1: 'right', 2: 'down', 3: 'left'
+        directions = [(-1, 0), (0, 1), (1, 0), (0, -1)] # the sequence of the directions does matter
+        visited = set() #record the cell which has been visited
+        initialCor = (0,0) #starting point does really matter, for our own convenience we choose (0,0)
+        distance = 0
+        backtrack(initialCor,distance)

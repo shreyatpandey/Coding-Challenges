@@ -69,6 +69,12 @@ All the empty cells can be visited from the starting position.
 #        :rtype void
 #        """
 '''
+Complexity:-
+TC:- At each cell we do 4 direction check 
+SC:- O(N) for the recursion stack for backtracking
+
+'''
+'''
 Wording:-
 In goBack()
 ->Either turnLeft() or turnRight() could be used? But it should be done twice to change the direction through 180 degree
@@ -90,7 +96,6 @@ class Solution:
             robot.turnLeft()
             
         def backtrack(cell, d):
-            visited.add(cell)
             robot.clean()
             # going clockwise : 0: 'up', 1: 'right', 2: 'down', 3: 'left'
             for i in range(4):
@@ -98,9 +103,10 @@ class Solution:
                 new_cell = (cell[0] + directions[new_d][0], 
                             cell[1] + directions[new_d][1])
                 
-                if not new_cell in visited and robot.move(): #why robot.move() because just check if the robot can move
+                if not new_cell in visited and robot.move(): #why robot.move() because it helps check the boundaries of the coordinate
+                    visited.add(new_cell)
                     backtrack(new_cell, new_d)
-                    go_back()
+                    go_back() #if we dont do go_back() say if the robot is at the edge/boundary then it needs to come back and then try different direction
                 # turn the robot following chosen direction : clockwise
                 robot.turnLeft()
     
@@ -109,4 +115,5 @@ class Solution:
         visited = set() #record the cell which has been visited
         initialCor = (0,0) #starting point does really matter, for our own convenience we choose (0,0)
         distance = 0
+        visited.add(initialCor)
         backtrack(initialCor,distance)

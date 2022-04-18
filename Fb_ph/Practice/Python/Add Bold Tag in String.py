@@ -10,6 +10,26 @@ Return s after adding the bold tags.
 '''
 Input:-Input: s = "abcxyz123", words = ["abc","123"]
 Output: "<b>abc</b>xyz<b>123</b>"
+
+Sample Output for this:-
+TestCase-1:
+trie: {'a': {'b': {'c': {'#': 1}}}, '1': {'2': {'3': {'#': 1}}}}
+max_end: 3
+intervals: [[0, 3]]
+max_end: 9
+intervals: [[0, 3], [6, 9]]
+res: <b>abc</b>
+prev_end: 3
+res: <b>abc</b>xyz<b>123</b>
+prev_end: 9
+<b>abc</b>xyz<b>123</b>
+'''
+'''
+Word:-
+Create a trie from the given list of words
+Find intervals from this list of word in the given string
+Concatenate the result by traversing over the interval 
+
 '''
 '''
 TC:- O(m.n) 
@@ -31,7 +51,7 @@ class Solution:
             cur = trie
             for c in w:
                 cur = cur.setdefault(c, {})
-            cur["#"] = 1
+            cur["#"] = 1 #this is to mark the end of the trie has been reached
 
         # interval merge
         def add_interval(interval):
@@ -59,4 +79,5 @@ class Solution:
         for start, end in intervals:
             res += s[prev_end:start] + '<b>' + s[start:end] + "</b>"
             prev_end = end
-        return res + s[prev_end:]
+        return res + s[prev_end:] # why this ? for test case:- "aaabbcc" ["aaa","aab","bc"] , Output:- "<b>aaabbc</b>", Expected:- "<b>aaabbc</b>c"
+        # it could be that the length of the string would execeed the intervals from the words

@@ -6,6 +6,9 @@ A person can see another person to their right in the queue if everybody in betw
 More formally, the ith person can see the jth person if i < j and min(heights[i], heights[j]) > max(heights[i+1], heights[i+2], ..., heights[j-1]).
 
 Return an array answer of length n where answer[i] is the number of people the ith person can see to their right in the queue.
+
+Input: heights = [10,6,8,5,11,9]
+Output: [3,1,2,1,1,0]
 '''
 '''
 Constraints:-

@@ -24,9 +24,19 @@ Constraints:-
 1 <= n <= 5000
 '''
 '''
+Wording:-
+We would need a map which would give all the neighbor cell that knight can transition into from the 
+starting cell
+Using principle of induction:
+we know that the values of zero-hop function calls are always one (the base case). 
+We also know how to combine N-1 hop values to get N hop values, 
+using the recurrence relation (the inductive step). We can start with a base case of zero hops and induce all values greater than zero.
+'''
+'''
 Complexity:-
 TC:- O(N)
 SC:- O(1)
+Why O(1) because we have an array of fixed size,which does not grow linearyly with the given N
 DP-Based Solution
 '''
 class Solution(object):

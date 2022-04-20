@@ -1,4 +1,23 @@
 '''
+You are given an m x n grid rooms initialized with these three possible values.
+
+-1 A wall or an obstacle.
+0 A gate.
+INF Infinity means an empty room. We use the value 231 - 1 = 2147483647 to represent INF as you may assume that the distance to a gate is less than 2147483647.
+Fill each empty room with the distance to its nearest gate. 
+If it is impossible to reach a gate, it should be filled with INF.
+
+'''
+'''
+Constraints:
+m == rooms.length
+n == rooms[i].length
+1 <= m, n <= 250
+rooms[i][j] is -1, 0, or 231 - 1.
+'''
+
+
+'''
 This Approach is not working, this might be correct
 Approach:- BFS
 TC:- O(m+n)
@@ -29,9 +48,16 @@ class Solution(object):
                 #if 0<=xcor_<rowLen and 0<=ycor_<colLen and rooms[xcor_][ycor_] == float('inf'):
                 rooms[xcor_][ycor_] = rooms[x_][y_] + 1
                 Queue.append((xcor_,ycor_))
-   '''
-   This Approach is working instead of deque
-   '''
+'''
+This Approach is working instead of deque
+TC:- O(mn)
+he breadth-first search takes at most m \times nm×n steps to reach all rooms, therefore the time complexity is O(mn)O(mn). 
+But what if you are doing breadth-first search from kk gates?
+
+Once we set a room's distance, we are basically marking it as visited, which means each room is visited at most once. 
+Therefore, the time complexity does not depend on the number of gates and is O(mn)
+SC:- O(mn) for the queue 
+'''
   class Solution(object):
     def wallsAndGates(self, rooms):
         """
@@ -41,20 +67,20 @@ class Solution(object):
         if not rooms:
             return
         
-        h = len(rooms)
-        w = len(rooms[0])
-        
-        q = []
-        for i in range(h):
-            for j in range(w):
+        rowLen = len(rooms)
+        colLen = len(rooms[0])
+        dirs = [(-1,0),(1,0),(0,-1),(0,1)]
+        Queue = []
+        for i in range(rowLen):
+            for j in range(colLen):
                 if rooms[i][j] == 0:
-                    q.append((i,j))
+                    Queue.append((i,j))
         
-        for row, col in q:
+        for row, col in Queue:
             dist = rooms[row][col] + 1
-            for dy, dx in (-1, 0), (1, 0), (0, -1), (0, 1):
+            for dy, dx in dirs:
                 r = row + dy
                 c = col + dx
-                if 0 <= r < h and 0 <= c < w and rooms[r][c] == 2147483647:
+                if 0 <= r < rowLen and 0 <= c<colLen and rooms[r][c] == 2147483647:
                     rooms[r][c] = dist
-                    q.append((r,c))
+                    Queue.append((r,c))

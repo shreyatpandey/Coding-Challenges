@@ -1,6 +1,8 @@
 '''
 A path in a binary tree is a sequence of nodes where each pair of adjacent nodes in the sequence has an edge connecting them.
 A node can only appear in the sequence at most once. Note that the path does not need to pass through the root.
+"Better Way of saying it": 
+A valid path is a "straight line" that connects all the nodes, in other words, it can't "fork".
 
 The path sum of a path is the sum of the node's values in the path.
 

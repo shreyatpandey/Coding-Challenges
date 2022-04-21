@@ -46,6 +46,7 @@ class Solution(object):
         self.dfs(root)
         return self.max_sum
     
+    #max path without splitting
     def dfs(self, node):
         if not node: return 0
         

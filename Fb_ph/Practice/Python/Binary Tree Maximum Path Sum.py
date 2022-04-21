@@ -62,6 +62,6 @@ class Solution(object):
         # add to the current node ONLY one of the children contributions
         # in order to maintain the constraint of considering only paths
         # if not, we would be exploring explore the whole tree - against problem definition
-        return max(leftST_sum, rightST_sum) + node.val
+        return max(leftST_sum, rightST_sum) + node.val #why max, we cant choose both because that would result into splitting
         
 

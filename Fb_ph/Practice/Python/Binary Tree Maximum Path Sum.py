@@ -54,6 +54,7 @@ class Solution(object):
         leftST_sum = max(0, self.dfs(node.left))
         rightST_sum = max(0, self.dfs(node.right))
 
+        # compute max path with splits
         # check if cumulative sum at current node > global max sum so far
         # this evaluates a candidate path
         self.max_sum = max(self.max_sum, leftST_sum + rightST_sum + node.val)

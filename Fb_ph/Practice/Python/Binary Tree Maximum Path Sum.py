@@ -20,7 +20,7 @@ Wording:-
 Key is that the node value can be negative.
 The idea is to update node values with the biggest, positive cumulative sum gathered by its children:
 
-If both contributions are negative, no value is added.
+If both contributions are negative, no value is added. We dont need to include nodes with negative values as it does not give the maximum path.
 If both are positive, only the biggest one is added, so that we don't include both children during the rest of the tree exploration.
 Leaves return its own value and we recursively work our way upwards.
 A global maximum sum variable is maintained so that every path can be individually checked, 

@@ -21,6 +21,10 @@ void AddNode(Node**Headref,int Val)
     {          
         Node* temp1 = *Headref;
         while ( temp1->next != NULL ) temp1 = temp1->next ;
+        /* 
+        what if temp1 != Null is written? In that case the issue would be regarding segmentation fault, 
+        temp1= temp1->next would cause to access nullptr
+        */
         temp1->next = new_node ;
     } 
 }

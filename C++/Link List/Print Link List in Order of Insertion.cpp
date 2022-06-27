@@ -17,6 +17,7 @@ void AddNode(Node**Headref,int Val)
     {
         *Headref = new_node; 
     } 
+    /* made-one small mistake, used Headref == null instead of *Headref == null , this can also cause problem */
     else 
     {          
         Node* temp1 = *Headref;

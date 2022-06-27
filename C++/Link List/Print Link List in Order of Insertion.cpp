@@ -26,6 +26,7 @@ void AddNode(Node**Headref,int Val)
         temp1= temp1->next would cause to access nullptr
         */
         temp1->next = new_node ;
+        /* for the if condition ( temp1 != nullptr) at line 28 would cause the problem , as nullptr accessing next is not feasible*/
     } 
 }
 void PrintNode(Node* head)

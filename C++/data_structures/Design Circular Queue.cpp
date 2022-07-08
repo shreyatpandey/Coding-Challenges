@@ -9,7 +9,7 @@ Reason of using modulo operator :- %
 
 To get the rear element , use
 (RearIndex + CircularQueue.size()-1) % CircularQueue.size()
-even -> (frontIndex + CircularQueue.size()-1 ) % CircularQueue.size() would also work
+replacing (frontIndex + CircularQueue.size()-1 ) % CircularQueue.size() would also work
 */
 
 

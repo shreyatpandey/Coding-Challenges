@@ -7,6 +7,8 @@ In standard queue , once the queue becomes full, inserting element is not possib
 Reason of using modulo operator :- % 
 (1) To reuse the cleared space at the beginning of the queue without the need to constantly reallocate with push and shift operations
 
+To get the rear element , use
+(RearIndex + CircularQueue.size()-1) % CircularQueue.size() ??
 */
 
 

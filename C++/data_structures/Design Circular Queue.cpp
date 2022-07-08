@@ -1,3 +1,15 @@
+/*
+Analysis:-
+if front index and last index match, then circular queue could would be considered as full
+Advantage of Circular Queue over Standard Queue, is that the space in front of the queue can be used even.
+In standard queue , once the queue becomes full, inserting element is not possible even if the queue has space in fron of it.
+
+Reason of using modulo operator :- % 
+(1) To reuse the cleared space at the beginning of the queue without the need to constantly reallocate with push and shift operations
+
+*/
+
+
 class MyCircularQueue {
     private :
         vector<int>CircularQueue ;

@@ -8,7 +8,8 @@ Reason of using modulo operator :- %
 (1) To reuse the cleared space at the beginning of the queue without the need to constantly reallocate with push and shift operations
 
 To get the rear element , use
-(RearIndex + CircularQueue.size()-1) % CircularQueue.size() ??
+(RearIndex + CircularQueue.size()-1) % CircularQueue.size()
+even -> (frontIndex + CircularQueue.size()-1 ) % CircularQueue.size() would also work
 */
 
 

@@ -17,40 +17,35 @@ Explanation: The groups are "a" and "bbbbbbbbbbbb". This compresses to "ab12".
 class Solution {
 public:
     int compress(vector<char>& chars) {
-        vector<char>StringCompressed ;
-        int KeepTrack = 0;
-        for(int Traverse=0;Traverse<chars.size();++Traverse)
+        int index = 0;
+        for(int i=0;i<chars.size();i++)
         {
-            int LoopWithSameChars = Traverse;
-            int CountSimilarChar = 0;
-            while ( LoopWithSameChars<chars.size() && chars[Traverse] == chars[LoopWithSameChars])
+            char temp = chars[i];
+            int j = i+1;
+            int count = 1;
+            while(j < chars.size() && chars[j] == temp)
             {
-                LoopWithSameChars += 1;
-                CountSimilarChar += 1;
+                count += 1;
+                j ++;
             }
-            chars[KeepTrack++] = chars[Traverse] ;
-            if ( CountSimilarChar > 1)
+            chars[index++] = temp;
+            if (count >1)
             {
-                if ( CountSimilarChar > 9 )
-            {
-                while ( CountSimilarChar > 9 )
-                {
-                    int Quotient = CountSimilarChar / 10;
-                    //char IntToChar = static_cast<char>(Quotient) ; static_Cast does not work here
-                    
-                    chars[KeepTrack++] =  Quotient + (int)'0';
-                    CountSimilarChar %= 10 ;
+                if(count>9)
+                {   
+                    string result = to_string(count);
+                    for(int i=0;i<result.size();i++)
+                    {
+                        chars[index++] = result[i];
+                    }
                 }
-                chars[KeepTrack++] = CountSimilarChar + (int)'0' ;
-            }
-            else
+                else
                 {
-                    chars[KeepTrack++] = CountSimilarChar+(int)'0';
+                    chars[index++] = count + (int)'0';
                 }
             }
-            Traverse = LoopWithSameChars - 1 ;
+            i = j - 1;
         }
-        return KeepTrack ;
-        
+        return index;
     }
 };

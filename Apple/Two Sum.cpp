@@ -1,9 +1,17 @@
+/*
+Question:- Return Indices of the two number and not the number
+[3,3] Target:- 6
+Ans:- [0,1]
+Will still work
+
+Clarifying question :- Do we need to return the number or only the indices?
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
 class Solution
 {
- 
    public:
    vector<int>twosum(vector<int>&nums,int target)
     {
@@ -18,25 +26,4 @@ class Solution
         hash[nums[i]]=i;
       }
     }
-  vector<int>twosum_2(vector<int>&nums,int target)
-  {
-	unordered_map<int,int>hash_map;
-	vector<int>return_1;
-	for(int i=0;i<nums.size();i++)
-	{
-		hash_map.emplace(i,nums[i]);
-	}
-
-	for(int j=0;j<nums.size();j++)
-	{
-		int result = target - nums[j];
-		if(hash_map.find(result) != hash_map.end())
-		{		
-		return_1.push_back(hash_map[nums[j]]);
-		return_1.push_back(j);
-		return return_1;
-		}
-	}
-   return return_1;
-  }
  };

@@ -5,6 +5,10 @@ Ans:- [0,1]
 Will still work
 
 Clarifying question :- Do we need to return the number or only the indices?
+
+Constraints-Memorize:-
+You may assume that each input would have exactly one solution, and you may not use the same element twice
+Only one valid answer exists.
 */
 
 #include<bits/stdc++.h>

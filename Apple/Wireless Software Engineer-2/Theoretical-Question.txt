@@ -1,5 +1,7 @@
 Q1] What happens in the capability message exchange during the initial request for LTE-Attach?
 Q2] What happens during the boot-up of the device to exchange information in LTE-Attach?
+Focus was on Authentication. Need to authenticate UE into the network
+
 
 C-Question:-
 Q1] Difference between const and volatile?

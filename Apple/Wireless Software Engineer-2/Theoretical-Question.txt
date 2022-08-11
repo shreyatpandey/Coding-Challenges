@@ -1,0 +1,12 @@
+Q1] What happens in the capability message exchange during the initial request for LTE-Attach?
+Q2] What happens during the boot-up of the device to exchange information in LTE-Attach?
+
+C-Question:-
+Q1] Difference between const and volatile?
+Q2] Conditions for deadlock?
+Q3] Difference between TCP and UDP?
+
+Programming:-
+Q1] Reverse 32-bit integer
+Q2] Remove a given node from the linked list , given that only that particular node is given
+

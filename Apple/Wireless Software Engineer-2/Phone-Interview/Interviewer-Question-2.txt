@@ -1,0 +1,19 @@
+Interviewer:- LNK
+SIP-
+Q1] When mobile is not connected to either cellular/wifi, is internet PDN still required?
+Q2] For emergency call, does IMS registration required?
+Q3] What is the purpose of getting PDN bring up?
+Q4] Question about Band Carrier Aggregation
+Q5] What is the whole purpose of internet PDN?
+
+Coding-Question:-
+(1) Basic-Calculator-II
+(2) write a simple macro to find min of two numbers , confused with syntzx bombed
+ 
+ Debugging:-
+ (1) Type of exception seen
+ (2) Question about 'abort' <-> Assert statement
+ 
+ RTOS:-
+ (1) what is watchdog timer?
+ 

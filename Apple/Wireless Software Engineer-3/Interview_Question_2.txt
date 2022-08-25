@@ -1,0 +1,25 @@
+LTE-IMS
+Q] What is LTE Qos / QCI for Supplementary Service? 5 [ bombed did not know this]
+Q] If IMS pdn is up, does Supplementary Service still require its on-Demand PDN?
+
+Memory-Layout:-
+(1) What are different memory layout in C?
+
+Operating-System:-
+(1) How does thread communication happen in C?
+
+
+Coding:-
+(1) Write the definition of function pointer
+(2) Debugging code:-
+char* AddNewLineSpace(char* s)
+{
+  char buffer[1024];
+  strcpy(buffer,s):
+  buffer[strleng(s)-1] = '\n';
+  return buffer
+}
+(3)Two-Sum in C
+(4) Swap two bits in an integer
+
+

@@ -4,6 +4,10 @@ Q] If IMS pdn is up, does Supplementary Service still require its on-Demand PDN?
 
 Memory-Layout:-
 (1) What are different memory layout in C?
+(2) How do you handle heap size allocation?
+-> Gave details about memory leak
+-> double free
+-> using pointer which has been deleted
 
 Operating-System:-
 (1) How does thread communication happen in C?

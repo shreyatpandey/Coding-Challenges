@@ -94,6 +94,9 @@ class LRUCache
 		}
 		void add(Node* addNode)
 		{
+			/* put the MRU at the end*/
+   			/*AddNode would be the MRU and should be put to the second last*/
+    			/* Last Node would be tail/prev which is Initialized to (-1,-1)*/
 			Node* secondLast  = tail->prev;
 			Node* last = tail;
 			secondLast->next = addNode;

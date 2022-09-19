@@ -85,10 +85,14 @@ class LRUCache
 			head->next = tail;
 			tail->prev = head;
 		}
-		void  remove(Node* remove)
+		void  remove(Node* removeNode)
 		{
-			Node* Previous = remove->prev ;
-			Node* Next = remove->next;
+			/*
+			 No concept of MRU here
+			 Just remvoe the Node
+			*/
+			Node* Previous = removeNode->prev ;
+			Node* Next = removeNode->next;
 			Previous->next = Next;
 			Next->prev = Previous;
 		}

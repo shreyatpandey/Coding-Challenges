@@ -6,7 +6,7 @@ class Solution
   public:
 	int firstuniquechar(string s)
 	{
-	  vector<int>input_hold(s.length());
+	  vector<int>input_hold(26);
 	  int flag_value = 0;
 	  for(uint32_t i=0;i<s.length();i++)
 	 {

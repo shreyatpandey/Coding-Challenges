@@ -56,44 +56,21 @@ why it is even required in this case?
 
 
 class HitCounter {
-    private:
-        int TotalCount ;
-        queue<pair<int,int>>hitCounter;
 public:
+    queue<int> q;
     HitCounter() {
-        TotalCount = 0;
         
     }
     
     void hit(int timestamp) {
-        if(hitCounter.empty() || hitCounter.back().first != timestamp)
-        {
-            hitCounter.push({timestamp,1});
-        }
-        else
-        {
-            hitCounter.back().second += 1;
-        }
-        TotalCount += 1;
+        q.push(timestamp);
     }
     
     int getHits(int timestamp) {
-        /* only for the number of hits in past 5 minutes */
-        while(hitCounter.size() > 0)
-        {
-            int timeDiff = timestamp - hitCounter.front().first ; /* I was using back() instead of front() */
-            /* why do we need front()*/
-            if ( timeDiff >= 300)
-            {
-                TotalCount -= hitCounter.front().second;
-                hitCounter.pop();
-            }
-            else
-            {
-                break;
-            }
+        while(!q.empty() && timestamp - q.front() >= 300){
+            q.pop();
         }
-        return TotalCount;
+        return q.size();
     }
 };
 

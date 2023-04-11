@@ -10,3 +10,10 @@ Q3] Write a macro to get max of two values?
 Ans:- Mistake I was making was that I using return value.
 Dont have to use return here
 #define Max(X,Y) { X>Y? X:Y}
+
+Q4] Write a macro to print numbers in a loop?
+Ans:- 
+#define LOOP(number)\
+        for (int i = 0; i < (number); i++){\
+        printf("%d\n", i);\
+        }\

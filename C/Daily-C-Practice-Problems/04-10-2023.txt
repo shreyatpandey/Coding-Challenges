@@ -33,6 +33,19 @@ int main()
     return 0;
 }
 
+Q6] How do you concatenate string in C?
+Ans:- You can concatenate string using the following ways:-
+[1] Use strcat
+[2] Use snprintf
+To use strcat first you have to perfrom strcpy.
+char *strcat(char *dest, const char *src);
+
+char str[80];
+strcpy(str, "these ");
+strcat(str, "strings ");
+strcat(str, "are ");
+strcat(str, "concatenated.");
+
 Q6] Convert ascii_string into byte array?
 Ans:- 
 #include <stdio.h>

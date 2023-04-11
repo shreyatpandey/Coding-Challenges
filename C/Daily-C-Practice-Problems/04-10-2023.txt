@@ -6,4 +6,7 @@ Ans:-
 Q2] How to write ternary operator in C?
 Ans:- ? first value: second value
 
-
+Q3] Write a macro to get max of two values?
+Ans:- Mistake I was making was that I using return value.
+Dont have to use return here
+#define Max(X,Y) { X>Y? X:Y}

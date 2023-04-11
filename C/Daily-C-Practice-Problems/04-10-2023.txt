@@ -1,0 +1,9 @@
+Q1] Write a multi-line Macro?
+Ans:- 
+#define PrintValue(X,Y){printf("X:%d",X);\
+                        printf("Y:%d", Y);\
+                        }
+Q2] How to write ternary operator in C?
+Ans:- ? first value: second value
+
+

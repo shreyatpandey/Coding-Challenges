@@ -1,0 +1,10 @@
+Q1] What do you mean by , "Offset Loading", in assembly language?
+Ans:- OFFSET would have translated to a segment selector (DS) and OFFSET, 
+whereas OFFSET FLAT translates to an absolute address of the label LC0 relative to 0 (seeing as that's the base of the DS segment in flat mode), 
+which the linker resolves after it is assembled
+
+Q2] What is edi?
+Ans:- EDI is used to hold the destination index, ESI holds the source index and EBX is used as a general purpose index register. 
+ESI and EDI are used in string instructions as source and destination, but other instructions can use them as general indexing registers.
+
+Link:- https://redirect.cs.umbc.edu/courses/undergraduate/CMSC313/fall04/burt_katz/lectures/Lect09/arrays.html#:~:text=EDI%20is%20used%20to%20hold,them%20as%20general%20indexing%20registers.

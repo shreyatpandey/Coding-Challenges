@@ -17,3 +17,61 @@ Ans:-
         for (int i = 0; i < (number); i++){\
         printf("%d\n", i);\
         }\
+
+Q5] What is utility of unsigned char datatype?
+Ans:- unsigned char datatype can be used to store both char values as well integer values.
+It occupies less space ranging from 0 to 255.
+int main()
+{
+    unsigned char ByteArray[256] = "Hello world";
+    for(int i=0;i<strlen(ByteArray);i++)
+    {
+        printf("%c:", ByteArray[i]);
+        printf("%d", ByteArray[i]);//display byte value of character
+        printf("\n");
+    }
+    return 0;
+}
+
+Q6] Convert ascii_string into byte array?
+Ans:- 
+#include <stdio.h>
+#include <string.h>
+
+typedef unsigned char BYTE;
+
+//function to convert string to byte array
+void string2ByteArray(char* input, BYTE* output)
+{
+    int loop;
+    int i;
+    
+    loop = 0;
+    i = 0;
+    
+    while(input[loop] != '\0')
+    {
+        output[i++] = input[loop++];
+    }
+}
+
+int main(){
+    char ascii_str[] = "Hello world!";
+    int len = strlen(ascii_str);
+    BYTE arr[len];
+    int i;
+    
+    //converting string to BYTE[]
+    string2ByteArray(ascii_str, arr);
+    
+    //printing
+    printf("ascii_str: %s\n", ascii_str);
+    printf("byte array is...\n");
+    for(i=0; i<len; i++)
+    {
+        printf("%c - %d\n", ascii_str[i], arr[i]);
+    }
+    printf("\n");
+    
+    return 0;
+}

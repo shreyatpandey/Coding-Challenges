@@ -1,3 +1,5 @@
+//This would work for hexadcimal values as well
+
 #include<bits/stdc++.h>
 using namespace std;
 

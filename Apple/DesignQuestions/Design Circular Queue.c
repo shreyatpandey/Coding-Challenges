@@ -1,5 +1,6 @@
 // Similar type was asked to me in Facebook Embedded Question
 //git-link:- https://github.com/goToMain/c-utils/blob/master/include/utils/circbuf.h
+//Embedded-Link:- https://embedjournal.com/implementing-circular-buffer-embedded-c/
 
 #include<stdio.h>
 #include<stdlib.h>

@@ -224,3 +224,4 @@ main(int argc, char const *argv[])
 	_free(str);
 	stats("end main");
 	return (EXIT_SUCCESS);
+}

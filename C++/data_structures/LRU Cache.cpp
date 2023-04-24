@@ -62,7 +62,8 @@ public:
 //Using Doubly Link List
 /* Some observation:-
 [1] There is hardly any use of head, rather no use of head.
-[2] In addNode, only tail is used to add node
+[2] In addNode, only tail is used to add node.
+[3] Can even use head, to add node
 */
 class Node
 {

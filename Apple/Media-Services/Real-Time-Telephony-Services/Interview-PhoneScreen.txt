@@ -1,0 +1,6 @@
+Interviewer:- KS
+Weakness:-
+[1] Need to slow a bit while speaking
+[2] Get a complete overview of the Audo-Pipeline
+[3] Say about phone->audio drivers and all.
+Tell me phone call in general within 5 minutes

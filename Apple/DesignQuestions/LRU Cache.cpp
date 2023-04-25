@@ -85,22 +85,24 @@ class LRUCache
 			head->next = tail;
 			tail->prev = head;
 		}
+		/*
+		 No concept of MRU here
+		 Just remvoe the Node
+		*/
 		void  remove(Node* removeNode)
 		{
-			/*
-			 No concept of MRU here
-			 Just remvoe the Node
-			*/
 			Node* Previous = removeNode->prev ;
 			Node* Next = removeNode->next;
 			Previous->next = Next;
 			Next->prev = Previous;
 		}
+		/* 
+		   put the MRU at the end
+   		   addNode would be the MRU and should be put to the second last
+    		   last Node would be tail/prev which is Initialized to (-1,-1)
+		 */
 		void add(Node* addNode)
 		{
-			/* put the MRU at the end*/
-   			/*AddNode would be the MRU and should be put to the second last*/
-    			/* Last Node would be tail/prev which is Initialized to (-1,-1)*/
 			Node* secondLast  = tail->prev;
 			Node* last = tail;
 			secondLast->next = addNode;
@@ -118,6 +120,10 @@ class LRUCache
 			add(Cache[key]);
 			return Cache[key]->value;
 		}
+		/* 
+	          1. if the cache contains key, update it with new value
+           	  2. if the cache size exceeds the required capacity, lru node from cache
+        	*/
 		void put(int key,int value)
 		{
 			if (Cache.count(key))

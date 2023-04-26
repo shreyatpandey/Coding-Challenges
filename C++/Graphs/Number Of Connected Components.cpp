@@ -1,6 +1,12 @@
 //BFS Approach
 //TC:- O(V+E)
-
+/*
+1. Create an adjacent list of edges. 
+    Mistake I make is that I used vector in value.
+    Use set for this.
+2. Create a set for marking visited vertices. [I forget this]
+3. Queue to keep vertices. This queue will updated only if vertices has NOT-BEEN visited.
+*/
 class Solution {
 public:
     int countComponents(int n, vector<vector<int>>& edges) {

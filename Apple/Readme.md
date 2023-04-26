@@ -13,6 +13,6 @@ Categorizing into various segments:-
 
 * Operating-System:-
   * Inter-Thread Communication:- 
-  * https://xunhuanfengliuxiang.gitbooks.io/operating-system/content/how-to-communicate-ipc-vs-itc-inter-process-communication-vs-inter-thread-communications.html
-  * https://docs.oracle.com/cd/E19048-01/chorus4/806-0610/chapter1-81/index.html
+     1] https://xunhuanfengliuxiang.gitbooks.io/operating-system/content/how-to-communicate-ipc-vs-itc-inter-process-communication-vs-inter-thread-communications.html
+    2] https://docs.oracle.com/cd/E19048-01/chorus4/806-0610/chapter1-81/index.html
  

@@ -29,3 +29,9 @@ Categorizing into various segments:-
 
 * C Advanced:-
    * Preprocessor:- https://gcc.gnu.org/onlinedocs/gcc-2.95.3/cpp_1.html
+   
+* C++ :-
+ * Type Cast Operators:- 
+   * https://www.bogotobogo.com/cplusplus/typecast.php
+ * Multithreading-Advanced:-
+   * https://www.bogotobogo.com/cplusplus/typecast.php

@@ -28,4 +28,4 @@ Categorizing into various segments:-
       * https://pubs.opengroup.org/onlinepubs/7908799/xsh/pthread.h.html
 
 * C Advanced:-
- * Preprocessor:- https://gcc.gnu.org/onlinedocs/gcc-2.95.3/cpp_1.html
+   * Preprocessor:- https://gcc.gnu.org/onlinedocs/gcc-2.95.3/cpp_1.html

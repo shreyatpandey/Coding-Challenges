@@ -23,6 +23,6 @@ Categorizing into various segments:-
     
   * Thread-Priority/Scheduling:-
      * https://www.ibm.com/docs/en/i/7.2?topic=ssw_ibm_i_72/apis/concep16.html
- 
- * Library for Posix-Thread(pthread):-
-    * https://pubs.opengroup.org/onlinepubs/7908799/xsh/pthread.h.html
+     
+  * Library for Posix-Thread(pthread):-
+      * https://pubs.opengroup.org/onlinepubs/7908799/xsh/pthread.h.html

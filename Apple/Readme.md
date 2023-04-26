@@ -22,5 +22,5 @@ Categorizing into various segments:-
     * https://techdifferences.com/difference-between-preemptive-and-non-preemptive-scheduling-in-os.html
     
   * Thread-Priority/Scheduling:-
-   * https://www.ibm.com/docs/en/i/7.2?topic=ssw_ibm_i_72/apis/concep16.html
+     * https://www.ibm.com/docs/en/i/7.2?topic=ssw_ibm_i_72/apis/concep16.html
  

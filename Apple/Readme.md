@@ -33,5 +33,7 @@ Categorizing into various segments:-
 * C++ :-
     * Type Cast Operators:- 
       * https://www.bogotobogo.com/cplusplus/typecast.php
+    * Upcasting and Downcasting:-
+      * https://www.bogotobogo.com/cplusplus/upcasting_downcasting.php
     * Multithreading-Advanced:-
       * https://www.bogotobogo.com/cplusplus/typecast.php

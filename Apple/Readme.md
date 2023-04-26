@@ -9,7 +9,7 @@ Categorizing into various segments:-
 
 * Embedded:-
   * Circular-Buffer-Explanation:- https://embeddedartistry.com/blog/2017/05/17/creating-a-circular-buffer-in-c-and-c/
-  * Indexing of registers:-   https://redirect.cs.umbc.edu/courses/undergraduate/CMSC313/fall04/burt_katz/lectures/Lect09/arrays.html#:~:text=EDI%20is%20used%20to%20hold,them%20as%20general%20indexing%20registers.
+  * Indexing of registers:-   * https://redirect.cs.umbc.edu/courses/undergraduate/CMSC313/fall04/burt_katz/lectures/Lect09/arrays.html#:~:text=EDI%20is%20used%20to%20hold,them%20as%20general%20indexing%20registers.
 
 * Operating-System:-
   * Inter-Thread Communication:- 

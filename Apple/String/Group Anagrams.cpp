@@ -42,3 +42,19 @@ public:
         
     }
 };
+
+int main()
+{
+    unique_ptr<Solution>s(new Solution);
+    vector<string>Input = {"eat","tea","tan","ate","nat","bat"};
+    vector<vector<string>>result = s->groupAnagrams(Input);
+    for(auto &x:result)
+    {
+        for(auto &y:x)
+        {
+            cout<<y<<" ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}

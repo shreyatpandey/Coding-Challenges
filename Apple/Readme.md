@@ -31,6 +31,8 @@ Categorizing into various segments:-
    * Preprocessor:- https://gcc.gnu.org/onlinedocs/gcc-2.95.3/cpp_1.html
    * Little Endian-Big Endian:- https://www.section.io/engineering-education/what-is-little-endian-and-big-endian/
    * Usage of unsigned char- https://stackoverflow.com/questions/75191/what-is-an-unsigned-char/87648#87648
+      * Cannot use strlen for unsigned char as its not null terminated
+      * function should contain the length for unsigned char*
    
 * C++ :-
     * Type Cast Operators:- 

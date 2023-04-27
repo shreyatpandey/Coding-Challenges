@@ -27,7 +27,7 @@ public:
             string sb = "";
             for(int k=0;k<26;k++)
             {
-                sb.append(":");
+                sb.append(":"); // this is just to create a key
                 sb.append(to_string(count[k]));
             }
             

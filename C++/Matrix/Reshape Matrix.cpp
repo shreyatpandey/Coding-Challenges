@@ -5,7 +5,7 @@ The reshaped matrix should be filled with all the elements of the original matri
 
 If the reshape operation with given parameters is possible and legal, output the new reshaped matrix; 
 Otherwise, output the original matrix.
-/* Hint-1*/
+// Hint-1
 M[i][j]=M[n*i+j] , where n is the number of cols. 
 This is the one way of converting 2-d indices into one 1-d index. Now, how will you convert 1-d index into 2-d indices?
 M[i] => M[i/n][i%n] 

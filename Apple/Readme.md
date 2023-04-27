@@ -30,6 +30,7 @@ Categorizing into various segments:-
 * C Advanced:-
    * Preprocessor:- https://gcc.gnu.org/onlinedocs/gcc-2.95.3/cpp_1.html
    * Little Endian-Big Endian:- https://www.section.io/engineering-education/what-is-little-endian-and-big-endian/
+   * Usage of unsigned char- https://stackoverflow.com/questions/75191/what-is-an-unsigned-char/87648#87648
    
 * C++ :-
     * Type Cast Operators:- 

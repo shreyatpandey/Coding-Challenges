@@ -29,6 +29,7 @@ Categorizing into various segments:-
 
 * C Advanced:-
    * Preprocessor:- https://gcc.gnu.org/onlinedocs/gcc-2.95.3/cpp_1.html
+   * Little Endian-Big Endian:- https://www.section.io/engineering-education/what-is-little-endian-and-big-endian/
    
 * C++ :-
     * Type Cast Operators:- 

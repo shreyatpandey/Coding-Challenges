@@ -6,6 +6,7 @@ Categorizing into various segments:-
   * IR92 Document:- https://www.gsma.com/newsroom/wp-content/uploads/IR.92-v15.0-4.pdf
   * SIP Document:- https://datatracker.ietf.org/doc/html/rfc3261
   * RTP/RTCP:- https://techdifferences.com/difference-between-rtp-and-rtcp.html
+  * LTE-RARCH Procedure:- https://www.youtube.com/watch?v=m8a8ELd1zlo&list=PLNi03lC4JijLkiwj_WpXNdz59BGrCFR9V&index=7
 
 * Embedded:-
   * Circular-Buffer-Explanation:- https://embeddedartistry.com/blog/2017/05/17/creating-a-circular-buffer-in-c-and-c/

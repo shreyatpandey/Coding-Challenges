@@ -7,6 +7,7 @@ Categorizing into various segments:-
   * SIP Document:- https://datatracker.ietf.org/doc/html/rfc3261
   * RTP/RTCP:- https://techdifferences.com/difference-between-rtp-and-rtcp.html
   * LTE-RARCH Procedure:- https://www.youtube.com/watch?v=m8a8ELd1zlo&list=PLNi03lC4JijLkiwj_WpXNdz59BGrCFR9V&index=7
+  * Purpose of RE-INVITE Message:- https://www.dialogic.com/webhelp/csp1010/8.4.1_ipn3/sip_software_chap_-_re-invite_message.htm#:~:text=The%20INVITE%20method%20is%20used,ensure%20that%20they%20are%20active.
 
 * Embedded:-
   * Circular-Buffer-Explanation:- https://embeddedartistry.com/blog/2017/05/17/creating-a-circular-buffer-in-c-and-c/

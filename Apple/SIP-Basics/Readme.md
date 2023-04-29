@@ -4,4 +4,4 @@
 
   * Difference between BYE and CANCLE
    
-   ![image](https://user-images.githubusercontent.com/32083899/235315710-e0e82ef1-3ef8-42d1-a2f3-d954e62a89db.png)
+     * ![image](https://user-images.githubusercontent.com/32083899/235315710-e0e82ef1-3ef8-42d1-a2f3-d954e62a89db.png)

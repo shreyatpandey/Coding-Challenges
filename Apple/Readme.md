@@ -36,6 +36,7 @@ Categorizing into various segments:-
       * Cannot use strlen for unsigned char as its not null terminated
       * function should contain the length for unsigned char*
    * C-Debugging Questions:- https://www.sanfoundry.com/linux-debugging-questions-answers-malloc-free/
+   * Aligned and Free Malloc:- https://www.youtube.com/watch?v=EknIzqZZEWY
    
 * C++ :-
     * Type Cast Operators:- 

@@ -45,3 +45,4 @@ Categorizing into various segments:-
       * https://www.bogotobogo.com/cplusplus/upcasting_downcasting.php
     * Multithreading-Advanced:-
       * https://www.bogotobogo.com/cplusplus/typecast.php
+    * C++ video series:- https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb

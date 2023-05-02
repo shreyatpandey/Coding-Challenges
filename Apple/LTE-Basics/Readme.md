@@ -1,5 +1,6 @@
 * LTE RARCH Procedure
-  * ![Screenshot 2023-05-02 at 10 43 40 AM](https://user-images.githubusercontent.com/32083899/235808375-5467ca78-a6cc-4c88-a1f1-586094b09304.pn
+  * ![RARCH-Message](https://user-images.githubusercontent.com/32083899/235808555-e4fcb128-ef44-4853-b89f-fc6f037b9a0a.png)
+
 
 
 

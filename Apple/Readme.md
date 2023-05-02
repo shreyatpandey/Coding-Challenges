@@ -37,6 +37,8 @@ Categorizing into various segments:-
       * function should contain the length for unsigned char*
    * C-Debugging Questions:- https://www.sanfoundry.com/linux-debugging-questions-answers-malloc-free/
    * Aligned and Free Malloc:- https://www.youtube.com/watch?v=EknIzqZZEWY
+   * Unsigned char array:-
+      * Set and Unset a bit inside unsigned char array:- https://stackoverflow.com/questions/63076036/bit-manipulation-inside-a-char-array?rq=1
    
 * C++ :-
     * Type Cast Operators:- 

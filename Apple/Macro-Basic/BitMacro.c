@@ -13,3 +13,8 @@
 #define BITMASK_FLIP(x, mask) ((x) ^= (mask))
 #define BITMASK_CHECK_ALL(x, mask) (!(~(x) & (mask)))
 #define BITMASK_CHECK_ANY(x, mask) ((x) & (mask))
+
+int main()
+{
+ return 0; 
+}

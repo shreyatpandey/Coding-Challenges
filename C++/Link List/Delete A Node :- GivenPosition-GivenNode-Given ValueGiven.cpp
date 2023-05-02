@@ -29,7 +29,7 @@ void AppendNode(Node** head,int Value)
        current->next = newNode;
     }
 }
-
+/* When only position is given*/
 void DeleteNodeAtParticularPos(Node** head, int position)
 {
     if ( position == 0)
@@ -50,6 +50,37 @@ void DeleteNodeAtParticularPos(Node** head, int position)
         delete(helper);
     }
 }
+
+/*When only value is given*/
+void DeleteNodeForGivenValue(Node** head, int Value)
+{
+   Node* current = *head;
+   Node* previous = nullptr;
+   if(current != nullptr && current->Value == Value)
+   {
+     *head = current->next;
+     delete(current);
+     return;
+   }
+    else
+    {
+      while(current!=nullptr && current->Value != Value)
+      { 
+          previous = current;
+          current = current->next;
+      }
+      previous->next = current->next;
+      delete(current);
+    }
+}
+
+/*when only node is given*/
+void DeleteNodeForGivenNode(Node* deleteNode)
+{
+   deleteNode->next = deleteNode->next->next;
+   deleteNode->Value = deleteNode->next->Value;
+}
+        
 
 void PrintNode(Node* head)
 {

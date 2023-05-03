@@ -6,13 +6,10 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize){
         for(int j=i+1; j<numsSize; j++)
             if(nums[j] == target - nums[i])
             {
-                printf("i = %d, j = %d\n", i, j);
                 element[0] = i;
                 element[1] = j;
                 return element;                
             }
-    // Return [-1,-1] if no result
-    printf("No result with specified target\n");
     element[0] = -1;
     element[1] = -1;
     return element;

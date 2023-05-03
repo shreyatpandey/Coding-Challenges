@@ -15,6 +15,18 @@
 
 
 
+    
+    
+    * EMM - States
+       *  ![EMM-States](https://user-images.githubusercontent.com/32083899/236010511-8e1a5f86-2cad-45e4-a6e4-4c21846f3232.png)
+
+
+
+
+
+
+    * ECM 
+       ![ECM](https://user-images.githubusercontent.com/32083899/236010653-a256c2ea-e402-4bef-a673-08eb3093ec7c.png)
 
 
 

@@ -39,6 +39,8 @@ Categorizing into various segments:-
    * Aligned and Free Malloc:- https://www.youtube.com/watch?v=EknIzqZZEWY
    * Unsigned char array:-
       * Set and Unset a bit inside unsigned char array:- https://stackoverflow.com/questions/63076036/bit-manipulation-inside-a-char-array?rq=1
+   * Union:-
+     * https://www.programiz.com/c-programming/c-unions
    
 * C++ :-
     * Type Cast Operators:- 

@@ -42,6 +42,8 @@ Categorizing into various segments:-
    * Union:-
      * https://www.programiz.com/c-programming/c-unions
    
+   * Pragma-Directive:-
+     * The pragma directive controls implementation-specific behavior of the compiler, such as disabling compiler warnings or changing alignment requirements   
 * C++ :-
     * Type Cast Operators:- 
       * https://www.bogotobogo.com/cplusplus/typecast.php

@@ -11,6 +11,7 @@
  * lseek() :- https://man7.org/linux/man-pages/man2/lseek.2.html
  * vnode() 
  * mount() :- https://man7.org/linux/man-pages/man2/mount.2.html
+ * mmap():- https://man7.org/linux/man-pages/man2/mmap.2.html
 
 
 # Link:-

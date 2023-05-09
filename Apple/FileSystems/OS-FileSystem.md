@@ -7,9 +7,10 @@
 #System Calls associated with fs/vnode:-
  * dup() :- https://man7.org/linux/man-pages/man2/dup.2.html
  * fget():- 
- * getdent() - https://man7.org/linux/man-pages/man2/getdents.2.html
+ * getdent() :- https://man7.org/linux/man-pages/man2/getdents.2.html
+ * lseek() :- https://man7.org/linux/man-pages/man2/lseek.2.html
  * vnode() 
-
+ 
 
 
 # Link:-

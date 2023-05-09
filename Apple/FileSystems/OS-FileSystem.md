@@ -4,13 +4,13 @@
   * The file abstraction contains information about an opened file such as the current file pointer. It only exists in memory.
   * Dentry:-  associates a name with an inode. It exists both on storage and in memory (for caching purposes).
 
-#System Calls associated with fs/vnode:-
+# System Calls associated with fs/vnode:-
  * dup() :- https://man7.org/linux/man-pages/man2/dup.2.html
  * fget():- 
  * getdent() :- https://man7.org/linux/man-pages/man2/getdents.2.html
  * lseek() :- https://man7.org/linux/man-pages/man2/lseek.2.html
  * vnode() 
- 
+ * mount() :- https://man7.org/linux/man-pages/man2/mount.2.html
 
 
 # Link:-

@@ -18,5 +18,6 @@
    * Virtual File System:- https://linux-kernel-labs.github.io/refs/heads/master/lectures/fs.html
    * Inode data structure man page:- https://man7.org/linux/man-pages/man7/inode.7.html
    * Difference between B and B+ tree:- https://stackoverflow.com/questions/870218/what-are-the-differences-between-b-trees-and-b-trees
+   * Best fit/First fit algorithm:- https://www.cs.nott.ac.uk/~pszgxk/courses/g53ops/Memory%20Management/MM07-allocationstrategies.html#:~:text=Best%20fit%20is%20slower%20than,use%20the%20largest%20hole%20available.
 
 

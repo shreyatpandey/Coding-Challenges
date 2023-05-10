@@ -12,6 +12,8 @@
  * vnode() 
  * mount() :- https://man7.org/linux/man-pages/man2/mount.2.html
  * mmap():- https://man7.org/linux/man-pages/man2/mmap.2.html
+ * fork() :- https://man7.org/linux/man-pages/man2/fork.2.html
+ * * execve() :- https://man7.org/linux/man-pages/man2/execve.2.html
 
 
 # Link:-

@@ -55,3 +55,8 @@ Categorizing into various segments:-
     * C++ video series:- https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb
     * Implement your own unique_ptr:- 
         * https://medium.com/swlh/c-smart-pointers-and-how-to-write-your-own-c0adcbdce04f
+
+
+* Sorting a large file:-
+  * https://en.wikipedia.org/wiki/External_sorting
+  * https://www.algosome.com/articles/how-to-sort-large-file.html

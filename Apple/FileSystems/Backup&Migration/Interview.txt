@@ -1,0 +1,4 @@
+Interviewer:- Kanchan Chandnani
+Question:-
+[1] Open ended question:- How would you migrate files from Windows to iOs Server?
+[2] Implement your own tail command

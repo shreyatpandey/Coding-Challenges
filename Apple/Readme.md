@@ -11,6 +11,7 @@ Categorizing into various segments:-
   * Emergency-Call:- 
       * https://blog.wirelessmoves.com/2016/07/volte-and-emergency-calls.html
       * https://www.sharetechnote.com/html/IMS_SIP_PSAP.html#WithoutUSIM_RRCConnectionRequest
+   * RRC- UE Capability Message:- https://www.sharetechnote.com/html/Handbook_LTE_UE_Capability.html#UMTS_RRC_ConnectionRequest
 
 * Embedded:-
   * Circular-Buffer-Explanation:- https://embeddedartistry.com/blog/2017/05/17/creating-a-circular-buffer-in-c-and-c/

@@ -1,6 +1,8 @@
 /*
 TC:- O(NLog(N))
 Space-Complextiry:- O(1)
+This contains duplicate.
+Clarify if the array contains duplicate or not
 */
 vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
         // Time O(NlogN) Space O(1)

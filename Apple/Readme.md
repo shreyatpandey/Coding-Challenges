@@ -48,8 +48,12 @@ Categorizing into various segments:-
    
    * Pragma-Directive:-
      * The pragma directive controls implementation-specific behavior of the compiler, such as disabling compiler warnings or changing alignment requirements
-     * Link:- https://stackoverflow.com/questions/3318410/pragma-pack-effect   
-* C++ :-
+     * Link:- https://stackoverflow.com/questions/3318410/pragma-pack-effect
+   
+   * Custom-Malloc:- 
+      * http://tharikasblogs.blogspot.com/p/include-include-include-mymalloc.html
+   
+  * C++ :-
     * Type Cast Operators:- 
       * https://www.bogotobogo.com/cplusplus/typecast.php
     * Upcasting and Downcasting:-

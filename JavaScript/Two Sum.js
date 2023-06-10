@@ -19,3 +19,7 @@ var twoSum = function(nums, target) {
     }
     return result;
 };
+let input = [2,7,11,15];
+let target = 9;
+var result = twoSum.call(this,input, target);
+console.log(result);

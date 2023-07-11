@@ -1,0 +1,8 @@
+Interviewer:- Patrick Muiton
+Coding question:-
+Implement these two functions
+void *MyMalloc(MyAllocatar* myallocator, size_t noOfBytes);
+void MyFree(void *free) ...Here is the confusion part
+
+Interviewer:- Siva
+Coding question:- cross-ramp signal

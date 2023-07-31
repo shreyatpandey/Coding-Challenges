@@ -67,4 +67,7 @@ Categorizing into various segments:-
 
 * Sorting a large file:-
   * https://en.wikipedia.org/wiki/External_sorting
-  * https://www.algosome.com/articles/how-to-sort-large-file.html
+  * https://www.algosome.com/articles/how-to-sort-large-file.htm
+ 
+* Link to study more about Race conditions:-
+  * https://www.cs.cmu.edu/~213/exams.html

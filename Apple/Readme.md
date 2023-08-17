@@ -33,6 +33,9 @@ Categorizing into various segments:-
   * Library for Posix-Thread(pthread):-
       * https://pubs.opengroup.org/onlinepubs/7908799/xsh/pthread.h.html
 
+   * Processes:-[ Refer to struct of Processes]
+       * https://www.ccs.neu.edu/home/skotthe/classes/cs5600/fall/2015/notes/Processes.pdf
+
 * C Advanced:-
    * Preprocessor:- https://gcc.gnu.org/onlinedocs/gcc-2.95.3/cpp_1.html
    * Little Endian-Big Endian:- https://www.section.io/engineering-education/what-is-little-endian-and-big-endian/

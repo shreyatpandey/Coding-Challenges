@@ -16,6 +16,20 @@ public:
         return Result;
     }
 };
+
+//vt - solution
+vector<vector<int>> construct2DArray(vector<int>& original, int m, int n) 
+{
+    vector<vector<int>> res;
+    if (m * n == original.size())
+        for (auto i : original) {
+            if (res.empty() || res.back().size() == n)
+                res.push_back({});
+            res.back().push_back(i);
+        }
+    return res;
+}
+
 //Square matrix without giving m and n would not work
 /*
 #include<bits/stdc++.h>

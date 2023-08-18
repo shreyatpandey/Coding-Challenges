@@ -32,3 +32,30 @@ public:
         return Result;
     }
 };
+
+void print(vector<vector<int>>&Input)
+{
+    int rowLength = Input.size();
+    for(auto x: Input)
+    {
+        for(auto col:x)
+        {
+            cout << col<< " ";
+        }
+        cout<<endl;
+    }
+}
+
+int main()
+{
+  Solution s;
+  vector<vector<int>>Input = {{1,2},{3,4}};
+  cout<<"|--- Test-Case: 1 ---|"<<endl;
+  auto Result = s.matrixReshape(Input,1, 4);
+  print(Result);
+  cout<<"| --- Test-Case: 2 ---|"<<endl;
+  Result = s.matrixReshape(Input,2,4);
+  print(Result);
+ return 0;   
+}
+

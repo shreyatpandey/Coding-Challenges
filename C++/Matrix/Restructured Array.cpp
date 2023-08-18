@@ -7,10 +7,10 @@ class Solution
     vector<int>QuerySearch(vector<int>&input,vector<vector<int>>&querysearch)
     {
         vector<int>Result ;
-        int LengthRow = input[0] ;
+        int LengthColumn = input[0] ;
         for(int i=0;i<querysearch.size();i++)
         {
-            int IndexPresent = (LengthRow*(querysearch[i][0]-1)) + querysearch[i][1] ;
+            int IndexPresent = (LengthColumn*(querysearch[i][0]-1)) + querysearch[i][1] ;
             if ( IndexPresent < input.size() )
             {
                 Result.push_back ( input[IndexPresent] );

@@ -4,7 +4,8 @@
 #define MAX_CAPACITY 20000
 char memory[MAX_CAPACITY] = {0};
 
-struct block{
+struct block
+{
  size_t size;
  int free;
  struct block *next; 

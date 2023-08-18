@@ -1,17 +1,9 @@
 #include<stdio.h> 
-#include<stdarg.h>						
+#include<stdarg.h>
+#include<stdlib.h>
  
-void Myprintf(char *,...); 				//Our printf function
+void Myprintf(char *,...); 				
 char* convert(unsigned int, int); 		//Convert integer number into octal, hex, etc.
- 
- 
-int main() 
-{ 
-	Myprintf(" WWW.FIRMCODES.COM \n %d", 9); 
-	
-	return 0;
-} 
- 
  
 void Myprintf(char* format,...) 
 { 
@@ -27,7 +19,6 @@ void Myprintf(char* format,...)
 	{ 
 		while( *traverse != '%' ) 
 		{ 
-			putchar(*traverse);
 			traverse++; 
 		} 
 		
@@ -70,10 +61,7 @@ void Myprintf(char* format,...)
 char *convert(unsigned int num, int base) 
 { 
 	static char Representation[]= "0123456789ABCDEF";
-	static char buffer[50]; 
-	char *ptr; 
-	
-	ptr = &buffer[49]; 
+	char *ptr = (char*)malloc(sizeof(char*));
 	*ptr = '\0'; 
 	
 	do 
@@ -84,3 +72,20 @@ char *convert(unsigned int num, int base)
 	
 	return(ptr); 
 }
+
+int main() 
+{ 
+	printf("|---Test-Case: 1 ---|\n");
+	Myprintf(" Integer-Value: %d", 9);
+	printf("\n");
+	
+	printf("|---Test-Case 2 ---|\n");
+	Myprintf("Integer-Value: %d", 56);
+	printf("\n");
+	
+	printf("|---Test-Case 3 ---|\n");
+	Myprintf("Hexadecimal Value:%x", 0xab);
+	printf("\n");
+	
+	return 0;
+} 

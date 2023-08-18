@@ -2,17 +2,20 @@
 #include <stdlib.h>
  
 // Function to swap two numbers
-void swap(char *x, char *y) {
-    char t = *x; *x = *y; *y = t;
+void swap(char *x, char *y) 
+{
+    char t = *x; 
+    *x = *y; 
+    *y = t;
 }
  
 // Function to reverse `buffer[i…j]`
 char* reverse(char *buffer, int i, int j)
 {
-    while (i < j) {
+    while (i < j) 
+    {
         swap(&buffer[i++], &buffer[j--]);
     }
- 
     return buffer;
 }
  

@@ -28,29 +28,29 @@ void Myprintf(char* format,...)
 		switch(*traverse) 
 		{ 
 			case 'c' : i = va_arg(arg,int);		//Fetch char argument
-						putchar(i);
-						break; 
+					   putchar(i);
+					   break; 
 						
 			case 'd' : i = va_arg(arg,int); 		//Fetch Decimal/Integer argument
-						if(i<0) 
-						{ 
+					   if(i<0) 
+					   { 
 							i = -i;
 							putchar('-'); 
-						} 
+					    } 
 						puts(convert(i,10));
 						break; 
 						
 			case 'o': i = va_arg(arg,unsigned int); //Fetch Octal representation
-						puts(convert(i,8));
-						break; 
+					  puts(convert(i,8));
+					  break; 
 						
 			case 's': s = va_arg(arg,char *); 		//Fetch string
-						puts(s); 
-						break; 
+					  puts(s); 
+					  break; 
 						
 			case 'x': i = va_arg(arg,unsigned int); //Fetch Hexadecimal representation
-						puts(convert(i,16));
-						break; 
+					  puts(convert(i,16));
+					  break; 
 		}	
 	} 
 	

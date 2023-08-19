@@ -1,3 +1,6 @@
 Q1] What are function pointer? Give one example of it
 Ans:- 
-Link:- https://www.guru99.com/c-function-pointers.html
+Link:- 
+  1. https://www.guru99.com/c-function-pointers.html
+  2. https://stackoverflow.com/questions/2592137/what-is-the-point-of-function-pointers
+

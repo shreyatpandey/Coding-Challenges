@@ -1,0 +1,34 @@
+Virtual Function:-
+Q1] Which of the following is not true about virtual function?
+Ans:- Virtual Function can be static.
+Virtual Functions can never be static
+
+Q2] Will derived class be ever called in the following function below?
+#include <iostream>
+using namespace std;
+
+class Base
+{
+    public:
+    virtual void show()
+    {
+        cout<<"Base class:"<<endl;
+    }
+};
+class Derived:public Base
+{
+    public:
+    virtual void show()
+    {
+        cout<<"Derived class:"<<endl;
+    }
+};
+
+int main()
+{
+    Derived d;
+    Base b = d;
+    b.show();
+    return 0;
+}
+

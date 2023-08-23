@@ -1,0 +1,5 @@
+Q] Which of the following opertors cannot be overloaded?
+Ans:- 
+Link:- https://www.scaler.com/topics/which-operator-cannot-be-overloaded/
+
+Q] 

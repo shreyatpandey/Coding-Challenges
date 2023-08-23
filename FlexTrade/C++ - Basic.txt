@@ -112,3 +112,24 @@ D: virtual functions are not members of the class
 Ans:- C
 A friend function is a function that isn't a member of a class but has access to the class's private and protected members.
 
+Q 10] Give the output of the following code
+#include <iostream>
+using namespace std;
+
+int i;
+void increment(int i)
+{
+    i++;
+}
+
+int main()
+{
+    for(i=0;i<10;increment(i))
+    {
+        
+    }
+    std::cout <<i<< std::endl;
+    return 0;
+}
+Ans:- This code will run forever
+

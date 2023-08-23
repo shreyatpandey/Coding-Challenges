@@ -98,3 +98,17 @@ int main()
    return 0;
 }
 
+Q8] Regarding map in STL, which of the following is true?
+a: Map can only have built in data type 
+b: Value can only have build in data type
+c: Map can have user defined data type but it has to be overloaded with '<' data type
+Ans:- C
+
+Q9] Which of the following is correct regarding C++ data members?
+A: Static members are not members of the class
+B: const members are not members of the class
+C: Friend functions are not members of the class
+D: virtual functions are not members of the class
+Ans:- C
+A friend function is a function that isn't a member of a class but has access to the class's private and protected members.
+

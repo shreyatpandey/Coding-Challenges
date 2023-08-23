@@ -1,0 +1,100 @@
+Q1] What is the effect of deleting a NULL pointer?
+A: Compile-time error
+B: Run-time error
+C: No effect
+D: Memory corruption
+Ans:- C
+
+Q2] Give the output of the following:
+int main()
+{
+  float a = 5;
+  switch(a)
+ {
+   case 5: cout<<"5"<<endl;
+    Default:cout<<"B<<endl; 
+  }
+  return 0;
+}
+Ans:- switch cannot take float value
+
+Q3] What is the output of the following below code?
+#include <bits/stdc++.h>
+using namespace std;
+class ABC
+{
+    public:
+     int &j;
+     ABC(int &val):j(val){}
+};
+int main()
+{
+    int k = 100;
+    ABC o1(k);
+    k = 150;
+    cout<<o1.j<<" "<<k<<endl;
+    return 0;
+}
+
+Q4] Will destructor be called in the below program?
+#include <bits/stdc++.h>
+using namespace std;
+
+class A
+{
+  public:
+   ~A()
+   {
+       cout<<"destroy";
+   }  
+};
+int main()
+{
+    vector<A*>*vec1 = new vector<A*>;
+    vector<A>*vec2 = new vector<A>;
+    return 0;
+}
+Ans:- No, it will not be called
+
+Q5] Give the output of the following code?
+int main()
+{
+   vector<int>numbers = {1,2,3,4,5,6,7,8};
+    auto first = numbers.begin();
+    auto second = numbers.end();
+    cout<<*first<<","<<second<<endl;
+    return 0;
+}
+Options:-
+A: 1,8
+B: 1,9
+C: Undefined behavior
+D: Program will not compile
+
+Q6]
+int main()
+{
+   vector<int>numbers = {1,2,3,4,5,6,7,8};
+    auto first = numbers.begin();
+    auto second = numbers.end();
+     numbers.push_back(9);
+    cout<<*first<<endl;
+    return 0;
+}
+Ans:- Here the output would be 1
+
+Q7] What would be the output of the following program?
+void update(int* ptr)
+{
+ptr = new int();
+*ptr = 10;
+}
+int main()
+{
+  int* ptr = new int();
+  *ptr = 55;
+   update(ptr);
+   cout<<*ptr<<endl;
+   return 0;
+}
+

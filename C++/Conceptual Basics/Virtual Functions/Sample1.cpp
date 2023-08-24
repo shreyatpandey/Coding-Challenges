@@ -20,5 +20,17 @@ int main()
     //Derived* d = new Base;
     //d->show();
 
+    /* The following lines of code will produce : is null */
+     Base* bp1;
+    Derived* d1 = dynamic_cast<Derived*>(bp1);
+    if(d1)
+    {
+        d1->show();
+    }
+    else
+    {
+        cout<<"Is null:"<<endl;
+    }
+
     return 0;
 }

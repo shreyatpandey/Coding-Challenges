@@ -133,3 +133,23 @@ int main()
 }
 Ans:- This code will run forever
 
+Q 11] Will the following piece of code run in C?
+struct Member
+{
+  int m;
+  char b;
+  static int d;
+};
+
+int main()
+{
+    static int d = 10;
+    printf("sizeof(d):%ld\n",sizeof(d));
+    struct Member m;
+    printf("sizeof(m):%ld\n",sizeof(m));
+    return 0;
+}
+Ans:- No, in C , struct members cannot have static member field.
+However this would compile in C++ environment.
+
+

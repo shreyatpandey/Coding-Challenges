@@ -55,6 +55,9 @@ Categorizing into various segments:-
    
    * Custom-Malloc:- 
       * http://tharikasblogs.blogspot.com/p/include-include-include-mymalloc.html
+
+  * Processing - Compilation - Assembly - Linking:-
+     * https://passlab.github.io/ITSC3181/notes/lecture02_CompilationAssemblingLinkingProgramExecution.pdf
    
   * C++ :-
     * Type Cast Operators:- 

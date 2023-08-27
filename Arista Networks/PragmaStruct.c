@@ -34,4 +34,6 @@ int main()
     printf("Size of double:%ld\n",sizeof(double));
     printf("Size of char:%d\n",sizeof(char));
     printf("Hence size of struct is sum of all datatypes inside struct\n");
-} 
+}
+/* Method to calculate size of structure without padding , is sum of all the individual members and then round it off to the next power of 2 value*/
+

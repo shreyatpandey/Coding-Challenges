@@ -37,6 +37,9 @@ public:
 };
 
 /*fast and slow pointer */
+//TC:- O(N) where N is the length of link list
+//SC:- O(1) as we are not adding any extra space
+
 class Solution {
 public:
     ListNode* middleNode(ListNode* head) {

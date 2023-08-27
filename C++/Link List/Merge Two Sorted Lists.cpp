@@ -12,6 +12,8 @@ Output: 1->1->2->3->4->4 */
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+
+//Time-Complexity:- O(M+N), where M is the length of one List and N is the list of another list
 class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {

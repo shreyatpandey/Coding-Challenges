@@ -7,6 +7,10 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
+
+//TC:- O(N) where N is the number of nodes in the tree
+//SC:- O(H) for recursion stack where H is the height of the tree
+
 class Solution {
     private:
     TreeNode* construct_BST(vector<int>&nums,int left,int right)

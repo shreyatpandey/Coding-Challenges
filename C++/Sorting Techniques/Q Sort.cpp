@@ -1,6 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*
+   TC:- 
+   Best-Case:- O(nlog(n))
+   Average-Case:- O(nlog(n))
+   Worst - Case:- O(n^2)
+*/
+// SC:- O(1)
+
 class Solution
 {
    public:

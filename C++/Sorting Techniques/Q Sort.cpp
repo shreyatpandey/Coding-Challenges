@@ -7,7 +7,7 @@ using namespace std;
    Average-Case:- O(nlog(n))
    Worst - Case:- O(n^2)
 */
-// SC:- O(1)
+// SC:- O(log(n))
 
 class Solution
 {

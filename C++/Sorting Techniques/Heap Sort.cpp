@@ -25,10 +25,10 @@ class Solution
 		largest = right;
 
 	  if(largest != i)
-	  {
+	   {
 		swap(input[i],input[largest]);
 		heapify(input,size,largest);
-	 }
+	   }
 	}
 	void heap_sort(vector<int>&input,int size)
 	{
@@ -36,10 +36,10 @@ class Solution
 		heapify(input,size,i);
 	
 	  for(int i=size-1;i>=0;i--)
-	 {
+	  {
 		swap(input[0],input[i]);
 	       heapify(input,i,0);
-	}
+	   }
 	}
 	void print_result(vector<int>&input)
 	{

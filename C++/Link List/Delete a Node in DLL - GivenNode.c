@@ -31,6 +31,7 @@ void appendNode(Node_t** head_ref,int Value)
     return;
 }
 
+/* Delete a node given node only*/
 void DeleteNodeDLL(Node_t** head,Node_t* input)
 {
     /* if the head node itself has to be deleted*/
@@ -52,6 +53,36 @@ void DeleteNodeDLL(Node_t** head,Node_t* input)
     free(input);
     return;
 }
+
+/* Delete a node given only value */
+void DeleteNodeDLLGivenValue(Node_t **head, int deleteValue)
+{
+    Node_t *previous = NULL;
+    Node_t* current = *head;
+   /*if the head itself has to be deleted*/
+   if(current!= NULL && current->Val == deleteValue)
+   {
+       Node_t* temp = current;
+       current = temp->next;
+       free(temp);
+       *head = current;
+   }
+   else
+   {
+       while(current != NULL && current->Val != deleteValue)
+       {
+           current = current->next;
+       }
+       current->prev->next = current->next;
+       if(current->next!= NULL)
+       {
+           current->next->prev = current->prev;
+       }
+       free(current);
+   }
+    return;
+}
+
 
 void printNode(Node_t* head_ref)
 {
@@ -82,7 +113,9 @@ int main()
     printf("|---Delete Head Node ---|\n");
     DeleteNodeDLL(&head, head);
     printNode(head);
-    
 
+    // DeleteNodeDLLGivenValue(&head,5);
+    // DeleteNodeDLLGivenValue(&head, 10);
+    
     return 0;
 }

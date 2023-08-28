@@ -46,3 +46,18 @@ ListNode* Solution:: ReverseLinkList(ListNode* head)
     head = previous ;
     return head;
 }
+//TC:- O(N) where N is the lenght of the link list
+//No reverse is required
+//SC:- O(1)
+class Solution {
+public:
+    int getDecimalValue(ListNode* head) {
+        int num = head->val;
+        while(head->next != NULL)
+        {
+            num = num*2 + head->next->val;
+            head = head->next;
+        }
+        return num;
+    }
+};

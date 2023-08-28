@@ -1,6 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/* Analysis of Time Complexity:-
+   TC for Heapify:- O(log(n))
+   There would be n calls to heapify:- TC = O(n*log(n))
+   Best-Case = Average-Case = Worst-Case = O(n*log(n))
+*/
+/* 
+   SC:- O(1)
+*/
+
 class Solution
 {
    public:

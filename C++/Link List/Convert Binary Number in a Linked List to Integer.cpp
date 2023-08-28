@@ -8,6 +8,10 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+
+//TC:- O(N) where N is the length of Link List
+//SC:- O(1)
+
 class Solution {
     private:
         ListNode* ReverseLinkList(ListNode* head);

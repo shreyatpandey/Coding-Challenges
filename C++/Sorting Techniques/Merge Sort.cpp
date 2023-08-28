@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/* TC:- 
+   Best Case = Average Case = Worst Case = O(nlog(n))
+*/
+/* SC:- O(n)
+*/
+
 void merge(int arr[],int low,int mid,int high)
 {
    int n1,n2;

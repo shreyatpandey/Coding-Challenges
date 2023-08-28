@@ -46,13 +46,7 @@ class Solution
 int main()
 {
    Solution s;
-   vector<int>input;
-   input.push_back(10);
-   input.push_back(7);
-   input.push_back(8);
-   input.push_back(9);
-   input.push_back(1);
-   input.push_back(5);
+   vector<int>input = {10,7,8,9,1,5};
    s.quicksort(input,0,input.size()-1);
    cout<<"[";
    for(size_t j=0;j<input.size();j++)

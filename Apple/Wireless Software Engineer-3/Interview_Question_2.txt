@@ -16,6 +16,7 @@ Operating-System:-
 Coding:-
 (1) Write the definition of function pointer
 (2) Debugging code:-
+// Function to add extra space at the end
 char* AddNewLineSpace(char* s)
 {
   char buffer[1024];
@@ -23,6 +24,18 @@ char* AddNewLineSpace(char* s)
   buffer[strleng(s)-1] = '\n';
   return buffer
 }
+/* Correct Solution for this*/
+char* newString(char* s)
+{
+    char* newBuffer = (char*)malloc(sizeof(s));
+    if(s != NULL)
+    {
+        strncpy(newBuffer,s,strlen(s));
+        newBuffer[strlen(s)] = '\n';
+    }
+    return newBuffer;
+}
+
 (3)Two-Sum in C
 (4) Swap two bits in an integer
 

@@ -35,3 +35,8 @@ int main() {
   C c2 = c1;
 }
 Output:- 12
+Explanation:-
+On the first line, C c1;, the object c1 is default initialized, so the default constructor is called, printing 1.
+
+On the second line, C c2 = c1;, the object c2 is copy initialized, so the copy constructor is called, printing 2.
+(Note that no assignment is taking place, even though there's a = involved.)

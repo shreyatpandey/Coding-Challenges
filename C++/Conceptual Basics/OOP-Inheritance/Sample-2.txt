@@ -72,3 +72,17 @@ int main(){
 //Output:- 01
 // Both a and b refer to the same variable x.
 // The fact that b is a const reference does not guarantee that b isn't modified from elsewhere, only that we can't modify it.
+
+Problem-5:-
+#include <iostream>
+#include <type_traits>
+
+int j = 1;
+
+int main() 
+{
+  int& i = j;
+  j = 2;
+  std::cout << i << j;
+}
+// Output:- 22

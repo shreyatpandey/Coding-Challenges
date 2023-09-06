@@ -31,6 +31,13 @@ int main()
     b.show();
     return 0;
 }
+// Output:- Base Class: and not Derived Class:
+// For Derived Class, it should be 
+/*
+Derived d;
+Base *b = &d;
+b->show();
+*/
 
 Q3] Which of the following is true about virtual functions?
 A: static linkage

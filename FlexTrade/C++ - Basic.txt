@@ -152,4 +152,51 @@ int main()
 Ans:- No, in C , struct members cannot have static member field.
 However this would compile in C++ environment.
 
+Q 12] 
+#include<iostream>
+using namespace std;
+
+class Integer
+{
+        int num;
+public:
+        Integer()
+        {
+                num = 0;
+                cout << "1";
+        }
+        Integer(int arg)
+        {
+                cout << "2";
+                num = arg;
+        }
+        int getValue()
+        {
+                cout << "3";
+                return num;
+        }
+};
+int main()
+{
+        Integer i; //1
+        i = 10; // 2 i(10)
+        cout << i.getValue(); //3
+        return 0;
+}
+// Output:- 12310
+
+Q 13] 
+#include<iostream>
+using namespace std;
+
+int main()
+{
+char arr[30] = "hello";
+char *p = arr;
+(*p)++;
+printf("%s, ", p); //ello
+p++;
+printf("%s",p);
+}
+
 

@@ -1,0 +1,23 @@
+Question-1:-
+#include <iostream>
+class C {
+public:
+  explicit C(int) {
+    std::cout << "i";
+  }
+  C(double) {
+    std::cout << "d";
+  }
+};
+
+int main() {
+  C c1(7);
+  C c2 = 7;
+}
+//Output:- id
+These are two examples of initialization. 
+The first form, C c1(7), is called direct-initialization, t
+he second, C c2 = 7, is called copy-initialization. 
+In most cases they are equivalent, but in this example they are not, since the int constructor is explicit.
+
+

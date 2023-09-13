@@ -59,6 +59,11 @@ class Solution:
  TC:- O(N)
  SC:- O(1) or O(N)
  '''
+'''
+Walk through this example:-
+s = "ab)(c)"
+
+'''
 class Solution:
     def minRemoveToMakeValid(self, s: str) -> str:
         cnt_open, cnt_close, res = 0, 0, ''
@@ -71,6 +76,7 @@ class Solution:
                 res = res + ch
 
         s = res
+        #s = ab(c)
         
         cnt_open, cnt_close, res = 0, 0, ''
         for ch in reversed(s):
@@ -78,7 +84,8 @@ class Solution:
             if ch == ')': cnt_close += 1
             if cnt_close < cnt_open:
                 cnt_open -= 1
+                #this if condition is not hit
             else:
                 res = ch + res
-                
+                #this string is constructed in reverse
         return res

@@ -18,7 +18,8 @@ Output: [""]
 
 '''
 Time-Complexity:-
-n BFS we handle the states level by level, in the worst case, 
+Let n be the number of parentheses in the string.
+While doing BFS we handle the states level by level, in the worst case, 
 we need to handle all the levels, we can analyze the time complexity level by level and add them up to get the final complexity.
 
 On the first level, there's only one string which is the input string s, let's say the length of it is n, to check whether it's valid, we need O(n) time. 

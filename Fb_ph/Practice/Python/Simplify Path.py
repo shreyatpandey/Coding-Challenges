@@ -19,6 +19,13 @@ Explanation: In the canonical path, multiple consecutive slashes are replaced by
 '''
 
 '''
+Constraints:
+1 <= path.length <= 3000
+path consists of English letters, digits, period '.', slash '/' or '_'.
+path is a valid absolute Unix path.
+'''
+
+'''
 Time-Complexity:- O(N) where N is the length of input str
 Space-Complexity:- O(N) -- for stack and O(n) for list split 
 '''

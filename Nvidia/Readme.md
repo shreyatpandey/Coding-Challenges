@@ -10,3 +10,6 @@
 
 * Ethernet - Concepts:-
    * https://www.geeksforgeeks.org/ethernet-frame-format/
+
+* RAW - Socket:-
+    * https://linux.die.net/man/7/rsocket

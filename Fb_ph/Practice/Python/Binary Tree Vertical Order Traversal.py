@@ -1,4 +1,9 @@
 '''
+Input:- 
+Input: root = [3,9,20,null,null,15,7]
+Output: [[9],[3,15],[20],[7]]
+'''
+'''
 TC:- O(N)
 where N is the number of nodes
 There is no need of sorting here
@@ -7,6 +12,11 @@ where N is the number of node
 
 Main Point:- We only need to know the range of the column index = [minColumn,maxColumn]
 this range can be used to generate the outpus without the need of sorting
+'''
+'''
+Constraints:
+The number of nodes in the tree is in the range [0, 100].
+-100 <= Node.val <= 100
 '''
 from collections import defaultdict
 class Solution:

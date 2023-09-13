@@ -10,18 +10,18 @@ Explanation: There are 4 substrings: "10", "01", "10", "01" that have equal numb
 class Solution {
 public:
     int countBinarySubstrings(string s) {
-        int currentIndex = 1, previous = 0, Result = 0;
+        int currentCount = 1, previous = 0, Result = 0;
         for(int i=1;i<s.size();i++)
         {
             if(s[i] == s[i-1])
             {
-                currentIndex += 1;
+                currentCount += 1;
             }
             else
             {
-                Result += min(currentIndex,previous);
-                previous = currentIndex;
-                currentIndex = 1;
+                Result += min(currentCount,previous);
+                previous = currentCount;
+                currentCount = 1;
             }
         }
         Result = Result + min(currentIndex,previous);

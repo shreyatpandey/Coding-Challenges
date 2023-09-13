@@ -1,4 +1,10 @@
 '''
+Example 1:
+Input: words = ["hello","leetcode"], order = "hlabcdefgijkmnopqrstuvwxyz"
+Output: true
+Explanation: As 'h' comes before 'l' in this language, then the sequence is sorted.
+'''
+'''
 Let N be the length of order, and M be the total number of characters in words.
 
 Time complexity : O(M).
@@ -14,6 +20,13 @@ Space complexity : O(1)
 The only extra data structure we use is the hashmap/array that serves to store the letter-order relations for each word in order. 
 Because the length of order is fixed as 26, this approach achieves constant space complexity.
 
+'''
+'''
+Constraints:
+1 <= words.length <= 100
+1 <= words[i].length <= 20
+order.length == 26
+All characters in words[i] and order are English lowercase letters.
 '''
 
 class Solution(object):

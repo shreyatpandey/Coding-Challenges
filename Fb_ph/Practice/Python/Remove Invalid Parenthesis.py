@@ -33,6 +33,10 @@ T(n) = n x C(n, n) + (n-1) x C(n, n-1) + ... + 1 x C(n, 1) = n x 2^(n-1)
 
 '''
 
+'''
+Walk through with this example:- '())'
+Output:- '()'
+'''
 class Solution:
     def removeInvalidParentheses(self, s: str) -> List[str]:
         # define when a combination of parenthesis is still valid
@@ -46,15 +50,21 @@ class Solution:
             return counter == 0
         # the actual BFS, we return the minimum of removals, so we stop as soon as we have something
         res, frontier = set() , set([s])
+        #frontier = set of list = {'())'}
         while not res:
             _next = set()
             for candidate in frontier:
-                if valid(candidate): res.add(candidate); continue
+                if valid(candidate): 
+                    res.add(candidate); 
+                    #res = '()'
+                    continue
                 # generate more candidates based on this candidate
                 for i, letter in enumerate(candidate):
                     # skip trash
-                    if letter not in "()": continue
+                    if letter not in "()": 
+                        continue
                     _next.add(candidate[:i] + candidate[i+1:])
             frontier = _next
+            #frontier = ')'
         return res
         

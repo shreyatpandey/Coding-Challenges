@@ -42,4 +42,12 @@ class Solution:
         for i in range(min_column,max_column+1):
             Output.append(columnTable[i])
         return Output
+# Output for one of the above test-case
+'''
+('min_column, max_column', 0, 0)
+('min_column, max_column', -1, 0)
+('min_column, max_column', -1, 1)
+('min_column, max_column', -1, 1)
+('min_column, max_column', -1, 2)
+'''
         

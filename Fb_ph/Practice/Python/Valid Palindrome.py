@@ -36,7 +36,11 @@ Example 1:
 Input: s = "A man, a plan, a canal: Panama"
 Output: true
 Explanation: "amanaplanacanalpanama" is a palindrome.
-
+'''
+'''
+Constraints:
+1 <= s.length <= 2 * 105
+s consists only of printable ASCII characters
 '''
 class Solution:
     def isPalindrome(self, s: str) -> bool:

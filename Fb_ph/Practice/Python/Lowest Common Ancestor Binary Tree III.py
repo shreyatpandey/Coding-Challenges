@@ -11,6 +11,10 @@ class Node {
 }
 
 '''
+'''
+TC:- O(n) where n is the height of the tree
+SC:- O(1) 
+'''
 class Solution:
     def lowestCommonAncestor(self, p: 'Node', q: 'Node') -> 'Node':
         def Depth(node):

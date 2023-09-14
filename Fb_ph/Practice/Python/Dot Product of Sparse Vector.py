@@ -85,7 +85,7 @@ class Solution(object):
         for i,num in enumerate(nums):
             if num:
                 self.nums.append((i,num))
-    def dotProdut(Self,vec):
+    def dotProdut(self,vec):
         DotProduct = 0
         i,j = 0,0
         while i<len(self.nums) and j<len(vec.nums):

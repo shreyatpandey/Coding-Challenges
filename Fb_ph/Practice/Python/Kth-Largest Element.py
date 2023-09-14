@@ -63,3 +63,18 @@ class Solution:
 
         # kth largest is (n - k)th smallest 
         return select(0, len(nums) - 1, len(nums) - k)
+
+'''
+Approach:- 2
+TC:- O(n.log(k)) , operation of heapify take O(logk) and its called n times where n is the number of elements in array/lis
+SC:- O(k) , heap uses k space
+'''
+class Solution:
+    def findKthLargest(self, nums, k):
+        heap = []
+        for num in nums:
+            heapq.heappush(heap, num)
+            if len(heap) > k:
+                heapq.heappop(heap)
+        
+        return heap[0]

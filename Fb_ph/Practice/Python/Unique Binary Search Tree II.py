@@ -26,7 +26,7 @@ TC:- O(4^n/n*sqrt(n))
 SC:- O(4^n/n*sqrt(n))
 '''
 class Solution:
-    def generateTrees(self, n: int):
+    def generateTrees(self, n: int) -> List[Optional[TreeNode]]:
         def generate_trees(start, end):
             if start > end:
                 return [None,]
@@ -42,5 +42,5 @@ class Solution:
                         current_tree.left = l
                         current_tree.right = r
                         all_trees.append(current_tree)
-            
             return all_trees
+        return generate_trees(1, n) if n else []

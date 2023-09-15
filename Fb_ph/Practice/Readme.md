@@ -3,4 +3,6 @@
 * https://leetcode.com/problems/binary-tree-vertical-order-traversal/description/
 * https://leetcode.com/problems/valid-palindrome-ii
 * https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses
-* Valid Word Abbreviation
+* https://leetcode.com/problems/valid-word-abbreviation
+* https://leetcode.com/problems/dot-product-of-two-sparse-vectors
+* https://leetcode.com/problems/nested-list-weight-sum

@@ -33,6 +33,7 @@ SC:- O(N)
 for the stack space to contain N Node of the tree
 '''
 '''
+Sample Input:- [7,3,15,null,null,9,20]
 Sample Output:-
 stack: [TreeNode{val: 7, left: TreeNode{val: 3, left: None, right: None},
 right: TreeNode{val: 15, left: TreeNode{val: 9, left: None, right: None},
@@ -63,10 +64,13 @@ class BSTIterator:
         while root:
             self.stack.append(root)
             root = root.left
+        #print("stack:",self.stack)
 
     def next(self) -> int:
         node = self.stack.pop()
         x = node.right
+        print("node.val:",node.val)
+        print("x:",x)
         while x:
             self.stack.append(x)
             x = x.left

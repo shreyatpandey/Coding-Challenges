@@ -28,18 +28,36 @@ for the visited list for each space cell
 '''
 
 def shortestPathBinaryMatrix(grid):
-	n = len(grid)
-	dirs = [(-1,-1),(-1,0),(0,-1),(1,0),(1,-1),(0,1),(-1,1),(1,1)]
-	if grid[0][0] or grid[n-1][n-1]:
-		return -1
-	q = [(0, 0, 1)]
-	grid[0][0] = 1
-	for i, j, d in q:
-		if i == n-1 and j == n-1: return d
-		for row,col in dirs:
-			x = row + i
-			y = col + j
-			if 0 <= x < n and 0 <= y < n and not grid[x][y]:
-				grid[x][y] = 1
-				q.append((x, y, d+1))
-	return -1
+    n = len(grid)
+    dirs = [(-1,-1),(-1,0),(0,-1),(1,0),(1,-1),(0,1),(-1,1),(1,1)]
+    if grid[0][0] or grid[n-1][n-1]:
+        return -1
+    q = [(0, 0, 1)]
+    grid[0][0] = 1
+    for i, j, d in q:
+        if i == n-1 and j == n-1: 
+            return d
+        for row,col in dirs:
+            x = row + i
+            y = col + j
+            if 0 <= x < n and 0 <= y < n and not grid[x][y]:
+                grid[x][y] = 1
+                q.append((x, y, d+1))
+    return -1
+
+if __name__ == '__main__':
+    print("Test-Case:1")
+    grid = [[0,1],[1,0]]
+    print(shortestPathBinaryMatrix(grid))
+    
+    print("Test-Case:2")
+    grid = [[0,0,0],[1,1,0],[1,1,0]]
+    print(shortestPathBinaryMatrix(grid))
+
+'''
+Output:-
+Test-Case:1
+2
+Test-Case:2
+4
+'''

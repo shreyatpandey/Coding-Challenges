@@ -25,13 +25,15 @@ The values of the nodes in the tree are unique.
 Let us use dfs(level, node) function, where:
 
 level is distance between root of our tree and current node we are in.
-result of this function is the distance between node and its farthest children: that is the largest numbers of steps we need to make to reach leaf.
+result of this function is the distance between node and its farthest children: 
+that is the largest numbers of steps we need to make to reach leaf.
 So, how exactly this function will work:
 
 If not node, then we are in the leaf and result is 0.
 
 in other case, we run recursively dfs for node.left and node.right.
-What we keep in our cand: in first value sum of distances to root and to farthest leaf, second value is distance to root and final value is current node.
+What we keep in our cand: in first value sum of distances to root and to farthest leaf, 
+second value is distance to root and final value is current node.
 Note, that cand[0] represent length of the longest path going from root to leaf, through our node.
 if cand[0] > self.ans[0]: it means that we found node with longer path going from root to leaf, and it means that we need to update self.ans.
 Also, if cand[0] = self.ans[0] and also lft = rgh, it means that we are now on the longest path from root to leaf and we have a fork: 

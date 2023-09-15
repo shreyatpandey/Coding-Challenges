@@ -9,6 +9,15 @@
 | Valid Word Abbreviation | https://leetcode.com/problems/valid-word-abbreviation  | TC:- O(max(word,abbr))<br>SC:- O(1)   |
 | Dot Product Of Two Sparse Vectors | https://leetcode.com/problems/dot-product-of-two-sparse-vector  | TC:-O(N)   |
 | Nested List Weight Sum | https://leetcode.com/problems/nested-list-weight-sum | TC:- O(N)<br>SC:-O(N)   |
+| Basic Calculator II | https://leetcode.com/problems/basic-calculator-ii/description/ | TC:-O(N)   |
+| Lowest Common Ancestor Of Binary Tree-III | https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/description/ | TC:- O(N)<br>SC:-O(N)   |
+| Simplify Path | https://leetcode.com/problems/simplify-path  | TC:-O(N)   |
+| Group Shifted Strings | https://leetcode.com/problems/group-shifted-strings | TC:- O(N)<br>SC:-O(N)   |
+| Random Pick With Weight| https://leetcode.com/problems/random-pick-with-weight/description/  | TC:- O(max(word,abbr))<br>SC:- O(1)   |
+| Range Sum Of BST | https://leetcode.com/problems/range-sum-of-bst/description/  | TC:-O(N)   |
+| Kth Largest Element In An Array| https://leetcode.com/problems/kth-largest-element-in-an-array/description/ | TC:- O(N)<br>SC:-O(N)   |
+
+
 
 
 

@@ -6,3 +6,9 @@
 * https://leetcode.com/problems/valid-word-abbreviation
 * https://leetcode.com/problems/dot-product-of-two-sparse-vectors
 * https://leetcode.com/problems/nested-list-weight-sum
+
+
+
+| Attempt | #1    | #2    |
+| :---:   | :---: | :---: |
+| Seconds | 301   | 283   |

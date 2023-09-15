@@ -9,6 +9,9 @@
 
 
 
-| Attempt | #1    | #2    |
+| Question | Link  | Time-Complexity   |
 | :---:   | :---: | :---: |
-| Seconds | 301   | 283   |
+| Building With An Ocean View | https://leetcode.com/problems/buildings-with-an-ocean-view/description/  | 283   |
+| Binary Tree Vertical Order Traversal | https://leetcode.com/problems/binary-tree-vertical-order-traversal/description  | 283   |
+| Valid Palindrome II | https://leetcode.com/problems/valid-palindrome-ii | 283   |
+

@@ -27,6 +27,10 @@ one will have prefix sum ending at that index from end, using kadane's algorithm
 For each i these array's will denote maximum subarray ending at i-1 and 
 maximum subarray starting at i+1 so when you add these two values it will denote maximum subarray after deleting i.
 '''
+'''
+TC:- O(n)
+SC:- O(n)
+'''
 class Solution:
     def maximumSum(self, arr: List[int]) -> int:
         n = len(arr)

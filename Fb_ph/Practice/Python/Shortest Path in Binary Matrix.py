@@ -10,7 +10,12 @@ The length of a clear path is the number of visited cells of this path.
 
 Input: grid = [[0,1],[1,0]]
 Output: 2
-
+'''
+'''
+n == grid.length
+n == grid[i].length
+1 <= n <= 100
+grid[i][j] is 0 or 1
 '''
 '''
 Comment:- To avoid revisiting we can securely set the visiting grid as non-empty

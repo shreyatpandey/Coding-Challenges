@@ -16,11 +16,16 @@ Output: "cbad"
 Explanation: 
 "a", "b", "c" appear in order, so the order of "a", "b", "c" should be "c", "b", and "a". 
 Since "d" does not appear in order, it can be at any position in the returned string. "dcba", "cdba", "cbda" are also valid outputs.
+
+Example 2:
+Input: order = "cbafg", s = "abcd"
+Output: "cbad"
 '''
 '''
 Question to ask?
 Are there any duplicates in order string? Mostly they are unique
 Will input have null string?
+Whether the characters are in uppper case or lowercase?
 '''
 
 '''

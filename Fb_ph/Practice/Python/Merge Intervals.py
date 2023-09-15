@@ -47,9 +47,11 @@ Otherwise, we put the new interval into the left subtree or right subtree.
 
 Why do we use middle for comparison and not start or end boundaries?
 The reason is that we can use merge-sort technique to query the merged intervals result when the left subtree does not overlap with the right subtree.
-query - Use merge-sort technique by retrieving the merged intervals of the left subtree (i.e. left_intervals) and those of the right subtree (i.e. right_intervals). Because of the implementation of add, we can guarantee that
-
-if there's an interval in the left_intervals that overlaps with the current node, then we know that all the intervals after that interval overlaps with the current node.
+query - Use merge-sort technique by retrieving the merged intervals of the left subtree (i.e. left_intervals) 
+and those of the right subtree (i.e. right_intervals).
+Because of the implementation of add, we can guarantee that
+if there's an interval in the left_intervals that overlaps with the current node, 
+then we know that all the intervals after that interval overlaps with the current node.
 The first few intervals or zero intervals in the right_intervals overlap with the current node.
 Here's the visualization:
 
@@ -129,8 +131,8 @@ class Solution:
 '''
 '''
 Initial sorting will not help much since it consists of large dataset
-Priority Queue would also not be not of much help as it would take care of only min interval and for rest of the interval would not be in sorted order
-
+Priority Queue would also not be not of much help as it would take care of only min interval and 
+for rest of the interval would not be in sorted order
 '''
 
 

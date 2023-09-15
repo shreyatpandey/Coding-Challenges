@@ -69,8 +69,8 @@ class BSTIterator:
     def next(self) -> int:
         node = self.stack.pop()
         x = node.right
-        print("node.val:",node.val)
-        print("x:",x)
+        #print("node.val:",node.val)
+        #print("x:",x)
         while x:
             self.stack.append(x)
             x = x.left

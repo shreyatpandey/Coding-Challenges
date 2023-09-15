@@ -17,6 +17,12 @@ Constraints:
 1 <= intervals.length <= 10^4
 0 <= starti < endi <= 10^6
 '''
+'''
+Complexity:-
+TC:- O(nlog(n)) sorting start and end timings
+SC:- O(n) this is used for two separate arrays for start_time and end_time
+
+'''
 class Solution:
     def minMeetingRooms(self, intervals: List[List[int]]) -> int:
         # If there are no meetings, we don't need any rooms.

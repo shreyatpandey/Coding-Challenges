@@ -56,7 +56,7 @@ if __name__ == '__main__':
     nextPermutation(nums)
     print(nums)
     
-    print("Test Case-1:")
+    print("Test Case-2:")
     nums = [2,1,3]
     nextPermutation(nums)
     print(nums)

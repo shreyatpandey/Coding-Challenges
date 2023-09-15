@@ -32,18 +32,49 @@ Perform the reversal of the from the index for the last ascending position to th
 Time-Complexity:- O(N)
 Space-Complexity :- O(1)
 '''
-def nextPermutation(self, nums):
+def nextPermutation(nums):
     i = j = len(nums)-1
     while i > 0 and nums[i-1] >= nums[i]:
         i -= 1
     if i == 0:   # nums are in descending order
         nums.reverse()
-        return 
+        return
+    print("i:",i)
     k = i - 1    # find the last "ascending" position
     while nums[j] <= nums[k]:
         j -= 1
+    print("k:",k)
     nums[k], nums[j] = nums[j], nums[k]  
     l, r = k+1, len(nums)-1  # reverse the second part
     while l < r:
         nums[l], nums[r] = nums[r], nums[l]
         l +=1 ; r -= 1
+
+if __name__ == '__main__':
+    print("Test Case-1:")
+    nums = [1,2,3]
+    nextPermutation(nums)
+    print(nums)
+    
+    print("Test Case-1:")
+    nums = [2,1,3]
+    nextPermutation(nums)
+    print(nums)
+    
+    print("Test Case-3:")
+    nums = [3,2,1]
+    nextPermutation(nums)
+    print(nums)
+    
+'''
+Test Case-1:
+i: 2
+k: 1
+[1, 3, 2]
+Test Case-1:
+i: 2
+k: 1
+[2, 3, 1]
+Test Case-3:
+[1, 2, 3]
+'''

@@ -12,7 +12,7 @@ Output:- [[1,4]]
 '''
 '''
 TC:- O(nlog(n))
-SC:- O(logN) for mergesort 
+SC:- O(logN) or O(n) for mergesort 
 '''
 class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:

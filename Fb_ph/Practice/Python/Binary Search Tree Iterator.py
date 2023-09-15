@@ -11,10 +11,10 @@ boolean hasNext()
 int next() 
 -- Moves the pointer to the right, then returns the number at the pointer.
 
-Notice that by initializing the pointer to a non-existent smallest number, the first call to next() will return the smallest element in the BST.
-
-You may assume that next() calls will always be valid. That is, there will be at least a next number in the in-order traversal when next() is called.
-
+Notice that by initializing the pointer to a non-existent smallest number, 
+the first call to next() will return the smallest element in the BST.
+You may assume that next() calls will always be valid. 
+That is, there will be at least a next number in the in-order traversal when next() is called.
 '''
 '''
 TC:-
@@ -31,7 +31,23 @@ Amortized(Average) Time:- O(1)
 
 SC:- O(N)
 for the stack space to contain N Node of the tree
-
+'''
+'''
+Sample Output:-
+stack: [TreeNode{val: 7, left: TreeNode{val: 3, left: None, right: None},
+right: TreeNode{val: 15, left: TreeNode{val: 9, left: None, right: None},
+right: TreeNode{val: 20, left: None, right: None}}}, 
+TreeNode{val: 3, left: None, right: None}]
+node.val: 3
+x: None
+node.val: 7
+x: TreeNode{val: 15, left: TreeNode{val: 9, left: None, right: None}, right: TreeNode{val: 20, left: None, right: None}}
+node.val: 9
+x: None
+node.val: 15
+x: TreeNode{val: 20, left: None, right: None}
+node.val: 20
+x: None
 '''
 
 # Definition for a binary tree node.

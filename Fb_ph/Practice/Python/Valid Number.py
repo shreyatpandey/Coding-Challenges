@@ -148,6 +148,6 @@ class Solution:
             if c not in state[currentState].keys():
                 return False
             currentState = state[currentState][c]
-        if currentState not in [3,5,8,9]:
+        if currentState not in [3,5,8]:
             return False
         return True

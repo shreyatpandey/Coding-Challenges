@@ -25,10 +25,13 @@ Rules:-
     Both decimal numbers and integers must contain at least one digit.
         A sign ("+" or "-")
 
-    Sign characters are optional for both decimal numbers and integers, but if one is present, it will always be the first character. Note, this means that a sign character can also appear immediately after an exponent.
+    Sign characters are optional for both decimal numbers and integers, but if one is present, 
+    it will always be the first character. 
+    Note, this means that a sign character can also appear immediately after an exponent.
     An exponent ("e" or "E")
 
-    Exponents are also optional, but if the string contains one then it must be after a decimal number or an integer.
+    Exponents are also optional, 
+    but if the string contains one then it must be after a decimal number or an integer.
     An integer must follow the exponent.
     A dot (".")
 

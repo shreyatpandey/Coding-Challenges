@@ -17,9 +17,14 @@
   * https://stackoverflow.com/questions/11729271/how-is-tcpkernel-bypass-implemented
 
 * RDMA - Struct :-
-   * https://www.rdmamojo.com/2012/12/21/ibv_create_qp/
-   * https://www.rdmamojo.com/2012/11/03/ibv_create_cq/
-   * https://www.rdmamojo.com/2012/08/24/ibv_alloc_pd/
+   * Queue-Pair
+      * https://www.rdmamojo.com/2012/12/21/ibv_create_qp/
+   * Completion-Queue
+      * https://www.rdmamojo.com/2012/11/03/ibv_create_cq/
+   * Protection Domain
+      * https://www.rdmamojo.com/2012/08/24/ibv_alloc_pd/
+   * Memory Region
+      * https://www.rdmamojo.com/2012/09/07/ibv_reg_mr/
 
 * Github - RDMA Tutorial:-
    * https://github.com/rhiswell/rdma-tutorial/blob/abc/rdma_mc.c

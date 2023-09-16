@@ -13,3 +13,5 @@
 
 * RAW - Socket:-
     * https://linux.die.net/man/7/rsocket
+* How is TCP(kernel) bypassed?
+  * https://stackoverflow.com/questions/11729271/how-is-tcpkernel-bypass-implemented

@@ -15,3 +15,11 @@
     * https://linux.die.net/man/7/rsocket
 * How is TCP(kernel) bypassed?
   * https://stackoverflow.com/questions/11729271/how-is-tcpkernel-bypass-implemented
+
+* RDMA - Struct :-
+   * https://www.rdmamojo.com/2012/12/21/ibv_create_qp/
+   * https://www.rdmamojo.com/2012/11/03/ibv_create_cq/
+
+* Github - RDMA Tutorial:-
+   * https://github.com/rhiswell/rdma-tutorial/blob/abc/rdma_mc.c
+   * https://github.com/jcxue/RDMA-Tutorial/blob/master/client.c

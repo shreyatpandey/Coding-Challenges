@@ -133,7 +133,7 @@ class Solution:
               {'digit':5, 'exponent':6,},
               {'sign':7, 'digit':8},
               {'digit':8},
-              {'digit':8}
+              {'digit':8} # s= "3.5e+3.5e+3.5" , this test case fails when the last is not present
                 ]
         currentState = 1
         for c in s:

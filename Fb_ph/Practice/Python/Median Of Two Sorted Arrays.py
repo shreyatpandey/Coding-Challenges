@@ -35,6 +35,10 @@ class Solution:
         while True:
             i = (l+r)//2 #A
             j = half - i - 2 #B
+
+            '''
+            the below piece of code checks the boundary of the partition
+            '''
             Aleft = A[i] if i>=0 else float("-inf")
             Aright = A[i+1] if (i+1)<len(A) else float("inf")
             Bleft = B[j] if j>=0 else float("-inf")

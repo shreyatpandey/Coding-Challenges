@@ -30,10 +30,14 @@ TC:- O(N^2 + 2^N + W)
 SC:- O(2^N.N + W)
 '''
 class Solution:
-    def wordBreak(self, s: str, wordDict: List[str]) -> List[str]:
+    def wordBreak(self, s, wordDict):
         def helper(s, wordDict, memo):
-            if s in memo: return memo[s]
-            if not s: return []
+            print("s:",s)
+            if s in memo:
+                print("here")
+                return memo[s]
+            if not s: 
+                return []
     
             res = []
             for word in wordDict:
@@ -43,10 +47,40 @@ class Solution:
                     res.append(word)
                 else:
                     resultOfTheRest = helper(s[len(word):], wordDict, memo)
+                    print("ResultOfTheRest:", resultOfTheRest)
                     for item in resultOfTheRest:
                         item = word + ' ' + item
                         res.append(item)
+                print("Result:",res)
             memo[s] = res
             return res
 
         return helper(s,wordDict,{})
+
+if __name__ == '__main__':
+    print("Test-Case:1")
+    s = Solution()
+    string = "catsanddog"
+    wordDict = ["cat","cats","and","sand","dog"]
+    print(s.wordBreak(string,wordDict))
+
+'''
+Output-Trace:-
+Test-Case:1
+s: catsanddog
+s: sanddog
+s: dog
+Result: ['dog']
+ResultOfTheRest: ['dog']
+Result: ['sand dog']
+ResultOfTheRest: ['sand dog']
+Result: ['cat sand dog']
+s: anddog
+s: dog
+here
+ResultOfTheRest: ['dog']
+Result: ['and dog']
+ResultOfTheRest: ['and dog']
+Result: ['cat sand dog', 'cats and dog']
+['cat sand dog', 'cats and dog']
+'''

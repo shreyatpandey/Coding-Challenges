@@ -58,13 +58,39 @@ class Solution:
  dp[0+len(w}] = True
  '''
 def wordBreak(s,wordDict):
-    dp = [False]*len(s)+1
+    dp = [False]*(len(s)+1)
     dp[len(s)] = True #Base Case
     for i in range(len(s)-1,-1,-1):
-       for w in wordDict:
-            if(i+len(w))<=len(s) and s[i:i+len(s)] == w:
+        for w in wordDict:
+            if(i+len(w))<=len(s) and s[i:i+len(w)] == w:
                 dp[i] = dp[i+len(w)]
+                print("i,dp:",i,dp)
             if dp[i] == True:
+                print("True")
                 break
     return dp[0]
+
+'''
+Stack-Trace:-
+Test-Case-1
+s[i;i+len(w)] e
+s[i;i+len(w)] e
+s[i;i+len(w)] de
+s[i;i+len(w)] de
+s[i;i+len(w)] ode
+s[i;i+len(w)] ode
+s[i;i+len(w)] code
+s[i;i+len(w)] code
+i,dp: 4 [False, False, False, False, True, False, False, False, True]
+True
+s[i;i+len(w)] tcod
+s[i;i+len(w)] tcod
+s[i;i+len(w)] etco
+s[i;i+len(w)] etco
+s[i;i+len(w)] eetc
+s[i;i+len(w)] eetc
+s[i;i+len(w)] leet
+i,dp: 0 [True, False, False, False, True, False, False, False, True]
+True
+'''
                 

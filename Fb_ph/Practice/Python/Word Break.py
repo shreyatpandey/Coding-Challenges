@@ -2,12 +2,17 @@
 Note the same word in word dict would be used multiple times
 the max size of the wordDict would be smaller than the s
 '''
-
 '''
 Input: s = "leetcode", wordDict = ["leet","code"]
 Output: true
 Explanation: Return true because "leetcode" can be segmented as "leet code".
-
+'''
+'''
+1 <= s.length <= 300
+1 <= wordDict.length <= 1000
+1 <= wordDict[i].length <= 20
+s and wordDict[i] consist of only lowercase English letters.
+All the strings of wordDict are unique.
 '''
 
 '''

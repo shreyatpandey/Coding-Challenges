@@ -18,5 +18,8 @@ Key thing to remember in shared pointers is:-
 Semantics of shared pointer:-
 * https://www.codementor.io/@sandesh87/1jaohbuey8
 
+Create your own Shared Pointer:-
+ * https://medium.com/analytics-vidhya/c-shared-ptr-and-how-to-write-your-own-d0d385c118ad
+
 # Links for reference and further reading:-
 * https://www.bogotobogo.com/cplusplus/boost.php

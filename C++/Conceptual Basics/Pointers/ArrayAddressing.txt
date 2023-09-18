@@ -1,3 +1,4 @@
+Question-1:-
 #include <stdio.h>
 int main()
 {
@@ -9,3 +10,25 @@ int main()
 // Output:- 
 0x7fff44cb4240
 0x7fff44cb4244
+
+Question-2:-
+#include <stdio.h>
+int main()
+{
+    int arr[4] = {1,2,3,4};
+    printf("%x\n",*(arr)+1); //2 
+    printf("%x\n",*(arr+1));//2
+    printf("%x\n",*(arr+3));//4
+    printf("%x\n",*(arr+4));//0
+
+    return 0;
+}
+//Output
+2
+2
+4
+0
+
+
+
+

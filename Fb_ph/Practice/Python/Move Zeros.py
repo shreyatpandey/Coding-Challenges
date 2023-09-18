@@ -40,9 +40,11 @@ Approach:- 2
 TC:- O(n)
 SC:- O(1)
 This method involves Swapping.
-Swap is not counted as single operation.
-Say for [0,1,1,1,1]
-Swapping would involve writing 2*n times
+Issues with this approach:-
+ 1.Swap is not counted as single operation.
+ 2. Say for [0,1,1,1,1]
+ 3. Swapping would involve writing 2*n times
+ 4. For all non-zeros elements
 '''
 class Solution:
   def moveZeroes(self, nums: List[int]) -> None:

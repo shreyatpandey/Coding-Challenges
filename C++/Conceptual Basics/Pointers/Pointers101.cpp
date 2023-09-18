@@ -1,3 +1,4 @@
+// This program gives pointer initialization
 #include <iostream>
 int main() 
 {

@@ -1,3 +1,5 @@
+Q1] Are Arrays and Pointers same? No, they are not
+
 Question-1:-
 #include <iostream>
 #include <typeinfo>

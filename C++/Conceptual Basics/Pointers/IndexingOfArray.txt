@@ -5,6 +5,7 @@ int main()
 {
     int arr[4] = {1,2,3,4};
     printf("%d\n", 2[arr]);
+    print("%d\n",1[&arr]-arr); // length of array
     return 0;
 }
 // 1[arr] = 1

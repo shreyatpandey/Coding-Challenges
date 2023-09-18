@@ -1,0 +1,40 @@
+Assignment is different from initialization.
+
+Both of the following lines do initialization. A single constructor call is done:
+
+A a1 = A_factory_func();  // calls copy constructor
+A a1(A_factory_func());   // calls copy constructor
+but it's not equivalent to:
+
+A a1;                     // calls default constructor
+a1 = A_factory_func();    // (assignment) calls operator 
+
+
+// Example
+#include <iostream>
+using namespace std;
+
+class A {
+public:
+    A() { 
+        cout << "default constructor" << endl;
+    }
+
+    A(const A& x) { 
+        cout << "copy constructor" << endl;
+    }
+
+    const A& operator = (const A& x) {
+        cout << "operator =" << endl;
+        return *this;
+    }
+};
+
+int main() 
+{
+    A a;       // default constructor
+    A b(a);    // copy constructor
+    A c = a;   // copy constructor
+    c = b;     // operator =
+    return 0;
+}

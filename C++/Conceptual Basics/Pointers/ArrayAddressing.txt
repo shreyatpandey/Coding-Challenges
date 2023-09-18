@@ -2,7 +2,7 @@ Question-1:-
 #include <stdio.h>
 int main()
 {
-    int arr[4] = {1,2,3,4};
+    int arr[5] = {1,2,3,4};
     printf("%p\n",arr);
     printf("%p\n",(arr+1));
     return 0;
@@ -10,6 +10,7 @@ int main()
 // Output:- 
 0x7fff44cb4240
 0x7fff44cb4244
+Address would always be = Original Address + sizeof(datatype)
 
 Question-2:-
 #include <stdio.h>

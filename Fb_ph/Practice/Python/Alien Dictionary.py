@@ -47,7 +47,13 @@ Output:- "zx"
 Test-Case[3] :- ["abc","ab"]
 Output:- ""
 """
-
+'''
+Complexity
+TC:- O(N+K) similar to O(V+E)
+where N is the total number of words and k is the total number of unique characters
+SC:- O(V+E) for the adjacency list 
+where V is the total number of characters in input array and E is the total number of connections/dependency
+'''
 
 from collections import OrderedDict
 class Solution(object):

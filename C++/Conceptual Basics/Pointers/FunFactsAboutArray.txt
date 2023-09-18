@@ -1,0 +1,15 @@
+1. &arr is a pointer to the array.
+  It points at the same memory address as arr—which decays to a pointer to its first element—but with a different type,
+  whose size is that of the entire array rather than of just one element.
+2. That means that &arr + 1 points at the address after the end of the array.
+3. Dereferencing to *(&arr + 1) gives the address after the end of the last element (which is again the same address with a different type).
+4. Finally, we can subtract the pointer to the first element to get the length of the array: *(&arr + 1) - arr.
+The equivalence between array indexing and pointer arithmetic simplifies this to (&arr)[1] - arr == 1[&arr] - arr, saving a pair of parens.
+
+Traversing array without sizeof() operator in C:-
+1. One-way:-
+  for (int i = 0; i < 1[&arr] - arr; i++) 
+    printf("%d\n", arr[i]); 
+2. Another-way:-
+  for (int *p = arr; p < 1[&arr]; p++) 
+    printf("%d\n", *p); 

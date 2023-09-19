@@ -1,4 +1,13 @@
 '''
+Given a string num that contains only digits and an integer target,
+return all possibilities to insert the binary operators '+', '-', and/or '*' 
+between the digits of num so that the resultant expression evaluates to the target value.
+
+Note that operands in the returned expressions should not contain leading zeros.
+
+'''
+
+'''
 TC:- O(4^N) 
 why 4 because we have 4 different possible ways to recur
 SC:- O(N) for the space required for the recursion stack

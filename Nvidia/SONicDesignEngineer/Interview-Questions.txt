@@ -1,0 +1,6 @@
+Interviewer:- Oleksander , Shyamal
+Q1] given an array:- [1,2,3,..N] 
+1.N can be very large
+2. Implement get_random_number(), such that everytime I call this function, it returns a new random number
+
+Q2] Given two servers connected to a switch, how will they reach out to each other.

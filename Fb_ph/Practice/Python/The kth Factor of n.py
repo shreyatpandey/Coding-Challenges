@@ -17,6 +17,11 @@ Constraints:
 Follow up:
 Could you solve this problem in less than O(n) complexity?
 '''
+'''
+Complexity
+TC:- O(sqrt(n))
+SC:- O(1)
+'''
 class Solution:
     def kthFactor(self, n: int, k: int) -> int:
         root = math.sqrt(n)

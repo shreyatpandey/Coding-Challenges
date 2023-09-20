@@ -11,7 +11,7 @@ Output: [4,2,6,3,1,5]
 '''
 '''
 Constraints:-
-0 <= s.length <= 3 * 104
+0 <= s.length <= 3 * 10^4
 s consists of digits, '(', ')', and '-' only.
 
 '''

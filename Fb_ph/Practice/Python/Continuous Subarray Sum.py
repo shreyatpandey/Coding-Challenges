@@ -39,5 +39,6 @@ class Solution:
             # if current sum mod k not in dict, store it so as to ensure the further values stay
             if remainder not in sums:
                 sums[remainder] = idx
+        return False
 
 # space can be easily improved to O(k) be only storing k elements in sums

@@ -37,6 +37,7 @@ class Solution:
         #print(stickerCount)
         dp = {}
         def dfs(t,stick):
+            #print(dp)
             if t in dp:
                 return dp[t]
             res = 1 if stick else 0
@@ -57,5 +58,16 @@ class Solution:
             return res
         res = dfs(target,{})
         return res if res != float("inf") else -1
+'''
+Output:-
+Dictionary = [{'w': 1, 'i': 1, 't': 1, 'h': 1}, {'e': 2, 'x': 1, 'a': 1, 'm': 1, 'p': 1, 'l': 1}, {'s': 1, 'c': 2, 'i': 1, 'e': 2, 'n': 1}]
+dp: {}
+dp: {}
+dp: {}
+dp: {}
+dp: {'ht': 1}
+dp: {'ht': 1}
+dp: {'ht': 1}
+'''
         
 

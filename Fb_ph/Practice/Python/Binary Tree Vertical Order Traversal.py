@@ -1,4 +1,16 @@
 '''
+Given the root of a binary tree, return the vertical order traversal of its nodes' values. 
+(i.e., from top to bottom, column by column).
+
+If two nodes are in the same row and column, the order should be from left to right.
+'''
+'''
+Constraints:-
+The number of nodes in the tree is in the range [0, 100].
+-100 <= Node.val <= 100
+'''
+
+'''
 Input:- 
 Input: root = [3,9,20,null,null,15,7]
 Output: [[9],[3,15],[20],[7]]

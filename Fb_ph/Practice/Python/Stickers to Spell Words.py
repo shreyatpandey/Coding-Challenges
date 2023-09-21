@@ -55,4 +55,7 @@ class Solution:
                 dp[remainT] = used
                 res += used
             return res
+        res = dfs(target,{})
+        return res if res != float("inf") else -1
+        
 

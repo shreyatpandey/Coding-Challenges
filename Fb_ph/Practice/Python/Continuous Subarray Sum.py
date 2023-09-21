@@ -15,7 +15,9 @@ Explanation: [2, 4] is a continuous subarray of size 2 whose elements sum up to 
 '''
 Approach:- Using HashMap / Dictionary
 TC:- O(n)
-SC:- O(n)
+SC:- O(min(n,k))
+The size of the array does not exceed the length of array+1. Also, it does not exceed k because there are only k 
+possible remainders
 '''
 class Solution:
     def checkSubarraySum(self, nums, k):

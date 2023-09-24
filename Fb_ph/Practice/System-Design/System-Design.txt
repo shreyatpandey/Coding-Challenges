@@ -1,0 +1,17 @@
+Core Requirements:-
+[1] Important Functional Requirements
+[2] Non-funnctional Requirements
+We would go over 3 important requirements - CAP:-
+[1] Consistency 
+[2] Availability
+[3] Partition
+
+Estimations:-
+[1] Storage Estimations
+[2] Bandwidth Estimations
+
+High-Level Design
+
+Some detailed explanation of the design
+
+Conclusion

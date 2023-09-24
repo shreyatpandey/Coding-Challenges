@@ -105,19 +105,23 @@ The CDN, because of its vicinity to the user, lets the user stream the video wit
    **likeDislike(user_id, video_id, like)**
    We can use the same API for the like and dislike functionality. Depending on what is passed as a parameter to the like field, we can update the   database accordingly—that is, 0 for like and a 1 for dislike
 
- Comment video
-Much like the like and dislike API, we only have to provide the comment string to the API. This API will also use the POST method.
-commentVideo(user_id, video_id, comment_text)
-Parameter	Description
-comment_text	This refers to the text that is typed by the user on the particular video.
-Storage schema
-Each of the above features in the API design requires support from the database—we’ll need to store the details above in our storage schema to provide services to the API gateway.
-Storage schema
-Note: Much of the underlying details regarding database tables that can be mapped to services provided by YouTube have been omitted for simplicity. For example, one video can have different qualities and that is not mentioned in the “Video” table.
-Detailed design
+   ### Comment video
+   Much like the like and dislike API, we only have to provide the comment string to the API. This API will also use the POST method.
+   ** commentVideo(user_id, video_id, comment_text) **
+   Parameter	Description
+   ** comment_text ** This refers to the text that is typed by the user on the particular video.
+
+  ## Storage schema
+  Each of the above features in the API design requires support from the database—we’ll need to store the details above in our storage schema to     
+ provide services to the API gateway.
+
+ Storage schema
+ Note: Much of the underlying details regarding database tables that can be mapped to services provided by YouTube have been omitted for simplicity. For example, one video can have different qualities and that is not mentioned in the “Video” table.
+
+ Detailed design
 Now, let’s get back to our high-level design and see if we can further explore parts of the design. In particular, the following areas require more discussion:
-•	Component integration: We’ll cover some interconnections between the servers and storage components to better understand how the system will work.
-•	Thumbnails: It’s important for users to see some parts of the video through thumbnails. Therefore, we’ll add thumbnail generation and storage to the detailed design.
+ * Component integration: We’ll cover some interconnections between the servers and storage components to better understand how the system will work.
+ * Thumbnails: It’s important for users to see some parts of the video through thumbnails. Therefore, we’ll add thumbnail generation and storage to the detailed design.
 •	Database structure: Our estimation showed that we require massive storage space. We also require storing varying types of data, such as videos, video metadata, and thumbnails, each of which demands specialized data storage for performance reasons. Understanding the database details will enable us to design a system with the least possible lag.
 Let’s take a look at the diagram below. We’ll explain our design in two steps, where the first looks at what the newly added components are, and the second considers how they coordinate to build the YouTube system.
 Detailed design components
@@ -153,7 +157,7 @@ Each new video uploaded to YouTube will be processed for data extraction. We can
 •	Categories.
 Each of the JSON files can be referred to as a document. Next, keywords will be extracted from the documents and stored in a key-value store. The key in the key-value store will hold all the keywords searched by the users, while the value in the key-value store will contain the occurrence of each key, its frequency, and the location of the occurrence in the different documents. When a user searches for a keyword, the videos with the most relevant keywords will be returned.
 An abstraction of how YouTube search works
-![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/33b4a59e-439b-4df4-95ec-1d89057436fa)
+
 
 
 

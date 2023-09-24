@@ -87,6 +87,14 @@
   ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/cd25cfaa-d9fc-43d5-bf51-b4fd48ac89a2)
 
 
+  ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/9628242b-fc8a-4d13-867d-b565b3cd8905)
+
+  
+  ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/a3da034b-e3b3-4ace-9095-255821b88737)
+
+
+
+
 
   
 

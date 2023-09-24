@@ -75,33 +75,33 @@ The CDN, because of its vicinity to the user, lets the user stream the video wit
    ## API DESIGN
    Let’s understand the design of APIs in terms of the functionalities we’re providing. We’ll design APIs to translate our feature set into technical specifications. In this case, REST APIs can be used for simplicity and speed purposes. Our API design section will help us understand how the      
    client will request services from the back-end application of YouTube. Let’s develop APIs for each of the following features:
-     Upload videos
-     Stream videos
-     Search videos
-     View thumbnails
-     Like or dislike videos
-     Comment on videos
+     * Upload videos
+     * Stream videos
+     * Search videos
+     * View thumbnails
+     * Like or dislike videos
+     * Comment on videos
 
-   ## Upload Video
+   ### Upload Video
    The **POST method** can upload a video to the /uploadVideo API:
    **uploadVideo(user_id, video_file, category_id, title, description, tags, default_language, privacy_settings)**
    Let’s take a look at the description of the following parameters here.
    Parameter
 
-   ## Stream Video
+   ### Stream Video
    The **GET method** is best suited for the /streamVideo API:
    **streamVideo(user_id, video_id, screen_resolution, user_bitrate, device_chipset)**
    The server will store different qualities of the same video in its storage and serve users based on their transmission rate.
 
-   ## Search Videos
+   ### Search Videos
    The **/searchVideo** API uses the GET method:
    **searchVideo(user_id, search_string, length, quality, upload_date)**
 
-   ## View Thumbnails
+   ### View Thumbnails
    We can use the GET method to access the **/viewThumbnails** API:
    **viewThumbnails(user_id, video_id)**
 
-   ## Like and Dislike Video
+   ### Like and Dislike Video
    The like and dislike API uses the POST method to register a like/dislike. As shown below, it’s fairly simple.
    **likeDislike(user_id, video_id, like)**
    We can use the same API for the like and dislike functionality. Depending on what is passed as a parameter to the like field, we can update the   database accordingly—that is, 0 for like and a 1 for dislike

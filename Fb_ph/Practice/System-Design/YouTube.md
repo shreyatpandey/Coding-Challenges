@@ -1,4 +1,3 @@
-![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/da46f323-cb38-40c0-bb4c-ada950afe58d)# Requirements
 Let’s start with the requirements for designing a system like YouTube.
 
 # Functional requirements

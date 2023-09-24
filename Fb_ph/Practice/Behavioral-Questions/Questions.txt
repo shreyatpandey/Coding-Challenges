@@ -13,7 +13,7 @@ Meta Core Values:-
 [2] Move fast
 [3] Focus on long term impact
 [4] Live in future/think of future
-[5] Be direct and respsect your colleagues
+[5] Be direct and respect your colleagues
 [6] Meta,Teammates,me
 
 I will try to present my answer is STAR format
@@ -27,4 +27,20 @@ Action:- I started investigated into the race condition that resulted into concu
 Result:- I was able to make optimal changes in our code base and reduce the concurrency issue by big margin around ~75%.
 Key Takeways:- I learnt that I had thiking of long term impact while designing my service architecture.
 
-Q2] 
+Q2] Tell me a situation where you had to deal with unexpected event in your professional space?
+Ans:- 
+Situation:- One situation , I can recollect is while working as a software engineer at Qualcomm. We had an unexpected event and demand from our major customer to add one feature. Feature was to include add Voice call service setting and this could involve changing a lot of code.
+Task:- I being an owner of the code and module that supported this voice call service, I had to thoroughly check if this last minute and unexpected event can be made and not change other code base
+Action:- I took upon the initiative to check the code. Given that it was one of major and important operator/customer, I decided to put their demand behind a hard configuration setting specific to that operator and then made necessary code changes. After that I had thoroughly tested it out.
+Result:- As a result , I was able to think of future as the code should not have much impact on other customers/operator. Consequently, the code ran without any issue.
+
+Q3] Tell me a time where you had to deal with company/person having bad culture?
+Ans:- 
+Situation:- Every company/person has it's own culture. In one of the situation, when I was working over cross-functional project at Qualcomm, I had 
+to deal with person who has the Point of contact from other team being highly unresponsive. Because of this, my project was getting delayed
+Task:- Given that my project had to be completed before the deadline, I had to initiative to make sure that person, cooperates and collaborate with me to get my project done.
+Action:- I first politely and directly approached my counterpart, and took steps to understand his reluctance. At the same time, respecting my colleague for his privacy. When things did not work out, I escalated to my manager and his manager in the mail-list and expressed my concerns for it. 
+Finally, the other person, began to collaborate more with me regarding it.
+Result:- I was able to complete the project on time after taking this bold move to involve his manager in every conversation that I wanted.
+
+

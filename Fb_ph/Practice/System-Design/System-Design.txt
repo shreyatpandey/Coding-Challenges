@@ -8,7 +8,7 @@ We would go over 3 important requirements - CAP:-
 [2] Availability
 [3] Partition
 
-Estimations:-
+Back of the envelope Estimations:-
 [1] Storage Estimations
 [2] Bandwidth Estimations
 
@@ -17,3 +17,9 @@ High-Level Design
 Some detailed explanation of the design
 
 Conclusion
+
+Q] How would distribute load over load balancers?
+Ans:- There are couple of mechanisms to distribute load over n servers.
+One of them is in Round-Robin manner, so that every server gets an opportunity to process the load.
+Other one is using some sort of hashing like Consistent Hashing, where the load is distributed depending upon the server that 
+are present within the geographical boundary

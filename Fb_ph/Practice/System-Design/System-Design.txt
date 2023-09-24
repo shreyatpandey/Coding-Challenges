@@ -1,3 +1,5 @@
+Don't take any names as Kafka, Google File System, Blob Storage
+
 Core Requirements:-
 [1] Important Functional Requirements
 [2] Non-funnctional Requirements

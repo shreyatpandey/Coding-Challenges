@@ -68,20 +68,11 @@
   
   It’ll take approximately 9.5 years to traverse the whole Internet while using one instance of crawling, but we want to achieve our goal in one day. We can accomplish this by designing our system to support multi-worker architecture and divide the tasks among multiple workers running on different servers.
 
-  ## Number of servers estimation for multi-worker architecture
-  Let’s calculate the number of servers required to finish crawling in one day. Assume that there is only one worker per server.
-  No. of days required by 1 server to complete the task=9.5 years×365 days≈3468 days
-  One server takes 3,468 days to complete the task.
-  How many servers would we need to complete this same task in one day?
-  We would need 3,468 servers to complete the same task in just one day.
-![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/ecc5fe91-9482-4fcd-82bf-77f9e8d3bbfc)
 
-Bandwidth estimation
-Since we want to process 10.35PB of data per day the total bandwidth required would be:
-10.35/86400 ≈120GB/sec≈960Gb/sec
-960Gb/sec is the total required bandwidth. Now, assume that the task is distributed equally among 3468 servers to accomplish the task in one day. Thus, the per server bandwidth would be:
-3468 server960Gb/sec≈277Mb/sec per server
-![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/2d635d24-85bd-4df6-bc80-b83ac4b4f606)
+ * ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/ecc5fe91-9482-4fcd-82bf-77f9e8d3bbfc)
+
+
+ * ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/2d635d24-85bd-4df6-bc80-b83ac4b4f606)
 
 
 

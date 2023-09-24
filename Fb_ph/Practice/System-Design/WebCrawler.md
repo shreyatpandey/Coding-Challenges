@@ -68,16 +68,17 @@
   
   It’ll take approximately 9.5 years to traverse the whole Internet while using one instance of crawling, but we want to achieve our goal in one day. We can accomplish this by designing our system to support multi-worker architecture and divide the tasks among multiple workers running on different servers.
 
-  # Building Blocks of Web Crawler
   
   ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/ecc5fe91-9482-4fcd-82bf-77f9e8d3bbfc)
 
   
-  # Design of Web Crawler
+  # Building Block To Use
   
   ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/2d635d24-85bd-4df6-bc80-b83ac4b4f606)
 
-
+  
+  # Design of Web Crawler
+  
   ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/8284a487-a7f2-4385-bd5a-ebfaff93c56f)
 
 

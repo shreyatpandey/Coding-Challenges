@@ -1,3 +1,4 @@
+These questions are from Googlyness
 Q1] Tell me a situation where you had to change the course of your action? What are the key takeaways/lessons learned from this?
 Q2] Tell me a situation where you had to deal with unexpected event in your professional space?
 Q3] Tell me a time where you had to deal with company/person having bad culture?
@@ -6,3 +7,24 @@ Q5] Tell me a time/situation where you had to work with person who had different
 Q6] Tell me a time/situation where your team was influenced by your "positive behaviour"?
 Q7] Tell me a time/situation where you had to deal with demands of customer issue which did make much sense?
 Q8] Tell me a time/situation where you had to take a perspective from different user/team?
+
+Meta Core Values:-
+[1] Be bold
+[2] Move fast
+[3] Focus on long term impact
+[4] Live in future/think of future
+[5] Be direct and respsect your colleagues
+[6] Meta,Teammates,me
+
+I will try to present my answer is STAR format
+Use 'I' versus 'we'
+Q1] Tell me a situation where you had to change the course of your action? What are the key takeaways/lessons learned from this?
+Ans:- 
+Situation:- While working at Microsoft, there was consistent concurrency/deadlock issue that my service was facing when it was deployed over Broad region in Azure clusters. This caused my service performance to degrade considerably and we were not able to meet 99% availability target under 
+our SLA
+Task:- Being the owner of the module where the concurrency issue was occuring, I had to bring the concurrency issue as low as possible.
+Action:- I started investigated into the race condition that resulted into concurrency problem. I found out that there I had to change the data-structure to store the record from persistent storage into an in-memory data-structure.This led to complete change of my action which I had initially planned . For this I had to move fast so that deployment in Broad cluster does not affect other services/customers.
+Result:- I was able to make optimal changes in our code base and reduce the concurrency issue by big margin around ~75%.
+Key Takeways:- I learnt that I had thiking of long term impact while designing my service architecture.
+
+Q2] 

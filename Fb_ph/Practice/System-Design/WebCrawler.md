@@ -72,8 +72,6 @@
   ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/ecc5fe91-9482-4fcd-82bf-77f9e8d3bbfc)
 
   
-  # Building Block To Use
-  
   ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/2d635d24-85bd-4df6-bc80-b83ac4b4f606)
 
   
@@ -95,6 +93,27 @@
 
   
   ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/a3da034b-e3b3-4ace-9095-255821b88737)
+
+  # Design Improvements
+
+  ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/6454a90e-b1d5-45cf-b773-bc6e4a63ee31)
+
+ 
+  ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/766bb8a3-e353-4db7-a9ed-c51f44279bec)
+
+  
+  ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/288c3cee-f205-4ff9-9ec8-b138496bce63)
+
+
+  ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/b3a68105-4e41-4099-a218-2999fae329c3)
+
+
+  ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/eda1e73a-2e9b-4d9e-bb03-6fac2607d87b)
+
+
+
+
+
 
 
 

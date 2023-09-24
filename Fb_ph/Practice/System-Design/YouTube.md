@@ -105,6 +105,57 @@ The CDN, because of its vicinity to the user, lets the user stream the video wit
    **likeDislike(user_id, video_id, like)**
    We can use the same API for the like and dislike functionality. Depending on what is passed as a parameter to the like field, we can update the   database accordingly—that is, 0 for like and a 1 for dislike
 
+ Comment video
+Much like the like and dislike API, we only have to provide the comment string to the API. This API will also use the POST method.
+commentVideo(user_id, video_id, comment_text)
+Parameter	Description
+comment_text	This refers to the text that is typed by the user on the particular video.
+Storage schema
+Each of the above features in the API design requires support from the database—we’ll need to store the details above in our storage schema to provide services to the API gateway.
+Storage schema
+Note: Much of the underlying details regarding database tables that can be mapped to services provided by YouTube have been omitted for simplicity. For example, one video can have different qualities and that is not mentioned in the “Video” table.
+Detailed design
+Now, let’s get back to our high-level design and see if we can further explore parts of the design. In particular, the following areas require more discussion:
+•	Component integration: We’ll cover some interconnections between the servers and storage components to better understand how the system will work.
+•	Thumbnails: It’s important for users to see some parts of the video through thumbnails. Therefore, we’ll add thumbnail generation and storage to the detailed design.
+•	Database structure: Our estimation showed that we require massive storage space. We also require storing varying types of data, such as videos, video metadata, and thumbnails, each of which demands specialized data storage for performance reasons. Understanding the database details will enable us to design a system with the least possible lag.
+Let’s take a look at the diagram below. We’ll explain our design in two steps, where the first looks at what the newly added components are, and the second considers how they coordinate to build the YouTube system.
+Detailed design components
+Since we highlighted the requirements of smooth streaming, server-level details, and thumbnail features, the following design will meet our expectations. Let’s explain the purpose of each added component here:
+•	Load balancers: To divide a large number of user requests among the web servers, we require load balancers.
+•	Web servers: Web servers take in user requests and respond to them. These can be considered the interface to our API servers that entertain user requests.
+•	Application server: The application and business logic resides in application servers. They prepare the data needed by the web servers to handle the end users’ queries.
+•	User and metadata storage: Since we have a large number of users and videos, the storage required to hold the metadata of videos and the content related to users must be stored in different storage clusters. This is because a large amount of not-so-related data should be decoupled for scalability purposes.
+•	Bigtable: For each video, we’ll require multiple thumbnails. Bigtable is a good choice for storing thumbnails because of its high throughput and scalability for storing key-value data. Bigtable is optimal for storing a large number of data items each below 10 MB. Therefore, it is the ideal choice for YouTube’s thumbnails.
+•	Upload storage: The upload storage is temporary storage that can store user-uploaded videos.
+•	Encoders: Each uploaded video requires compression and transcoding into various formats. Thumbnail generation service is also obtained from the encoders.
+•	CDN and colocation sites: CDNs and colocation sites store popular and moderately popular content that is closer to the user for easy access. Colocation centers are used where it’s not possible to invest in a data center facility due to business reasons.
+Detailed design of YouTube’s components
+Design flow and technology usage
+Now that we understand the purpose of every component, let’s discuss the flow and technology used in different components in the following steps:
+1.	The user can upload a video by connecting to the web servers. The web server can run Apache or Lighttpd. Lighttpd is preferable because it can serve static pages and videos due to its fast speed.
+2.	Requests from the web servers are passed onto application servers that can contact various data stores to read or write user, videos, or videos’ metadata. There are separate web and application servers because we want to decouple clients’ services from the application and business logic. Different programming languages can be used on this layer to perform different tasks efficiently. For example, the C programming language can be used for encryption. Moreover, this gives us an additional layer of caching, where the most requested objects are stored on the application server while the most frequently requested pages will be stored on the web servers.
+3.	Multiple storage units are used. Let’s go through each of these:
+I.	Upload storage is used to store user-uploaded videos before they are temporarily encoded.
+II.	User account data is stored in a separate database, whereas videos metadata is stored separately. The idea is to separate the more frequently and less frequently accessed storage clusters from each other for optimal access time. We can use MySQL if there are a limited number of concurrent reads and writes. However, as the number of users—and therefore the number of concurrent reads and writes—grows, we can move towards NoSQL types of data management systems.
+III.	Since Bigtable is based on Google File System (GFS), it is designed to store a large number of small files with low retrieval latency. It is a reasonable choice for storing thumbnails.
+4.	The encoders generate thumbnails and also store additional metadata related to videos in the metadata database. It will also provide popular and moderately popular content to CDNs and colocation servers, respectively.
+5.	The user can finally stream videos from any available site.
+Note: Because YouTube is storage intensive, sharding different storage services will effectively come into play as we scale and do frequent writes on the database. At the same time, Bigtable has multiple cache hierarchies. If we combine that with GFS, web- and application-level caching will further reduce the request processing latency.
+YouTube search
+Since YouTube is one of the most visited websites, a large number of users will be using the search feature. Even though we have covered a building block on distributed search, we’ll provide a basic overview of how search inside the YouTube system will work.
+Each new video uploaded to YouTube will be processed for data extraction. We can use a JSON file to store extracted data, which includes the following:
+•	Title of the video.
+•	Channel name.
+•	Description of the video.
+•	The content of the video, possibly extracted from the transcripts.
+•	Video length.
+•	Categories.
+Each of the JSON files can be referred to as a document. Next, keywords will be extracted from the documents and stored in a key-value store. The key in the key-value store will hold all the keywords searched by the users, while the value in the key-value store will contain the occurrence of each key, its frequency, and the location of the occurrence in the different documents. When a user searches for a keyword, the videos with the most relevant keywords will be returned.
+An abstraction of how YouTube search works
+![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/33b4a59e-439b-4df4-95ec-1d89057436fa)
+
+
 
 
 

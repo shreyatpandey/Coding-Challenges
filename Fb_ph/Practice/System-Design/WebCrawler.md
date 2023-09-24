@@ -78,10 +78,14 @@
   ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/8284a487-a7f2-4385-bd5a-ebfaff93c56f)
 
 
- ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/bc6ac649-a5ac-4f71-aa56-aa399e33fe64)
+  ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/bc6ac649-a5ac-4f71-aa56-aa399e33fe64)
 
 
-![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/955ee756-9a6a-4f28-97cf-71196cbdf10f)
+  ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/955ee756-9a6a-4f28-97cf-71196cbdf10f)
+
+
+  ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/cd25cfaa-d9fc-43d5-bf51-b4fd48ac89a2)
+
 
 
   

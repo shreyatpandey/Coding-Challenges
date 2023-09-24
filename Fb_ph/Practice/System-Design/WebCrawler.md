@@ -65,15 +65,8 @@
   ## Storage Estimation
   The collective storage required to store the textual content of 5 billion web pages 
   Total storage per crawl=5 Billion×(2070 KB+500B)=10.35PB
-  ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/19ea7af0-8f4f-49c4-8500-06de00da0348)
-
-  ## Traversal time
-  Since the traversal time is just as important as the storage requirements, let’s calculate the approximate time for one-time crawling. Assuming   
-  that the average HTTP traversal per webpage is 60 ms, the time to traverse all 5 billion pages will be:
-  Total traversal time=5 Billion×60 ms=0.3 Billion seconds= 9.5 
-
-  It’ll take approximately 9.5 years to traverse the whole Internet while using one instance of crawling, but we want to achieve our goal in one day. We can accomplish this by designing our system to support multi-worker architecture and divide the tasks among multiple workers running on different servers.![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/5e7fd49c-4a67-4975-be52-221045801ae2)
-
+  
+  It’ll take approximately 9.5 years to traverse the whole Internet while using one instance of crawling, but we want to achieve our goal in one day. We can accomplish this by designing our system to support multi-worker architecture and divide the tasks among multiple workers running on different servers.
 
   ## Number of servers estimation for multi-worker architecture
   Let’s calculate the number of servers required to finish crawling in one day. Assume that there is only one worker per server.

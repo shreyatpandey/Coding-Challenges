@@ -74,23 +74,8 @@
 
   ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/2d635d24-85bd-4df6-bc80-b83ac4b4f606)
 
-  Building blocks we will use
-Here is the list of the main building blocks we’ll use in our design:
- 
-Building blocks in high-level design
-•	Scheduler is used to schedule crawling events on the URLs that are stored in its database.
-•	DNS is needed to get the IP address resolution of the web pages.
-•	Cache is utilized in storing fetched documents for quick access by all the processing modules.
-•	Blob store’s main application is to store the crawled content.
-Besides these basic building blocks, our design includes some additional components as well:
-•	The HTML fetcher establishes a network communication connection between the crawler and the web hosts.
-•	The service host manages the crawling operation among the workers.
-•	The extractor extracts the embedded URLs and the document from the web page.
-•	The duplicate eliminator performs dedup testing on the incoming URLs and the documents.
-The components in a high-level design
-In the next lesson, we’ll focus on the high-level and detailed design of a web crawler.
 
-![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/8284a487-a7f2-4385-bd5a-ebfaff93c56f)
+  ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/8284a487-a7f2-4385-bd5a-ebfaff93c56f)
 
 
 

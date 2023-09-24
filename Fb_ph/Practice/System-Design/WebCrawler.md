@@ -76,6 +76,13 @@
   We would need 3,468 servers to complete the same task in just one day.
 ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/ecc5fe91-9482-4fcd-82bf-77f9e8d3bbfc)
 
+Bandwidth estimation
+Since we want to process 10.35PB of data per day the total bandwidth required would be:
+10.35/86400 ≈120GB/sec≈960Gb/sec
+960Gb/sec is the total required bandwidth. Now, assume that the task is distributed equally among 3468 servers to accomplish the task in one day. Thus, the per server bandwidth would be:
+3468 server960Gb/sec≈277Mb/sec per server
+![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/2d635d24-85bd-4df6-bc80-b83ac4b4f606)
+
 
 
   

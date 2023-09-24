@@ -110,6 +110,19 @@
 
   ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/eda1e73a-2e9b-4d9e-bb03-6fac2607d87b)
 
+  # Evaluatin of Web Crawler
+
+  ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/b7fbfcb1-2463-4a00-b5fc-a8e9976afe39)
+
+  
+  ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/e73d2a3c-f352-4da6-9b43-9894514c1140)
+
+
+  ![image](https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/3fd1f969-4653-4eac-837b-08e563d5178c)
+
+
+
+
 
 
 

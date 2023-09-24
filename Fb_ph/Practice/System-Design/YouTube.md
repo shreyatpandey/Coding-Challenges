@@ -40,3 +40,10 @@ Let’s start with the requirements for designing a system like YouTube.
         Average length of a video: 5 minutes.
         Size of an average (5 minute-long) video before processing/encoding (compression, format changes, and so on): 600 MB.
         Size of an average video after encoding (using different algorithms for different resolutions like MPEG-4 and VP9): 30 MB.
+   ## Storage Estimation
+    To find the storage needs of YouTube, we have to estimate the total number of videos and the length of each video uploaded to YouTube per minute. 
+    Let’s consider that 500 hours worth of content is uploaded to YouTube in one minute. Since each video of 30 MB is 5 minutes long, we require
+    1 minute to store the video
+    
+
+ 

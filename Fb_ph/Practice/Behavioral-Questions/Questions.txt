@@ -22,7 +22,7 @@ Use 'I' versus 'we'
 Q1] Tell me a situation where you had to change the course of your action? What are the key takeaways/lessons learned from this?
 Ans:- 
 Situation:- While working at Microsoft, there was consistent concurrency/deadlock issue that my service was facing when it was deployed over Broad region in Azure clusters. This caused my service performance to degrade considerably and we were not able to meet 99% availability target under 
-our SLA
+our SLA. This involved that I had change the course of my action.
 Task:- Being the owner of the module where the concurrency issue was occuring, I had to bring the concurrency issue as low as possible.
 Action:- I started investigated into the race condition that resulted into concurrency problem. I found out that there I had to change the data-structure to store the record from persistent storage into an in-memory data-structure.This led to complete change of my action which I had initially planned . For this I had to move fast so that deployment in Broad cluster does not affect other services/customers.
 Result:- I was able to make optimal changes in our code base and reduce the concurrency issue by big margin around ~75%.
@@ -43,5 +43,28 @@ Task:- Given that my project had to be completed before the deadline, I had to i
 Action:- I first politely and directly approached my counterpart, and took steps to understand his reluctance. At the same time, respecting my colleague for his privacy. When things did not work out, I escalated to my manager and his manager in the mail-list and expressed my concerns for it. 
 Finally, the other person, began to collaborate more with me regarding it.
 Result:- I was able to complete the project on time after taking this bold move to involve his manager in every conversation that I wanted.
+
+Q4] Tell me a time/situation where your technical leader/manager did not give much direction to your task?
+Ans:- 
+Situation:- One situation that I can foundly remember, was when my manager who had to go on immediate leave. That time, I was left alone and there
+was an immediate requirement from our internal customer. However, that requirement was not present in the initial design discussion. Hence, I could not take that decision all alone by myself without having thorough discussion/consultation with my manager.
+Task:- As the demand was pressing and I had to address the additional design requirement on immediate basis and I had to move fast on that changes.
+Action:- My respsone and action was to carve out a separate repository for that particular requirement and develop my code for that requirement and pushed 
+my changes into that.
+Result:- I was able to meet the deadline and requirement of my customer and also did not impact the main repository of our module.
+
+Q5] Tell me a time/situation where you had to work with person who had different working style compared to you?
+Ans:- 
+Situation:- We all have different working style. While working at Microsoft, one of my peer used to provide pull request to review without
+giving the background of the changes we made. I being his peer reviewer, had a hard time giving positive suggestion to his code without having
+the context behind it. For me, I was believe having a context and documentation of the changes before I push my major pull request.
+Task:- As a team player and for his and mine growth, I had to convey my thoughts and concern with him.
+Action:- My action was that I was direct and respecting my colleague, I politely asked him, if he could document the changes and his requirment
+before hand so that I can go through it before giving suggestion to his pull request.
+Result:- My peer responded to my request and was able to document the need of the changes before pushing his pull request for review.
+
+
+Q6] Tell me a time/situation where your team was influenced by your "positive behaviour"?
+
 
 

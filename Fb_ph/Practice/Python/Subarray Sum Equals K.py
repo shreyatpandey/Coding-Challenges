@@ -1,5 +1,6 @@
 '''
-Given an array of integers nums and an integer k, return the total number of subarrays whose sum equals to k.
+Given an array of integers nums and an integer k, return the
+total number of subarrays whose sum equals to k.
 
 Example 1:
 
@@ -28,4 +29,8 @@ class Solution:
             frequency[Sum] = frequency.get(Sum,0) + 1
         
         return Answer
+''''
+Follow-up:-
+Maximum Size Subarray Sum
+''''
     

@@ -65,6 +65,14 @@ Result:- My peer responded to my request and was able to document the need of th
 
 
 Q6] Tell me a time/situation where your team was influenced by your "positive behaviour"?
+Ans:- 
+Situation:- This was a time, I had recently joined Microsoft. So there was need of On-Call rotation that every member team had to be, to support
+any Sev Incidents that were getting reported. So, one of my team who was scheduled to be On-Call had to go on immediate leave. He was not getting any 
+replacement for him and consequently asked me, if I was willing to take up his On-Call rotation.
+Task:- My task was to understand the requirement of being On-Call and provide effective support from our team.
+Action:- Given that I was new, I quickly ramped on the basic details and needs of On-Call. During the On-Call rotation I gave my best to resolve
+the incidents/JIRA tickets within my domain of knowledge. Of course, being new I did require some help to resolve the issue.
+Result:- Give my positive approach and eagerness to help in this situation, my team was impressed by my positive attitude and behaviour.
 
 
 

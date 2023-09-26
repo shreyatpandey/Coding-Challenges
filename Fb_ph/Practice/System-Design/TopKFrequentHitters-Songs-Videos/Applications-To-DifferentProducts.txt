@@ -1,0 +1,4 @@
+1. Find top k trends on youtube, twitter, facebook
+2. Find top-k products on amazon page
+3. Find top-k stocks
+4. Describe DDOS attacks

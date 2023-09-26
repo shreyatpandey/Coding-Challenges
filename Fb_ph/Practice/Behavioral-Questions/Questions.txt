@@ -24,7 +24,10 @@ Ans:-
 Situation:- While working at Microsoft, there was consistent concurrency/deadlock issue that my service was facing when it was deployed over Broad region in Azure clusters. This caused my service performance to degrade considerably and we were not able to meet 99% availability target under 
 our SLA. This involved that I had change the course of my action.
 Task:- Being the owner of the module where the concurrency issue was occuring, I had to bring the concurrency issue as low as possible.
-Action:- I started investigated into the race condition that resulted into concurrency problem. I found out that there I had to change the data-structure to store the record from persistent storage into an in-memory data-structure.This led to complete change of my action which I had initially planned . For this I had to move fast so that deployment in Broad cluster does not affect other services/customers.
+Action:- I started investigating into the race condition that resulted into concurrency problem. 
+I found out that there I had to change the data-structure to store the record from persistent storage into an in-memory data-structure. 
+This led to complete change of my action which I had initially planned. 
+For this I had to move fast so that deployment in Broad cluster does not affect other services/customers.
 Result:- I was able to make optimal changes in our code base and reduce the concurrency issue by big margin around ~75%.
 Key Takeways:- I learnt that I had thiking of long term impact while designing my service architecture.
 

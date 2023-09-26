@@ -90,4 +90,16 @@ Result:- I was able to push back some of the  customer's demand without actually
 
 Q8] Tell me a time/situation where you had to take a perspective from different user/team?
 Ans:- 
+Situation:- We all have different perspective, which bring diversity in the team. In one Situation at Microsoft, I had to design data pipelining work
+to deliver into the Azure portal. I had visioned for multiple queues to deliver the data. However, my teammate had a different perspective 
+of using a single queue for it.However, respecting my colleague's view I decided to have thorough consultation with him.
+Task:- Given that I had to finish the project and work as a team, I shared my views on it and also tried to inculcate his views
+Action:- After having our difference resolved, I was able to come up with a solution where we used single queue however to protect against deadlock, I decided to use thread ownership mecahnism for it.
+Result:- By resolving our differences and respecting each other's view , I was able to to deliver my project with very high efficiency. It 
+also helped learn about taking different perspective positively.
+
+Q9] Tell me a time/situation where you had a conflict with your manager?
+Ans:-
+
+
 

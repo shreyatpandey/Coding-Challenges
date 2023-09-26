@@ -8,6 +8,7 @@ Q6] Tell me a time/situation where your team was influenced by your "positive be
 Q7] Tell me a time/situation where you had to deal with demands of customer issue which did make much sense?
 Q8] Tell me a time/situation where you had to take a perspective from different user/team?
 Q9] Tell me a time/situation where you had a conflict with your manager?
+Q10] Tell me about a time where you delivered a project effectively/a project you are proud of?
 
 Meta Core Values:-
 [1] Be bold
@@ -98,8 +99,18 @@ Action:- After having our difference resolved, I was able to come up with a solu
 Result:- By resolving our differences and respecting each other's view , I was able to to deliver my project with very high efficiency. It 
 also helped learn about taking different perspective positively.
 
-Q9] Tell me a time/situation where you had a conflict with your manager?
+Q9] Tell me about a time/situation where you had a conflict with your manager?
 Ans:-
+
+
+Q10] Tell me about a time where you delivered a project effectively/a project you are proud of?
+Ans:-
+Situation:- I remember one situation while working as a software engineer at Qualcomm, my team was getting high memory consumption issue
+because of excesssive logging. Given the limited memory space, it was necessary to reduce logging and I was made in charge of that project.
+Task:- The task was to reduce the logging to an optimal level so that memory consumption is drastically reduced
+Action:- Firstly I checked the code base where there was logging of dynamic string. I tried to change that the logging of dynamic string to enum values. The reason being enum value being a 32-bit integer takes very less space as compared to logging of dynamic string.
+Also, I removed redundant and unnecessary logging of the similar nature. In the sense, if there is logging in one function and it's repeatedly called at mutliple places, I tried to reduce the logging.
+Result:- As a result, I simplified the process of logging mechanism for my team at Qualcomm, thereby effectively reducing the high memory consumption.
 
 
 

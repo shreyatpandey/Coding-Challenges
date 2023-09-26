@@ -74,5 +74,17 @@ Action:- Given that I was new, I quickly ramped on the basic details and needs o
 the incidents/JIRA tickets within my domain of knowledge. Of course, being new I did require some help to resolve the issue.
 Result:- Give my positive approach and eagerness to help in this situation, my team was impressed by my positive attitude and behaviour.
 
+Q7] Tell me a time/situation where you had to deal with demands of customer issue which did make much sense?
+Ans:- 
+Situation:- One of the circumstances where I faced similar situation was during the commercialization of 5G cellular network. As every customer
+wanted to move fast and quick to market their product and they were using Qualcomm's modem for that. As a result they started giving me and my team an excessive demand request to add feature set over Voice signalling services without giving much background. As I had to often have correspondance with the customer directly, 
+I had to convey my limitation to them.
+Task:- I had to professionally and politely convey my limitation to deliver these demand for them as these demands were unrealistic.
+Action:- I first step up a meeting with direct representative of the customer as well as keeping my higher management in the loop.
+I conveyed about my reservation regarding this in a professional manner with them and also asked for more detailed clarification about their 
+requirements for it.
+Result:- I was able to push back some of the  customer's demand without actually offending them or causing any unprofessional attitude towards them.
 
+Q8] Tell me a time/situation where you had to take a perspective from different user/team?
+Ans:- 
 

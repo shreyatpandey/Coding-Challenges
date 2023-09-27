@@ -6,7 +6,9 @@ For each node at position (row, col), its left and right children will be at pos
 The root of the tree is at (0, 0).
 
 The vertical order traversal of a binary tree is a list of top-to-bottom orderings for each column index starting from the leftmost column and ending on the rightmost column. 
-There may be multiple nodes in the same row and same column. In such a case, sort these nodes by their values.
+There may be multiple nodes in the same row and same column.
+***In such a case, sort these nodes by their values.***
+This makes all the difference
 
 Return the vertical order traversal of the binary tree.
 

@@ -31,7 +31,21 @@ words[i] consists of lowercase English letters.
 Complexity Analysis
 Let n be the number of words, and kbe the length of the longest word.
 Time Complexity : O(k2⋅n)
+There were 2 major steps to the algorithm. 
+Firstly, we needed to build the Trie. Secondly, we needed to look up each word in the Trie.
+
+Inserting each word into the Trie takes O(k)time. 
+As well as inserting the word, we also checked at each letter whether or not the remaining part of the word was a palindrome. 
+These checks had a cost of O, and with k of them, gave a total cost of O(k^2).
+With n words to insert, the total cost of building the Trie was therefore O(k2⋅n)
+
 Space-Complexity:- O((k+n)^2)
+The Trie is the main space usage. In the worst case, each of the O(n⋅k) letters in the input would be on separate nodes,
+and each node would have up to nnn indexes in its list. This gives us a worst case of O(n2⋅k) 
+which is strictly larger than the input or the output.
+
+Inserting and looking up words only takes k space though, because we're not generating a list of prefixes like we were in approach 2. 
+This is insignificant compared to the size of the Trie itself.
 '''
 
 class TrieNode:

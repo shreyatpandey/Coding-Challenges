@@ -101,6 +101,14 @@ also helped learn about taking different perspective positively.
 
 Q9] Tell me about a time/situation where you had a conflict with your manager?
 Ans:-
+Situation:- In one situation during my role in Qualcomm, we had a project due to deliver high quality voice calling over internet protocol (IP) . 
+This involved reducing latency and using a specific codec rate for that. My manager wanted to use a different codec rate and that was neither present
+during the initial design discussion nor it was an ask from customer.
+Task:- As I had to deliver project before deadline and need to move fast, I set up a 1:1 meeting with him .Need to think of the company as a whole and not just about my project,
+Action:- I presented my own views and concerns and tried to brige any miscommunication gap with it. I put forward the fact that codec ratio should not be altered as it would cause more latency and jitterness in the system. As an alternative for his suggestion, I put forward my design to involve his
+codec ratio only when there is a demand from the customer.
+Reslt:- My manager was convinced with my reasoning and his respecting his views as well to make the code more robust, I put his point behind
+a configuration setting to be used only when required.
 
 
 Q10] Tell me about a time where you delivered a project effectively/a project you are proud of?

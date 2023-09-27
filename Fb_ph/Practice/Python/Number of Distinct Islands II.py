@@ -95,8 +95,10 @@ class Solution:
             for y in range(len(grid[0])):
                 if grid[x][y] == 1:
                     coords = []
+                    #print("coords:",coords)
                     dfs(x, y, coords)
                     distinct_islands.add(tuple(canonical(coords)))
+                    #print("distinct_islands:",distinct_islands)
 
         return len(distinct_islands)
 

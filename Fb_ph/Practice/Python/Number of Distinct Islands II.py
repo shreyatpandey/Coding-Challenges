@@ -23,7 +23,7 @@ grid[i][j] is either 0 or 1.
 '''
 '''
 Explanation:-
-Find the shape of the island.
+1. Find the shape of the island.
 Simple DFS, always start at top left. Same as Number of distinct islands 1.
 
 2. Find 4 possible reflections for this shape.

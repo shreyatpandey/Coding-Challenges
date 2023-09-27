@@ -32,7 +32,7 @@ For each point (x, y) in the original shape, it has 4 corresponding reflection p
 (x, y)
 (-x, y)
 (x, -y)
-(-x, y)
+(-x, -y)
 Find all these, sort them and add to our list of reflections.
 
 3. Find 4 possible rotations for this shape.
@@ -99,3 +99,16 @@ class Solution:
                     distinct_islands.add(tuple(canonical(coords)))
 
         return len(distinct_islands)
+
+if __name__ == '__main__':
+    print("Test Case-1:")
+    s = Solution()
+    grid = [[0,0],[1,1]]
+    print(s.numDistinctIslands2(grid))
+'''
+Output:-
+Test Case-1:
+coords: [(1, 0), (1, 1)]
+distinct_islands: {((0, 0), (0, 1))}
+1
+'''

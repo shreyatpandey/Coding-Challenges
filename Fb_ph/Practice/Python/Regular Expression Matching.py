@@ -86,18 +86,27 @@ class Solution(object):
                 return False
             
             match = i<len(s) and (s[i]==p[j] or p[j] == '.')
+            #print("match:",match)
             if (j+1)<len(p) and p[j+1] == '*' :   #the reason for checking "*" is that it has the highesh precedence and j+1 because the firsr character can never be "*"
                 #whenever we encounter "*" we have two choices use or dont use it
+                #print("1:(i,j)",i,j)
                 cache[(i,j)] = (dfs(i,j+2) or  #dont use *
                         (match and dfs(i+1,j))) #use *
                 return cache[(i,j)]
             if match:
+                #print("2:(i,j)",i,j)
                 cache[(i,j)] = dfs(i+1,j+1)
                 return cache[(i,j)]
             cache[(i,j)] = False
             return False
         
         return dfs(0,0)
+if __name__ == '__main__':
+    print("Test Case-1:")
+    s,p = "aa", "a*"
+    object1 = Solution()
+    print("Result:", object1.isMatch(s,p))
+
 
 '''
 Approach:- Bottom-Up

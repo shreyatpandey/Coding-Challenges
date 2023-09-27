@@ -47,12 +47,14 @@ class Solution:
                     stick[c] -= 1
                 else:
                     remainT += c
+            #print("remainT:",remainT)
             if remainT:
                 used = float("inf")
                 for s in stickerCount:
                     if remainT[0] not in s:
                         continue
                     used = min(used,dfs(remainT,s.copy()))
+                    #print("used:",used)
                 dp[remainT] = used
                 res += used
             return res
@@ -60,14 +62,28 @@ class Solution:
         return res if res != float("inf") else -1
 '''
 Output:-
-Dictionary = [{'w': 1, 'i': 1, 't': 1, 'h': 1}, {'e': 2, 'x': 1, 'a': 1, 'm': 1, 'p': 1, 'l': 1}, {'s': 1, 'c': 2, 'i': 1, 'e': 2, 'n': 1}]
+Test-Case:1
+[{'w': 1, 'i': 1, 't': 1, 'h': 1}, {'e': 2, 'x': 1, 'a': 1, 'm': 1, 'p': 1, 'l': 1}, {'s': 1, 'c': 2, 'i': 1, 'e': 2, 'n': 1}]
 dp: {}
+remainT: thehat
 dp: {}
+remainT: ehat
 dp: {}
+remainT: ht
 dp: {}
+remainT: 
+used: 1
+used: 2
 dp: {'ht': 1}
+remainT: hat
 dp: {'ht': 1}
+remainT: a
 dp: {'ht': 1}
+remainT: 
+used: 1
+used: 2
+used: 2
+used: 3
 '''
         
 

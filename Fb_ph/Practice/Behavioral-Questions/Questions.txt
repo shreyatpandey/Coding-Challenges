@@ -20,7 +20,8 @@ Meta Core Values:-
 
 I will try to present my answer is STAR format
 Use 'I' versus 'we'
-Q1] Tell me a situation where you had to change the course of your action? What are the key takeaways/lessons learned from this?
+Q1] Tell me a situation where you had to change the course of your action? What are the key takeaways/lessons learned from this? or
+Tell me about a time you failed to deliver the project.
 Ans:- 
 Situation:- While working at Microsoft, there was consistent concurrency/deadlock issue that my service was facing when it was deployed over Broad region in Azure clusters. This caused my service performance to degrade considerably and we were not able to meet 99% availability target under 
 our SLA. This involved that I had change the course of my action.

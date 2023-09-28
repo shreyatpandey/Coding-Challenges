@@ -30,8 +30,8 @@ Action:- I started investigating into the race condition that resulted into conc
 I found out that there I had to change the data-structure to store the record from persistent storage into an in-memory data-structure. 
 This led to complete change of my action which I had initially planned. 
 For this I had to move fast so that deployment in Broad cluster does not affect other services/customers.
-Result:- I was able to make optimal changes in our code base and reduce the concurrency issue by big margin around ~75%.
-Key Takeways:- I learnt that I had thiking of long term impact while designing my service architecture.
+Result:- I was able to make optimal changes in our code base and reduce the concurrency issue by big margin around ~75% and customer was satisified with our service.
+Key Takeways:- I learnt that I had to think of long term impact while designing my service architecture.
 
 Q2] Tell me a situation where you had to deal with unexpected event in your professional space?
 Ans:- 

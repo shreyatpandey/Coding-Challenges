@@ -35,7 +35,8 @@ Key Takeways:- I learnt that I had thiking of long term impact while designing m
 
 Q2] Tell me a situation where you had to deal with unexpected event in your professional space?
 Ans:- 
-Situation:- One situation , I can recollect is while working as a software engineer at Qualcomm. We had an unexpected event and demand from our major customer to add one feature. Feature was to include add Voice call service setting and this could involve changing a lot of code.
+Situation:- One situation , I can recollect is while working as a software engineer at Qualcomm.
+We had an unexpected event and demand from our major customer to add one feature. Feature was to include add Voice call service setting and this could involve changing a lot of code.
 Task:- I being an owner of the code and module that supported this voice call service, I had to thoroughly check if this last minute and unexpected event can be made and not change other code base
 Action:- I took upon the initiative to check the code. Given that it was one of major and important operator/customer, I decided to put their demand behind a hard configuration setting specific to that operator and then made necessary code changes. After that I had thoroughly tested it out.
 Result:- As a result , I was able to think of future as the code should not have much impact on other customers/operator. Consequently, the code ran without any issue.
@@ -90,7 +91,7 @@ I conveyed about my reservation regarding this in a professional manner with the
 requirements for it.
 Result:- I was able to push back some of the  customer's demand without actually offending them or causing any unprofessional attitude towards them.
 
-Q8] Tell me a time/situation where you had to take a perspective from different user/team?
+Q8] Tell me a time/situation where you had to take a perspective from different user/team? or Tell me a time when people didn't see things your way?
 Ans:- 
 Situation:- We all have different perspective, which bring diversity in the team. In one Situation at Microsoft, I had to design data pipelining work
 to deliver into the Azure portal. I had visioned for multiple queues to deliver the data. However, my teammate had a different perspective 

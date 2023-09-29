@@ -29,13 +29,17 @@
         * Each day we need 200 M* 100 B = 20 GB
         * In one year, we would 365 * 20GB  ~ = 8 TB of Data
         * In 5 years ~ 40 Tb of data
+   
    * API Design:
       * getReport(ad_id, starts_at, ends_at)
       * getReport(user_id, ad_id, starts_at, ends_at)
       * getReport(user_id, ad_id, start_at, ends_at
+   * High Level Design:
+     * Link:-
+     * https://github.com/systemdesignfightclub/SDFC/blob/main/problems/ad-click-counter/images/Screen%20Shot%202022-09 24%20at%209.40.43%20PM.png
 
-    * High Level Design:
-     * Link:- https://github.com/systemdesignfightclub/SDFC/blob/main/problems/ad-click-counter/images/Screen%20Shot%202022-09-24%20at%209.40.43%20PM.png
+
+     
 
 
    

@@ -36,3 +36,6 @@
 
       <img width="403" alt="Screenshot 2023-09-29 at 1 25 26 PM" src="https://github.com/shreyatpandey/Coding-Challenges/assets/32083899/aa28abde-2454-438f-9f3c-9e6ca8770b49">
 
+
+    * High Level Design:
+      * 

@@ -25,6 +25,11 @@ Q] Tell me about a time when you didn't meet customer expectations. What happene
 Q] How do you go about prioritizing customer needs when you are dealing with a large number of customers?
 
 Ownership:-
+Story-1:-
+1. Senior team member left at Qualcomm. I took the ownership of our code signalling service module.
+2. I quickly ramped up on the task which the senior team left
+Story:-2 
+1. Logging framework at Qualcomm
 Q] Have you ever gone out of your way to help a peer?
 Q] Tell me about a time when you took on a task that was beyond your job responsibilities.
 Q] Tell me about a time when you had to work on a task with unclear responsibilities.
@@ -47,6 +52,8 @@ Q] Tell me about a situation or experience you went through that changed your wa
 Q] Tell me about a time when you made a smarter decision with the help of your curiosity.
 
 Hire and Develop the Best:-
+Story:-
+1. Mentor to an intern
 Q] Tell me about a time when you mentored someone.
 Q] Tell me about a time when you made a bad hire. When did you figure it out, and what did you do?
 Q] What qualities do you look for in potential candidates when making hiring decisions?
@@ -62,6 +69,10 @@ Q] Tell me about a time when you had to make a bold and challenging decision.
 Q] Tell me about a time when your vision led to a great impact.
 
 Bias for Action
+Story-1:-
+1. When my manager was on leave at Qualcomm
+Story-2:-
+1. Tradeoff at Microsoft for availabilty vs consistent in the pipeline information - Calculated risk
 Q] Have you ever had to make a tough decision without consulting anybody?
 Q] Provide an example of when you took a calculated risk.
 Q] Describe a situation when you took the initiative to correct a problem or a mistake rather than waiting for someone else to do it.

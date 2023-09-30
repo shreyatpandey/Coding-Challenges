@@ -28,20 +28,46 @@ Ownership:-
 Story-1:-
 1. Senior team member left at Qualcomm. I took the ownership of our code signalling service module.
 2. I quickly ramped up on the task which the senior team left
-Story:-2 
-1. Logging framework at Qualcomm
+
+Story-2:- Challenging Project/Project you were proud of 
+1. High Memory Consumption :- Logging framework at Qualcomm reduced by 30 %
+2. High Information Flow:- At Microsoft, Loss of data had to reduced by 40% . Consuming from various sources
+and this is a pipelining work
+
 Q] Have you ever gone out of your way to help a peer?
 Q] Tell me about a time when you took on a task that was beyond your job responsibilities.
 Q] Tell me about a time when you had to work on a task with unclear responsibilities.
 Q] Tell me about a time when you showed an initiative to work on a challenging project.
 
 Invent & Simplify:-
+Story-1:- Simple solution to complext problem/ think out of box
+1.Concurrency issue at Microsoft:- From persistent storage transaction that is writing into a disk to in-memory. Reduced delay in sending data 
+in pipeline by 20%
+Story-2:- Invented something
+1. Call-Flow Parser:- At Qualcomm, used Python and django framework to display call flow for our internal customers and testing team.
+Enhanced efficiency in debugging for my team by 30 % as it reduced the team to open the log file, then search for the log and then process
+the call flow.
+
 Q] Tell me about a time when you invented something?
 Q] Tell me about a time when you gave a simple solution to a complex problem.
 Q] Tell me about a time you had to think outside the box (think creatively) to close a sale or sell your product.
 Q] What improvements have you made at your current company?
 
 Are Right, a Lot:-
+Story-1:- Used your judgement to solve a problem
+1. Jitter-rate:- In Qualcomm, used my judgement in networking domain from master's to increase the jitter rate over video call over VoIP.
+Issue was faced by testing team. I checked the log and told them to configure higher jitter rate . Helped them save time and prevented from escalating to upper management.
+
+Story-2:- Insuffucient information or incomplete data
+1. Sprint Planning at Microsoft:- There was one task that I was assigned to me regarding the integration of different agents with our service.
+This task had to be completed in the up coming spring session. 
+Task:- There was no clear terms that were defined in this task as what information had to be integrated in the service that I own. But still I had 
+to complete before the next sprint deadline
+Action:- I talked with different members of the agent team for whom we were the customer. Tried to get as much clarity from them. Yet the scope of
+the project was somewhat unclear.
+Result:- I tried to reason out how the flow of information had to take place, used my logic to absorb those information in my service and how
+it can be done without causing minimal issue to other customers
+
 Q] Tell me about a time when you effectively used your judgment to solve a problem.
 Q] Tell me about a time when you had to work with insufficient information or incomplete data.
 Q] Tell me about a time when you were wrong.
@@ -52,8 +78,9 @@ Q] Tell me about a situation or experience you went through that changed your wa
 Q] Tell me about a time when you made a smarter decision with the help of your curiosity.
 
 Hire and Develop the Best:-
-Story:-
+Story-1:- Tell me a time when you mentored someone
 1. Mentor to an intern
+
 Q] Tell me about a time when you mentored someone.
 Q] Tell me about a time when you made a bad hire. When did you figure it out, and what did you do?
 Q] What qualities do you look for in potential candidates when making hiring decisions?
@@ -69,10 +96,11 @@ Q] Tell me about a time when you had to make a bold and challenging decision.
 Q] Tell me about a time when your vision led to a great impact.
 
 Bias for Action
-Story-1:-
+Story-1:- [Make a tough decision without consulting anybody]
 1. When my manager was on leave at Qualcomm
-Story-2:-
+Story-2:- [Took calculated Risk]
 1. Tradeoff at Microsoft for availabilty vs consistent in the pipeline information - Calculated risk
+
 Q] Have you ever had to make a tough decision without consulting anybody?
 Q] Provide an example of when you took a calculated risk.
 Q] Describe a situation when you took the initiative to correct a problem or a mistake rather than waiting for someone else to do it.

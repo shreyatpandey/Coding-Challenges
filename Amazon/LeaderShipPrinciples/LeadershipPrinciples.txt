@@ -20,6 +20,17 @@ Customer Obsession:-
 Stories:- 1. Apple 2. China Operators
 1. Unexpected demand from the customer/ customer demand did not make any sense
 2. 
+
+Story-2:- Prioritizing customer demand
+1. At Qualcomm:- Multiple customers for 5G commercialization
+Prioritize into :- P0 , P1, P2 etc
+a. Cost Based analysis:- On the changes on number of lines required was given priority-1 as well as the importance of 
+that customer
+b. for customer which required testing in LTE and Wifi network , I pushed it by engaging QA and testing team
+c. Kept an open communication channel by regular following-up with them with their demands and keeping a complete loop of 
+main PoC of customer engineering team, testing team etc
+
+
 Q] Who was your most difficult customer?
 Q] Tell me about a time when you didn't meet customer expectations. What happened, and how did you deal with the situation?
 Q] How do you go about prioritizing customer needs when you are dealing with a large number of customers?

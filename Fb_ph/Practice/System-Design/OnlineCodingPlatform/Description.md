@@ -98,6 +98,7 @@
     {
        user_id:- 123000
        rank:- 1500
+       contest_id: 150 ** - (sort key/secondary index)
        submissions: { successful_submission_link:- url, fail_count: 3, success_timestamp: 167000 }
     }
     user info schema:-
@@ -116,6 +117,11 @@
   * Caching on data-store
   * Intellgent caching from the region where there is a high traffic
   * Higher traffic from Asian Region
+
+ # Hot-Key Problem:
+  * Consistent Hashing:-
+     To resolve hot-spot or hot-key problem depending on the contest_id we can use consistent hashing
+     
     
     
     

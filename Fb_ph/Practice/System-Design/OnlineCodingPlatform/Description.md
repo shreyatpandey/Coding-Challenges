@@ -39,6 +39,7 @@
    round up to 10 threads at once
 
  # High Level Design:-
+   * Link:- https://github.com/systemdesignfightclub/SDFC/blob/main/problems/coding-competition-platform/images/diagram-screenshot.png
   
 
   

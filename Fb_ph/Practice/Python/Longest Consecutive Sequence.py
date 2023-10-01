@@ -60,7 +60,7 @@ class Solution:
         # check if its start of a sequence
             if (n-1) not in numSet:
 	            length = 0
-	            while(n+length) in numSet:
+	            while(n+length) in numSet: #Set is implemented as hashtable in python, lookup/add/search is in O(1) time
 		            length += 1
 	            longest = max(length, longest)
         return longest

@@ -39,4 +39,17 @@ class NumMatrix:
     def sumRegion(self, r1: int, c1: int, r2: int, c2: int) -> int:
         r1, c1, r2, c2 = r1 + 1, c1 + 1, r2 + 1, c2 + 1  # Since our `sum` starts by 1 so we need to increase r1, c1, r2, c2 by 1
         return self.sum[r2][c2] - self.sum[r2][c1 - 1] - self.sum[r1 - 1][c2] + self.sum[r1 - 1][c1 - 1]
-        
+
+if __name__ == '__main__':
+    print("Test-Case:1")
+    Input = [[1, 1,1], [2, 2, 2], [3, 3, 3]]
+    numMatrix = NumMatrix(Input)
+    print(numMatrix.sumRegion(0, 1, 0, 1))
+    print(numMatrix.sumRegion(1, 2, 1, 2))
+
+'''
+Output:-
+sum: [[0, 0, 0, 0], [0, 1, 2, 3], [0, 3, 6, 9], [0, 6, 12, 18]]
+1
+2
+'''

@@ -106,6 +106,17 @@ if __name__ == '__main__':
     s,p = "aa", "a*"
     object1 = Solution()
     print("Result:", object1.isMatch(s,p))
+    
+'''
+Test Case-1:
+match: True
+1:(i,j) 0 0
+match: True
+1:(i,j) 1 0
+match: False
+1:(i,j) 2 0
+Result: True
+'''
 
 
 '''

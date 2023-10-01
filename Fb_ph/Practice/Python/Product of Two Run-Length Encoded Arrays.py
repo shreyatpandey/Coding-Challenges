@@ -95,4 +95,29 @@ class Solution(object):
                 product_encoded[-1][1] += product_freq
 
         return product_encoded
+
+if __name__ == '__main__':
+    print("Test-Case:-1")
+    encoded1 = [[1,3],[2,3]]
+    encoded2 = [[6,2],[4,3]]
+    s = Solution()
+    print(s.findRLEArray(encoded1,encoded2))
+
+'''
+Output:-
+Test-Case:-1
+e1_val,e1_freq: 1 3
+e2_val,e2_freq: 6 2
+product_val: 6
+product_encoded: [[6, 2]]
+e1_val,e1_freq: 1 1
+e2_val,e2_freq: 4 3
+product_val: 4
+product_encoded: [[6, 2], [4, 1]]
+e1_val,e1_freq: 2 3
+e2_val,e2_freq: 4 2
+product_val: 8
+product_encoded: [[6, 2], [4, 1], [8, 2]]
+[[6, 2], [4, 1], [8, 2]]
+'''
         

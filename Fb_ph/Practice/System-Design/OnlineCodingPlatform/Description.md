@@ -15,6 +15,23 @@
  * How many active contestants are present? Say 20,000
  * How many submission can contestant make for a given question? 6 submission on avg
  * How much time does submission take? 5 seconds of processing time
- * What is the making size of code? 2 kb size on average
+ * What is the making size of code? 2 kb size on average.
+    It is pretty fair number
+ * How many submissions are running concurrently?
+    22 submission per second(TPS)
+    They run for 5 seconds
+    22*5 = 110 submissions running concurrently
+ 
+ # Storage Estimatoins:-
+   * Total submission per minute = 20 k* 6 = 120,000 per minute
+   * 90 minute * 6 -> 5400 seconds
+   * 120 k/5400 -> ~ 22 submissions per second (TPS)
+
+ # Bandwidth Estimation:-
+  22 TPS * 2 kb -> 44 kb per second
+  Round of 50 kb * -> 400k bits per second
+  ~ 1 MB per second
+
+  
 
    

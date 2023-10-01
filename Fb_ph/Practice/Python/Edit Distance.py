@@ -62,4 +62,11 @@ class Solution:
             
         # Return if input strings are exactly one edit distance away from each other
         return edits == 1
-        
+
+if __name__ == '__main__':
+    s = "ab"
+    t = "acb"
+    s1 = Solution()
+    print("One Edit Distance:", s1.isOneEditDistance(s,t))
+    
+    

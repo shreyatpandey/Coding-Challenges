@@ -32,6 +32,15 @@
   Round of 50 kb * -> 400k bits per second
   ~ 1 MB per second
 
+ # Number of Server Estimations:-
+  How many machines for processing all those concurrent submissions?
+   110 submissions running concurrently
+   8 vCPUs each ( only 4 core)
+   round up to 10 threads at once
+
+ # High Level Design:-
+  
+
   
 
    

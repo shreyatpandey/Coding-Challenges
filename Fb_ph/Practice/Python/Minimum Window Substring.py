@@ -50,6 +50,7 @@ If s_counter[x] is decreased to be less than t_counter[x] - 1, do nothing
 TC:- O(s + t) where O(t) to build t_counter, then O(s) to move our sliding window across s. Each index is only visited twice.
 SC:- O(s + t) where O(t) space for t_counter and O(s) space for s_counter
 '''
+from collections import Counter
 class Solution(object):
     def minWindow(self, s, t):
         """
@@ -64,6 +65,7 @@ class Solution(object):
         chars = len(t_counter.keys())
         
         s_counter = Counter()
+        #print("s_counter:",s_counter)
         matches = 0
         
         answer = ''
@@ -82,11 +84,14 @@ class Solution(object):
                 
                 j += 1
                 s_counter[s[j]] += 1
+                #print("s_counter:",s_counter)
                 if t_counter[s[j]] > 0 and s_counter[s[j]] == t_counter[s[j]]:
+                    print("first condition")
                     matches += 1
 
             # contract
             else:
+                #print("Else condition")
                 s_counter[s[i]] -= 1
                 if t_counter[s[i]] > 0 and s_counter[s[i]] == t_counter[s[i]] - 1:
                     matches -= 1
@@ -95,8 +100,62 @@ class Solution(object):
             # update answer
             if matches == chars:
                 if not answer:
+                    #print("if not answer")
                     answer = s[i:j+1]
-                elif (j - i + 1) < len(answer):
+                elif (j - i + 1) < len(answer): #this gives minimum size of window substring
                     answer = s[i:j+1]
-        
+                #print("answer:",answer)
+                
         return answer
+    
+if __name__ == '__main__':
+    s = "ADOBECODEBANC"
+    t = "ABC"
+    print("Test-Case:1")
+    s1 = Solution()
+    print("Result:",s1.minWindow(s,t))
+
+'''
+Test-Case:1
+s_counter: Counter()
+s_counter: Counter({'A': 1})
+first condition
+s_counter: Counter({'A': 1, 'D': 1})
+s_counter: Counter({'A': 1, 'D': 1, 'O': 1})
+s_counter: Counter({'A': 1, 'D': 1, 'O': 1, 'B': 1})
+first condition
+s_counter: Counter({'A': 1, 'D': 1, 'O': 1, 'B': 1, 'E': 1})
+s_counter: Counter({'A': 1, 'D': 1, 'O': 1, 'B': 1, 'E': 1, 'C': 1})
+first condition
+if not answer
+answer: ADOBEC
+Else condition
+s_counter: Counter({'O': 2, 'D': 1, 'B': 1, 'E': 1, 'C': 1, 'A': 0})
+s_counter: Counter({'D': 2, 'O': 2, 'B': 1, 'E': 1, 'C': 1, 'A': 0})
+s_counter: Counter({'D': 2, 'O': 2, 'E': 2, 'B': 1, 'C': 1, 'A': 0})
+s_counter: Counter({'D': 2, 'O': 2, 'B': 2, 'E': 2, 'C': 1, 'A': 0})
+s_counter: Counter({'D': 2, 'O': 2, 'B': 2, 'E': 2, 'A': 1, 'C': 1})
+first condition
+answer: ADOBEC
+Else condition
+answer: ADOBEC
+Else condition
+answer: ADOBEC
+Else condition
+answer: ADOBEC
+Else condition
+answer: ADOBEC
+Else condition
+s_counter: Counter({'A': 1, 'D': 1, 'O': 1, 'B': 1, 'E': 1, 'N': 1, 'C': 0})
+s_counter: Counter({'A': 1, 'D': 1, 'O': 1, 'B': 1, 'E': 1, 'C': 1, 'N': 1})
+first condition
+answer: ADOBEC
+Else condition
+answer: ADOBEC
+Else condition
+answer: EBANC
+Else condition
+answer: BANC
+Else condition
+Result: BANC
+'''

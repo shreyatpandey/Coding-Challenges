@@ -94,7 +94,5 @@ class Solution(object):
             else:
                 product_encoded[-1][1] += product_freq
 
-
-
         return product_encoded
         

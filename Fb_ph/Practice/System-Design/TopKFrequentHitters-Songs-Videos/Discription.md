@@ -25,5 +25,7 @@
      {
        song_id:- 12345
        hourly_timestamp:- timestamp in seconds :- 1675000
-       counter:- 676
+       song_url: sharing
+       artist_name:
+       genre_name:
      }

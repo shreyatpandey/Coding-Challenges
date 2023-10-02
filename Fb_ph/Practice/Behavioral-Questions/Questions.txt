@@ -90,7 +90,7 @@ I conveyed about my reservation regarding this in a professional manner with the
 requirements for it. I continued to have consultation with them over email and present the demo as well.
 Result:- I was able to push back some of the  customer's demand without actually offending them or causing any unprofessional damage with our company and customer. Finally, I was able to convince the customer about our existent architecture.
 
-Q8] Tell me a time/situation where you had to take a perspective from different user/team? or Tell me a time when people didn't see things your way?
+Q8] Tell me a time/situation where you had to take a perspective from different user/team? or Tell me a time when people didn't see things your way? [LP:- Earn Trust]
 Ans:- 
 Situation:- We all have different perspective, which bring diversity in the team. In one Situation at Microsoft, I had to design data pipelining work
 to deliver into the Azure portal. I had visioned for multiple queues to deliver the data. However, my teammate had a different perspective 

@@ -36,11 +36,14 @@ Q] Tell me about a time when you didn't meet customer expectations. What happene
 Q] How do you go about prioritizing customer needs when you are dealing with a large number of customers?
 
 Ownership:-
-Story-1:-
+Story-1:- [Gone out of way to help a peer]
+1. On-Call Rotation at Microsoft
+
+Story-1:- [Task that was beyond your job responsibilities]
 1. Senior team member left at Qualcomm. I took the ownership of our code signalling service module.
 2. I quickly ramped up on the task which the senior team left
 
-Story-2:- Challenging Project/Project you were proud of 
+Story-2:- [Challenging Project/Project you were proud of]
 1. High Memory Consumption :- Logging framework at Qualcomm reduced by 30 %
 2. High Information Flow:- At Microsoft, Loss of data had to reduced by 40% . Consuming from various sources
 and this is a pipelining work
@@ -51,10 +54,10 @@ Q] Tell me about a time when you had to work on a task with unclear responsibili
 Q] Tell me about a time when you showed an initiative to work on a challenging project.
 
 Invent & Simplify:-
-Story-1:- Simple solution to complext problem/ think out of box
+Story-1:- [Simple solution to complext problem/ think out of box]
 1.Concurrency issue at Microsoft:- From persistent storage transaction that is writing into a disk to in-memory. Reduced delay in sending data 
 in pipeline by 20%
-Story-2:- Invented something
+Story-2:- [Invented something/ Made improvement in your company]
 1. Call-Flow Parser:- At Qualcomm, used Python and django framework to display call flow for our internal customers and testing team.
 Enhanced efficiency in debugging for my team by 30 % as it reduced the team to open the log file, then search for the log and then process
 the call flow.
@@ -65,11 +68,11 @@ Q] Tell me about a time you had to think outside the box (think creatively) to c
 Q] What improvements have you made at your current company?
 
 Are Right, a Lot:-
-Story-1:- Used your judgement to solve a problem
+Story-1:- [Used your judgement to solve a problem]
 1. Jitter-rate:- In Qualcomm, used my judgement in networking domain from master's to increase the jitter rate over video call over VoIP.
 Issue was faced by testing team. I checked the log and told them to configure higher jitter rate . Helped them save time and prevented from escalating to upper management.
 
-Story-2:- Insuffucient information or incomplete data
+Story-2:- [Insufficient information or incomplete data]
 1. Sprint Planning at Microsoft:- There was one task that I was assigned to me regarding the integration of different agents with our service.
 This task had to be completed in the up coming spring session. 
 Task:- There was no clear terms that were defined in this task as what information had to be integrated in the service that I own. But still I had 
@@ -84,16 +87,33 @@ Q] Tell me about a time when you had to work with insufficient information or in
 Q] Tell me about a time when you were wrong.
 
 Learn and be Curious:-
+Story-1:- [Learned new technologies]
+Ans:- Picked up front end technology :- javascript and Node.js even though I had been a system guy and no prior exposure to that.
+Situation:- During my time at Microsoft, a situation aroused where I had to develop a user friendly tool to display virtual machine health
+report to our customer. This was need of the hour cause, customer was not a techinical person and I had to make his work as easy as possible.
+Task:- I had to quickly learn this front end technology and start working on it.
+Action:- Given that it javascript and node.js is vast and there is high learning curve, I start to learning first specific modules which were
+necessary for my project. I allocated 10% of my daily work to learn this and made progress incrementally.
+Result- Within a period of one month, I start making a good desing for our UI tool and customer seemed extremely satsified with this new UI tool.
+
+Story-2:- [Smarter Decision with the help of curiosity]
+Situation:- There was a situation during my internship at Intel, where I had to make meaningful and useful visualization chart using the testing log.
+Task:- My task was to parse those information which very relevant and benficial for the team.
+Action:- I checked and extracted throughput and bandwidth of the LTE/ifi network. Then consequently tried to put this information into a moving
+average graph.
+Result:- With my curiosity to learn about this visualization technique, I took smart decision to implement moving average chart instead of 
+static chart. I enhanced the productivity of my team by 30% as they would can track of the changes in these logs in real time.
+
 Q] Tell me about a time when you learned new technologies
 Q] Tell me about a situation or experience you went through that changed your way of thinking.
 Q] Tell me about a time when you made a smarter decision with the help of your curiosity.
 
 Hire and Develop the Best:-
-Story-1:- Tell me a time when you mentored someone
+Story-1:- [Tell me a time when you mentored someone]
 1. Mentor to an intern
 
 Q] Tell me about a time when you mentored someone.
-Q] Tell me about a time when you made a bad hire. When did you figure it out, and what did you do?
+Q] Tell me about a time when you made a bad hire. When did you figure it out, and what did you do?[Not applicable]
 Q] What qualities do you look for in potential candidates when making hiring decisions?
 
 Insist on the Highest Standards:-
@@ -109,6 +129,7 @@ Q] Tell me about a time when your vision led to a great impact.
 Bias for Action
 Story-1:- [Make a tough decision without consulting anybody]
 1. When my manager was on leave at Qualcomm
+
 Story-2:- [Took calculated Risk]
 1. Tradeoff at Microsoft for availabilty vs consistent in the pipeline information - Calculated risk
 
@@ -134,11 +155,22 @@ Q] Tell me about a time when you took important decision without any data?
 Q] Have you ever been in a situation where you had to make a choice among a few options, but did not have a lot of time to explore each option
 
 Having Backbone; disagree and commit:-
+Story-1:- [Disagreed with the approach of a team member/conflict with your manager]
+Qualcomm story from Fb
+
 Q] Describe a time when you disagreed with the approach of a team member. What did you do?
 Q] Give me an example of something you believe in that nobody else does.
 Q] Tell me about an unpopular decision of yours.
 
 Deliver Results:-
+Story-1: [Couldn't meet your deadline]
+Situation:- Commercialization of 5G at Qualcomm. Testing of code was remaining.
+Requested customer and became open about delay from the field testing team.
+Pushed in the code, then as and when more issue aroused, made necessary modification
+Was able to satisfy customer with my progess.
+Consquently was ablt to delive quantity work sacrificing on quality.
+
+
 Q] Tell me about a time when you couldn't meet your deadline?
 Q] Give an example of a time when you had to handle a variety of assignments. What was the outcome?
 Q] Tell me about a time when your team gave up on something, but you pushed them to deliver results.

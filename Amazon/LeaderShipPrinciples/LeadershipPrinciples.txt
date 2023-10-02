@@ -82,6 +82,9 @@ the project was somewhat unclear.
 Result:- I tried to reason out how the flow of information had to take place, used my logic to absorb those information in my service and how
 it can be done without causing minimal issue to other customers
 
+Story-3:- [Time when you were wrong]
+From Fb regarding deadlock issue in SLA, course correction and gained insight, live in future
+
 Q] Tell me about a time when you effectively used your judgment to solve a problem.
 Q] Tell me about a time when you had to work with insufficient information or incomplete data.
 Q] Tell me about a time when you were wrong.

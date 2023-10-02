@@ -154,6 +154,10 @@ Q] What would you do to gain the trust of your team?
 Q] Tell me about a time when you had to tell a harsh truth to someone.
 
 Dive Deep:-
+Story-1: [When you took important decision without any data] similar to "Are right a lot" [Insufficient datat]
+-> Build a small prototype , showed that out internal customer at Microsoft, they liked the prototype and then scaled to 
+other external and internal customers
+
 Q] Tell me about a time when you took important decision without any data?
 Q] Have you ever been in a situation where you had to make a choice among a few options, but did not have a lot of time to explore each option
 

@@ -10,9 +10,9 @@
 
 # Capacity Estimations and Constraint
  # Numbers:-
-   Number of active users? 1 billion = 10^9 users
-   Number of songs hosted on server? 100 million = 100 x 10^6
-   Size of song? 5 MB
+   * Number of active users? 1 billion = 10^9 users
+   * Number of songs hosted on server? 100 million = 100 x 10^6
+   * Size of song? 5 MB
  # Storage Estimation
     * Total Audio Storage = 100 million x 5 MB = 500 TB
  # Bandidth and Traffic Estimation

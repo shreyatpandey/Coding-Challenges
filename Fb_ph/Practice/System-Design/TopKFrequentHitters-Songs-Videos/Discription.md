@@ -20,8 +20,8 @@
 
  # Schema
   * Database Schema:- 
-     Database that is getting used is Casandra
-     Schema:- 
+     * Database that is getting used is Casandra
+     * Schema:- 
      {
        song_id:- 12345
        hourly_timestamp:- timestamp in seconds :- 1675000

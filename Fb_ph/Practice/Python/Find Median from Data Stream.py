@@ -20,7 +20,34 @@ At most 5 * 10^4 calls will be made to addNum and findMedian.
 '''
 Follow up:
 If all integer numbers from the stream are in the range [0, 100], how would you optimize your solution?
+Ans:-
+Create 101 buckets using an array of size 101.
+Store the numbers into these buckets.
+Find median by looping through this array.
+Time Complexity
+addNum() is O(1)
+findMedian() is O(1) since array has fixed size.
+Space Complexity: O(1) since array has fixed size.
+
 If 99% of all integer numbers from the stream are in the range [0, 100], how would you optimize your solution?
+Ans:-
+Divide problem into 3 subproblems. Here are the groupings:
+Numbers < 0: You have 2 options: 
+1. Use 2-heap solution (that we coded in original solution), 
+or 1. Use 1 array, which represents 1 bucket
+0 <= Numbers <= 100: Use 100 buckets using an array of size 100
+
+100 < Numbers: You have 2 options: 
+1. Use 2-heap solution (that we coded in original solution), or 1. 
+Use 1 array, which represents 1 bucket
+For each number we get in the stream, insert it into 1 of the 3 groupings, keeping track of the count of numbers in each of these 3 groupings
+To find the median, see which grouping the median must fall into and find it there.
+For Numbers < 0 and 100 < Numbers, 
+using 2 arrays/buckets is the more practical solution since it is very unlikely the median will fall into either bucket/array. 
+This makes findMedian() O(1) in average case. 
+In the worst case, all numbers fall in 1 array,
+and we would either have to use Quickselect (O(n) average case, O(n2) worst case), or sorting (O(n log n)) to find the median.
+If you use 2 heaps instead, you will get findMedian() of O(1) average case, O(log n) worst case.
 '''
 '''
 The idea is to divide numbers into 2 balanced halves, one half low stores low numbers, 

@@ -42,7 +42,15 @@
         timestamp<br>
         metadata<br>
      }<br>
-    
+
+    Redirect URL:<br>
+    Another data store for redirect URL<br>
+    Give asynchronously give redirect link<br>
+    Mapping of ad_id for URL<br>
+    {<br>
+     ad_id: <br>
+     url:{} <br>
+     }<br>
     <pr>
     response:
     30 x redirect event
@@ -63,9 +71,12 @@
 
   * Partitioning:-<br>
     Paritioning over ad_id <br>
+    Preferred over uuid <br>
     We may have hot key problem<br>
     Consistent Hashing for it<br>
     Say for enterprise with hight demand for coca-cola, compared to some unknown candy<br>
+
+
     
      
    

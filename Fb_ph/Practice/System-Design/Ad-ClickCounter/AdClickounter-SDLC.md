@@ -33,9 +33,11 @@
  * Ad-placement service:- uuid for ad ad_id
  * CDN
  * Click Capture Service:- 30x redirection
- * Message Broker:-
+ * Message Broker:-<br>
     High volume of 10,000 TPS, can be avoided for backpressure problem<br>
-    Noisy neightbor problem<br>
+    Noisy neighbor problem<br>
+    Big expensive processing jobs, smaller jobs sits behind these big expensive processing jobs<br>
+    
     
  * Request contract:- getQuery(user_id,ad_id,timestamp)
    request:<br>
@@ -71,13 +73,20 @@
   * Database:-<br>
      Cassandra<br>
      Time-series database<br>
+     Advantage for time-series database is easier to write query<br>
 
   * Partitioning:-<br>
     Paritioning over ad_id <br>
-    Preferred over uuid <br>
-    We may have hot key problem<br>
+    Preferred partitioning over uuid <br>
+    We may have hot key problem over ad_id<br>
     Consistent Hashing for it<br>
     Say for enterprise with hight demand for coca-cola, compared to some unknown candy<br>
+    *** Another way:- ad_id + rnd_number ***  <br>
+    Above would remove partitioning over hot key problem <br>
+
+  * Lambda Vs Kappa architecture:- <br>
+    This is too detail: <br>
+    
     
 
   

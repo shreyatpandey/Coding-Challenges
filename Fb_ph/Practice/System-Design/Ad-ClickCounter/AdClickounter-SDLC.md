@@ -4,9 +4,9 @@
     * We should be able to query the ad click events
 
  ## Non Functional Requirments
-  * Low Latency
-  * Consistency
-  * Availability
+  * Low Latency:- Actual ad clicks and redirect should be pretty fast ( low latency )
+  * Consistency:- Eventual consistency is good enough
+  * Availability:- High availability for ad click counter. With minimum down time and high up time of 99%
   * Performance
 
 # Numbers
@@ -24,5 +24,23 @@
    * Bandwidth requirment:- 10,000 TPS x 0.1 kb = 1,000 kb per second = 1 MB per second
    * At peak = 50,000 TPS avg x 0.1 kb  = 5 MB per second
 
+  ## Analytical Part
+   * 100k MAU
+
 # High Level Design
- * 
+ * Browser-clicker
+ * Browser-Analyst
+ * Ad-placement service:- uuid for ad ad_id
+ * CDN
+ * Click Capture Service:- 30x redirection
+ * Message Broker:- High volume of 10,000 TPS
+ * Request contract:- getQuery(user_id,ad_id,timestamp
+    request:
+     {
+        ad_id
+        timestamp
+        metadata
+     }
+    response:
+    30 x redirect event
+   

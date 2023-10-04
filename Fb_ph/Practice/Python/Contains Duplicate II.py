@@ -20,17 +20,6 @@ the extra space depends on the number of items sorted in the hash table
 which is the size of sliding window <=> min(n,k)
 '''
 class Solution:
-    def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
-        hashSet = set()
-        for index in range(len(nums)):
-            if nums[index] in hashSet:
-                return True
-            hashSet.add(nums[index])
-            if len(hashSet) > k:
-                hashSet.remove(nums[index-k])
-        return False
-
-class Solution:
     def containsNearbyDuplicate(self, nums, k):
         hashSet = set()
         for index in range(len(nums)):

@@ -62,6 +62,11 @@ Story-2:- [Invented something/ Made improvement in your company]
 Enhanced efficiency in debugging for my team by 30 % as it reduced the team to open the log file, then search for the log and then process
 the call flow.
 
+Story-3:- [Made Improvementst at your company]
+1. Jenkins job that used to give weekly report of the number of drop in SIP packet flow in 5g wireless service. That used to get
+represented through excel sheets
+Was able to enhance productivity of team by 40%
+
 Q] Tell me about a time when you invented something?
 Q] Tell me about a time when you gave a simple solution to a complex problem.
 Q] Tell me about a time you had to think outside the box (think creatively) to close a sale or sell your product.

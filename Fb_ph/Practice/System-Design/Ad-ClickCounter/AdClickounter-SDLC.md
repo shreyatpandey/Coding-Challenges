@@ -33,7 +33,10 @@
  * Ad-placement service:- uuid for ad ad_id
  * CDN
  * Click Capture Service:- 30x redirection
- * Message Broker:- High volume of 10,000 TPS, can be avoided for backpressure problem
+ * Message Broker:-
+    High volume of 10,000 TPS, can be avoided for backpressure problem<br>
+    Noisy neightbor problem<br>
+    
  * Request contract:- getQuery(user_id,ad_id,timestamp)
    request:<br>
      {<br>
@@ -49,7 +52,7 @@
     Mapping of ad_id for URL<br>
     {<br>
      ad_id: <br>
-     url:{} <br>
+     url:{https://someURL} <br>
      }<br>
     <pr>
     response:
@@ -75,6 +78,9 @@
     We may have hot key problem<br>
     Consistent Hashing for it<br>
     Say for enterprise with hight demand for coca-cola, compared to some unknown candy<br>
+    
+
+  
 
 
     

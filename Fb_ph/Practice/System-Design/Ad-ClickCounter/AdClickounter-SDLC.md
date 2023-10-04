@@ -35,14 +35,13 @@
  * Click Capture Service:- 30x redirection
  * Message Broker:- High volume of 10,000 TPS
  * Request contract:- getQuery(user_id,ad_id,timestamp)
-  <pr>
-   request:
-     {
-        ad_id
-        timestamp
-        metadata
-     }
-    </pr>
+   request: <br>
+     {        <br>
+        ad_id    <br>
+        timestamp  <br>
+        metadata   <br>
+     }            <br>
+    
     <pr>
     response:
     30 x redirect event

@@ -28,20 +28,20 @@
    * 100k MAU
 
 # High Level Design
- * Browser-clicker
- * Browser-Analyst
+ * Browser-clicker :- User clicks browser for the ad
+ * Browser-Analyst :- Mostly for the marketing analyst to give input here
  * Ad-placement service:- uuid for ad ad_id
  * CDN
  * Click Capture Service:- 30x redirection
- * Message Broker:- High volume of 10,000 TPS
+ * Message Broker:- High volume of 10,000 TPS, can be avoided for backpressure problem
  * Request contract:- getQuery(user_id,ad_id,timestamp)
-   request: <br>
-     {        <br>
-        ad_id    <br>
-        uuid_of_ad <br>
-        timestamp  <br>
-        metadata   <br>
-     }            <br>
+   request:<br>
+     {<br>
+        ad_id<br>
+        uuid_of_ad<br>
+        timestamp<br>
+        metadata<br>
+     }<br>
     
     <pr>
     response:
@@ -50,9 +50,18 @@
  
  * Ad Capture Data Store:- 365 TB over 10 years
    Schema <br>
-   {     <br>
-     ad_id   <br>
-     timestamp  <br>
-     metadata_about_click: {}  <br>
-    }    <br>
+   {<br>
+     uuid[ensure de-duping]:- hexadecimal <br> 
+     ad_id<br>
+     timestamp<br>
+     metadata_about_click: {}<br>
+    }<br>
+
+  * Database:-
+     Cassandra<br>
+     Time-series database<br>
+
+  * Partitioning:-
+    
+     
    

@@ -82,10 +82,20 @@
     Consistent Hashing for it<br>
     Say for enterprise with hight demand for coca-cola, compared to some unknown candy<br>
     *** Another way:- ad_id + rnd_number ***  <br>
-    Above would remove partitioning over hot key problem <br>
+    Above would over come hot key problem <br>
 
   * Lambda Vs Kappa architecture:- <br>
     This is too detail: <br>
+
+  * Aggregated clicks data-store:- <br>
+    Seconds or mini-seconds granularity <br>
+    Schema:- <br>
+    {<br>
+     ad_id:<br>
+     timestamp:[rounded down to one minute granularities]<br>
+     click_count:124<br>
+     }<br>
+    
     
     
 

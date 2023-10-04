@@ -139,7 +139,12 @@ Story-1:- [Make a tough decision without consulting anybody]
 1. When my manager was on leave at Qualcomm
 
 Story-2:- [Took calculated Risk]
-1. Tradeoff at Microsoft for availabilty vs consistent in the pipeline information - Calculated risk
+1. Tradeoff at Microsoft for availabilty vs consistent in multiple partition over health signals information - Calculated risk
+Ans:- Sacrified on consistency in our design. As millions of Virtual Machines are deployed over nodes in cluster nodes,
+either design model to get a consistent health signals or make it robust that it's always available.
+following our SLA agreement of high availability, took a calculated risk to design for high availability by peforming partitioning of 
+our service to observe information from messaging system.
+
 
 Q] Have you ever had to make a tough decision without consulting anybody?
 Q] Provide an example of when you took a calculated risk.
@@ -160,8 +165,9 @@ Q] Tell me about a time when you had to tell a harsh truth to someone.
 
 Dive Deep:-
 Story-1: [When you took important decision without any data] similar to "Are right a lot" [Insufficient datat]
--> Build a small prototype , showed that out internal customer at Microsoft, they liked the prototype and then scaled to 
-other external and internal customers
+-> Build a small prototype of Virtual Machine Report  , showed that out internal customer at Microsoft, they liked the prototype and then scaled to 
+other external and internal customers 
+Result:- 60% of the internal customers liked it. 
 
 Q] Tell me about a time when you took important decision without any data?
 Q] Have you ever been in a situation where you had to make a choice among a few options, but did not have a lot of time to explore each option
@@ -169,6 +175,9 @@ Q] Have you ever been in a situation where you had to make a choice among a few 
 Having Backbone; disagree and commit:-
 Story-1:- [Disagreed with the approach of a team member/conflict with your manager]
 Qualcomm story from Fb
+
+Story-2:- [Example of something you believe in that nobody else does]/[Different Perspective from another team member]
+Microsoft regarding , multiple queues in pipeline vs single queue with thread 
 
 Q] Describe a time when you disagreed with the approach of a team member. What did you do?
 Q] Give me an example of something you believe in that nobody else does.
@@ -178,9 +187,9 @@ Deliver Results:-
 Story-1: [Couldn't meet your deadline]
 Situation:- Commercialization of 5G at Qualcomm. Testing of code was remaining.
 Requested customer and became open about delay from the field testing team.
-Pushed in the code, then as and when more issue aroused, made necessary modification
+Pushed in the code and performed unit test cases on them, then as and when more issue aroused, made necessary modification
 Was able to satisfy customer with my progess.
-Consquently was ablt to delive quantity work sacrificing on quality.
+Consquently was able to delive quantity work sacrificing on quality.
 
 
 Q] Tell me about a time when you couldn't meet your deadline?

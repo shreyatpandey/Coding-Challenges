@@ -1,29 +1,39 @@
 '''
-Question:-
-Given a binary array nums and an integer k, return the maximum number of consecutive 1's in the array if you can flip at most k 0's.
+Given a binary array nums, return the maximum number of consecutive 1's in the array if you can flip at most one 0.
+
 Example 1:
 
-Input: nums = [1,1,1,0,0,0,1,1,1,1,0], k = 2
-Output: 6
-Explanation: [1,1,1,0,0,1,1,1,1,1,1]
-Bolded numbers were flipped from 0 to 1. The longest subarray is underlined.
-
+Input: nums = [1,0,1,1,0]
+Output: 4
+Explanation: 
+- If we flip the first zero, nums becomes [1,1,1,1,0] and we have 4 consecutive ones.
+- If we flip the second zero, nums becomes [1,0,1,1,1] and we have 3 consecutive ones.
+The max number of consecutive ones is 4.
 '''
 '''
-Approach:- 
-We can maintain two pointers l (left-most window index) and r (right-most window index). 
-We have following possible scenarios -
-
-nums[r] == 0 : We will try to include this in our window. 
-Here we have two subcases:
-
-    k != 0: We can just include nums[r] in current window and extend it. 
-        We will also decrement k denoting a zero has been picked in the current window
-    k == 0: Our window already contains maximum zeros (k) allowed. 
-    So, we need to shrink our window size from the left till a zero is removed from the other end. 
-    Then we can pick nums[r] in our window & extend it. k won't change since we have popped a zero from left and picked one from right.
-nums[r] == 1: We can simply pick this element and extend our window.
-
+Q] 
+Follow up: What if the input numbers come in one by one as an infinite stream? 
+In other words, you can't store all numbers coming from the stream as it's too large to hold in memory. 
+Could you solve it efficiently?
+Ans:- 
+public int findMaxConsecutiveOnes(int[] nums) {
+      int start = 0;
+      int end = 0;
+        
+      int zeroIndex = -1;
+      int result = 0;
+      while (end < nums.length) {
+          if (nums[end] == 0) {
+              start = zeroIndex + 1;
+              zeroIndex = end;
+          }
+            
+          result = Math.max(result, end - start + 1);
+          end++;
+      }
+  
+      return result;
+}
 '''
 
 '''
@@ -31,16 +41,24 @@ TC:- O(n)
 SC:- O(1)
 where n is the size of the inputNum
 '''
-
+'''
+Complexity:-
+Tc:- O(n)
+SC:- O(1)
+'''
 class Solution:
-    def longestOnes(self, nums: List[int], k: int) -> int:
-        n, ans, l = len(nums), 0, 0
-        for r in range(n):
-            if nums[r] == 0:                       # try to pick current 0
-                if k == 0:                         # if window already picked k zeros, pop 1 from left and pick this
-                    while nums[l] != 0 : 
-                        l += 1
-                    l += 1
-                else : k-= 1                       # otherwise pick it and decrement k
-            ans = max(ans, r - l + 1)              # update ans as max window size till now
-        return ans
+    def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
+        maxx = 1
+        withf = 0
+        withoutf = 0
+        for n in nums:
+            if n:
+                withf+=1
+                withoutf+=1
+            else:
+                withf = withoutf + 1
+                withoutf = 0
+            if withf>maxx:
+                maxx = withf
+        return maxx
+

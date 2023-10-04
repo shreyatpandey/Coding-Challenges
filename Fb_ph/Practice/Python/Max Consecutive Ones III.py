@@ -44,3 +44,13 @@ class Solution:
                 else : k-= 1                       # otherwise pick it and decrement k
             ans = max(ans, r - l + 1)              # update ans as max window size till now
         return ans
+
+if __name__ == '__main__':
+    print("Test Case:1")
+    nums = [1,1,1,0,0,0,1,1,1,1,0]
+    k = 2
+    s = Solution()
+    print("1:",s.longestOnes(nums,k))
+    nums = [1,0,0,1,0,1]
+    print("2:",s.longestOnes(nums,k))
+    

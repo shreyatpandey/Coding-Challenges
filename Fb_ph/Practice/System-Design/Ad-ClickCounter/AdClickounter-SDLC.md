@@ -38,6 +38,7 @@
    request: <br>
      {        <br>
         ad_id    <br>
+        uuid_of_ad <br>
         timestamp  <br>
         metadata   <br>
      }            <br>
@@ -46,4 +47,12 @@
     response:
     30 x redirect event
     </pr>
+ 
+ * Ad Capture Data Store:- 365 TB over 10 years
+   Schema <br>
+   {     <br>
+     ad_id   <br>
+     timestamp  <br>
+     metadata_about_click: {}  <br>
+    }    <br>
    

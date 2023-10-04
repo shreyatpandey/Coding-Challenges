@@ -46,11 +46,21 @@ class Solution:
         return ans
 
 if __name__ == '__main__':
-    print("Test Case:1")
     nums = [1,1,1,0,0,0,1,1,1,1,0]
     k = 2
     s = Solution()
-    print("1:",s.longestOnes(nums,k))
+    print("1:", s.longestOnes(nums,k))
     nums = [1,0,0,1,0,1]
-    print("2:",s.longestOnes(nums,k))
+    print("2:", s.longestOnes(nums,k))
+    nums = [0,1,0]
+    print("3:", s.longestOnes(nums,k))
+    nums = [0,0,0] # good test case
+    print("4:", s.longestOnes(nums,k))
+
+'''
+1: 6
+2: 4
+3: 3
+4: 2
+'''
     

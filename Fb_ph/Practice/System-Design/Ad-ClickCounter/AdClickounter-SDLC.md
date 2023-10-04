@@ -57,11 +57,15 @@
      metadata_about_click: {}<br>
     }<br>
 
-  * Database:-
+  * Database:-<br>
      Cassandra<br>
      Time-series database<br>
 
-  * Partitioning:-
+  * Partitioning:-<br>
+    Paritioning over ad_id <br>
+    We may have hot key problem<br>
+    Consistent Hashing for it<br>
+    Say for enterprise with hight demand for coca-cola, compared to some unknown candy<br>
     
      
    

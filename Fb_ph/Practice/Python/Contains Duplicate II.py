@@ -28,3 +28,4 @@ class Solution:
             hashSet.add(nums[index])
             if len(hashSet) > k:
                 hashSet.remove(nums[index-k])
+        return False

@@ -9,6 +9,7 @@ Questions With Series<br>
 
 **Word Break**<br>
 | Question | Link | Concept Involved |
+| :---:   | :---: | :---: |
 | Word Break | https://leetcode.com/problems/word-break/description/ | BFS<br>DFS<br>Dynamic Programming|
 | Word Break II| https://leetcode.com/problems/word-break-ii/description/ | Recursion With Memoization<br>|
 

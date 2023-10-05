@@ -21,10 +21,11 @@ Leetcode Premium Meta Questions which I have not done it yet
 
 Questions With Series<br>
 **Word Search**<br>
-| Question | Link | Concept Involved |
-| :---:   | :---: | :---: |
+| Question | Link | Input | Concept Involved |
+| :---:   | :---: | :---: | :---:|
 | Word Search | https://leetcode.com/problems/word-search/description/| DFS<br>Directions<br>Consruction Of String|
-| Word Search II| https://leetcode.com/problems/word-search-ii/description/| Trie<br>Add word in Trie<br>DFS<br>|
+| Word Search II| https://leetcode.com/problems/word-search-ii/description/| Input: board = [["o","a","a","n"],["e","t","a","e"],["i","h","k","r"["i","f","l","v"]], words = ["oath","pea","eat","rain"]<br> Output: ["eat","oath"] |
+Trie<br>Add word in Trie<br>DFS<br>|
 
 **Word Break**<br>
 | Question | Link | Input | Concept Involved |

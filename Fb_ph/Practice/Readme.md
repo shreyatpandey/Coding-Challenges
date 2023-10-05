@@ -1,6 +1,6 @@
 # Meta Top Frequently asked Questions
 
-Questions With Series
+Questions With Series<br>
 Word Search<br>
 | Question | Link | Concept Involved |
 | :---:   | :---: | :---: |

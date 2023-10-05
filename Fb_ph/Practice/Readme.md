@@ -10,9 +10,9 @@ Questions With Series<br>
 **Word Break**<br>
 | Question | Link | Input | Concept Involved |
 | :---:   | :---: | :---: | :---:|
-| Word Break | https://leetcode.com/problems/word-break/description/ | Input: s = "leetcode", wordDict = ["leet","code"]<br>
+| Word Break | https://leetcode.com/problems/word-break/description/ | Input: s = "leetcode"<br>wordDict = ["leet","code"]<br>
 Output: true<br>|  BFS<br>DFS<br>Dynamic Programming|
-| Word Break II| https://leetcode.com/problems/word-break-ii/description/ | Input: s = "catsanddog", wordDict = ["cat","cats","and","sand","dog"]
+| Word Break II| https://leetcode.com/problems/word-break-ii/description/ | Input: s = "catsanddog"<br>wordDict = ["cat","cats","and","sand","dog"]<br>
 Output: ["cats and dog","cat sand dog"]<br>| Recursion With Memoization<br>|
 
 **Word Ladder**<br>

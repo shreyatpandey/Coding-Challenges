@@ -4,7 +4,7 @@ Leetcode Premium Meta Questions which I have not done it yet
 | Question | Link | Input |
 | :---: | :---: | :---: |
 | Print Immutable Linked List in Reverse | https://leetcode.com/problems/print-immutable-linked-list-in-reverse/description/| ImmutableListNode: An interface of immutable linked list, you are given the head of the list<br>Example 1:Input: head = [1,2,3,4]<br>Output: [4,3,2,1]<br>|
-
+| Find Distance in a Binary Tree | https://leetcode.com/problems/find-distance-in-a-binary-tree/description/| Input: root [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 0<br>Output: 3<br>Explanation: There are 3 edges between 5 and 0: 5-3-1-0|
 
 
 Questions With Series<br>

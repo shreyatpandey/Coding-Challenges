@@ -12,6 +12,9 @@ Leetcode Premium Meta Questions which I have not done it yet
 | Two Sum Less Than K|https://leetcode.com/problems/two-sum-less-than-k/description/|Input: nums = [34,23,1,24,75,33,54,8], k = 60<br>Output: 58<br>Explanation: We can use 34 and 24 to sum 58 which is less than 60.|
 | Employee Free Time|https://leetcode.com/problems/employee-free-time/description/|Input: schedule = [[[1,2],[5,6]],[[1,3]],[[4,10]]]<br>Output: [[3,4]]<br>Explanation: There are a total of three employees, and all common<br>free time intervals would be [-inf, 1], [3, 4], [10, inf].<br>We discard any intervals that contain inf as they aren't finite.|
 |First Unique Number|https://leetcode.com/problems/first-unique-number/description/|Input<br>["FirstUnique","showFirstUnique","add","showFirstUnique","add","showFirstUnique","add","showFirstUnique"]<br>[[[2,3,5]],[],[5],[],[2],[],[3],[]]<br>Output: [null,2,null,2,null,3,null,-1]|
+| Tree Diameter|https://leetcode.com/problems/tree-diameter/description/|Input: edges = [[0,1],[0,2]]<br>Output: 2<br>Explanation: The longest path of the tree is the path 1 - 0 - 2.|
+| Palindrome Permutation 2|https://leetcode.com/problems/palindrome-permutation-ii/description/|Input: s = "aabb"<br>Output: ["abba","baab"]|
+
 
 
 

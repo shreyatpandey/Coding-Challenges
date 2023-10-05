@@ -8,10 +8,12 @@ Questions With Series<br>
 | Word Search II| https://leetcode.com/problems/word-search-ii/description/| Trie<br>Add word in Trie<br>DFS<br>|
 
 **Word Break**<br>
-| Question | Link | Concept Involved |
-| :---:   | :---: | :---: |
-| Word Break | https://leetcode.com/problems/word-break/description/ | BFS<br>DFS<br>Dynamic Programming|
-| Word Break II| https://leetcode.com/problems/word-break-ii/description/ | Recursion With Memoization<br>|
+| Question | Link | Input | Concept Involved |
+| :---:   | :---: | :---: | :---:|
+| Word Break | https://leetcode.com/problems/word-break/description/ | Input: s = "leetcode", wordDict = ["leet","code"]<br>
+Output: true<br>|  BFS<br>DFS<br>Dynamic Programming|
+| Word Break II| https://leetcode.com/problems/word-break-ii/description/ | Input: s = "catsanddog", wordDict = ["cat","cats","and","sand","dog"]
+Output: ["cats and dog","cat sand dog"]<br>| Recursion With Memoization<br>|
 
 **Word Ladder**<br>
 | Question | Link | Input | Concept Involved |

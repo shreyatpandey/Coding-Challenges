@@ -18,7 +18,11 @@ Questions With Series<br>
 | :---:   | :---: | :---: | :---: |
 | Word Ladder | https://leetcode.com/problems/word-ladder/description/ | Input: beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log","cog"] <br> Output: 5 <br>Explanation: One shortest transformation sequence is "hit" -> "hot" -> "dot" -> "dog" -> cog", which is 5 words long.<br> | Remaining |
 
-
+**String Counter**<br>
+| Question | Link | Input | Concept Involved |
+| :---:   | :---: | :---: | :---: |
+| Custom Sort String | https://leetcode.com/problems/custom-sort-string/description/ | Input: order = "cbafg",<br>s = "abcd"<br>Output: "cbad"| Frequency Counter of string<br>Check the frequency in another string<br>|
+| Ransom Note|https://leetcode.com/problems/ransom-note/description/|Input: ransomNote = "aa",<br>magazine = "ab"<br>Output: false| Frequency Counter of string<br>|
 
 
 

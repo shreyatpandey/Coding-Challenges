@@ -14,6 +14,7 @@ Leetcode Premium Meta Questions which I have not done it yet
 |First Unique Number|https://leetcode.com/problems/first-unique-number/description/|Input<br>["FirstUnique","showFirstUnique","add","showFirstUnique","add","showFirstUnique","add","showFirstUnique"]<br>[[[2,3,5]],[],[5],[],[2],[],[3],[]]<br>Output: [null,2,null,2,null,3,null,-1]|
 | Tree Diameter|https://leetcode.com/problems/tree-diameter/description/|Input: edges = [[0,1],[0,2]]<br>Output: 2<br>Explanation: The longest path of the tree is the path 1 - 0 - 2.|
 | Palindrome Permutation 2|https://leetcode.com/problems/palindrome-permutation-ii/description/|Input: s = "aabb"<br>Output: ["abba","baab"]|
+| Design A Leaderboard | https://leetcode.com/problems/design-a-leaderboard/description/ | Input:["Leaderboard","addScore","addScore","addScore","addScore","addScore","top","reset","reset","addScore","top"]<br>[[],[1,73],[2,56],[3,39],[4,51],[5,4],[1],[1],[2],[2,51],[3]]<br>Output: [null,null,null,null,null,null,73,null,null,null,141] |
 
 
 

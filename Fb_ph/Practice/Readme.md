@@ -7,10 +7,8 @@ Leetcode Premium Meta Questions which I have not done it yet
 | Find Distance in a Binary Tree | https://leetcode.com/problems/find-distance-in-a-binary-tree/description/| Input: root [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 0<br>Output: 3<br>Explanation: There are 3 edges between 5 and 0: 5-3-1-0|
 | Count Nodes Equal to Sum of Descendants | https://leetcode.com/problems/count-nodes-equal-to-sum-of-descendants/description/ | Input: root = [10,3,4,2,1]<br>Output: 2<br>Explanation: For the node with value 10: The sum of its descendants is 3+4+2+1 = 10<br>For the node with value 3: The sum of its descendants is 2+1 = 3<br>|
 | Shortest Way To Form a String|https://leetcode.com/problems/shortest-way-to-form-string/description/| Input: source = "abc"<br>target = "abcbc"<br>Output: 2<br>Explanation: The target "abcbc" can be formed by "abc" and "bc", which are subsequences of source "abc"|
-|Encode and Decode Strings| https://leetcode.com/problems/encode-and-decode-strings/description/|Input: dummy_input = ["Hello","World"]<br>Output: ["Hello","World"]<br>Explanation: Machine 1: Codec encoder = new Codec();<br>String msg = encoder.encode(strs);<br>Machine 1 ---msg---> Machine 2<br>
-Machine 2:<br>Codec decoder = new Codec();<br>String[] strs = decoder.decode(msg);|
-| Best Meeting Point| https://leetcode.com/problems/best-meeting-point/description/ | Input: grid = [[1,0,0,0,1],[0,0,0,0,0],[0,0,1,0,0]]<br>Output: 6
-Explanation: Given three friends living at (0,0), (0,4), and (2,2).<br>The point (0,2) is an ideal meeting point, as the total travel distance of 2 + 2 + 2 = 6 is minimal.<br>So return 6.|
+|Encode and Decode Strings| https://leetcode.com/problems/encode-and-decode-strings/description/|Input: dummy_input = ["Hello","World"]<br>Output: ["Hello","World"]<br>Explanation: Machine 1: Codec encoder = new Codec();<br>String msg = encoder.encode(strs);<br>Machine 1 ---msg---> Machine 2<br>Machine 2:<br>Codec decoder = new Codec();<br>String[] strs = decoder.decode(msg);|
+| Best Meeting Point| https://leetcode.com/problems/best-meeting-point/description/ | Input: grid = [[1,0,0,0,1],[0,0,0,0,0],[0,0,1,0,0]]<br>Output: 6<br>Explanation: Given three friends living at (0,0), (0,4), and (2,2).<br>The point (0,2) is an ideal meeting point, as the total travel distance of 2 + 2 + 2 = 6 is minimal.<br>So return 6.|
 
 
 

@@ -9,6 +9,9 @@ Leetcode Premium Meta Questions which I have not done it yet
 | Shortest Way To Form a String|https://leetcode.com/problems/shortest-way-to-form-string/description/| Input: source = "abc"<br>target = "abcbc"<br>Output: 2<br>Explanation: The target "abcbc" can be formed by "abc" and "bc", which are subsequences of source "abc"|
 |Encode and Decode Strings| https://leetcode.com/problems/encode-and-decode-strings/description/|Input: dummy_input = ["Hello","World"]<br>Output: ["Hello","World"]<br>Explanation: Machine 1: Codec encoder = new Codec();<br>String msg = encoder.encode(strs);<br>Machine 1 ---msg---> Machine 2<br>Machine 2:<br>Codec decoder = new Codec();<br>String[] strs = decoder.decode(msg);|
 | Best Meeting Point| https://leetcode.com/problems/best-meeting-point/description/ | Input: grid = [[1,0,0,0,1],[0,0,0,0,0],[0,0,1,0,0]]<br>Output: 6<br>Explanation: Given three friends living at (0,0), (0,4), and (2,2).<br>The point (0,2) is an ideal meeting point, as the total travel distance of 2 + 2 + 2 = 6 is minimal.<br>So return 6.|
+| Two Sum Less Than K|https://leetcode.com/problems/two-sum-less-than-k/description/|Input: nums = [34,23,1,24,75,33,54,8], k = 60<br>Output: 58<br>Explanation: We can use 34 and 24 to sum 58 which is less than 60.|
+| Employee Free Time|https://leetcode.com/problems/employee-free-time/description/|Input: schedule = [[[1,2],[5,6]],[[1,3]],[[4,10]]]<br>Output: [[3,4]]<br>Explanation: There are a total of three employees, and all common<br>free time intervals would be [-inf, 1], [3, 4], [10, inf].<br>We discard any intervals that contain inf as they aren't finite.|
+|First Unique Number|https://leetcode.com/problems/first-unique-number/description/|Input<br>["FirstUnique","showFirstUnique","add","showFirstUnique","add","showFirstUnique","add","showFirstUnique"]<br>[[[2,3,5]],[],[5],[],[2],[],[3],[]]<br>Output: [null,2,null,2,null,3,null,-1]|
 
 
 

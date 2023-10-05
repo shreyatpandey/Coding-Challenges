@@ -20,7 +20,7 @@ Leetcode Premium Meta Questions which I have not done it yet
 
 
 
-Questions With Series<br>
+
 **Word Search**<br>
 | Question | Link | Input | Concept Involved |
 | :---:   | :---: | :---: | :---:|
@@ -50,7 +50,7 @@ Questions With Series<br>
 | Inorder Successor of BST-I|https://leetcode.com/problems/inorder-successor-in-bst/description/|Input: root = [2,1,3]<br>p = 1<br>Output: 2<br>Explanation: 1's in-order successor node is 2. Note that both p and the return value is of TreeNode type| Iterative|
 | Inorder Successor of BST-II | https://leetcode.com/problems/inorder-successor-in-bst-ii/description/| Input: tree = [2,1,3]<br>node = 1<br>Output: 2<br>Explanation: 1's in-order successor node is 2. Note that both the node and the return value is of Node type<br>| Node has access to parent pointer<br>|
 
-Morrison Traversal
+**Morrison Traversal**<br>
 | Question | Link | Answer Link |
 | :---:   | :---: | :---: |
 | Binary Tree Inorder Traversal | https://leetcode.com/problems/binary-tree-inorder-traversal/editorial/|

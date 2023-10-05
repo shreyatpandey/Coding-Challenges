@@ -1,7 +1,7 @@
 # Meta Top Frequently asked Questions
 
 Questions With Series<br>
-Word Search<br>
+** Word Search<br>
 | Question | Link | Concept Involved |
 | :---:   | :---: | :---: |
 | Word Search | https://leetcode.com/problems/word-search/description/| DFS<br>Directions<br>Consruction Of String|

@@ -63,3 +63,9 @@ int main()
   cout << (sizeof(array) == get_size_2(array));
   cout << (sizeof(array) == get_size_3(array));
 }
+// Output
+get_size_1:8
+get_size_2:8
+get_size_3:40
+001
+

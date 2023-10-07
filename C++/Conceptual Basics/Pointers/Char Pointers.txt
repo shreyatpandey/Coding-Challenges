@@ -57,4 +57,23 @@ Q-4:-
 // Output
 two different memory location
 
+Q-5:- 
+#include <stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    char Input[6] = "Hello";
+    char *ptr = Input;
+    char* next = ptr+1;
+    printf("%c\n", (*next)++);
+    printf("%c\n",*(ptr+1));
+    printf("%s\n",(ptr+1));
+    return 0;
+}
+// Output
+e
+f
+fllo
+
 

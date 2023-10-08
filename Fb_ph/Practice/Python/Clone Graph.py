@@ -1,3 +1,37 @@
+'''
+Given a reference of a node in a connected undirected graph.
+
+Return a deep copy (clone) of the graph.
+
+Each node in the graph contains a value (int) and a list (List[Node]) of its neighbors.
+
+class Node {
+    public int val;
+    public List<Node> neighbors;
+}
+'''
+'''
+For simplicity, each node's value is the same as the node's index (1-indexed). 
+For example, the first node with val == 1, the second node with val == 2, and so on. 
+The graph is represented in the test case using an adjacency list.
+
+An adjacency list is a collection of unordered lists used to represent a finite graph. 
+Each list describes the set of neighbors of a node in the graph.
+'''
+
+
+'''
+Problem is adjList is given and not the node
+Input: adjList = [[2,4],[1,3],[2,4],[1,3]]
+Output: [[2,4],[1,3],[2,4],[1,3]]
+'''
+
+'''
+I don't think this is because it's hard or confusing, etc. 
+The problem is that the problem states that we're given a node as input, whereas the test cases / submission actually pass you a list of edges.
+'''
+
+
 """
 # Definition for a Node.
 class Node(object):

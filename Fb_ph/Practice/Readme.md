@@ -57,6 +57,11 @@ Leetcode Premium Meta Questions which I have not done it yet
 | Binary Search Tree Iterator |  https://leetcode.com/problems/binary-search-tree-iterator/description/ | https://leetcode.com/problems/binary-search-tree-iterator/solutions/52520/python-o1-space-and-o1-time-morris-inorder-traversal/ 
 | Binary Tree Preorder Traversal | https://leetcode.com/problems/binary-tree-preorder-traversal/description/ |
 
+**Longest Sequences**<br>
+| Question | Link | Input | Concept Involved |
+| :---:   | :---: | :---: | :---: |
+| Longest Increasing Subsequence | https://leetcode.com/problems/longest-increasing-subsequence/description/ | Input: nums = [10,9,2,5,3,7,101,18]<br>Output: 4<br>Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4.| https://leetcode.com/problems/longest-increasing-subsequence/solutions/1326308/c-python-dp-binary-search-bit-segment-tree-solutions-picture-explain-o-nlogn/
+| Longest Consecutive Sequence | https://leetcode.com/problems/longest-consecutive-sequence/description/ | Example 1: Input: nums = [100,4,200,1,3,2]<br>Output: 4<br>Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.| O(n) time 
 
 
 

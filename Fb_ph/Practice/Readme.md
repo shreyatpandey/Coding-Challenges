@@ -63,6 +63,17 @@ Leetcode Premium Meta Questions which I have not done it yet
 | Longest Increasing Subsequence | https://leetcode.com/problems/longest-increasing-subsequence/description/ | Input: nums = [10,9,2,5,3,7,101,18]<br>Output: 4<br>Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4.| https://leetcode.com/problems/longest-increasing-subsequence/solutions/1326308/c-python-dp-binary-search-bit-segment-tree-solutions-picture-explain-o-nlogn/
 | Longest Consecutive Sequence | https://leetcode.com/problems/longest-consecutive-sequence/description/ | Example 1: Input: nums = [100,4,200,1,3,2]<br>Output: 4<br>Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.| O(n) time 
 
+**Path Sum Series**<br>
+| Question | Link | Input | Concept Involved |
+| :---:   | :---: | :---: | :---: |
+| Path Sum | https://leetcode.com/problems/path-sum/description/ | Input: root = [1,2,3], targetSum = 5<br>Output: false<br>
+Explanation: There two root-to-leaf paths in the tree:<br>(1 --> 2): The sum is 3.<br>(1 --> 3): The sum is 4.<br>There is no root-to-leaf path with sum = 5.|
+| Path Sum II | https://leetcode.com/problems/path-sum-ii/description/ | Input: root = [5,4,8,11,null,13,4,7,2,null,null,5,1], targetSum = 22<br>Output: [[5,4,11,2],[5,8,4,5]]<br>Explanation: There are two paths whose sum equals targetSum:<br>5 + 4 + 11 + 2 = 22<br>5 + 8 + 4 + 5 = 22 |
+| Path Sum III | https://leetcode.com/problems/path-sum-iii/description/| Input: root = [5,4,8,11,null,13,4,7,2,null,null,5,1], targetSum = 22<br>Output: 3 |
+| Path Sum IV | https://leetcode.com/problems/path-sum-iv/description/ | Input: nums = [113,215,221]<br>Output: 12<br>Explanation: The tree that the list represents is shown.<br>The path sum is (3 + 5) + (3 + 1) = 12.|
+| Sum Root to Leaf Numbers | https://leetcode.com/problems/sum-root-to-leaf-numbers/description/ | Input: root = [1,2,3]<br>Output: 25<br>Explanation:<br>The root-to-leaf path 1->2 represents the number 12.<br>The root-to-leaf path 1->3 represents the number 13.<br>Therefore, sum = 12 + 13 = 25.|
+| Binary Tree Maximum Path | https://leetcode.com/problems/binary-tree-maximum-path-sum/description/ | Input: root = [-10,9,20,null,null,15,7]<br>Output: 42<br>Explanation: The optimal path is 15 -> 20 -> 7 with a path sum of 15 + 20 + 7 = 42. |
+
 
 
 

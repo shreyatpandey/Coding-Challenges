@@ -80,3 +80,49 @@ class Solution:
   '''
   Quick-Select may not work in this case as the output needs to be lexicographically be sorted
   '''
+'''
+If the output need not be lexicograhically sorted
+Tc:- O(n) best case, O(n^2) in worst case
+Sc:- O(1)
+'''
+class Solution:
+    def topKFrequent(self, words: List[str], k: int) -> List[str]:
+        counts_dict = Counter(words)
+        counts = list(counts_dict.items())
+        
+        n = len(counts)
+        
+        # since we are sorting in ASC order, the kth most frequent element is the (n - k)th element
+        self.quickselect(0, n - 1, n - k, counts)
+        return [count[0] for count in counts[n - k:]]
+     
+    def partition(self, left: int, right: int, counts: list[tuple[int, int]]):
+        # get random pivot index
+        pivot_index = random.randint(left, right)  
+        pivot_value = counts[pivot_index][1]
+        # move pivot element to the end
+        counts[pivot_index], counts[right] = counts[right], counts[pivot_index]
+        # when we find an element less than pivot_value, move it left of pivot_index and increment the swap position
+        i = left
+        for j in range(left, right):
+            if counts[j][1] < pivot_value:
+                counts[i], counts[j] = counts[j], counts[i]
+                i += 1
+        # move pivot to its final place
+        counts[right], counts[i] = counts[i], counts[right]
+        return i
+        
+    def quickselect(self, left: int, right: int, k_target_index: int, counts: list[tuple[int, int]]):
+        # base case: if there is only one element in the partition, it's already sorted
+        if left == right:
+            return
+        # find the pivot's correct position
+        pivot_index = self.partition(left, right, counts)
+        # if the pivot index is equal to our target, we're done
+        if k_target_index == pivot_index:
+            return
+        elif k_target_index < pivot_index:
+            self.quickselect(left, pivot_index - 1, k_target_index, counts)
+        else:
+            self.quickselect(pivot_index + 1, right, k_target_index, counts)
+

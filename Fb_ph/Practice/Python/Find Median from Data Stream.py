@@ -35,13 +35,16 @@ Divide problem into 3 subproblems. Here are the groupings:
 Numbers < 0: You have 2 options: 
 1. Use 2-heap solution (that we coded in original solution), 
 or 1. Use 1 array, which represents 1 bucket
+
 0 <= Numbers <= 100: Use 100 buckets using an array of size 100
 
 100 < Numbers: You have 2 options: 
 1. Use 2-heap solution (that we coded in original solution), or 1. 
 Use 1 array, which represents 1 bucket
-For each number we get in the stream, insert it into 1 of the 3 groupings, keeping track of the count of numbers in each of these 3 groupings
+For each number we get in the stream, insert it into 1 of the 3 groupings,
+keeping track of the count of numbers in each of these 3 groupings
 To find the median, see which grouping the median must fall into and find it there.
+
 For Numbers < 0 and 100 < Numbers, 
 using 2 arrays/buckets is the more practical solution since it is very unlikely the median will fall into either bucket/array. 
 This makes findMedian() O(1) in average case. 

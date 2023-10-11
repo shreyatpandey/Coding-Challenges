@@ -61,6 +61,7 @@ Leetcode Premium Meta Questions which I have not done it yet
 **Longest Sequences**<br>
 | Question | Link | Input | Concept Involved |
 | :---:   | :---: | :---: | :---: |
+| Longest Continuous Increasing Subsequence | https://leetcode.com/problems/longest-continuous-increasing-subsequence/description/ | Input: nums = [1,3,5,4,7]<br>Output: 3<br>Explanation: The longest continuous increasing subsequence is [1,3,5] with length 3.<br>Even though [1,3,5,7] is an increasing subsequence, it is not continuous as elements 5 and 7 are separated by element4.| Sliding Window
 | Longest Increasing Subsequence | https://leetcode.com/problems/longest-increasing-subsequence/description/ | Input: nums = [10,9,2,5,3,7,101,18]<br>Output: 4<br>Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4.| https://leetcode.com/problems/longest-increasing-subsequence/solutions/1326308/c-python-dp-binary-search-bit-segment-tree-solutions-picture-explain-o-nlogn/
 | Longest Consecutive Sequence | https://leetcode.com/problems/longest-consecutive-sequence/description/ | Example 1: Input: nums = [100,4,200,1,3,2]<br>Output: 4<br>Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.| O(n) time 
 

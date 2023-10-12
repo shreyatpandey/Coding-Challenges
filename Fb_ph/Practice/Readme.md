@@ -16,6 +16,7 @@ Leetcode Premium Meta Questions which I have not done it yet
 | Palindrome Permutation 2|https://leetcode.com/problems/palindrome-permutation-ii/description/|Input: s = "aabb"<br>Output: ["abba","baab"]|
 | Design A Leaderboard | https://leetcode.com/problems/design-a-leaderboard/description/ | Input:["Leaderboard","addScore","addScore","addScore","addScore","addScore","top","reset","reset","addScore","top"]<br>[[],[1,73],[2,56],[3,39],[4,51],[5,4],[1],[1],[2],[2,51],[3]]<br>Output: [null,null,null,null,null,null,73,null,null,null,141] |
 | All Elements in Two Binary Search Trees | https://leetcode.com/problems/all-elements-in-two-binary-search-trees/description/ | Input: root1 = [2,1,4], root2 = [1,0,3]<br>Output: [0,1,1,2,3,4] |
+| Boundary of Binary Tree | https://leetcode.com/problems/boundary-of-binary-tree/description/ | Input: root = [1,null,2,3,4]<br>Output: [1,3,4,2]<br>Explanation:- The left boundary is empty because the root does not have a left child.<br>- The right boundary follows the path starting from the root's right child 2 -> 4.<br>4 is a leaf, so the right boundary is [2].<br>- The leaves from left to right are [3,4].<br>Concatenating everything results in [1] + [] + [3,4] + [2] = [1,3,4,2]. | 
 
 
 

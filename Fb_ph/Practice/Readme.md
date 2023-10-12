@@ -1,6 +1,6 @@
 # Meta Top Frequently asked Questions
 
-Leetcode Premium Meta Questions which I have not done it yet
+Leetcode Premium Meta Questions which I have not done it yet as well as done some of them
 | Question | Link | Input |
 | :---: | :---: | :---: |
 | Print Immutable Linked List in Reverse | https://leetcode.com/problems/print-immutable-linked-list-in-reverse/description/| ImmutableListNode: An interface of immutable linked list, you are given the head of the list<br>Example 1:Input: head = [1,2,3,4]<br>Output: [4,3,2,1]<br>|

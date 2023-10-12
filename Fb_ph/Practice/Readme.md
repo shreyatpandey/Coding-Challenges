@@ -60,6 +60,7 @@ Leetcode Premium Meta Questions which I have not done it yet as well as done som
 | Sum Root to Leaf Numbers | https://leetcode.com/problems/sum-root-to-leaf-numbers/description/ | 
 
 **Longest Sequences**<br>
+Difference between consecutive and continuous is for consecutive, nums[i+1] = nums[i] + 1<br> 
 | Question | Link | Input | Concept Involved |
 | :---:   | :---: | :---: | :---: |
 | Longest Continuous Increasing Subsequence | https://leetcode.com/problems/longest-continuous-increasing-subsequence/description/ | Input: nums = [1,3,5,4,7]<br>Output: 3<br>Explanation: The longest continuous increasing subsequence is [1,3,5] with length 3.<br>Even though [1,3,5,7] is an increasing subsequence, it is not continuous as elements 5 and 7 are separated by element4.| Sliding Window

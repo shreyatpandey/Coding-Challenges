@@ -13,12 +13,15 @@
 | Employee Free Time|https://leetcode.com/problems/employee-free-time/description/|Input: schedule = [[[1,2],[5,6]],[[1,3]],[[4,10]]]<br>Output: [[3,4]]<br>Explanation: There are a total of three employees, and all common<br>free time intervals would be [-inf, 1], [3, 4], [10, inf].<br>We discard any intervals that contain inf as they aren't finite.|
 |First Unique Number|https://leetcode.com/problems/first-unique-number/description/|Input<br>["FirstUnique","showFirstUnique","add","showFirstUnique","add","showFirstUnique","add","showFirstUnique"]<br>[[[2,3,5]],[],[5],[],[2],[],[3],[]]<br>Output: [null,2,null,2,null,3,null,-1]|
 | Tree Diameter|https://leetcode.com/problems/tree-diameter/description/|Input: edges = [[0,1],[0,2]]<br>Output: 2<br>Explanation: The longest path of the tree is the path 1 - 0 - 2.|
+| Palindrome Permutation | https://leetcode.com/problems/palindrome-permutation/description/ | Example 1:Input: s = "code"Output: false|
 | Palindrome Permutation 2|https://leetcode.com/problems/palindrome-permutation-ii/description/|Input: s = "aabb"<br>Output: ["abba","baab"]|
 | Design A Leaderboard | https://leetcode.com/problems/design-a-leaderboard/description/ | Input:["Leaderboard","addScore","addScore","addScore","addScore","addScore","top","reset","reset","addScore","top"]<br>[[],[1,73],[2,56],[3,39],[4,51],[5,4],[1],[1],[2],[2,51],[3]]<br>Output: [null,null,null,null,null,null,73,null,null,null,141] |
 | All Elements in Two Binary Search Trees | https://leetcode.com/problems/all-elements-in-two-binary-search-trees/description/ | Input: root1 = [2,1,4], root2 = [1,0,3]<br>Output: [0,1,1,2,3,4] |
 | Boundary of Binary Tree | https://leetcode.com/problems/boundary-of-binary-tree/description/ | Input: root = [1,null,2,3,4]<br>Output: [1,3,4,2]<br>Explanation:- The left boundary is empty because the root does not have a left child.<br>- The right boundary follows the path starting from the root's right child 2 -> 4.<br>4 is a leaf, so the right boundary is [2].<br>- The leaves from left to right are [3,4].<br>Concatenating everything results in [1] + [] + [3,4] + [2] = [1,3,4,2]. |
 | Binary Tree Longest Consecutive Sequence | https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/description/ | Input: root = [1,null,3,2,4,null,null,null,5]<br>Output: 3<br>Explanation: Longest consecutive sequence path is 3-4-5, so return 3.|
 | Largest BST Subtree | https://leetcode.com/problems/largest-bst-subtree/description/ | Input: root = [10,5,15,1,8,null,7]<br>Output: 3<br>Explanation: The Largest BST Subtree in this case is the highlighted one. The return value is the subtree's size, which is 3.|
+| Add Bold Tag in String | https://leetcode.com/problems/add-bold-tag-in-string/description/ | Example 1:Input: s = "abcxyz123", words = ["abc","123"]
+Output: "<b>abc</b>xyz<b>123</b>"<br>Explanation: The two strings of words are substrings of s as following: "abcxyz123".We add <b> before each substring and </b> after each substring.|
 
 **Hard - Level Problems**<br>
 | Question | Link | Input |

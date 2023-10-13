@@ -20,7 +20,22 @@ Leetcode Premium Meta Questions which I have not done it yet as well as done som
 | Binary Tree Longest Consecutive Sequence | https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/description/ | Input: root = [1,null,3,2,4,null,null,null,5]<br>Output: 3<br>Explanation: Longest consecutive sequence path is 3-4-5, so return 3.|
 | Largest BST Subtree | https://leetcode.com/problems/largest-bst-subtree/description/ | Input: root = [10,5,15,1,8,null,7]<br>Output: 3<br>Explanation: The Largest BST Subtree in this case is the highlighted one. The return value is the subtree's size, which is 3.|
 
+Hard - Level Problems 
+| Question | Link | Input |
+| :---: | :---: | :---: |
+| Text Justification | https://leetcode.com/problems/text-justification/description/ | Input: words = ["This", "is", "an", "example", "of", "text", "justification."], maxWidth = 16<br>Output:<br>[ "This    is    an", "example  of text", "justification.  "]
+| Sum-of-k-mirror-numbers| https://leetcode.com/problems/sum-of-k-mirror-numbers/description/ | Input: k = 2, n = 5 <br>Output: 25<br>Explanation:
+The 5 smallest 2-mirror numbers and their representations in base-2 are listed as follows:
+  base-10    base-2
+    1          1
+    3          11
+    5          101
+    7          111
+    9          1001
+Their sum = 1 + 3 + 5 + 7 + 9 = 25. 
 
+
+        
 
 
 

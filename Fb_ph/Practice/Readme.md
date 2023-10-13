@@ -20,7 +20,7 @@
 | Boundary of Binary Tree | https://leetcode.com/problems/boundary-of-binary-tree/description/ | Input: root = [1,null,2,3,4]<br>Output: [1,3,4,2]<br>Explanation:- The left boundary is empty because the root does not have a left child.<br>- The right boundary follows the path starting from the root's right child 2 -> 4.<br>4 is a leaf, so the right boundary is [2].<br>- The leaves from left to right are [3,4].<br>Concatenating everything results in [1] + [] + [3,4] + [2] = [1,3,4,2]. |
 | Binary Tree Longest Consecutive Sequence | https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/description/ | Input: root = [1,null,3,2,4,null,null,null,5]<br>Output: 3<br>Explanation: Longest consecutive sequence path is 3-4-5, so return 3.|
 | Largest BST Subtree | https://leetcode.com/problems/largest-bst-subtree/description/ | Input: root = [10,5,15,1,8,null,7]<br>Output: 3<br>Explanation: The Largest BST Subtree in this case is the highlighted one. The return value is the subtree's size, which is 3.|
-| Add Bold Tag in String | https://leetcode.com/problems/add-bold-tag-in-string/description/ |Example 1:Input: s = "abcxyz123",words = ["abc","123"]<br>Output: "<b>abc</b>xyz<b>123</b>"<br>Explanation: The two strings of words are substrings of s as following: "abcxyz123".We add <b> before each<br>substring and </b> after each substring.|
+| Add Bold Tag in String | https://leetcode.com/problems/add-bold-tag-in-string/description/ |Example 1:Input: s = "abcxyz123",words = ["abc","123"]<br>Output: **"<b>abc</b>xyz<b>123</b>"**<br>Explanation: The two strings of words are substrings of s as following: "abcxyz123".We add <b> before each<br>substring and </b> after each substring.|
 
 **Hard - Level Problems**<br>
 | Question | Link | Input |

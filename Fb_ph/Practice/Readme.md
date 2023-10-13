@@ -24,8 +24,7 @@ Hard - Level Problems
 | Question | Link | Input |
 | :---: | :---: | :---: |
 | Text Justification | https://leetcode.com/problems/text-justification/description/ | Input: words = ["This", "is", "an", "example", "of", "text", "justification."], maxWidth = 16<br>Output:<br>[ "This    is    an", "example  of text", "justification.  "]
-| Sum-of-k-mirror-numbers [ One killer of a question]| https://leetcode.com/problems/sum-of-k-mirror-numbers/description/ | Input: k = 2, n = 5 <br>Output: 25<br>Explanation:
-The 5 smallest 2-mirror numbers and their representations in base-2 are listed as follows: 1<br>Their sum = 1 + 3 + 5 + 7 + 9 = 25.|
+| Sum-of-k-mirror-numbers [ One killer of a question]| https://leetcode.com/problems/sum-of-k-mirror-numbers/description/ | Input: k = 2, n = 5 <br>Output: 25<br>Explanation:<br>The 5 smallest 2-mirror numbers and their representations in base-2 are listed as follows: 1<br>Their sum = 1 + 3 + 5 + 7 + 9 = 25.|
 
 
         

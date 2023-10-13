@@ -1,6 +1,6 @@
 # Meta Top Frequently asked Questions
 
-Leetcode Premium Meta Questions which I have not done it yet as well as done some of them
+**Leetcode Premium Meta Questions which I have not done it yet as well as done some of them**<br>
 | Question | Link | Input |
 | :---: | :---: | :---: |
 | Print Immutable Linked List in Reverse | https://leetcode.com/problems/print-immutable-linked-list-in-reverse/description/| ImmutableListNode: An interface of immutable linked list, you are given the head of the list<br>Example 1:Input: head = [1,2,3,4]<br>Output: [4,3,2,1]<br>|
@@ -20,7 +20,7 @@ Leetcode Premium Meta Questions which I have not done it yet as well as done som
 | Binary Tree Longest Consecutive Sequence | https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/description/ | Input: root = [1,null,3,2,4,null,null,null,5]<br>Output: 3<br>Explanation: Longest consecutive sequence path is 3-4-5, so return 3.|
 | Largest BST Subtree | https://leetcode.com/problems/largest-bst-subtree/description/ | Input: root = [10,5,15,1,8,null,7]<br>Output: 3<br>Explanation: The Largest BST Subtree in this case is the highlighted one. The return value is the subtree's size, which is 3.|
 
-Hard - Level Problems 
+**Hard - Level Problems**<br>
 | Question | Link | Input |
 | :---: | :---: | :---: |
 | Text Justification | https://leetcode.com/problems/text-justification/description/ | Input: words = ["This", "is", "an", "example", "of", "text", "justification."], maxWidth = 16<br>Output:<br>[ "This    is    an", "example  of text", "justification.  "]

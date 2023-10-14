@@ -121,5 +121,20 @@ Action:- Firstly I checked the code base where there was logging of dynamic stri
 Also, I removed redundant and unnecessary logging of the similar nature. In the sense, if there is logging in one function and it's repeatedly called at mutliple places, I tried to reduce the logging.
 Result:- As a result, I simplified the process of logging mechanism for my team at Qualcomm, thereby effectively reducing the high memory consumption.
 
+Q11] Career Transitions
+Think about the career transitions you’ve made so far. Write about recent ones: what motivated them, what you felt like went well, and what could have gone better.
+Situation:-
+Yes I have made a career transitions. This happened when I was working as a software engineer at Qualcomm. I had nearly completed 3 years at Qualcomm and in wireless domain. Also at that time, due to covid there was a massive surge in cloud computing domain. This actually motivated met even more to look for domain in infrastructure and cloud computing, and thats what I wanted to do in future as well.
+Task:
+First I started doing short online courses regarding infrastructure and distributed system and did some cloud certificate course. Once, I got at a certain level of domain knowledge I started researching about companies in this domain.
+Action:
+    I expanded my networking to include, folks who worked on this. I explained my enthusiasm and was open about desire to learn about this domain. Luckily I was able to secure job at Microsoft through one of the referral.
+
+Result:
+Hiring team at Microsoft was actually quite impressed with my enthusiasm in cloud computing. As a result I was able to get hired in Azure Cloud.
+Now looking back, I feel I could have enhanced my knowledge more in cloud computing and researched more about the job responsibilities, because sometimes in enthusiasm you overlook certain aspects as well.
+
+
+
 
 

@@ -158,6 +158,14 @@ Q] Tell me about a time when you had to be frugal.
 Q] Tell me about a time when you had to rely on yourself to complete a project.
 
 Earn Trust:-
+Story-1:- [ Tell me about a time when you helped one of your teammates]
+Took one of my coworkers work , due to her personal issues and was going behind . Somebody's else code is also my code
+Story-2:- [Gain trust]
+Situation:- Describe about situation in Microsoft
+Be open about the work progress and also be bold enough to share your views in the design document.
+Be proactive on taking up any customer issues or tickets which are directed towards your team.
+Emphasize of empathy to enhance team morale
+
 Q] Tell me about a time when you helped one of your teammates?
 Q] Describe a time when you had to speak up in a difficult or uncomfortable environment.
 Q] What would you do to gain the trust of your team?

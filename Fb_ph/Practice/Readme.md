@@ -90,6 +90,12 @@ Difference between consecutive and continuous is for consecutive, nums[i+1] = nu
 | Sum Root to Leaf Numbers | https://leetcode.com/problems/sum-root-to-leaf-numbers/description/ | Input: root = [1,2,3]<br>Output: 25<br>Explanation:<br>The root-to-leaf path 1->2 represents the number 12.<br>The root-to-leaf path 1->3 represents the number 13.<br>Therefore, sum = 12 + 13 = 25.|
 | Binary Tree Maximum Path | https://leetcode.com/problems/binary-tree-maximum-path-sum/description/ | Input: root = [-10,9,20,null,null,15,7]<br>Output: 42<br>Explanation: The optimal path is 15 -> 20 -> 7 with a path sum of 15 + 20 + 7 = 42. |
 
+**Manhattan Distance**<br>
+| Question | Link | Input |
+| :---:   | :---: | :---: |
+| Shortest Distance from All Buildings | https://leetcode.com/problems/shortest-distance-from-all-buildings/description/ | Input: grid =[[1,0,2,0,1],[0,0,0,0,0],[0,0,1,0,0]]<br>Output: 7<br>Explanation: Given three buildings at (0,0), (0,4), (2,2), and an obstacle at (0,2).<br>The point (1,2) is an ideal empty land to build a house, as the total travel distance of 3+3+1=7 is minimal.<br>So return 7.|
+| Best Meeting Point |
+
 
 
 

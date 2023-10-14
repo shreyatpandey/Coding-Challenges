@@ -23,28 +23,30 @@ Use 'I' versus 'we'
 Q1] Tell me a situation where you had to change the course of your action? What are the key takeaways/lessons learned from this? or
 Tell me about a time you failed to deliver the project.
 Ans:- 
-Situation:- While working at Microsoft, there was consistent concurrency/deadlock issue that my service was facing when it was deployed over Broad region in Azure clusters. This caused my service performance to degrade considerably and we were not able to meet 99% availability target under 
-our SLA. This involved that I had change the course of my action.
+Situation:- While working at Microsoft, there was consistent concurrency/deadlock issue that my service was facing when it was deployed over Broad/Production region in Azure clusters. This caused my service performance to degrade considerably and we were not able to meet 99% availability target under  our SLA. This involved that I had change the course of my action.
+
 Task:- Being the owner of the module where the concurrency issue was occuring, I had to bring the concurrency issue as low as possible.
+
 Action:- I started investigating into the race condition that resulted into concurrency problem. 
 I found out that there I had to change the data-structure to store the record from persistent storage into an in-memory data-structure. 
 This led to complete change of my action which I had initially planned. 
 For this I had to move fast so that deployment in Broad cluster does not affect other services/customers.
+
 Result:- I was able to make optimal changes in our code base and reduce the concurrency issue by big margin around ~75% and customer was satisified with our service.
+
 Key Takeways:- I learnt that I had to think of long term impact while designing my service architecture.
 
 Q2] Tell me a situation where you had to deal with unexpected event in your professional space?
 Ans:- 
 Situation:- One situation , I can recollect is while working as a software engineer at Qualcomm.
-We had an unexpected event and demand from our major customer to add one feature. Feature was to include add Voice call service setting and this could involve changing a lot of code.
+We had an unexpected event and demand from our major customer to add multiple feature. Feature was to include add Voice call service setting and this could involve changing a lot of code.
 Task:- I being an owner of the code and module that supported this voice call service, I had to thoroughly check if this last minute and unexpected event can be made and not change other code base
 Action:- I took upon the initiative to check the code. Given that it was one of major and important operator/customer, I decided to put their demand behind a hard configuration setting specific to that operator and then made necessary code changes. After that I had thoroughly tested it out.
 Result:- As a result , I was able to think of future as the code should not have much impact on other customers/operator. Consequently, the code ran without any issue.
 
 Q3] Tell me a time where you had to deal with company/person having bad culture?
 Ans:- 
-Situation:- Every company/person has it's own culture. In one of the situation, when I was working over cross-functional project at Qualcomm, I had 
-to deal with person who was the Point of contact from other team being highly unresponsive. Because of this, my project was getting delayed
+Situation:- Every company/person has it's own culture. In one of the situation, when I was working over cross-functional project at Qualcomm, I had to deal with person who was the Point of contact from other team being highly unresponsive. Because of this, my project was getting delayed.
 Task:- Given that my project had to be completed before the deadline, I had to take initiative to make sure that person, cooperates and collaborate with me to get my project done.
 Action:- I first politely and directly approached my counterpart, and took steps to understand his reluctance. At the same time, respecting my colleague for his privacy. When things did not work out, I escalated to my manager and his manager in the mail-list and expressed my concerns for it. 
 Finally, the other person, began to collaborate more with me regarding it.
@@ -128,11 +130,27 @@ Yes I have made a career transitions. This happened when I was working as a soft
 Task:
 First I started doing short online courses regarding infrastructure and distributed system and did some cloud certificate course. Once, I got at a certain level of domain knowledge I started researching about companies in this domain.
 Action:
-    I expanded my networking to include, folks who worked on this. I explained my enthusiasm and was open about desire to learn about this domain. Luckily I was able to secure job at Microsoft through one of the referral.
+I expanded my networking to include, folks who worked on this. 
+I explained my enthusiasm and was open about desire to learn about this domain. Luckily I was able to secure job at Microsoft through one of the referral.
 
 Result:
 Hiring team at Microsoft was actually quite impressed with my enthusiasm in cloud computing. As a result I was able to get hired in Azure Cloud.
 Now looking back, I feel I could have enhanced my knowledge more in cloud computing and researched more about the job responsibilities, because sometimes in enthusiasm you overlook certain aspects as well.
+
+Q12] Write about how you’ve taken the initiative on teams you’ve been a part of. Where have you gone beyond what was expected?
+Ans:-
+Situation:
+During my time at Qualcomm, there was hughe gap in documentation whether it was the upcoming feature request or the past delivered project. Having a set of definite documentation is important for members of the team as well as new member who join as they could easily ramp up basically aligning with our future outlook.
+Task:
+    I took upon the task/ initiative of collecting previous project and managing the documentation 
+
+Action:
+   I started with writing effective and concise documentation. Also made an automated Jenkin job that periodically used to give update on the previous project done. It also used to give reminder to other team members to upload their design document on the folder provided.
+Apart from this, in Qualcomm you need to perform device testing and it is a tedious process with lot of steps getting involved in it . 
+I made a small video of demonstration and documented it in the folder.
+
+Result:
+My team and my manager was extremely happy with my initiative and I was able to reduce the search time for documentation of the team by 40% as it become a single folder source
 
 
 

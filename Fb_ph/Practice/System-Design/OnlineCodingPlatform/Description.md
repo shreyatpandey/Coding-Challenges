@@ -94,20 +94,22 @@
     3] Sort all the users by points scored and then by order of timestamp with failure penalty applied
     3 different jobs in a row<br>
 
-    Leaderboard schema:-<br>
+    **Leaderboard schema**:-<br>
     {<br>
        user_id:- 123000<br>
        rank:- 1500<br>
        contest_id: 150 ** - (sort key/secondary index)<br>
        submissions: { successful_submission_link:- url, fail_count: 3, success_timestamp: 167000 }<br>
     }<br>
-    user info schema:-<br>
+
+    **user info schema**:-<br>
     {<br>
        user_id: 123000<br>
        contestant_rank : { contest_id: 160, contest_rank: 2300}<br>
        global_rank: 25,000<br>
     }<br>
-    problem store schema:<br>
+
+    **Problem store schema**:<br>
     {<br>
       problem_id: 2300<br>
       url_prompt_link:<br>

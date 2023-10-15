@@ -107,7 +107,7 @@ Difference between consecutive and continuous is for consecutive, nums[i+1] = nu
 | :---:   | :---: | :---: |
 | Find all Numbers Disappeared in an Array| https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/ | Input: nums =[4,3,2,7,8,2,3,1]<br>Output: [5,6]|
 | First Missing Positive | https://leetcode.com/problems/first-missing-positive/description/ | Input: nums = [3,4,-1,1]<br>Output: 2<br>Explanation: 1 is in the array but 2 is missing.|
-
+| Missing Number | https://leetcode.com/problems/missing-number/description/ | Input: nums = [3,0,1]<br>Output: 2<br>Explanation: n = 3 since there are 3 numbers, so all numbers are in the range [0,3]. 2 is the missing number in the range since it does not appear in nums.|
 
 
 

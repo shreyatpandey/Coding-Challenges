@@ -88,11 +88,11 @@
        url_link:- distributed file storage link<br>
        isPassing: true<br>
      }<br>
-    Ranking Map Reduce Jobs
-    1] find timestamps for first passing result of each user for each problem (find timestamp with least value)
-    2] Count up the number of failed submissions from prior to first passing result timestamp
+    Ranking Map Reduce Jobs<br>
+    1] find timestamps for first passing result of each user for each problem (find timestamp with least value)<br>
+    2] Count up the number of failed submissions from prior to first passing result timestamp<br>
     3] Sort all the users by points scored and then by order of timestamp with failure penalty applied
-    3 different jobs in a row
+    3 different jobs in a row<br>
 
     Leaderboard schema:-<br>
     {<br>

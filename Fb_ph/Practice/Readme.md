@@ -103,11 +103,13 @@ Difference between consecutive and continuous is for consecutive, nums[i+1] = nu
 | Walls and Gates | https://leetcode.com/problems/walls-and-gates/description/ | -1 A wall or an obstacle.<br>0 A gate.<br> INF Infinity means an empty room. Input: rooms = [[2147483647,-1,0,2147483647],[2147483647,2147483647,2147483647,-1],[2147483647,-1,2147483647,-1],[0,-1,2147483647,2147483647]]<br>Output: [[3,-1,0,1],[2,2,1,-1],[1,-1,2,-1],[0,-1,3,4]] |
 
 **Missing Number**<br>
-| Question | Link | Input |
-| :---:   | :---: | :---: |
-| Find all Numbers Disappeared in an Array| https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/ | Input: nums =[4,3,2,7,8,2,3,1]<br>Output: [5,6]|
-| First Missing Positive | https://leetcode.com/problems/first-missing-positive/description/ | Input: nums = [3,4,-1,1]<br>Output: 2<br>Explanation: 1 is in the array but 2 is missing.|
-| Missing Number | https://leetcode.com/problems/missing-number/description/ | Input: nums = [3,0,1]<br>Output: 2<br>Explanation: n = 3 since there are 3 numbers, so all numbers are in the range [0,3]. 2 is the missing number in the range since it does not appear in nums.|
+| Question | Link | Input | Sorted or Unsorted
+| :---:   | :---: | :---: | :---: |
+| Find all Numbers Disappeared in an Array| https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/ | Input: nums =[4,3,2,7,8,2,3,1]<br>Output: [5,6]| Unsorted | 
+| First Missing Positive | https://leetcode.com/problems/first-missing-positive/description/ | Input: nums = [3,4,-1,1]<br>Output: 2<br>Explanation: 1 is in the array but 2 is missing.| Unsorted | 
+| Missing Number | https://leetcode.com/problems/missing-number/description/ | Input: nums = [3,0,1]<br>Output: 2<br>Explanation: n = 3 since there are 3 numbers, so all numbers are in the range [0,3]. 2 is the missing number in the range since it does not appear in nums.| Unsorted |
+| Missing Element in Sorted Array | https://leetcode.com/problems/missing-element-in-sorted-array/description/ | Input: nums = [4,7,9,10], k = 1<br> Output: 5<br>Explanation: The first missing number is 5.|
+
 
 
 

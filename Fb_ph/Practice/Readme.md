@@ -112,6 +112,12 @@ Difference between consecutive and continuous is for consecutive, nums[i+1] = nu
 | Missing Element in Sorted Array | https://leetcode.com/problems/missing-element-in-sorted-array/description/ | Input: nums = [4,7,9,10], k = 1<br> Output: 5<br>Explanation: The first missing number is 5.| Sorted |
 | Missing Ranges | https://leetcode.com/problems/missing-ranges/description/ | Input: nums = [0,1,3,50,75], lower = 0, upper = 99<rb>Output: [[2,2],[4,49],[51,74],[76,99]]<br>Explanation: The ranges are:<br>[2,2][4,49][51,74][76,99] | Sorted
 
+**Distance**<br>
+| Question | Link | Input |
+| :---:   | :---: | :---: |
+| Edit Distance | https://leetcode.com/problems/edit-distance/description/| You have the following three operations permitted on a word:<br>Insert a character , Delete a character, Replace a character<br>Input: word1 = "horse", word2 = "ros" , Output: 3 , Explanation: horse -> rorse (replace 'h' with 'r'),rorse -> rose (remove 'r'), rose -> ros (remove 'e')|
+| One Edit Distance | https://leetcode.com/problems/one-edit-distance/description/ | A string s is said to be one distance apart from a string t if you can:Insert exactly one character into s to get t , Delete exactly one character from s to get t , Replace exactly one character of s with a different character to get t.<br>Input: s = "ab", t = "acb" , Output: true , Explanation: We can insert 'c' into s to get t.|
+
 
 
 

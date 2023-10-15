@@ -96,11 +96,18 @@ Difference between consecutive and continuous is for consecutive, nums[i+1] = nu
 | Shortest Distance from All Buildings | https://leetcode.com/problems/shortest-distance-from-all-buildings/description/ | Input: grid =[[1,0,2,0,1],[0,0,0,0,0],[0,0,1,0,0]]<br>Output: 7<br>Explanation: Given three buildings at (0,0), (0,4), (2,2), and an obstacle at (0,2).<br>The point (1,2) is an ideal empty land to build a house, as the total travel distance of 3+3+1=7 is minimal.<br>So return 7.|
 | Best Meeting Point |
 
-**Bricks and Walls Type**
+**Bricks and Walls Type**<br>
 | Question | Link | Input |
 | :---:   | :---: | :---: |
 | The Maze | https://leetcode.com/problems/the-maze/ | Input: maze = [[0,0,1,0,0],[0,0,0,0,0],[0,0,0,1,0],[1,1,0,1,1],[0,0,0,0,0]], start = [0,4],destination = [4,4]<br>Output: true<br>Explanation: One possible way is : left -> down -> left -> down -> right -> down -> right.|
 | Walls and Gates | https://leetcode.com/problems/walls-and-gates/description/ | -1 A wall or an obstacle.<br>0 A gate.<br> INF Infinity means an empty room. Input: rooms = [[2147483647,-1,0,2147483647],[2147483647,2147483647,2147483647,-1],[2147483647,-1,2147483647,-1],[0,-1,2147483647,2147483647]]<br>Output: [[3,-1,0,1],[2,2,1,-1],[1,-1,2,-1],[0,-1,3,4]] |
+
+**Missing Number**<br>
+| Question | Link | Input |
+| :---:   | :---: | :---: |
+| Find all Numbers Disappeared in an Array| https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/ | Input: nums =[4,3,2,7,8,2,3,1]<br>Output: [5,6]|
+| First Missing Positive | https://leetcode.com/problems/first-missing-positive/description/ | Input: nums = [3,4,-1,1]<br>Output: 2<br>Explanation: 1 is in the array but 2 is missing.|
+
 
 
 

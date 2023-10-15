@@ -109,6 +109,8 @@ Difference between consecutive and continuous is for consecutive, nums[i+1] = nu
 | First Missing Positive | https://leetcode.com/problems/first-missing-positive/description/ | Input: nums = [3,4,-1,1]<br>Output: 2<br>Explanation: 1 is in the array but 2 is missing.| Unsorted | 
 | Missing Number | https://leetcode.com/problems/missing-number/description/ | Input: nums = [3,0,1]<br>Output: 2<br>Explanation: n = 3 since there are 3 numbers, so all numbers are in the range [0,3]. 2 is the missing number in the range since it does not appear in nums.| Unsorted |
 | Missing Element in Sorted Array | https://leetcode.com/problems/missing-element-in-sorted-array/description/ | Input: nums = [4,7,9,10], k = 1<br> Output: 5<br>Explanation: The first missing number is 5.| Sorted |
+| Missing Ranges | https://leetcode.com/problems/missing-ranges/description/ | Input: nums = [0,1,3,50,75], lower = 0, upper = 99<rb>Output: [[2,2],[4,49],[51,74],[76,99]]<br>Explanation: The ranges are:<br>[2,2][4,49][51,74][76,99] | Sorted
+
 
 
 

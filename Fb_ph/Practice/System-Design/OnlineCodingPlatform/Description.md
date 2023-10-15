@@ -79,14 +79,14 @@
 
  # DB Schema
   * Result Metadata store:-
-     From submission evaluation task runners gets connected to result metadata store
-    Result Metdata Schema:-
+     From submission evaluation task runners gets connected to result metadata store<br>
+    Result Metdata Schema:-<br>
      {
-       timestamp:- 17900000
-       user_id:- 123000 - indicating who made the submission
-       submission_uuid:- abcdef-12-lmnopq
-       url_link:- distributed file storage link
-       isPassing: true
+       timestamp:- 17900000<br>
+       user_id:- 123000 - indicating who made the submission<br>
+       submission_uuid:- abcdef-12-lmnopq<br>
+       url_link:- distributed file storage link<br>
+       isPassing: true<br>
      }
     Ranking Map Reduce Jobs
     1] find timestamps for first passing result of each user for each problem (find timestamp with least value)
@@ -94,23 +94,23 @@
     3] Sort all the users by points scored and then by order of timestamp with failure penalty applied
     3 different jobs in a row
 
-    Leaderboard schema:-
+    Leaderboard schema:-<br>
     {
-       user_id:- 123000
-       rank:- 1500
-       contest_id: 150 ** - (sort key/secondary index)
-       submissions: { successful_submission_link:- url, fail_count: 3, success_timestamp: 167000 }
+       user_id:- 123000<br>
+       rank:- 1500<br>
+       contest_id: 150 ** - (sort key/secondary index)<br>
+       submissions: { successful_submission_link:- url, fail_count: 3, success_timestamp: 167000 }<br>
     }
-    user info schema:-
+    user info schema:-<br>
     {
-       user_id: 123000
-       contestant_rank : { contest_id: 160, contest_rank: 2300}
-       global_rank: 25,000
+       user_id: 123000<br>
+       contestant_rank : { contest_id: 160, contest_rank: 2300}<br>
+       global_rank: 25,000<br>
     }
-    problem store schema:
+    problem store schema:<br>
     {
-      problem_id: 2300
-      url_prompt_link:
+      problem_id: 2300<br>
+      url_prompt_link:<br>
     }
 
  # Cache: 

@@ -75,6 +75,7 @@ class Solution(object):
             for character in word:
                 if character not in self.BuildSet:
                     self.BuildSet[character] = set()
+        print("self.BuildSet-1:",self.BuildSet)
         for i in range(1,len(words)):
             first = words[i-1]
             second = words[i]
@@ -92,9 +93,10 @@ class Solution(object):
                 if j + 1 == MinLength and len(first) > len(second):
                     self.BuildSet.clear();
                     return;
-                
+        print("self.BuildSet-2:",self.BuildSet)
+        print("ListIndegree:",self.ListIndegree)
     
-    #Topological Sorting
+     #Topological Sorting
     def FinalString(self):
         ListString = []
         Dictlen = len(self.BuildSet)
@@ -103,6 +105,8 @@ class Solution(object):
             if self.ListIndegree[ord(key)-ord('a')] == 0:
                 ListString.append(key)
                 Queue.append(key)
+        
+        print("ListString:",ListString)
                 
         while ( len(Queue)>0) :
             current = Queue[0]
@@ -119,4 +123,47 @@ class Solution(object):
             return ''.join(ListString)
         else:
             return ""
+                
+if __name__ == '__main__':
+    
+    print("Test Case-1:")
+    Input = ["wrt","wrf","er","ett","rftt"]
+    s = Solution()
+    print("s.alienOrder:",s.alienOrder(Input))
+    print('\n')
+    
+    
+    print("Test Case-2:")
+    Input = ["abc","ab"]
+    s1 = Solution()
+    print("s.alienOrder:",s1.alienOrder(Input))
+    print('\n')
+    
+    print("Test Case-3:")
+    Input = ["a","bc","cde"]
+    s2 = Solution()
+    print("s.alienOrder:",s2.alienOrder(Input))
+
+'''
+Test Case-1:
+self.BuildSet-1: OrderedDict([('w', set()), ('r', set()), ('t', set()), ('f', set()), ('e', set())])
+self.BuildSet-2: OrderedDict([('w', {'e'}), ('r', {'t'}), ('t', {'f'}), ('f', set()), ('e', {'r'})])
+ListIndegree: [0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0]
+ListString: ['w']
+s.alienOrder: wertf
+
+
+Test Case-2:
+self.BuildSet-1: OrderedDict([('a', set()), ('b', set()), ('c', set())])
+ListString: []
+s.alienOrder: 
+
+
+Test Case-3:
+self.BuildSet-1: OrderedDict([('a', set()), ('b', set()), ('c', set()), ('d', set()), ('e', set())])
+self.BuildSet-2: OrderedDict([('a', {'b'}), ('b', {'c'}), ('c', set()), ('d', set()), ('e', set())])
+ListIndegree: [0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+ListString: ['a', 'd', 'e']
+s.alienOrder: adebc
+'''
                 

@@ -81,13 +81,13 @@
   * Result Metadata store:-
      From submission evaluation task runners gets connected to result metadata store<br>
     Result Metdata Schema:-<br>
-     {
+     {<br>
        timestamp:- 17900000<br>
        user_id:- 123000 - indicating who made the submission<br>
        submission_uuid:- abcdef-12-lmnopq<br>
        url_link:- distributed file storage link<br>
        isPassing: true<br>
-     }
+     }<br>
     Ranking Map Reduce Jobs
     1] find timestamps for first passing result of each user for each problem (find timestamp with least value)
     2] Count up the number of failed submissions from prior to first passing result timestamp
@@ -95,23 +95,23 @@
     3 different jobs in a row
 
     Leaderboard schema:-<br>
-    {
+    {<br>
        user_id:- 123000<br>
        rank:- 1500<br>
        contest_id: 150 ** - (sort key/secondary index)<br>
        submissions: { successful_submission_link:- url, fail_count: 3, success_timestamp: 167000 }<br>
-    }
+    }<br>
     user info schema:-<br>
-    {
+    {<br>
        user_id: 123000<br>
        contestant_rank : { contest_id: 160, contest_rank: 2300}<br>
        global_rank: 25,000<br>
-    }
+    }<br>
     problem store schema:<br>
-    {
+    {<br>
       problem_id: 2300<br>
       url_prompt_link:<br>
-    }
+    }<br>
 
  # Cache: 
   * Caching on data-store

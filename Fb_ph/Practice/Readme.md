@@ -118,6 +118,13 @@ Difference between consecutive and continuous is for consecutive, nums[i+1] = nu
 | Edit Distance | https://leetcode.com/problems/edit-distance/description/| You have the following three operations permitted on a word:<br>Insert a character , Delete a character, Replace a character<br>Input: word1 = "horse", word2 = "ros" , Output: 3 , Explanation: horse -> rorse (replace 'h' with 'r'),rorse -> rose (remove 'r'), rose -> ros (remove 'e')|
 | One Edit Distance | https://leetcode.com/problems/one-edit-distance/description/ | A string s is said to be one distance apart from a string t if you can:Insert exactly one character into s to get t , Delete exactly one character from s to get t , Replace exactly one character of s with a different character to get t.<br>Input: s = "ab", t = "acb" , Output: true , Explanation: We can insert 'c' into s to get t.|
 
+**Peak Index Series**<br>
+| Question | Link | Input |
+| :---:   | :---: | :---: |
+| Find Peak Element | https://leetcode.com/problems/find-peak-element/description/ | Input: nums = [1,2,3,1], Output: 2<br>Explanation: 3 is a peak element and your function should return the index number 2.|
+| Peak Index in a Mountain Array | https://leetcode.com/problems/peak-index-in-a-mountain-array/description/ | Input: arr = [0,10,5,2],Output: 10|
+| Find in Mountain Array | https://leetcode.com/problems/find-in-mountain-array/description/ | Input: array = [1,2,3,4,5,3,1], target = 3,Output: 2<br>Explanation: 3 exists in the array, at index=2 and index=5. Return the minimum index, which is 2.|
+
 
 
 

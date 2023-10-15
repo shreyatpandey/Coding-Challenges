@@ -78,9 +78,9 @@
   * User display service
 
  # DB Schema
-  * Result Metadata store:-
-     From submission evaluation task runners gets connected to result metadata store<br>
-    Result Metdata Schema:-<br>
+  * Result Metadata store:-<br>
+    From submission evaluation task runners gets connected to result metadata store<br>
+    **Result Metdata Schema**:-<br>
      {<br>
        timestamp:- 17900000<br>
        user_id:- 123000 - indicating who made the submission<br>

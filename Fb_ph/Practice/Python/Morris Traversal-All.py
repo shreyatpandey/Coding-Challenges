@@ -1,6 +1,6 @@
 
 '''
-Morrison Inorder
+Morris Inorder
 Tc:- O(n)
 Sc:- O(1)
 '''
@@ -26,7 +26,7 @@ class Solution:
         return Result
 
 '''
-Morrison PreOrder traversal
+Morris PreOrder traversal
 Complexity
 Tc:- O(n)
 Sc:- O(1)
@@ -79,3 +79,53 @@ class Solution:
                     curr = curr.right
         
         return answer
+
+'''
+Morris PostOrder
+Complexity:-
+Tc:- O(n)
+where n is the number of nodes
+Sc:- O(1)
+'''
+class Solution:
+    def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        def reverse(start,end):
+            if start == end:
+                return
+            previous,node= start, start.right
+            while previous != end:
+                next = node.right
+                node.right = previous
+                previous = node
+                node = next
+        
+        
+        Result = []
+        if not root:
+            return Result
+        dummy = TreeNode(-1)
+        previous = None
+        dummy.left = root
+        root = dummy
+        while root :
+            if root.left:
+                previous = root.left
+                while previous.right != None and previous.right != root:
+                    previous = previous.right
+                if previous.right == None:
+                    previous.right = root
+                    root = root.left
+                else:
+                    node = previous
+                    reverse(root.left,previous)
+                    while node != root.left:
+                        Result.append(node.val)
+                        node = node.right
+                    Result.append(node.val)
+                    reverse(previous,root.left)
+                    previous.right = None
+                    root = root.right
+            else:
+                root = root.right
+        return Result
+        

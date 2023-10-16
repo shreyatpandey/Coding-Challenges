@@ -34,10 +34,10 @@
   ~ 1 MB per second
 
  # Number of Server Estimations:-
-  How many machines for processing all those concurrent submissions?
-   110 submissions running concurrently
-   8 vCPUs each ( only 4 core)
-   round up to 10 threads at once
+  How many machines for processing all those concurrent submissions?<br>
+  110 submissions running concurrently<br>
+  8 vCPUs each ( only 4 core)<br>
+  round up to 10 threads at once<br>
 
  # High Level Design:-
    * Link:- https://github.com/systemdesignfightclub/SDFC/blob/main/problems/coding-competition-platform/images/diagram-screenshot.png
@@ -60,12 +60,12 @@
    Flow from code submission back to server:-
     * 100 ms to get response after submitting the code
     * Total RTT = 200 ms
-   Distrubution of machines:-
-     11 machines for submission evaluation task runner
-     At most 1 machine for the submission of backend server
-     5 thread running concurrently
-     3 machines of m5.large, where different instances can run
-     put 2 machines( m5.large or m5.medium) in each region for submission backend server
+   * Distrubution of machines:-<br>
+     11 machines for submission evaluation task runner<br>
+     At most 1 machine for the submission of backend server<br>
+     5 thread running concurrently<br>
+     3 machines of m5.large, where different instances can run<br>
+     put 2 machines( m5.large or m5.medium) in each region for submission backend server<br>
   * Result metadata store:-
     Submission evaluation task runners would be connected to this
   * Some distributed data store like NoSQL over result metadata store

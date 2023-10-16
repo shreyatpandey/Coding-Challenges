@@ -57,7 +57,7 @@
    * Web Sockets:-
       1. Web sockets connects submission backend server to browser contestant viewing problem
       2. Web sockets also connects submission evaluation task runners to submission backend server
-   Flow from code submission back to server:-
+   * Flow from code submission back to server:-<br>
     * 100 ms to get response after submitting the code<br>
     * Total RTT = 200 ms<br>
    * Distrubution of machines:-<br>

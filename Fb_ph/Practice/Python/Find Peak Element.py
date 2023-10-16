@@ -24,14 +24,18 @@ Approach:- Binary Search
 TC:- O(log2(N))
 SC:- O(1)
 '''
+'''
+Solution is exactly similar as Find Peak Index in a Mountain Array
+'''
 
 class Solution:
     def findPeakElement(self, nums: List[int]) -> int:
-        left , right = 0, len(nums)-1
-        while left < right:
-            mid = (left + right) // 2
-            if nums[mid] > nums[mid+1]:
-                right = mid
+        l, r = 0, len(nums) - 1
+        while l < r:
+            m = (l + r) // 2
+            if nums[m] < nums[m + 1]:
+                l = m + 1
             else:
-                left = mid + 1
-        return left
+                r = m
+        return l
+

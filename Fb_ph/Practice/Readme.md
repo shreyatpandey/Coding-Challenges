@@ -125,11 +125,19 @@ Difference between consecutive and continuous is for consecutive, nums[i+1] = nu
 | Peak Index in a Mountain Array | https://leetcode.com/problems/peak-index-in-a-mountain-array/description/ | Input: arr = [0,10,5,2],Output: 10|
 | Find in Mountain Array | https://leetcode.com/problems/find-in-mountain-array/description/ | Input: array = [1,2,3,4,5,3,1], target = 3,Output: 2<br>Explanation: 3 exists in the array, at index=2 and index=5. Return the minimum index, which is 2.|
 
-**Substring Questions**
+**Substring**<br>
 | Question | Link | Input |
 | :---:   | :---: | :---: |
 | Longest Substring without Repeating Characters | https://leetcode.com/problems/longest-substring-without-repeating-characters/description/|Input:s = "abcabcbb"<br>Output: 3<br>Explanation: The answer is "abc", with the length of 3.|
 | Longest Repeating Character Replacement| https://leetcode.com/problems/longest-repeating-character-replacement/description/ | Input: s = "ABAB", k = 2<br>Output: 4<br>Explanation: Replace the two 'A's with two 'B's or vice versa.|
+
+**Water Questions**<br>
+| Question | Link | Input
+| :---:   | :---: | :---: |
+| Container With Most Water | https://leetcode.com/problems/container-with-most-water/description/ | Return the maximum amount of water a container can store.<br> Input: height = [1,8,6,2,5,4,8,3,7]<br>Output: 49|
+| Trapping Rain Water | https://leetcode.com/problems/trapping-rain-water/description/ | Input: height = [0,1,0,2,1,0,1,3,2,1,2,1]<br>Output: 6|
+| Swimming in rising water | https://leetcode.com/problems/swim-in-rising-water/description/ | Return the least time until you can reach the bottom right square (n - 1, n - 1) if you start at the top left square (0, 0).Input: grid = [[0,2],[1,3]]<br>Output: 3 Explanation:At time 0, you are in grid location (0, 0).<br>You cannot go anywhere else because 4-directionally adjacent neighbors have a higher elevation than t = 0.<br>You cannot reach point (1, 1) until time 3.When the depth of water is 3, we can swim anywhere inside the grid.
+
 
 
 

@@ -125,6 +125,13 @@ Difference between consecutive and continuous is for consecutive, nums[i+1] = nu
 | Peak Index in a Mountain Array | https://leetcode.com/problems/peak-index-in-a-mountain-array/description/ | Input: arr = [0,10,5,2],Output: 10|
 | Find in Mountain Array | https://leetcode.com/problems/find-in-mountain-array/description/ | Input: array = [1,2,3,4,5,3,1], target = 3,Output: 2<br>Explanation: 3 exists in the array, at index=2 and index=5. Return the minimum index, which is 2.|
 
+**Substring Questions**
+| Question | Link | Input |
+| :---:   | :---: | :---: |
+| Longest Substring without Repeating Characters | https://leetcode.com/problems/longest-substring-without-repeating-characters/description/|Input:s = "abcabcbb"<br>Output: 3<br>Explanation: The answer is "abc", with the length of 3.|
+| Longest Repeating Character Replacement| https://leetcode.com/problems/longest-repeating-character-replacement/description/ | Input: s = "ABAB", k = 2<br>Output: 4<br>Explanation: Replace the two 'A's with two 'B's or vice versa.|
+
+
 
 
 

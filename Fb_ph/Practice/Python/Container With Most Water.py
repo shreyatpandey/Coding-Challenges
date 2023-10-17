@@ -26,3 +26,20 @@ class Solution:
                 Right -= 1
         
         return MaxArea
+if __name__ == '__main__':
+    print("Test Case-1:")
+    s = Solution()
+    height = [1,8,6,2,5,4,8,3,7]
+    print(s.maxArea(height))
+'''
+Test Case-1:
+height[Left], height[Right] 1 7
+height[Left], height[Right] 8 7
+height[Left], height[Right] 8 3
+height[Left], height[Right] 8 8
+height[Left], height[Right] 8 4
+height[Left], height[Right] 8 5
+height[Left], height[Right] 8 2
+height[Left], height[Right] 8 6
+Max Area:- 49
+'''

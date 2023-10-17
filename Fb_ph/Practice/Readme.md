@@ -137,6 +137,7 @@ Difference between consecutive and continuous is for consecutive, nums[i+1] = nu
 | Container With Most Water | https://leetcode.com/problems/container-with-most-water/description/ | Return the maximum amount of water a container can store.<br> Input: height = [1,8,6,2,5,4,8,3,7]<br>Output: 49|
 | Trapping Rain Water | https://leetcode.com/problems/trapping-rain-water/description/ | Input: height = [0,1,0,2,1,0,1,3,2,1,2,1]<br>Output: 6|
 | Swimming in rising water | https://leetcode.com/problems/swim-in-rising-water/description/ | Return the least time until you can reach the bottom right square (n - 1, n - 1) if you start at the top left square (0, 0).Input: grid = [[0,2],[1,3]]<br>Output: 3 Explanation:At time 0, you are in grid location (0, 0).<br>You cannot go anywhere else because 4-directionally adjacent neighbors have a higher elevation than t = 0.<br>You cannot reach point (1, 1) until time 3.When the depth of water is 3, we can swim anywhere inside the grid.
+| Largest Rectangle in Histogram | https://leetcode.com/problems/largest-rectangle-in-histogram/description/ | Input: heights [2,1,5,6,2,3] ,Output: 10<br>Explanation: The above is a histogram where width of each bar is 1.<br>The largest rectangle is shown in the red area, which has an area = 10 units.|
 
 
 

@@ -6,6 +6,7 @@
 # Tip:-
   * Keep last 5 minute for thorough evaluation of non-functional requirements
   * Clarify for number of active users, number of daily active users, content length
+  * Make sure to touch upon data partitioning, replication, consistent hashing in every god damn topic
 
 # Rough Estimations:-
  * Number of User? 1 billion
@@ -25,3 +26,4 @@
   * Numbers of Servers = Number of Active Users/(Queries or Request per second)
   * Keep Queries or Request per second = 10,000/second
   * Number of Servers range from 10,000 to 20,000 servers
+    

@@ -49,9 +49,9 @@ Intuition & Algorithm
 This approach walks alongside the one above but is improved a lot.
 We don't need to traverse most nodes many times repeatedly
 
-Pair up \text{k}k lists and merge each pair.
+Pair up k lists and merge each pair.
 
-After the first pairing, \text{k}k lists are merged into k/2k/2 lists with average 2N/k2N/k length, then k/4k/4, k/8k/8 and so on.
+After the first pairing, k lists are merged into k/2 lists with average 2N/k length, then k/4, k/8 and so on.
 
 Repeat this procedure until we get the final sorted linked list.
 

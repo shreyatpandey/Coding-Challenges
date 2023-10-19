@@ -44,6 +44,52 @@ def isHappy(self, n: int) -> bool:
         fast_runner = get_next(get_next(fast_runner))
     return fast_runner == 1
 
+if __name__ == '__main__':
+    print("Test Case:1")
+    inputNum = 19
+    print(happyNumber(19))
+    
+    print("Test Case:2")
+    inputNum = 0
+    print(happyNumber(inputNum))
+    
+    print("Test Case:3")
+    inputNum = pow(2,31)-1
+    print(happyNumber(inputNum))
+'''
+Test Case:1
+fastPointer: 82
+slowPointer: 82
+fastPointer: 100
+slowPointer: 68
+fastPointer: 1
+slowPointer: 100
+fastPointer: 1
+slowPointer: 1
+fastPointer: 1
+True
+Test Case:2
+fastPointer: 0
+False
+Test Case:3
+fastPointer: 260
+slowPointer: 260
+fastPointer: 16
+slowPointer: 40
+fastPointer: 58
+slowPointer: 16
+fastPointer: 145
+slowPointer: 37
+fastPointer: 20
+slowPointer: 58
+fastPointer: 16
+slowPointer: 89
+fastPointer: 58
+slowPointer: 145
+fastPointer: 145
+False
+'''
+
 '''
 Approach:- HashSet
 Complexity

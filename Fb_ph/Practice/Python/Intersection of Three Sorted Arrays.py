@@ -33,7 +33,8 @@ class Solution(object):
         p1 = p2 = p3 = 0
         while p1 < len(arr1) and p2 < len(arr2) and p3 < len(arr3):
             if arr1[p1] == arr2[p2] == arr3[p3]:
-                ans.append(arr1[p1])
+                if not ans or arr1[p1] != ans[-1]: #this will handle duplicates
+                    ans.append(arr1[p1])
                 p1 += 1
                 p2 += 1
                 p3 += 1
@@ -45,3 +46,17 @@ class Solution(object):
                 else:
                     p3 += 1
         return ans
+
+if __name__ == '__main__':
+    s = Solution()
+    print("Test Case:-1")
+    A = [1, 2, 3, 4, 5]
+    B = [1,2,3]
+    C = [1,2]
+    print(s.arraysIntersection(A,B,C))
+    print('\n')
+    print("Test Case:-2")
+    A = [4,4,4]
+    B = [4,4,4]
+    C = [4,4,4]
+    print(s.arraysIntersection(A,B,C))

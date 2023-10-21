@@ -69,5 +69,10 @@
   1. If you are adding a new item, we can use **LSM**, if you we are updating the price, the search should be fast.<br>
   2. Add a new entry every time a new product comes in.
 
+ * What's the mechanism for ensuring that recipients are not receiving duplicate alerts?<br>
+  1. De-duplication can be done on the notification service side, which would add basic checksum so that duplicate alerts are not sent.<br>
+
+ 
+
   
 

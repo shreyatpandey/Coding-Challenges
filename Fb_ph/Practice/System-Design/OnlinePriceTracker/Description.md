@@ -10,6 +10,12 @@
  * Scalability:- It should scale to support million of users
  * Performance:- Should be fault tolerant to any failure
 
+# Estimations and Constraints
+ * Millions of products, updated @ once per day<br>
+ * 100 k seconds in a day. <br>
+ * 1M products at once per day.<br>
+ * 10 TPS.<br>
+
  # API Design / Schema
  
  **getProductPrice(product_id)**<br>
@@ -28,6 +34,12 @@
    }<br>
  
  **queryw/product_id, price_threshold**
+
+ **Price Threshold DB**
+ {<br>
+  relation_id: 123477<br>
+  price_threshold: $xxx<br>
+  }<br>
 
  # High Level Design
   * Database Base:-<br>

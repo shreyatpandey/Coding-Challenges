@@ -52,5 +52,8 @@ if __name__ == '__main__':
     
     print("Test Case-5:")
     misplacedElement([4,5,6,7,8,9,11,12,13,14,3])
+
+    print("Test Case-6:")
+    misplacedElement([2,4,6,1,7,9])
     
     

@@ -19,11 +19,14 @@
    * Text:- 100 Bytes
    * Total Storage Estimation:- 1 TB or 10 TB or 1 PB or 10 PB
 * Bandwidth/Traffic Estimatino:-
-   * Uploading / Downloading :- For seconds = 24*60*60 = 86400 sec
+   * Uploading / Downloading :- For seconds = 24x60x60 = 86400 sec
    * Speed:- (Data-Stored in TB)/(86400 sec) = (10 TB)/(86400) ~ 1000 MBps or 1000 GBPs depending upon total storage
    * Sometimes take into consideration, Read/Write Ratio :- 100:1 or 1:100 for upload / download speed
 * Server's Estimation:-
   * Numbers of Servers = Number of Active Users/(Queries or Request per second)
   * Keep Queries or Request per second = 10,000/second
   * Number of Servers range from 10,000 to 20,000 servers
+* Conversion :- <br>
+ 1. 1 TB = 10^12 Bytes<br>
+ 2. 1 PB = 10^15 Bytes<br>
     

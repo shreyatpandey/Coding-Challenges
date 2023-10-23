@@ -30,7 +30,7 @@ Starting from 0 to 1
 Extra 2-D Array to keep record of how many building can be reached
 '''
 '''
-Time complexity: O(k*l)
+Time complexity: O(k*l) or O(N^2.M^2)
 Space complexity: O(m*n*k), 
 where m = len(grid), n = len(grid[0]) 
 k is the number of buildings in the grid, and l is the number of empty lands in the grid.

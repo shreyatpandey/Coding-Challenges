@@ -29,4 +29,19 @@
 * Conversion :- <br>
    1. 1 TB = 10^12 Bytes<br>
    2. 1 PB = 10^15 Bytes<br>
+
+# Database:-
+  * Relational Database:- <br>
+    1. Proximity Server/Yelp
+    2. Web Crawler
+    3. Whatsapp
+    4. Instgram
+
+  * Non-Relational Database:- <br>
+    1. Youtube <br>
+    2. Typeahead Suggestion
+    3. Online Price Tracker
+    4. Ad Counter
+    5. Online Coding Platform
+       
     

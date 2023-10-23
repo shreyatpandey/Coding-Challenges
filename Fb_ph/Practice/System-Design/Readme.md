@@ -27,6 +27,6 @@
   * Keep Queries or Request per second = 10,000/second
   * Number of Servers range from 10,000 to 20,000 servers
 * Conversion :- <br>
- 1. 1 TB = 10^12 Bytes<br>
- 2. 1 PB = 10^15 Bytes<br>
+   1. 1 TB = 10^12 Bytes<br>
+   2. 1 PB = 10^15 Bytes<br>
     

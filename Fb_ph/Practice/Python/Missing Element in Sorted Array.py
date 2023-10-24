@@ -1,4 +1,22 @@
 '''
+Given an integer array nums which is sorted in ascending order and all of its elements are unique and given also an integer k, 
+return the kth missing number starting from the leftmost number of the array.
+Example 1:
+
+Input: nums = [4,7,9,10], k = 1
+Output: 5
+Explanation: The first missing number is 5.
+'''
+'''
+Constraints:
+
+1 <= nums.length <= 5 * 10^4
+1 <= nums[i] <= 10^7
+nums is sorted in ascending order, and all the elements are unique.
+1 <= k <= 10^8
+'''
+
+'''
 Binary search
 calculate number_range = nums[-1] - nums[0] + 1
 The count of missing numbers, missing = number_range - len(nums)
@@ -30,3 +48,20 @@ class Solution:
             else:
                 right = mid - 1
         return nums[last] + k
+
+'''
+Approach-2
+Tc:- O(log(n))
+Sc:- O(1)
+'''
+class Solution:
+    def missingElement(self, nums: List[int], k: int) -> int:
+        leftIndex,rightIndex = 0, len(nums)
+        while leftIndex < rightIndex:
+            midVal = leftIndex + (rightIndex - leftIndex)//2
+            difference = (nums[midVal]-midVal) - nums[0]
+            if difference < k:
+                leftIndex = midVal + 1
+            else:
+                rightIndex = midVal
+        return rightIndex + nums[0] + k -1

@@ -32,3 +32,56 @@ class Solution(object):
             self.head = node
         self.prev = node
         self.treeToDoublyListHelper(node.right)
+'''
+Approach:- Iterative
+Tc:- O(n)
+Sc:- O(n)
+'''
+class Solution:
+    def treeToDoublyList(self, root: 'Node') -> 'Node':
+        ## RC ##
+        ## APPROACH : ITERATIVE + STACK ##
+        ## Similar to Leetcode: 94 Binary tree inorder traversal ##
+        ## LOGIC ##
+        ## 1. using pre order traversal, store the prev node and for current node point that prev node and for that prev node point this current node ##
+        ## 2. first when currNode is Node, top of stack is the FirstNode, and as iterating change every next node to LastNode ##
+        ## 3. At last link first and last nodes ##
+        
+		## TIME COMPLEXITY : O(N) ##
+		## SPACE COMPLEXITY : O(N) ##
+
+        if not root: 
+            return root
+        
+        if not root.left and not root.right:
+            root.left = root
+            root.right = root
+            return root
+        
+        stack = []
+        currNode = root
+        prevNode = None
+        firstNode = None
+        lastNode = None
+        while( stack or currNode ):
+            while( currNode ):
+                stack.append( currNode )
+                currNode = currNode.left
+            
+            node = stack.pop()
+            node.left = prevNode
+            if( prevNode ):
+                prevNode.right = node
+            prevNode = node
+            
+            if( not firstNode ): 
+                firstNode = node
+            lastNode = node
+            
+            currNode = node.right
+        
+        # joining first and last numbers
+        firstNode.left = lastNode
+        lastNode.right = firstNode
+        
+        return firstNode

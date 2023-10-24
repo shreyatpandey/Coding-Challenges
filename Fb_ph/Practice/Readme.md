@@ -122,7 +122,7 @@ Difference between consecutive and continuous is for consecutive, nums[i+1] = nu
 | :---:   | :---: | :---: |
 | Longest Substring without Repeating Characters | https://leetcode.com/problems/longest-substring-without-repeating-characters/description/|Input:s = "abcabcbb"<br>Output: 3<br>Explanation: The answer is "abc", with the length of 3.|
 | Longest Repeating Character Replacement| https://leetcode.com/problems/longest-repeating-character-replacement/description/ | Input: s = "ABAB", k = 2<br>Output: 4<br>Explanation: Replace the two 'A's with two 'B's or vice versa.|
-| Longest Substring With At Most K Distinct Characters | https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/description/| 
+| Longest Substring With At Most K Distinct Characters | https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/description/| Example 1: Input: s = "eceba", k = 2 Output: 3 Explanation: The substring is "ece" with length 3.<br>Example 2:Input: s = "aa", k = 1 Output: 2 <br> Explanation: The substring is "aa" with length 2.|
 
 **Water Questions**<br>
 | Question | Link | Input |

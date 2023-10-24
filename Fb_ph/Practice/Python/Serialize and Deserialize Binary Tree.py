@@ -34,7 +34,11 @@ class Codec:
         queue = deque(data.split(","))
         return deserialize_helper(queue)
 '''
+Approach:- Level Order Traversal
 BFS
+Tc:- O(n)
+where n is the number of nodes
+Sc:- O(n) for the queue
 '''
 class Codec:
     def serialize(self, root):

@@ -121,3 +121,65 @@ shapes-2: [[(0, 0), (0, 1)], [(0, 0), (1, 0)], [(0, 0), (0, 1)], [(0, 0), (1, 0)
 distinct_islands: {((0, 0), (0, 1))}
 1
 '''
+
+'''
+Approach:- BFS
+O(m*n+d*k*logk) or O(m*n*log(m*n))
+where
+m, n = height/width of the grid 
+d = Number of islands 
+k = number of cells in the biggest island
+
+dfs = (O(m*n))
+cannonical = O(k*logk)
+Main loop =  O(m*n+d*k*logk)
+'''
+class Solution:
+    def numDistinctIslands2(self, grid: List[List[int]]) -> int:
+        if not grid:
+            return 
+        m, n = len(grid), len(grid[0])
+        checkShape = set()
+
+        def canonical(coords):
+            shapes = []
+            for i, j in [(1, 1), (1, -1), (-1, 1), (-1, -1)]:
+                # Reflection
+                shape = sorted([(x * i, y * j) for x, y in coords])
+                shape = [(x - shape[0][0], y - shape[0][1]) for x, y in shape]
+                shapes.append(shape)
+
+                # Rotations
+                shape = sorted([(y * i, x * j) for x, y in coords])
+                shape = [(x - shape[0][0], y - shape[0][1]) for x, y in shape]
+                shapes.append(shape)
+                
+            return min(shapes)
+
+        for i in range(m):
+            for j in range(n):
+                if grid[i][j]:
+                    grid[i][j] = 0
+                    pair = []
+                    pair.append((i,j))
+                    index = 0
+                    while index < len(pair):
+                        row = pair[index][0]
+                        col= pair[index][1]
+                        if row and grid[row-1][col]:
+                            grid[row-1][col] = 0
+                            pair.append((row-1,col))
+                        if row+1<m and grid[row+1][col]:
+                            grid[row+1][col] = 0
+                            pair.append((row+1,col))
+                        if col and grid[row][col-1]:
+                            grid[row][col-1] = 0
+                            pair.append((row,col-1))
+                        if col+1<n and grid[row][col+1]:
+                            grid[row][col+1] = 0
+                            pair.append((row,col+1))
+                        index += 1
+                    #print("pair:",pair)
+                    checkShape.add(tuple(canonical(pair)))
+        return len(checkShape)
+

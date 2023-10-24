@@ -121,4 +121,46 @@ dirs = {(-1,0, 'U'),(1,0, 'D'),(0,-1, 'L'),(0,1, 'R')}
          # only unique shapes in set 
         return len(pattern)
 
+'''
+Approach:- BFS
+Tc:- O(mn)
+Sc:- O(mn)
+'''
+class Solution:
+    def numDistinctIslands(self, grid: List[List[int]]) -> int:
+        """
+        time: O(mn)
+        space: O(mn)
+        """
+        row, col = len(grid), len(grid[0])
+        directions_array = [(-1, 0), (1, 0), (0, 1), (0, -1)]
+        queue = deque([])
+
+        distinct_islands = set()
+
+        for r in range(row):
+            for c in range(col):
+                if grid[r][c] == 1:
+                    # mark visited
+                    grid[r][c] = 2
+                    
+                    queue.append((r, c))
+                    island_shape = []
+                    
+                    while queue:
+                        x, y = queue.popleft()
+                        
+                        for d0, d1 in directions_array:
+                            dx, dy = d0 + x, d1 + y
+                            
+                            if (0 <= dx < row) and (0 <= dy < col) and (grid[dx][dy] == 1):
+                                # mark visited 
+                                grid[dx][dy] = 2
+								# append the relative coordinates... r is the start row and c is the start col
+                                island_shape.append((r - dx, c - dy))
+                                queue.append((dx, dy))
+
+                    distinct_islands.add(tuple(island_shape))
+        return len(distinct_islands)
+        
 

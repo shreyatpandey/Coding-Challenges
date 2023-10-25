@@ -48,7 +48,7 @@ class Solution:
 
             if right+1 >= k:
                 Result.append(nums[queue[0]])
-                left += 1 # this is important as it woudl wrong result
+                left += 1 # this is important as it would wrong result
             right += 1
 
         return Result

@@ -149,10 +149,10 @@ Ans:-
 Situation:
 During my time at Qualcomm, there was hughe gap in documentation whether it was the upcoming feature request or the past delivered project. Having a set of definite documentation is important for members of the team as well as new member who join as they could easily ramp up basically aligning with our future outlook.
 Task:
-    I took upon the task/ initiative of collecting previous project and managing the documentation 
+I took upon the task/ initiative of collecting previous project and managing the documentation 
 
 Action:
-   I started with writing effective and concise documentation. Also made an automated Jenkin job that periodically used to give update on the previous project done. It also used to give reminder to other team members to upload their design document on the folder provided.
+I started with writing effective and concise documentation. Also made an automated Jenkin job that periodically used to give update on the previous project done. It also used to give reminder to other team members to upload their design document on the folder provided.
 Apart from this, in Qualcomm you need to perform device testing and it is a tedious process with lot of steps getting involved in it . 
 I made a small video of demonstration and documented it in the folder.
 
@@ -171,7 +171,7 @@ Story-2:- Prioritizing customer demand
 Prioritize into :- P0 , P1, P2 etc
 a. Cost Based analysis:- On the changes on number of lines required was given priority-1 as well as the importance of 
 that customer
-b. for customer which required testing in LTE and Wifi network , I pushed it by engaging QA and testing team
+b. For customer which required testing in LTE and Wifi network , I pushed it by engaging QA and testing team
 c. Kept an open communication channel by regular following-up with them with their demands and keeping a complete loop of 
 main PoC of customer engineering team, testing team etc
 

@@ -19,6 +19,13 @@ Meta Core Values:-
 [6] Meta,Teammates,me
 [7] Build social value
 
+*** Categorizing keyword term with meta core values ***
+Teammates/Manager/Perspective:- Be open and be bold
+Customer/Deadline :- Move fast
+Helping/Mentoring:- Build social value/meta teammates me
+Efficiency/Improvements/Course correction:- Focus on long term impact/live in future
+
+
 I will try to present my answer is STAR format
 Use 'I' versus 'we'
 Q1] Tell me a situation where you had to change the course of your action? What are the key takeaways/lessons learned from this? or
@@ -200,7 +207,7 @@ Story-2:- [Invented something/ Made improvement in your company]
 Enhanced efficiency in debugging for my team by 30 % as it reduced the team to open the log file, then search for the log and then process
 the call flow.
 
-Story-3:- [Made Improvementst at your company]
+Story-3:- [Made Improvement at your company]
 1. Jenkins job that used to give weekly report of the number of drop in SIP packet flow in 5g wireless service. That used to get
 represented through excel sheets
 Was able to enhance productivity of team by 40%

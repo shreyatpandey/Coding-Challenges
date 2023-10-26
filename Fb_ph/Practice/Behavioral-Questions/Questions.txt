@@ -17,11 +17,12 @@ Meta Core Values:-
 [4] Live in future/think of future
 [5] Be direct and respect your colleagues
 [6] Meta,Teammates,me
+[7] Build social value
 
 I will try to present my answer is STAR format
 Use 'I' versus 'we'
 Q1] Tell me a situation where you had to change the course of your action? What are the key takeaways/lessons learned from this? or
-Tell me about a time you failed to deliver the project.
+Tell me about a time you failed to deliver the project.[Move fast and think of future]
 Ans:- 
 Situation:- While working at Microsoft, there was consistent concurrency/deadlock issue that my service was facing when it was deployed over Broad/Production region in Azure clusters. This caused my service performance to degrade considerably and we were not able to meet 99% availability target under  our SLA. This involved that I had change the course of my action.
 
@@ -52,7 +53,7 @@ Action:- I first politely and directly approached my counterpart, and took steps
 Finally, the other person, began to collaborate more with me regarding it.
 Result:- I was able to complete the project on time after taking this bold move to involve his manager in every conversation that I wanted.
 
-Q4] Tell me a time/situation where your technical leader/manager did not give much direction to your task?
+Q4] Tell me a time/situation where your technical leader/manager did not give much direction to your task?[Bias for action]
 Ans:- 
 Situation:- One situation that I can foundly remember, was when my manager who had to go on immediate leave. That time, I was left alone and there
 was an immediate requirement from our internal customer. However, that requirement was not present in the initial design discussion. Hence, I could not take that decision all alone by myself without having thorough discussion/consultation with my manager.
@@ -72,18 +73,18 @@ before hand so that I can go through it before giving suggestion to his pull req
 Result:- My peer responded to my request and was able to document the need of the changes before pushing his pull request for review.
 
 
-Q6] Tell me a time/situation where your team was influenced by your "positive behaviour"?
+Q6] Tell me a time/situation where your team was influenced by your "positive behaviour"?[Thinking of company as a whole]
 Ans:- 
 Situation:- This was a time, I had recently joined Microsoft. So there was need of On-Call rotation that every member team had to be, to support
 any Sev Incidents that were getting reported. So, one of my team who was scheduled to be On-Call had to go on immediate leave. He was not getting any 
-replacement for him and consequently asked me, if I was willing to take up his On-Call rotation.
+replacement for him and consequently asked me, if I was willing to take up his On-Call rotation. 
 Task:- My task was to understand the requirement of being On-Call and provide effective support from our team.
 Action:- Given that I was new, I quickly ramped on the basic details and needs of On-Call. During the On-Call rotation I gave my best to resolve
 the incidents/JIRA tickets within my domain of knowledge. Of course, being new I did require some help to resolve the issue.
 Result:- Give my positive approach and eagerness to help in this situation, my team was impressed by my positive attitude and behaviour.
 
-Q7] Tell me a time/situation where you had to deal with demands of customer issue which did make much sense? or the demand was ambiguous?
-Ans:- 
+Q7] Tell me a time/situation where you had to deal with demands of customer issue which did not make much sense? or the demand was ambiguous?
+Ans:- [Customer obsession and move fast]
 Situation:- One of the circumstances where I faced similar situation was during the commercialization of 5G cellular network. As every customer
 wanted to move fast and quick to market their product and they were using Qualcomm's modem for that. As a result they started giving me and my team an excessive demand request to add feature set over Voice signalling services to involve enhancing network bandwidth  feature without giving much background. As I often have correspondance with the customer directly,  I had to convey my limitation to them.
 Task:- I had to professionally and politely convey my limitation to deliver these demand for them as these demands were unrealistic/incoherent/ambiguous which could damage my architecture.
@@ -100,16 +101,15 @@ of using a single queue for it.However, respecting my colleague's view I decided
 Task:- Given that I had to finish the project and work as a team, I shared my views on it and also tried to inculcate his views
 Action:- After having our difference resolved, I was able to come up with a solution where we used single queue however to protect against deadlock, I decided to use thread ownership mecahnism for it.
 Result:- By resolving our differences and respecting each other's view , I was able to to deliver my project with very high efficiency. It 
-also helped learn about taking different perspective positively.
+also helped learn about taking different perspective positively and earn his trust.
 
 Q9] Tell me about a time/situation where you had a conflict with your manager?
-Ans:-
+Ans:-[I was open and direct]
 Situation:- In one situation during my role in Qualcomm, we had a project due to deliver high quality voice calling over internet protocol (IP) . 
 This involved reducing latency and using a specific codec rate for that. My manager wanted to use a different codec rate and that was neither present
 during the initial design discussion nor it was an ask from customer.
 Task:- As I had to deliver project before deadline and need to move fast, I set up a 1:1 meeting with him .Need to think of the company as a whole and not just about my project,
-Action:- I presented my own views and concerns and tried to brige any miscommunication gap with it. I put forward the fact that codec ratio should not be altered as it would cause more latency and jitterness in the system. As an alternative for his suggestion, I put forward my design to involve his
-codec ratio only when there is a demand from the customer.
+Action:- I presented my own views and concerns and tried to brige any miscommunication gap with it. I put forward the fact that codec ratio should not be altered as it would cause more latency and jitterness in the system. As an alternative for his suggestion, I put forward my design to involve his codec ratio only when there is a demand from the customer.
 Reslt:- My manager was convinced with my reasoning and his respecting his views as well to make the code more robust, I put his point behind
 a configuration setting to be used only when required.
 
@@ -126,7 +126,7 @@ Result:- As a result, I simplified the process of logging mechanism for my team 
 Q11] Career Transitions
 Think about the career transitions you’ve made so far. Write about recent ones: what motivated them, what you felt like went well, and what could have gone better.
 Situation:-
-Yes I have made a career transitions. This happened when I was working as a software engineer at Qualcomm. I had nearly completed 3 years at Qualcomm and in wireless domain. Also at that time, due to covid there was a massive surge in cloud computing domain. This actually motivated met even more to look for domain in infrastructure and cloud computing, and thats what I wanted to do in future as well.
+Yes I have made a career transitions. This happened when I was working as a software engineer at Qualcomm. I had nearly completed 3 years at Qualcomm and in wireless domain. Also at that time, due to covid there was a massive surge in cloud computing domain. This actually motivated met even more to look for domain in infrastructure and cloud computing, and thats what I wanted to do in future as well[think of future]
 Task:
 First I started doing short online courses regarding infrastructure and distributed system and did some cloud certificate course. Once, I got at a certain level of domain knowledge I started researching about companies in this domain.
 Action:
@@ -151,6 +151,197 @@ I made a small video of demonstration and documented it in the folder.
 
 Result:
 My team and my manager was extremely happy with my initiative and I was able to reduce the search time for documentation of the team by 40% as it become a single folder source
+
+*** Amazon **
+Questions based with respect to each LP:-
+Customer Obsession:-
+Stories:- 1. Apple 2. China Operators
+1. Unexpected demand from the customer/ customer demand did not make any sense
+2. 
+
+Story-2:- Prioritizing customer demand
+1. At Qualcomm:- Multiple customers for 5G commercialization
+Prioritize into :- P0 , P1, P2 etc
+a. Cost Based analysis:- On the changes on number of lines required was given priority-1 as well as the importance of 
+that customer
+b. for customer which required testing in LTE and Wifi network , I pushed it by engaging QA and testing team
+c. Kept an open communication channel by regular following-up with them with their demands and keeping a complete loop of 
+main PoC of customer engineering team, testing team etc
+
+
+Q] Who was your most difficult customer?
+Q] Tell me about a time when you didn't meet customer expectations. What happened, and how did you deal with the situation?
+Q] How do you go about prioritizing customer needs when you are dealing with a large number of customers?
+
+Ownership:-
+Story-1:- [Gone out of way to help a peer]
+1. On-Call Rotation at Microsoft
+
+Story-1:- [Task that was beyond your job responsibilities]
+1. Senior team member left at Qualcomm. I took the ownership of our code signalling service module.
+2. I quickly ramped up on the task which the senior team left
+
+Story-2:- [Challenging Project/Project you were proud of]
+1. High Memory Consumption :- Logging framework at Qualcomm reduced by 30 %
+2. High Information Flow:- At Microsoft, Loss of data had to reduced by 40% . Consuming from various sources
+and this is a pipelining work
+
+Q] Have you ever gone out of your way to help a peer?
+Q] Tell me about a time when you took on a task that was beyond your job responsibilities.
+Q] Tell me about a time when you had to work on a task with unclear responsibilities.
+Q] Tell me about a time when you showed an initiative to work on a challenging project.
+
+Invent & Simplify:-
+Story-1:- [Simple solution to complext problem/ think out of box]
+1.Concurrency issue at Microsoft:- From persistent storage transaction that is writing into a disk to in-memory. Reduced delay in sending data 
+in pipeline by 20%
+Story-2:- [Invented something/ Made improvement in your company]
+1. Call-Flow Parser:- At Qualcomm, used Python and django framework to display call flow for our internal customers and testing team.
+Enhanced efficiency in debugging for my team by 30 % as it reduced the team to open the log file, then search for the log and then process
+the call flow.
+
+Story-3:- [Made Improvementst at your company]
+1. Jenkins job that used to give weekly report of the number of drop in SIP packet flow in 5g wireless service. That used to get
+represented through excel sheets
+Was able to enhance productivity of team by 40%
+
+Q] Tell me about a time when you invented something?
+Q] Tell me about a time when you gave a simple solution to a complex problem.
+Q] Tell me about a time you had to think outside the box (think creatively) to close a sale or sell your product.
+Q] What improvements have you made at your current company?
+
+Are Right, a Lot:-
+Story-1:- [Used your judgement to solve a problem]
+1. Jitter-rate:- In Qualcomm, used my judgement in networking domain from master's to increase the jitter rate over video call over VoIP.
+Issue was faced by testing team. I checked the log and told them to configure higher jitter rate . Helped them save time and prevented from escalating to upper management.
+
+Story-2:- [Insufficient information or incomplete data]
+1. Sprint Planning at Microsoft:- There was one task that I was assigned to me regarding the integration of different agents with our service.
+This task had to be completed in the up coming spring session. 
+Task:- There was no clear terms that were defined in this task as what information had to be integrated in the service that I own. But still I had 
+to complete before the next sprint deadline
+Action:- I talked with different members of the agent team for whom we were the customer. Tried to get as much clarity from them. Yet the scope of
+the project was somewhat unclear.
+Result:- I tried to reason out how the flow of information had to take place, used my logic to absorb those information in my service and how
+it can be done without causing minimal issue to other customers
+
+Story-3:- [Time when you were wrong]
+From Fb regarding deadlock issue in SLA, course correction and gained insight, live in future
+
+Q] Tell me about a time when you effectively used your judgment to solve a problem.
+Q] Tell me about a time when you had to work with insufficient information or incomplete data.
+Q] Tell me about a time when you were wrong.
+
+Learn and be Curious:-
+Story-1:- [Learned new technologies]
+Ans:- Picked up front end technology :- javascript and Node.js even though I had been a system guy and no prior exposure to that.
+Situation:- During my time at Microsoft, a situation aroused where I had to develop a user friendly tool to display virtual machine health
+report to our customer. This was need of the hour cause, customer was not a techinical person and I had to make his work as easy as possible.
+Task:- I had to quickly learn this front end technology and start working on it.
+Action:- Given that it javascript and node.js is vast and there is high learning curve, I start to learning first specific modules which were
+necessary for my project. I allocated 10% of my daily work to learn this and made progress incrementally.
+Result- Within a period of one month, I start making a good desing for our UI tool and customer seemed extremely satsified with this new UI tool.
+
+Story-2:- [Smarter Decision with the help of curiosity]
+Situation:- There was a situation during my internship at Intel, where I had to make meaningful and useful visualization chart using the testing log.
+Task:- My task was to parse those information which very relevant and benficial for the team.
+Action:- I checked and extracted throughput and bandwidth of the LTE/ifi network. Then consequently tried to put this information into a moving
+average graph.
+Result:- With my curiosity to learn about this visualization technique, I took smart decision to implement moving average chart instead of 
+static chart. I enhanced the productivity of my team by 30% as they would can track of the changes in these logs in real time.
+
+Q] Tell me about a time when you learned new technologies
+Q] Tell me about a situation or experience you went through that changed your way of thinking.
+Q] Tell me about a time when you made a smarter decision with the help of your curiosity.
+
+Hire and Develop the Best:-
+Story-1:- [Tell me a time when you mentored someone]
+1. Mentor to an intern
+
+Q] Tell me about a time when you mentored someone.
+Q] Tell me about a time when you made a bad hire. When did you figure it out, and what did you do?[Not applicable]
+Q] What qualities do you look for in potential candidates when making hiring decisions?
+
+Insist on the Highest Standards:-
+Q] Tell me about a time when you were dissatisfied with the quality of a project at work. What did you do to improve it?
+Q] Tell me about a time when you motivated others to go above and beyond.
+Q] Describe a situation when you couldn't meet your standards and expectations on a task.
+
+Think Big:-
+Q] Tell me about your most significant professional achievement.
+Q] Tell me about a time when you had to make a bold and challenging decision.
+Q] Tell me about a time when your vision led to a great impact.
+
+Bias for Action
+Story-1:- [Make a tough decision without consulting anybody]
+1. When my manager was on leave at Qualcomm
+
+Story-2:- [Took calculated Risk]
+1. Tradeoff at Microsoft for availabilty vs consistent in multiple partition over health signals information - Calculated risk
+Ans:- Sacrified on consistency in our design. As millions of Virtual Machines are deployed over nodes in cluster nodes,
+either design model to get a consistent health signals or make it robust that it's always available.
+following our SLA agreement of high availability, took a calculated risk to design for high availability by peforming partitioning of 
+our service to observe information from messaging system.
+
+
+Q] Have you ever had to make a tough decision without consulting anybody?
+Q] Provide an example of when you took a calculated risk.
+Q] Describe a situation when you took the initiative to correct a problem or a mistake rather than waiting for someone else to do it.
+Q] Tell me about a time when you required some information from somebody else, but they weren't responsive. What did you do?
+
+
+Frugality:-
+Q] Describe a time when you had to rely on yourself to complete a task.
+Q] Tell me about a time when you had to be frugal.
+Q] Tell me about a time when you had to rely on yourself to complete a project.
+
+Earn Trust:-
+Story-1:- [ Tell me about a time when you helped one of your teammates]
+Took one of my coworkers work , due to her personal issues and was going behind . Somebody's else code is also my code
+Story-2:- [Gain trust]
+Situation:- Describe about situation in Microsoft
+Be open about the work progress and also be bold enough to share your views in the design document.
+Be proactive on taking up any customer issues or tickets which are directed towards your team.
+Emphasize of empathy to enhance team morale
+
+Q] Tell me about a time when you helped one of your teammates?
+Q] Describe a time when you had to speak up in a difficult or uncomfortable environment.
+Q] What would you do to gain the trust of your team?
+Q] Tell me about a time when you had to tell a harsh truth to someone.
+
+Dive Deep:-
+Story-1: [When you took important decision without any data] similar to "Are right a lot" [Insufficient datat]
+-> Build a small prototype of Virtual Machine Report  , showed that out internal customer at Microsoft, they liked the prototype and then scaled to 
+other external and internal customers 
+Result:- 60% of the internal customers liked it. 
+
+Q] Tell me about a time when you took important decision without any data?
+Q] Have you ever been in a situation where you had to make a choice among a few options, but did not have a lot of time to explore each option
+
+Having Backbone; disagree and commit:-
+Story-1:- [Disagreed with the approach of a team member/conflict with your manager]
+Qualcomm story from Fb
+
+Story-2:- [Example of something you believe in that nobody else does]/[Different Perspective from another team member]
+Microsoft regarding , multiple queues in pipeline vs single queue with thread 
+
+Q] Describe a time when you disagreed with the approach of a team member. What did you do?
+Q] Give me an example of something you believe in that nobody else does.
+Q] Tell me about an unpopular decision of yours.
+
+Deliver Results:-
+Story-1: [Couldn't meet your deadline]
+Situation:- Commercialization of 5G at Qualcomm. Testing of code was remaining.
+Requested customer and became open about delay from the field testing team.
+Pushed in the code and performed unit test cases on them, then as and when more issue aroused, made necessary modification
+Was able to satisfy customer with my progess.
+Consquently was able to delive quantity work sacrificing on quality.
+
+
+Q] Tell me about a time when you couldn't meet your deadline?
+Q] Give an example of a time when you had to handle a variety of assignments. What was the outcome?
+Q] Tell me about a time when your team gave up on something, but you pushed them to deliver results
+
 
 
 

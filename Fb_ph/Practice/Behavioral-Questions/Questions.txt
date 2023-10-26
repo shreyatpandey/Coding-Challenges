@@ -224,7 +224,7 @@ Issue was faced by testing team. I checked the log and told them to configure hi
 
 Story-2:- [Insufficient information or incomplete data]
 1. Sprint Planning at Microsoft:- There was one task that I was assigned to me regarding the integration of different agents with our service.
-This task had to be completed in the up coming spring session. 
+This task had to be completed in the up coming sprint session. 
 Task:- There was no clear terms that were defined in this task as what information had to be integrated in the service that I own. But still I had 
 to complete before the next sprint deadline
 Action:- I talked with different members of the agent team for whom we were the customer. Tried to get as much clarity from them. Yet the scope of

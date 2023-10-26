@@ -152,7 +152,7 @@ I made a small video of demonstration and documented it in the folder.
 Result:
 My team and my manager was extremely happy with my initiative and I was able to reduce the search time for documentation of the team by 40% as it become a single folder source
 
-*** Amazon **
+*** Amazon ***
 Questions based with respect to each LP:-
 Customer Obsession:-
 Stories:- 1. Apple 2. China Operators

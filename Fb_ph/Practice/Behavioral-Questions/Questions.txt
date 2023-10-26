@@ -289,7 +289,13 @@ Ans:- Sacrified on consistency in our design. As millions of Virtual Machines ar
 either design model to get a consistent health signals or make it robust that it's always available.
 following our SLA agreement of high availability, took a calculated risk to design for high availability by peforming partitioning of 
 our service to observe information from messaging system.
-
+2. At microsoft, there was semester project to display the output of virtual health machine through annotation message which give indications to customer to migrate their application to different virtual machine in another cluster.
+The risk here was there is a latency between virtual machine going down and when that annotation message comes.
+So if the customer receives the indication befor virtual machine actually goes down then he would have to immediately start migrating 
+leaving his important work that the customer is doing
+I decided to take this calculated risk, as I beleived that it would improve customer standards and pushed my changes for it.
+However, as I pitched this new feature to customer, they actually liked the idea of sending a warning indication of virtual machine
+annotatino health message and gave ample time to save their information.
 
 Q] Have you ever had to make a tough decision without consulting anybody?
 Q] Provide an example of when you took a calculated risk.

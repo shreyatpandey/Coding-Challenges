@@ -1,0 +1,32 @@
+Geospatial indexing:
+- Geohash: a 1D string that recursively subdivides the world into smaller and smaller grids with each additional bit.
+- Quadtree: an in-memory data structure that recursively subdivides a plane into four quadrants.
+- Google S2: mapping a sphere to a 1D index based on the Hilbert curve.
+
+Geohash is easier to update on location change, but a quadtree can dynamically adjust the grid size based on population density.
+
+Option 1:- Two-Dimensional search
+Input :- lat, long, radius
+Drawback:- Data set could be hughe
+-Scan the whole table
+- Data is spread alone 2 dimensions
+
+Option 2:- Evenly divided grid
+-Divide the world into small grids
+Drawback:-
+Distribution of business is not even / uneven distribution of data
+Say business in hot areas like London, New York will have more density compared to the country region
+
+Option 3:- Geohash
+ 1D string that recursively subdivides the world into smaller and smaller grids with each additional bit.
+-01 from  (-180,90)
+-00 from (-180,-90)
+-10 from (180,-90)
+-11 from (180,90)
+then again divide 01 into 4 smaller grids and repeat the process
+
+Drawback:-
+-Boundary issues:- Longer a shared prefix is between two geohashes, the closer they are
+- Bounary issue 1:- Two location can be very close but have no shared prefix at all.
+- Boundary issue 2:- Another boundary issue is that two positions can have a long shared prefix, but they belong to 
+different geohashes.

@@ -1,0 +1,49 @@
+In computing, the count–min sketch (CM sketch) is a probabilistic data structure that serves as a frequency table of events in a stream of data.
+It uses hash functions to map events to frequencies, but unlike a hash table uses only sub-linear space, 
+at the expense of over counting some events due to collisions.
+
+In an ideal case for retrieving frequency of any streaming data we use HashTable 
+as we can Store the HashValues in the Hash table and retrieve them easily at O(1). 
+But by doing so we are storing all the data in the hash tables which will fall in to super liner Memory usage 
+for very large (infinite) streaming of data.
+
+To tackle this memory in efficiency model , we can use count min sketch to calculate the frequency in sub-liner space , 
+because in this case we will not be storing the complete values of data stream , 
+instead we will use a matrix to compute the frequency, 
+where number of rows would be number of Hash functions we are using and columns would be number of out come of the HashFunctions.
+
+Lets understand the count min sketch algorithm with an example
+
+Lets say we have a stream of data
+
+Stream = {A,A,B,A,B,D,A……..}
+
+Lets define 4 hash functions H1,H2,H3,H4 and lets assume the below table for their out puts as shown in pic..
+
+Now Lets Create a Matrix to keep a track of count of input streams
+
+Here is the matrix of Hash function X possible Outputs (Matrix-1)
+
+Now for each data from stream now lets calculate the Hash outputs and increment the corresponding counter in the table….
+
+H1(A) = 1, H2(A) = 3, H3(A) = 1, H4(A)=2
+
+So by increasing the corresponding counts in the matrix we will have .. matrix 2
+
+Similarly next in stream we again get A so lets update the table .. so now the table will be matrix 3
+
+Next in the stream we have B .. So the Hash output of B is H1(B)= 3 ,H2(B)= 5 , H3(B) = 3 , H4(B) =1 … 
+so lets update matrix accordingly matrix 4
+
+Next again A so updated matrix is matrix 5
+
+Next in Stream is B so will be matrix 6
+
+Now Next in Stream is D
+
+H1(D)= 2 ,H2(D)= 1 , H3(D) = 4 , H4(D) =4
+
+So updated matrix will be….matrix 7
+
+Now again A…. so updated matrix is matrix 8
+

@@ -10,6 +10,8 @@ Input :- lat, long, radius
 Drawback:- Data set could be hughe
 -Scan the whole table
 - Data is spread alone 2 dimensions
+- While in theory using latitude and longitude we can determine things such as how close points are to each other using euclidean distance, 
+for practical use cases it is simply not scalable because of its CPU-intensive nature with large data sets.
 
 Option 2:- Evenly divided grid
 -Divide the world into small grids
@@ -18,7 +20,8 @@ Distribution of business is not even / uneven distribution of data
 Say business in hot areas like London, New York will have more density compared to the country region
 
 Option 3:- Geohash
- 1D string that recursively subdivides the world into smaller and smaller grids with each additional bit.
+1D string that recursively subdivides the world into smaller and smaller grids with each additional bit.
+base32 encoding is used
 -01 from  (-180,90)
 -00 from (-180,-90)
 -10 from (180,-90)
@@ -26,11 +29,11 @@ Option 3:- Geohash
 then again divide 01 into 4 smaller grids and repeat the process
 Eg:- geohash of the google headquarters
 1001 10110 01001 1000 11011 11010
-base32 in binary
+
 
 
 Drawback:-
--Boundary issues:- Longer a shared prefix is between two geohashes, the closer they are
+- Boundary issues:- Longer a shared prefix is between two geohashes, the closer they are
 - Bounary issue 1:- Two location can be very close but have no shared prefix at all.
 - Boundary issue 2:- Another boundary issue is that two positions can have a long shared prefix, but they belong to 
 different geohashes.

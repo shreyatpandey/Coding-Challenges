@@ -69,6 +69,8 @@
   1. Sequencer/UUID.<br>
      a. Attached with Auction & Placement Service.<br>
      b. Data Model(/s).<br>
+
+will adding secondary indexes (local or global) work? (PS :- I just added this point out of curiosity to know more if that would really work) ---- data warehouses tend to not have secondary indices because you tend to do full table scans<b>
      
 
 

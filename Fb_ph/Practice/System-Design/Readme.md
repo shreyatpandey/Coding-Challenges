@@ -44,10 +44,10 @@
     4. Ad Counter
     5. Online Coding Platform
 
-# Important Numbers every engineer should know
+# Important Numbers every engineer should know<br>
 Latency Comparison Numbers
 --------------------------
-L1 cache reference                           0.5 ns
+L1 cache reference                           0.5 ns<br>
 Branch mispredict                            5   ns
 L2 cache reference                           7   ns                      14x L1 cache
 Mutex lock/unlock                           25   ns

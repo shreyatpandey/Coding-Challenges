@@ -7,6 +7,7 @@
   * Keep last 5 minute for thorough evaluation of non-functional requirements
   * Clarify for number of active users, number of daily active users, content length
   * Make sure to touch upon data partitioning, replication, consistent hashing in every god damn topic
+  * Start small with one server, then scale it. [Say these words]
 
 # Rough Estimations:-
  * Number of User? 1 billion

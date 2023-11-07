@@ -22,10 +22,10 @@
   * Database Schema:- 
      * Database that is getting used is Casandra
      * Schema:- <br>
-     {
+     {<br>
        song_id:- 12345<br>
        hourly_timestamp:- timestamp in seconds :- 1675000<br>
        song_url: sharing<br>
        artist_name:<br>
        genre_name:<br>
-     }
+     }<br>

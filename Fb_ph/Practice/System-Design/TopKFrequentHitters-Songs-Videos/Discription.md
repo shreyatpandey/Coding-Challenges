@@ -21,11 +21,11 @@
  # Schema
   * Database Schema:- 
      * Database that is getting used is Casandra
-     * Schema:- 
+     * Schema:- <br>
      {
-       song_id:- 12345
-       hourly_timestamp:- timestamp in seconds :- 1675000
-       song_url: sharing
-       artist_name:
-       genre_name:
+       song_id:- 12345<br>
+       hourly_timestamp:- timestamp in seconds :- 1675000<br>
+       song_url: sharing<br>
+       artist_name:<br>
+       genre_name:<br>
      }

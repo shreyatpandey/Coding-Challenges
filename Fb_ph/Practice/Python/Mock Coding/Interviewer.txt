@@ -14,4 +14,24 @@ Phone-Screen Interview:-
 Phone-Screen Interview:-
 [1] September-2023
    1. Interviewer Name:- Zeev N
+   Question:- 
+   [1] Pow(x,n)
+   [2] Next Permutation
+
+[2] October - 2023
+Coding-1:- Jianchao Li
+Question:-
+1. Valid Palindrome II
+2. Binary Tree Vertical Order Traversal
+
+Coding-2:- Nahari Totev
+Question:-
+1. Valid Palindrome II
+2. Variation of Account Merge
+
+Behavioural:- Ayichew Hailu
+
+Nov - 2023
+System Design:- Michael Douglas
+Question:- Design Real-Time Ad Aggregated Service
 

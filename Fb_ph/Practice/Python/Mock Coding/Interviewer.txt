@@ -6,6 +6,10 @@
 Phone-Screen Interview:-
 [1] April-2022
    1. Harris Yip
+Question:-
+[1] Minimum Remove To Make Valid Parenthesis
+[2] Basic Calculatore with "+" and "-" operation
+[3] Expand it to include '[]' brackets
 
 2] September-2023
   1. Interviewer Name:- Vasu S

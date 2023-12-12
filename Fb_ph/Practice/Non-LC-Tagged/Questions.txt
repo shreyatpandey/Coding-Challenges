@@ -1,1 +1,130 @@
+2018-2020
+1.
+Check weather an array can we sorted by swapping just a pair of elements (https://www.geeksforgeeks.org/sort-an-almost-sorted-array-where-only-two-elements-are-swapped/)
+2. 
+Reverse a string in place. Modification 1, Reverse it without reversing words, Modification 2, Remove all trailing spaces in front or extra spaces in between a string, and a tuple (reversed string, length).
+3.
+Find closest time permuting digits of a given time in hh:mm. Modification 1, Without repeating any digit.
+4.
+write a method to find if users have common friends, write a method to suggest friends.
+5.
+Reverse Linked List (https://leetcode.com/problems/reverse-linked-list/description/)
+(Recursively and Iteratively)
+Print the Linked List in Reverse
+(Discuss time and space complexity for both)
+6.
+K Sorted Lists Iterator (variant of https://leetcode.com/problems/merge-k-sorted-lists/)
+7.
+Question:
+Given an array V and an integer k. V is filled with 0s and 1s wich represent non-working and working days respectively. Find the largest sub-array that contain at most k working days. Write a function that return the size of the previous sub-array. O(n) expected time complexity.
+Variation of https://leetcode.com/problems/max-consecutive-ones-iii
 
+Example 1:
+	input 
+		V = [0,0,1,0,1,1,0,1] ; k = 2
+	output
+		5 // start at index 0 and end at 4 -> [0,0,1,0,1]
+Example 2:
+	input:
+		V= [0,0,1,0,0,0,0] ; k = 5
+	output:
+		7 // the whole array
+Example 3:
+	Input:
+		V = [1,1,1,1,1,1,1] ; k = 2
+	output:
+		2 // any sub-array of length 2
+8.
+Calculate tax if Salary and Tax Brackets are given as list in the form
+[ [10000, 0.3],[20000, 0.2], [30000, 0.1], [null, .1]]
+null being rest of the salary
+Big O for both questions
+9.
+Input char array consistes of 'W' and 'H' for week day and holiday respectively, and an
+int n. We can change 'W' to 'H' n times and return the longest continoust subarray consisting 'H'
+Variant of https://leetcode.com/problems/max-consecutive-ones-iii
+10.
+https://leetcode.com/problems/backspace-string-compare/description/
+11.
+https://leetcode.com/problems/serialize-and-deserialize-binary-tree
+Follow-up: Discussed about various corner cases, network bandwidth require, encrypt/decrypt etc.
+12.
+Variation of https://leetcode.com/problems/range-sum-query-2d-immutable
+13.
+Variation of https://leetcode.com/problems/average-of-levels-in-binary-tree/. Mine was an N-ary tree, not a binary tree.
+14.
+Wildcard Matching similar to https://leetcode.com/problems/wildcard-matching/ but with only '?' wildcard and for a list of patterns and words.
+My solution was to traverse linearly for each word against each pattern. I have been asked if I can optimize further. I proposed building prefix tree for all words. But didn't had time to implement it.
+15.
+Round 2: [Coding]
+
+Question was similar to https://leetcode.com/problems/task-scheduler/.
+Problem :
+Given a char array representing tasks CPU need to do. It contains Integers where different integers represent different tasks. Tasks has to be done in original order. Each task could be done in one interval. For each interval, CPU could finish one task or just be idle.
+
+However, there is a non-negative cooling interval K that means between two same tasks, there must be at least K intervals that CPU are doing different tasks or just be idle.
+
+You need to return the total amount of time CPU will take to finish all the given tasks.
+16.
+warm up (10 min): reverseSubarray(int[] arr, int first_k_elts)
+extension of: https://leetcode.com/problems/reverse-string/
+core challenge (30 min): implement sort() based on reverseSubarray(arr, k).
+Only did it after a hint from the interviewer. If I practiced enough on LT I would've come across this (thanks Sithis):
+https://leetcode.com/problems/pancake-sorting/
+No further info is given except you need to sort an int array and use reverseSubarray() only.
+i.e. input [3 5 1 7 4] -> output [1 3 4 5 7] etc...
+Solution:
+Once you know the solution the implementation is rather trivial.
+In each iteration starting from i= n-1 towards 0:
+
+identify position of max element k
+if not in the right place already (at i) and not in position 0, rotate rotate(arr, k+1) - max elt is now first
+if max is now in position 0 (i.e. rotated in 2 or was in 0 after point 1.), rotate to put the max elt at the end (for the current iteration) rotate (arr, i+1)
+for the example above (n=5):
+iteration: i= 4: arr= [3 5 1 7 4]
+max(arr, 4+1) => k=3 (max elt is 7)
+rotate(arr, 3+1) => [7 1 5 3 4]
+rotate(arr, 4+1) => [4 3 5 1 7]
+
+iteration: i= 3: arr= [4 3 5 1 7]
+max(arr, 3+1) => k=2 (max elt is 5)
+rotate(arr, 2+1) => [5 3 4 1 7]
+rotate(arr, 3+1) => [1 4 3 5 7]
+
+iteration: i= 2: arr= [1 4 3 5 7]
+max(arr, 2+1) => k=1 (max elt is 4)
+rotate(arr, 1+1) => [4 1 3 5 7]
+rotate(arr, 2+1) => [3 1 4 5 7]
+
+iteration: i= 1: arr= [3 1 4 5 7]
+max(arr, 1+1) => k=0 (max elt is 3)
+skip first rotation (as k=0)
+rotate(arr, 1+1) => [1 3 4 5 7]
+
+i=0 => done.
+
+17.
+Find duplicate directories
+E.g /abc/xyz,/xyz,/mno
+result should be /abc /mno as /xyz is a child of /abc since it is redundant.
+Could not solve this optimally and also solved with bugs.
+i would think i bombed this interview.
+
+18.
+The Questions was: given an array [1, 4, 0 ,2,5] return True if a^2+b^2=c^2 exisit in the array.
+Quite similar to 3-sum approach I solved it in O(n^2)
+
+The recruiter then sent me an email asking for another time for the interview instead of the one with the phone signal trouble,
+I was wondering do you think they will take into consideration that I solved the problem in the 2nd interview ? or will the 2nd interview be completely discarded ?
+
+I am really bumped about that since my rescheduled one was difficult I dont think I will pass
+
+19.
+Support multi-level xml parsing in large number of files with fast lookup using xpath given only openFile & readLine apis.
+
+
+2018-2020 :- Hot question
+a. In-order binary search tree iterator using controlled recursion. Binary search tree iterator
+b. https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
+
+Did till 23 starting from last

@@ -195,7 +195,8 @@ Story-1:- [Disagreed with the approach of a team member/conflict with your manag
 Qualcomm story from Fb
 
 Story-2:- [Example of something you believe in that nobody else does]/[Different Perspective from another team member]
-Microsoft regarding , multiple queues in pipeline vs single queue with thread 
+Microsoft regarding , multiple queues in pipeline vs single queue with thread.
+Result:- In the log processing anaylsis, I was able to back my decision with strong data. Single queue with threading helped in reducing timing by 5 seconds which is considerable factor in our service delivery.
 
 Q] Describe a time when you disagreed with the approach of a team member. What did you do?
 Q] Give me an example of something you believe in that nobody else does.

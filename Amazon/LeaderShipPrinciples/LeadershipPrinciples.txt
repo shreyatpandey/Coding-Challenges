@@ -15,6 +15,8 @@ Deliver Results
 Strive to be Earth’s Best Employer
 Success and Scale Bring Broad Responsibility
 
+** Try to mix 2 or 3 LP's in a single story **
+
 Questions based with respect to each LP:-
 Customer Obsession:-
 Stories:- 1. Apple 2. China Operators
@@ -30,6 +32,7 @@ b. for customer which required testing in LTE and Wifi network , I pushed it by 
 c. Kept an open communication channel by regular following-up with them with their demands and keeping a complete loop of 
 main PoC of customer engineering team, testing team etc
 
+Metric:- Dashboard account on the number of failures seen in testing reducing by 40% margin from the previous case.
 
 Q] Who was your most difficult customer?
 Q] Tell me about a time when you didn't meet customer expectations. What happened, and how did you deal with the situation?
@@ -63,7 +66,7 @@ Story-2:- [Invented something/ Made improvement in your company]
 Enhanced efficiency in debugging for my team by 30 % as it reduced the team to open the log file, then search for the log and then process
 the call flow.
 
-Story-3:- [Made Improvementst at your company]
+Story-3:- [Made Improvements at your company]
 1. Jenkins job that used to give weekly report of the number of drop in SIP packet flow in 5g wireless service. That used to get
 represented through excel sheets
 Was able to enhance productivity of team by 40%

@@ -135,10 +135,17 @@ Q] Describe a situation when you couldn't meet your standards and expectations o
 
 Think Big:-
 Story-1:- [ Most significant professinal development]
-1. During my time at Microsoft, I was owner of the module of developing virtual machine health report, like whether its degraded or available.
-Initially my code architecture supported only windows Vm. However, as the customer demand arouse, they required information of linux Vm's as well.
-The issue was my code was scalable enough to handle information of linux Vms.
-Task:- Need to redesign my code such that both windows Vms as well as linux Vms are supported
+1. Reason for downtime of virtual machine was not getting notified to the customer. 
+Task:- To check the reason for downtime for downtime and subsequently broadcast the  annotation report for the same to the customer.
+Action:- 
+1.I had to think big as new code changes could involve around 500 lines to prepare annotation report and how to present the 
+annotation report.
+2. First I had initiate a multi-team communication to understand how I can report the exact report. This involved deep dive into various reason with different
+team . 
+3. Then incorporate those information in my code base. 
+Result:- Given the new annotation report feature being highly customer driven, it was appreciated by principal manager as well as product manager.
+It helped customer get hands information on the root cause of failure. Further my annotation report was also used by customer experience team in their RCA while
+investigation an IcM/ JIRA ticket.
 
 Q] Tell me about your most significant professional achievement.
 Q] Tell me about a time when you had to make a bold and challenging decision.
@@ -196,7 +203,8 @@ Qualcomm story from Fb
 
 Story-2:- [Example of something you believe in that nobody else does]/[Different Perspective from another team member]
 Microsoft regarding , multiple queues in pipeline vs single queue with thread.
-Result:- In the log processing anaylsis, I was able to back my decision with strong data. Single queue with threading helped in reducing timing by 5 seconds which is considerable factor in our service delivery.
+Result:- In the log processing anaylsis, I was able to back my decision with strong data. 
+Single queue with threading helped in reducing timing by 5 seconds which is considerable factor in our service delivery.
 
 Q] Describe a time when you disagreed with the approach of a team member. What did you do?
 Q] Give me an example of something you believe in that nobody else does.

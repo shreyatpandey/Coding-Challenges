@@ -57,6 +57,7 @@ Invent & Simplify:-
 Story-1:- [Simple solution to complext problem/ think out of box]
 1.Concurrency issue at Microsoft:- From persistent storage transaction that is writing into a disk to in-memory. Reduced delay in sending data 
 in pipeline by 20%
+
 Story-2:- [Invented something/ Made improvement in your company]
 1. Call-Flow Parser:- At Qualcomm, used Python and django framework to display call flow for our internal customers and testing team.
 Enhanced efficiency in debugging for my team by 30 % as it reduced the team to open the log file, then search for the log and then process
@@ -130,11 +131,17 @@ Q] Tell me about a time when you motivated others to go above and beyond.
 Q] Describe a situation when you couldn't meet your standards and expectations on a task.
 
 Think Big:-
+Story-1:- [ Most significant professinal development]
+1. During my time at Microsoft, I was owner of the module of developing virtual machine health report, like whether its degraded or available.
+Initially my code architecture supported only windows Vm. However, as the customer demand arouse, they required information of linux Vm's as well.
+The issue was my code was scalable enough to handle information of linux Vms.
+Task:- Need to redesign my code such that both windows Vms as well as linux Vms are supported
+
 Q] Tell me about your most significant professional achievement.
 Q] Tell me about a time when you had to make a bold and challenging decision.
 Q] Tell me about a time when your vision led to a great impact.
 
-Bias for Action
+Bias for Action:-
 Story-1:- [Make a tough decision without consulting anybody]
 1. When my manager was on leave at Qualcomm
 
@@ -172,7 +179,7 @@ Q] What would you do to gain the trust of your team?
 Q] Tell me about a time when you had to tell a harsh truth to someone.
 
 Dive Deep:-
-Story-1: [When you took important decision without any data] similar to "Are right a lot" [Insufficient datat]
+Story-1: [When you took important decision without any data] similar to "Are right a lot" [Insufficient data]
 -> Build a small prototype of Virtual Machine Report  , showed that out internal customer at Microsoft, they liked the prototype and then scaled to 
 other external and internal customers 
 Result:- 60% of the internal customers liked it. 

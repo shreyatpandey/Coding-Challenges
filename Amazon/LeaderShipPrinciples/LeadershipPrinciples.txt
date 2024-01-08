@@ -175,6 +175,15 @@ Q] Tell me about a time when you required some information from somebody else, b
 
 
 Frugality:-
+Story-1:- [ Time when you had to complete task by yourself]
+1. Qualcomm :- Refractoring of legacy LTE code base. My team members were put on new 5g commercialization project.
+Being customer obsessed I still had to support operators who were only on 4G/LTE framework. 
+I had to rely on my judgement to remove redundant code base which were not required for 5g network.
+Did not receive much help from team member given their limited bandwidth.
+Metric:- I was able to reduced my 2000 line of LTE code base to roughly 1,200 lines which is roughly 40% of code. Also, during testing not much
+issue was reported for testing.
+
+
 Q] Describe a time when you had to rely on yourself to complete a task.
 Q] Tell me about a time when you had to be frugal.
 Q] Tell me about a time when you had to rely on yourself to complete a project.

@@ -44,12 +44,17 @@ Story-1:- [Gone out of way to help a peer]
 
 Story-1:- [Task that was beyond your job responsibilities]
 1. Senior team member left at Qualcomm. I took the ownership of our code signalling service module.
-2. I quickly ramped up on the task which the senior team left
+2. I quickly ramped up on the task which the senior team left.
+3. How I ramped up? 
+  a. Initially acquired as much information as possible during knowledge transfer. Read through documents and did training for it.
+  b. Ran unit test cases for it.
+4. Within the 3 months was able to commit my code and deliver the result for it.
 
 Story-2:- [Challenging Project/Project you were proud of]
-1. High Memory Consumption :- Logging framework at Qualcomm reduced by 30 %
-2. High Information Flow:- At Microsoft, Loss of data had to reduced by 40% . Consuming from various sources
-and this is a pipelining work
+1. High Memory Consumption/ High Memory Footprint :- Logging framework at Qualcomm reduced by 30 %.
+    a. Metric:- On an avg of 24 hrs, I saw a reduction of 40% in logging framework as compared to the changes before it.
+2. High Information Flow:- 
+  a. At Microsoft, Loss of data had to reduced by 40% . Consuming from various sources and this is a pipelining work
 
 Q] Have you ever gone out of your way to help a peer?
 Q] Tell me about a time when you took on a task that was beyond your job responsibilities.

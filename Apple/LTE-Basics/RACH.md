@@ -1,9 +1,11 @@
 # RARCH Procedure Fundamentals
  * RACH stands for Random Access Channel. This is the first message from UE to eNB when you power it on.<br>
- ## Purpose of RARCH
- * Achieve UP link synchronization between UE and eNB <br>
- * Obtain messages like RRC Connection Request <br>
  
+  ## Purpose of RARCH
+   * Achieve UP link synchronization between UE and eNB <br>
+   * Obtain messages like RRC Connection Request <br>
+ 
+
 
 
 

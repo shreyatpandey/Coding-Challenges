@@ -1,0 +1,22 @@
+5 minute :- Brief Introduction of Interviewer + Me
+
+Behavioural Question:- ~ 20-25 minutes
+Major Question :- 
+Q1] How did you deal with a project or multiple project with tight deadline?
+Story:- Commercialization of 5g LTE network in Qualcomm
+Prioritizing customer demand in terms of P0, P1, and so on.
+LP's I used:- Customer Obession, Deliver Result, Bias for Action
+Follow-Up:- 
+Q1] What was the timeframe for your project?
+- Sprint planning which was differentiated into
+Q2] Did you completely lead the project or did some checkpoint?
+- Since I was an engineer, I just did checkpoint
+Q3] What was the most technical challenge you faced in this deadline?
+- Memory consumption was high. 
+LP used:- Invent and Simplify, Think out of box
+Q4] What metric did you use to check the progress?
+- Number of JIRA tickets were reduced.
+- Number of tickets received were 10 instead of 30 or so
+
+Q2] 
+

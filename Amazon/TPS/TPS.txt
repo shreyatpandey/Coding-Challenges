@@ -13,10 +13,57 @@ Q2] Did you completely lead the project or did some checkpoint?
 - Since I was an engineer, I just did checkpoint
 Q3] What was the most technical challenge you faced in this deadline?
 - Memory consumption was high. 
-LP used:- Invent and Simplify, Think out of box
+LP used:- Invent and Simplify, Dive Deep
 Q4] What metric did you use to check the progress?
 - Number of JIRA tickets were reduced.
 - Number of tickets received were 10 instead of 30 or so
 
-Q2] 
+Q2] How did you deal with a project that did not have much information?
+Story:- Pipeling work at Microsoft
+What to extract was not clear. Coordination with different product managers across various teams
+Virtual Machine health report for internal customer
+LP's I used:- Forget[Are Right a lot], instead used terms like "my own judgement and reasoning"
+Q1] How long was the time frame for it? Was it semester long or so? How did you plan it out?
+- Setup realistic goals in planning to get information in the first sprint , then in the second sprint designed my code consequently coded
+and tested it out through exhaustive unit test cases. Then kept one sprint to get feeedback from internal customers
+Q2] How did you make your code extensible and scalable?
+- First built a small prototype of the report, then got feedback and started scaling
+LP's I used:- Think Big
+Q3] What different you think you could have done to improve your product/situation?
+- I talked about involving me in early stage of discussion. 
+Q4] What metric did you use to check/monitor your progress or success?
+- We had 5 internal customers, 3/5 liked it. Can say 66.6% of internal customers liked it.
+
+Coding Question:- 
+Q] Design an optimal locker that would pop open with the right package.
+// Interface was in java
+Package packageId
+Locker lockerId
+public enum PackageSize
+{
+   enum("Small"),
+   enum("Medium"),
+   enum("Large")
+}
+public class PackageDimension
+{
+    public int length,
+    public int width,
+    public int height
+}
+public class getLockers
+{
+  public List<Lockers>getAvailableLockers();
+}
+
+Follow-Up:-
+Q1] What if the dimension of the package are exactly as the dimension of the package?
+- Use that < instead of less thatn equal to condition
+Q2] What was the run time-complexity of the code?
+- Since sorted was used in multiple places, it became ~ O(n*log(n))
+Q3] What can you do to improve the code?
+- Add some extra class property class 'isempty' which would reflect condition if the locker is empty or not before package is put into it.
+
+Reference:-
+-Similar to this:- https://leetcode.com/discuss/interview-question/object-oriented-design/1837728/amazon-l5-design-finding-box-to-fit-in-amz-locker-feedback-is-welcomed
 

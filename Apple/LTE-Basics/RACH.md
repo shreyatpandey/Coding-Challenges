@@ -4,6 +4,12 @@
   ## Purpose of RARCH
    * Achieve UP link synchronization between UE and eNB <br>
    * Obtain messages like RRC Connection Request <br>
+
+  ## Criteria for Uplink Syncronization
+    * The synchronization process should happen only when there is immediate necessity. <br>
+    * The synchronization should be dedicated to only a specific UE. <br>
+
+  
  
 
 

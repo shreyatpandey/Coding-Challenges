@@ -1,0 +1,152 @@
+Q] To reverse the links list using recursion
+
+// Input = 2->4->5
+2<-4<-5
+//Output = 5->4->2
+
+Node* reverseRecursive(Node* head)
+{
+	if( head == NULL || head->next = NULL)
+		return head;
+            
+	Node* current =  reverseRecursive(head->next);    
+           // Node* temp = head->next;
+
+            head->next->next = current;
+            // head->next = 5
+          // 5->next = NULL
+	head->next = NULL;
+   	
+         return current;
+
+}
+Iteration-1:-
+Head = 2
+Head->next = 4
+
+
+
+
+
+Iteration-2:-
+Head = 4
+Head->next = 5;
+
+
+
+// current = 5
+Head = 4
+Head->next->next = 
+4’s next is 5 , then 5’s next = current 
+Head->next = 5
+ 5= NULL;
+Current = 5
+
+
+Iteration-3:- 
+Head = 5
+Head->next = NULL
+Return head = 5
+
+
+
+
+
+Q2] Two link they are crossing each other , find the 2nd common node between two link list
+
+Node* intersection(
+
+
+
+Node* findsecondCommon(Node* head1, int length1,Node* head2,int length2)
+{
+
+	
+
+}
+
+Q3] Count set number of bits in unsigned integer
+
+Unsigned int num = 10;
+Int countSet = 0;
+while(num)
+{
+  countSet += 1;
+  num &= num-1;
+}
+
+// 3 = 011
+// num-1 = 2 = 010
+011 & 010 = 
+
+//Multiple reader and multiple writer
+Mutex
+thread
+Thread-synchronization - conditional_broadcast
+
+
+Char buffer[246]
+Void *dummy reader()
+{
+  // signal , 
+ // r = signal
+// check the signal bal
+// wait for the signal
+..signal-handler or have a shared memory in this
+…sleep() to make thread sleep before other thread writes it
+…perform read-operation
+ 
+  }
+// condition with no writer
+Void writer()
+{
+  ..lock
+   {
+     Critical section of the code
+    }
+   ..release the lock
+ ..notify through signal}
+// Scenario-1:- There is no writer
+
+No need to have locking mechanism for reading
+Variable totalReaders // global variable
+Void Reader()
+{
+      ..increment the totalReaders
+
+     ..decrement the totalReaders
+}
+
+//Scenario- 2:- There is say one reader and multiple writers
+Void writer()
+{
+    ..lock
+     {
+        Perform the operation
+     }
+   ..unlock
+}
+
+//Scenario-3:- There is multiple reader and one writer
+
+
+//Scenario-4:- There are multiple reader and multiple writer
+Void reader()
+{
+     …increment the total Readers
+     … make the thread sleep
+     …decrement the total Readers
+
+}
+
+Void writer()
+{
+   
+    …lock either through mutex or semaphore
+     {
+          Perform the operation
+
+     }
+   …unlock
+
+}

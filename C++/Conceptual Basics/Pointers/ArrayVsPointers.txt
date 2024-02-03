@@ -23,6 +23,9 @@ int main() {
 
   std::cout << (typeid(int*) == typeid(int[]));
 }
+// Output:-
+pp0
+
 //Reason:- 
 Functions taking pointers can also be called with arrays, and vice versa. So are arrays and pointers the same? No.
 If they aren't the same, why can both functions be called with both arguments?
@@ -68,4 +71,20 @@ get_size_1:8
 get_size_2:8
 get_size_3:40
 001
+
+
+// Issues in following piece of code
+int a=0;
+int arr[]={1,2,3};
+arr = &a; //Array type "int [3]" is not assignable
+// Name of arr is a pointer constant
+It’s address can be accessed, but usually there is a warnning
+
+int *pt;
+int arr[]={1,2,3};
+pt = &arr; //Incompatible pointer types assigning to "int *" from "int (*)[3]"
+
+
+
+Good Reference:- https://rstudio-pubs-static.s3.amazonaws.com/495651_5a3108e73fb1412aa341b6d476abc28e.html
 

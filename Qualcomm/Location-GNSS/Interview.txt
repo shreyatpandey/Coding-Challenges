@@ -10,6 +10,10 @@ int *ptr = arr;
 int *ptr1 = &arr;
 Are ptr and ptr1 same?
 
+Size of the two datatype
+int arr[10]; //sizeof(arr) = 40
+int *ptr; //sizeof(arr) = 4 
+
 Output of this program
 #define Square(n) n*n
 int n = 5;

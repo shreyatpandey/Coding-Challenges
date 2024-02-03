@@ -28,6 +28,14 @@ Q10] Define a function pointer in C?
 [2] Ankur Sharma
 Q1] Program to reverse words in a sentence?
 - Lot of edge cases
+- first gave const char*input , found that out, I had done in-place,
+- I asked if the string is null-terminated
+main thing is don't assume anything
+- asked for size of string
+- More follow-up
+number of spaces between words, I had assumed only a space between words
+- Whether the words contain any numbers in it or not
+
 Q2] Deadly:-
 I have a stream of bytes coming in a string.
 At a particular address there is a struct present, I would need to extract num from it.

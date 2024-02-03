@@ -1,0 +1,36 @@
+[1] Jeevan Varghese
+Q1] What is void pointer?
+Q2] Can you perform pointer arithmetic on void pointer?
+Q3] What is dangling pointer?
+Q4] What is an advantage of defining pointer to Null?
+Q5] Are pointers and array same?
+Q6] 
+int arr[10] = {0}
+int *ptr = arr;
+int *ptr1 = &arr;
+Are ptr and ptr1 same?
+
+Output of this program
+#define Square(n) n*n
+int n = 5;
+printf("%d\n %d\n",Square(n++),n);
+First asked me what are the stage of compilation in C program?
+
+Q7] Program to find the number of set bits in an integer?
+Q8] Program to perform circular shift of an integer?
+Q9] Program to define 2D array in C?
+Q10] Define a function pointer in C?
+
+[2] Ankur Sharma
+Q1] Program to reverse words in a sentence?
+- Lot of edge cases
+Q2] Deadly:-
+I have a stream of bytes coming in a string.
+At a particular address there is a struct present, I would need to extract num from it.
+struct Node
+{
+  int num;
+};
+Say this struct is present after a tag = 0x65
+0x00 0x01 ...0x65...0x78
+Bytes end in 0x78 

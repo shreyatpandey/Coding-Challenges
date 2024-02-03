@@ -1,0 +1,18 @@
+//[1] Asked in Qualcomm
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+#define Square(n) n*n
+
+int main()
+{
+    int n = 5;
+    printf("%d\n %d\n",Square(n++),n);
+    return 0;
+}
+// 30,7
+Reason:-
+MACROs are textual replacement, so your code
+SQR(a++)
+expands to something like:- a++ * a++

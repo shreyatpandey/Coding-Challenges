@@ -16,3 +16,56 @@ Reason:-
 MACROs are textual replacement, so your code
 SQR(a++)
 expands to something like:- a++ * a++
+
+Q2] 
+#include<stdio.h> 
+#define f(g,g2) g##g2 
+int main() 
+{ 
+   int var12 = 100; 
+   printf("%d", f(var,12)); 
+   return 0; 
+}
+// Output - 100
+/*
+The operator ## is called “Token-Pasting” or “Merge” Operator. It merges two tokens into one token. 
+So, after preprocessing, the main function becomes as follows, and prints 100.
+int main() 
+{ 
+   int var12 = 100; 
+   printf("%d", var12); 
+   return 0; 
+}
+*/
+
+Q3] 
+#include <stdio.h>
+#define square(x) x*x
+int main()
+{
+  int x;
+  x = 36/square(6);
+  printf("%d", x);
+  return 0;
+}
+/*
+Preprocessor replaces square(6) by 6*6 and the expression becomes x = 36/6*6 and
+value of x is calculated as 36. Note that the macro will also fail for expressions "x = square(6-2)" If we want correct behavior from macro square(x), we should declare the macro as
+#define square(x) ((x)*(x))  
+*/
+
+Q4]
+#include<stdio.h>
+#define SQR(x) (x*x)
+int main()
+{
+    int a;
+    int b=4;
+    a=SQR(b+2);
+    printf("%dn",a);
+    return 0;
+}
+/*
+#define SQR(x) (x*x) a = SQR(b+2); a = (b + 2*b + 2) = (4 + 2*4 + 2) = 14 So, option (A) is correct.
+*/
+

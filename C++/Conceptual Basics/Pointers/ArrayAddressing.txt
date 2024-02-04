@@ -30,6 +30,25 @@ int main()
 4
 0
 
+Question-3:-
+#include<stdio.h>
+int main()
+{
+    char *B[8]; //array of pointers
+    double *D[5]; //array of pointers
+    int **R[9]; //array of pointers , size would be 8 bytes itself
+    printf("%d\n",sizeof(B));
+    printf("%d\n",sizeof(D));
+    return 0;
+}
+// Output
+64
+40
+Reason:- size of pointer is say 8 bytes. 
+Then char *B[8] is 8x8= 64 , double *D[5] is 8x5 = 40 bytes
+
+** Formula for array-addressing:- startingaddress + L.i at ith index **
+
 
 
 

@@ -47,7 +47,15 @@ int main()
 Reason:- size of pointer is say 8 bytes. 
 Then char *B[8] is 8x8= 64 , double *D[5] is 8x5 = 40 bytes
 
-** Formula for array-addressing:- startingaddress + L.i at ith index **
+** Formula for array-addressing to get address at the ith element:- 
+[1] One-dimensional array:-
+startingaddress + L.i at ith index 
+[2] Two-dimensional array:-
+T D[R][C]
+&D[i][j] = xd + L(C.i+j)
+where L is the size of data type T in bytes
+C is the column size
+**
 
 
 

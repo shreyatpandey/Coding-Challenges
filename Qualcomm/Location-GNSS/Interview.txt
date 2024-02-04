@@ -20,6 +20,13 @@ int n = 5;
 printf("%d\n %d\n",Square(n++),n);
 First asked me what are the stage of compilation in C program?
 
+error in this program
+char *input = "Jeevan"; // part of read only text segment
+input[2] = 'f' ; // error 
+char Input[] = "Jev";
+Input[1] = 'f' ; // this is possible
+
+
 Q7] Program to find the number of set bits in an integer?
 Q8] Program to perform circular shift of an integer?
 Q9] Program to define 2D array in C?

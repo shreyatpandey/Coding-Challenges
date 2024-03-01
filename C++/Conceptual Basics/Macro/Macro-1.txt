@@ -69,3 +69,16 @@ int main()
 #define SQR(x) (x*x) a = SQR(b+2); a = (b + 2*b + 2) = (4 + 2*4 + 2) = 14 So, option (A) is correct.
 */
 
+Q5] 
+#include <stdio.h>
+#define get(s) #s
+ 
+int main()
+{
+    char str[] = get(GeeksQuiz);
+    printf("%s", str);
+    return 0;
+}
+Ans:- GeeksQuiz
+The preprocessing operator '#' is used to convert a string argument into a string constant.
+

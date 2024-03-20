@@ -5,4 +5,4 @@
  * Helps run time execution and promotes polymorphism
 
 # Function Pointer as an array
- * **return_type (*function_name[SIZE])(parameter_type)**
+ *  **return_type (*function_name[SIZE])(parameter_type)**

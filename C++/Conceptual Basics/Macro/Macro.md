@@ -3,6 +3,7 @@
 
 # String Constant
  * "#" is used to convert string argument into string constant
+ * "#" = stringization operator, converting into "quoted string"
 
 ## Pattern Matching
  * "##" is used for concatenation or merge tokens

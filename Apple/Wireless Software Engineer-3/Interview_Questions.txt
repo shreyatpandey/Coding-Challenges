@@ -14,6 +14,14 @@ int main()
     return 0;
 }
 /* Output */
+/*
+Learning:-
+p_i is of unsigned int which is of 4 byte
+=> * at the initial location would print out entire unsigned int
+p_c is of char which is of 1 byte
+=> * at the initial location which is of char datatype would print only the first byte
+*/
+
 
 Q] Basically it was "atoi"
 unsigned_t function(uchart_t* p_buffer, uint8_t base)

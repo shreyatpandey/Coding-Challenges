@@ -62,3 +62,14 @@ Address of each:0x7ffeb9798bc8
 Address of each:0x7ffeb9798bc8 
   */
 
+// There is no difference between these two declaration of pointer to array
+/*
+int *ptr;
+int arr[5] = {0};
+ptr = arr;
+or
+int *ptr ;
+int arr[5] = {0};
+ptr = &arr;
+Both point to the first element address of the array
+*/

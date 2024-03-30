@@ -1,1 +1,43 @@
+Interviewer:- Vamsi Krishna
+Q1] 
+What does this code do?
+void func() 
+{
+int *p = 0;
+printf("%d", &p); 
+printf("%d", p); 
+printf("%d", *p); 
+}
+void func() 
+{
+int *p;
+p = 0;
+printf("%d", &p); 
+printf("%d", p); 
+printf("%d", *p);
+}
+void func() 
+{
+int *p;
+p = NULL;
+printf("%d", &p); 
+printf("%d", p); 
+printf("%d", *p);
+}
+Review:- Look up for issue with "int *p = 0" . It's one of a unique cases
+
+Q2] 
+struct 
+{
+unsigned int a;
+signed char b;
+unsigned short c;
+};
+Moment I said 32-bit and 64-bit compiler. Asked me what does 32-bit and 64-bit compiler does?
+
+Networking:-
+Q1] What is the use of RTT?
+Q2] Does RTT affect throughput?
+Q3] What is the use of queue in TCP network?
+Q4] What is DHCP commit during IP allocation?
 

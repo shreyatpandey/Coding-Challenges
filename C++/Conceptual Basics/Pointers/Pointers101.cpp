@@ -10,3 +10,14 @@ int main()
     std::cout<<*Temp1<<std::endl;
     return 0;
 }
+
+/*
+int *p = 0;
+It's a special case. 
+This translates into null pointer constant.
+Program will compile and won't give any output.
+This one line :- int *p = 0 is equivalent to two lines
+int *p;
+p = 0x0
+
+*/

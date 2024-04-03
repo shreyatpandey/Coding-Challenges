@@ -47,17 +47,18 @@ Behavioral:-
   2. More detail on the role of Qualcomm.
 
 Q1] What is the use of volatile and non volatile variable?
-Q2] What are stacks and queues?
-Q3] Implement queue using stacks
-Q4] OS Based:-
+Q2] What is variable argument in C? Any known example or library that uses variable argument
+Q3] What are stacks and queues?
+Q4] Implement queue using stacks
+Q5] OS Based:-
 1. What is basic difference between mutex and semaphore?
 2. If you are streaming video application like youtube and phone comes in , which one would you use out of those two?
 3. What is a page fault?
 4. What is thrashing?
-Q5] Puzzle
+Q6] Puzzle
 There are 3 ants on the edge of triangle. What are the chance that they are going to collide?
-Q6] Find the intersection of two link list
-Q7] Find all the errors in this program
+Q7] Find the intersection of two link list
+Q8] Find all the errors in this program
 struct connect_params
 {
   char *ssid;

@@ -63,17 +63,17 @@ class List(object):
                 print("TripleNext Val:",current.TripleNext.Value)
             current = current.next
         
-    if __name__ == '__main__':
-      listNode = List()
-      print("|----|Test Case-1|----|")
-      listNode.Prepend(4)
-      listNode.Prepend(5)
-      listNode.Prepend(6)
-      listNode.Prepend(7)
-      listNode.Prepend(8)
-      listNode.Prepend(9)
-      listNode.Print()
+if __name__ == '__main__':
+    listNode = List()
+    print("|----|Test Case-1|----|")
+    listNode.Prepend(4)
+    listNode.Prepend(5)
+    listNode.Prepend(6)
+    listNode.Prepend(7)
+    listNode.Prepend(8)
+    listNode.Prepend(9)
+    listNode.Print()
 
-      print("|----|Test Case-2|----|")
-      listNode.RemoveNode(3)
-      listNode.Print()
+    print("|----|Test Case-2|----|")
+    listNode.RemoveNode(3)
+    listNode.Print()

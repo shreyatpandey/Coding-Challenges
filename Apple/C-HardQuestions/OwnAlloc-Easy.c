@@ -121,7 +121,9 @@ int main()
  int *r=(int*)MyMalloc(1000*sizeof(int));
  MyFree(p);
  char *w=(char*)MyMalloc(700);
+ char *w=(char*)MyMalloc(700);
  MyFree(r);
+ int *k=(int*)MyMalloc(500*sizeof(int));
  int *k=(int*)MyMalloc(500*sizeof(int));
  printf("Allocation and deallocation is done successfully!");
  return 0;

@@ -8,14 +8,14 @@ void show_val_1(unsigned int num)
 }
 void show_val_2(signed int num)
 {
-    printf("Number: %08x", num);
+    printf("Number: %08x\n", num);
 }
 
 
 int main()
 {
     short num = -1;
-    show_val_1(num);
+    show_val_1((unsigned int)num);
     show_val_2(num);
     return 0;
 }

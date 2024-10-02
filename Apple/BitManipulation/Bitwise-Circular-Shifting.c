@@ -15,7 +15,30 @@ unsigned int _8bit_leftrotate(unsigned int word, unsigned int shift) {
     return ((word << (shift&7)) | ((word >> ((8-shift) & 7))));
 }
 
+void print(unsigned int value) {
+    printf("Value:%d\n", value);
+    int i;
+    for(i = 0; i<8; i++) {
+        if (value & (0x80>>i)) {
+            printf("1");
+        }
+        else {
+            printf("0");
+        }
+    }
+    printf("\n");
+}
+
 int main() {
-    printf("Test-Case-1:%u\n", _8bit_leftrotate(12,3));
-    printf("Test-Case-2:%u\n", _8bit_leftrotate(8,2));
+    printf("Test-Case-1 : Word = 13\n");
+    print(13);
+    int result = _8bit_leftrotate(13,3);
+    print(result);
+    printf("\n");
+    printf("Test-Case-2: Word = 8\n");
+    print(8);
+    result = _8bit_leftrotate(8,2);
+    print(result);
+
+    return 0;
 }

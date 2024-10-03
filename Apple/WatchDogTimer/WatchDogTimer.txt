@@ -1,0 +1,43 @@
+A watchdog timer is a piece of hardware that can be used to automatically detect software anomalies and reset the processor if any occur. 
+Generally speaking, a watchdog timer is based on a counter that counts down from some initial value to zero. 
+The embedded software selects the counter's initial value and periodically restarts it. 
+If the counter ever reaches zero before the software restarts it, the software is presumed to be malfunctioning and the processor's reset signal is asserted. 
+The processor (and the embedded software it's running) will be restarted as if a human operator had cycled the power. 
+[ Diagram : As shown, the watchdog timer is a chip external to the processor ]
+However, it could also be included within the same chip as the CPU. 
+This is done in many microcontrollers. 
+In either case, the output from the watchdog timer is tied directly to the processor's reset signal. 
+
+Kicking the dog 
+The process of restarting the watchdog timer's counter is sometimes called "kicking the dog." 
+The appropriate visual metaphor is that of a man being attacked by a vicious dog.
+If he keeps kicking the dog, it can't ever bite him. 
+But he must keep kicking the dog at regular intervals to avoid a bite. 
+Similarly, the software must restart the watchdog timer at a regular rate, or risk being restarted. 
+
+A simple example is shown in Listing 1. 
+Here we have a single infinite loop that controls the entire behavior of the system. 
+This software architecture is common in many embedded systems with low-end processors and behaviors based on a single operational frequency.
+The hardware implementation of this watchdog allows the counter value to be set via a memory-mapped register. 
+
+Listing 1: Kicking the dog 
+uint16 volatile * pWatchdog = 
+    (uint16 volatile *) 0xFF0000; 
+main(void) 
+{ 
+        hwinit(); 
+        for (;;) 
+        { 
+            *pWatchdog = 10000; 
+            read_sensors(); 
+            control_motor(); 
+            display_status(); 
+        } 
+} 
+Suppose that the loop must execute at least once every five milliseconds. 
+(Say the motor must be fed new control parameters at least that often.) 
+If the watchdog timer's counter is initialized to a value that corresponds to five milliseconds of elapsed time, say 10,000,
+and the software has no bugs, the watchdog timer will never expire; 
+the software will always restart the counter before it reaches zero. 
+
+

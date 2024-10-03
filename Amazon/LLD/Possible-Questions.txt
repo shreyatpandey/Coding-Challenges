@@ -5,3 +5,5 @@
 [3] Design a coupon and voucher managment :- https://leetcode.com/discuss/interview-question/1003648/low-level-design-question-amazon
 
 [4] Design an Elevator Management System :- https://tedweishiwang.github.io/journal/object-oriented-design-elevator.html
+
+[5] Design a Vehicle Tracking System :- https://leetcode.com/discuss/interview-question/4930449/Amazon-or-Onsite-or-HLD-or-Vehicle-Tracking

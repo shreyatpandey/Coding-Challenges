@@ -10,10 +10,10 @@ This is often done by chaining, which means to create a linked list of all the v
 
 STL:-
 An STL map inserts the key/value pairs into a binary search tree based on the keys. There is no need to
-handlecollisions,and,since the tree is balanced,the insert and lookuptime is guaranteed to beO(log N).
+handlecollisions,and,since the tree is balanced,the insert and lookuptime is guaranteed to be O(log N).
 
 How is a hash table implemented?
-A hash tabie is traditionally implemented with an array of linked lists.
+A hash table is traditionally implemented with an array of linked lists.
 When we want to insert a key/value pair, we map the key to an index in the array using a hash function. 
 The value is then inserted into the linked list at that position.
 Note that the elements in a linked list at a particular index of the array do not have the same key. 

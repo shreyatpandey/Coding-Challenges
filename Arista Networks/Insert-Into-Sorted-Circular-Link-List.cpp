@@ -1,4 +1,7 @@
-/*
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 // Definition for a Node.
 class Node {
 public:
@@ -17,7 +20,7 @@ public:
         next = _next;
     }
 };
-*/
+
 Node* AddNodeToEmpty (Node*head,int val)
 {
     Node* temp = new Node(val);

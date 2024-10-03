@@ -1,0 +1,7 @@
+[1] Design Unix File Search API :- https://leetcode.com/discuss/interview-question/609070/Amazon-OOD-Design-Unix-File-Search-API
+
+[2] Design finding box to fit in AMZ Locker :- https://leetcode.com/discuss/interview-question/object-oriented-design/1837728/amazon-l5-design-finding-box-to-fit-in-amz-locker-feedback-is-welcomed
+
+[3] Design a coupon and voucher managment :- https://leetcode.com/discuss/interview-question/1003648/low-level-design-question-amazon
+
+[4] Design an Elevator Management System :- https://tedweishiwang.github.io/journal/object-oriented-design-elevator.html

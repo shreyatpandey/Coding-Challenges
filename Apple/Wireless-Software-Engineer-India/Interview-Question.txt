@@ -6,6 +6,11 @@ LTE-Knowledge
 network, will the UE latch on to Jio or Airtel Network.
 [3] Even before IMS SIP Request that goes out, what is the first message to indicate if
 network is IMS supported or not
+[4] What are the core netowork components in LTE/EPC network?
+    - MME
+    - P-GW
+    - S-GW
+    - HSS
 [4] What is the first NAS message that goes out for MME?
 [5] Did you work on NR? Told him about SA and NSA mode
 

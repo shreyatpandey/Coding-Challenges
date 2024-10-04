@@ -1,0 +1,24 @@
+Interviewer Name : Rajkumar Krishnaperumal
+
+LTE-Knowledge
+[1] Question about LTE attach
+[2] Assuming cell frequency, strength are same, and if the SIM card is of Jio
+network, will the UE latch on to Jio or Airtel Network.
+[3] Even before IMS SIP Request that goes out, what is the first message to indicate if
+network is IMS supported or not
+[4] What is the first NAS message that goes out for MME?
+[5] Did you work on NR? Told him about SA and NSA mode
+
+Memor-layout:-
+Basic memory layout in C
+
+C- Questions:-
+[1] Apple Debug:-
+Write a function A to declare a pointer
+Write a function B to assign a pointer
+Write a function C to give value to a pointer
+Write a function D to print a pointer
+Write a function E to free the pointer
+
+[2] Write a function to check if the binary representation of a number is 
+palindrome or not

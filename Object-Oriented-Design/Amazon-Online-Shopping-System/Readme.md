@@ -56,7 +56,7 @@ Here are the top use cases of the Online Shopping System:
 Here is the use case diagram of our Online Shopping System:
 
 <p align="center">
-    <img src="/media-files/online-shopping-use-case.svg" alt="Online Shoopping System Use Case Diagram">
+    <img src="/Object-Oriented-Design/media-files/online-shopping-use-case.svg" alt="Online Shoopping System Use Case Diagram">
     <br />
     Use Case Diagram for Online Shoopping System
 </p>

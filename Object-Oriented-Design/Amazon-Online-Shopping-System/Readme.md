@@ -13,7 +13,7 @@
 Amazon ([amazon.com](https://www.amazon.com/)) is the world’s largest online retailer. The company was originally a bookseller but has expanded to sell a wide variety of consumer goods and digital media. For the sake of this problem, we will focus on their online retail business where users can sell/buy their products.
 
 <p align="center">
-    <img src="/media-files/amazon.jpg" alt="Amazon">
+    <img src="/Object-Oriented-Design/media-files/amazon.jpg" alt="Amazon">
     <br />
     Amazon - Online Shopping System
 </p>

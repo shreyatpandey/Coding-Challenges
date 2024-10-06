@@ -1,8 +1,9 @@
 '''
 Enums, data types, and constants:** Here are the required enums, data types, and constants:
 '''
-
-```python
+'''
+Python source code
+'''
 from enum import Enum
 
 
@@ -31,11 +32,11 @@ class PaymentStatus(Enum):
     UNPAID, PENDING, COMPLETED, FILLED, DECLINED, CANCELLED, ABANDONED, SETTLING, SETTLED, REFUNDED = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 
 
-```
+'''
+**Account, Customer, Admin, and Guest:** These classes represent different people 
+that interact with our system:
+'''
 
-**Account, Customer, Admin, and Guest:** These classes represent different people that interact with our system:
-
-```python
 from abc import ABC
 from .constants import *
 
@@ -95,11 +96,9 @@ class Member(Customer):
         None
 
 
-```
-
+'''
 **ProductCategory, Product, and ProductReview:** Here are the classes related to a product:
-
-```python
+'''
 class ProductCategory:
     def __init__(self, name, description):
         self.__name = name
@@ -131,11 +130,11 @@ class Product:
         None
 
 
-```
+'''
 
-**ShoppingCart, Item, Order, and OrderLog:** Users will add items to the shopping cart and place an order to buy all the items in the cart.
+ShoppingCart, Item, Order, and OrderLog:** Users will add items to the shopping cart and place an order to buy all the items in the cart.
+'''
 
-```python
 from datetime import datetime
 from .constants import *
 
@@ -194,11 +193,11 @@ class Order:
         None
 
 
-```
+'''
+**Shipment, ShipmentLog, and Notification:** After successfully placing an order,
+ a shipment record will be created:
+'''
 
-**Shipment, ShipmentLog, and Notification:** After successfully placing an order, a shipment record will be created:
-
-```python
 from abc import ABC
 from datetime import datetime
 from .constants import *
@@ -233,13 +232,11 @@ class Notification(ABC):
         None
 
 
-```
-
-**Search interface and Catalog:** Catalog will implement Search to facilitate searching of products.
-
-```python
+'''
+** Search interface and Catalog: ** 
+Catalog will implement Search to facilitate searching of products.
+'''
 from abc import ABC
-
 
 class Search(ABC):
     def search_products_by_name(self, name):
@@ -259,6 +256,3 @@ class Catalog(Search):
     
     def search_products_by_category(self, category):
         return self.product_categories.get(category)
-
-
-```

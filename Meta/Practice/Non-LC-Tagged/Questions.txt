@@ -132,3 +132,5 @@ Did till 23 starting from last
 2024:-
 [1] Given cities and their respective populations, randomly return a city according to proportion of its population relative to the overall population 
 (https://leetcode.com/problems/random-pick-with-weight/description/)
+
+[2] https://leetcode.com/discuss/interview-question/338192/Facebook-or-Onsite-or-Word-Break-and-Working-and-MultiTasking-Intervals

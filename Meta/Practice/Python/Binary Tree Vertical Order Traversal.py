@@ -31,6 +31,7 @@ The number of nodes in the tree is in the range [0, 100].
 -100 <= Node.val <= 100
 '''
 from collections import defaultdict
+from collections import deque
 class Solution:
     def verticalOrder(self, root: TreeNode) -> List[List[int]]:
         if root is None:

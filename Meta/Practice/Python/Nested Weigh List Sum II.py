@@ -22,6 +22,7 @@ Explanation: One 1 at depth 3, one 4 at depth 2, and one 6 at depth 1.
 Double Pass BFS
 
 '''
+from collections import deque
 class Solution:
     def depthSumInverse(self, nestedList: List[NestedInteger]) -> int:
         queue = deque(nestedList)

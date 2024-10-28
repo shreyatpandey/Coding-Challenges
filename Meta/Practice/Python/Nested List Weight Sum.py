@@ -74,6 +74,7 @@ where N is the number of Nested List
 SC:- O(N)
 For the queue
 '''
+from collections import deque
 class Solution:
     def depthSum(self, nestedList: List[NestedInteger]) -> int:
         queue = deque(nestedList)

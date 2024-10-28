@@ -128,3 +128,7 @@ a. In-order binary search tree iterator using controlled recursion. Binary searc
 b. https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
 
 Did till 23 starting from last
+
+2024:-
+[1] Given cities and their respective populations, randomly return a city according to proportion of its population relative to the overall population 
+(https://leetcode.com/problems/random-pick-with-weight/description/)

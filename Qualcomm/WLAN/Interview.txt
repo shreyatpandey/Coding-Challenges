@@ -4,24 +4,24 @@ What does this code do?
 void func() 
 {
 int *p = 0;
-printf("%d", &p); 
-printf("%d", p); 
+printf("%d", &p);
+printf("%d", p);
 printf("%d", *p); 
 }
 void func() 
 {
 int *p;
 p = 0;
-printf("%d", &p); 
-printf("%d", p); 
+printf("%d", &p);
+printf("%d", p);
 printf("%d", *p);
 }
 void func() 
 {
 int *p;
 p = NULL;
-printf("%d", &p); 
-printf("%d", p); 
+printf("%d", &p);
+printf("%d", p);
 printf("%d", *p);
 }
 Review:- Look up for issue with "int *p = 0" . It's one of a unique cases

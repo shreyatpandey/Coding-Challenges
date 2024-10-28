@@ -32,10 +32,7 @@ class Solution(object):
                     queue.append(node.right)
         return BinaryTreeRightSideView
  
- '''
-
-
-
+ 
 '''
 Approach:- BFS without using Deque
 TC:- O(N) where N is the number of nodes

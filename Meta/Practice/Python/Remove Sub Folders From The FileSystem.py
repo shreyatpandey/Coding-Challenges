@@ -46,3 +46,58 @@ class Solution(object):
         return Result
     
 
+'''
+Approach - 2 : Trie
+Let N be the length of the folder and L maximum length of the folder path
+TC :- O(N*L)
+SC :- O(N*L)
+Max space is taken by Trie Node as we need to construct Node for 
+each iteration when the folder name is not present
+'''
+class Solution(object):
+    class Trie:
+        def __init__(self):
+            self.child = {}
+            self.is_end = False
+    
+    def __init__(self):
+        self.root = self.Trie()
+    
+    def removeSubfolders(self, folder):
+        """
+        :type folder: List[str]
+        :rtype: List[str]
+        """
+        for path in folder:
+            current_folder = self.root
+            list_folder = path.split("/")
+        
+            for folder_name in list_folder:
+                if folder_name == "":
+                    continue
+
+                if folder_name not in current_folder.child:
+                    current_folder.child[folder_name] = self.Trie()
+                current_folder.child = current_folder.child[folder_name]
+        current_folder.is_end = True
+
+        Result = []
+        for path in folder:
+            current_node = self.root
+            folders = path.split("/")
+            is_subfolder = False
+
+            for i,folder_name in enumerate(folders):
+                if folder_name == "":
+                    continue
+                next_node = current_node.child[folder_name]
+
+                if next_node.is_end and i != len(folders) - 1:
+                    is_subfolder = True
+                current_node = next_node
+            
+            if not is_subfolder:
+                Result.append(path)
+        
+        return Result
+    

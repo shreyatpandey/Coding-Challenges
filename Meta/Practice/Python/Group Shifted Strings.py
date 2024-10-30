@@ -35,6 +35,7 @@ and az and ba would map to different groups. This is incorrect.
 To account for this case, we add 26 to the difference between letters (smallest difference possible is -25, za) 
 and mod by 26. So, (26 + 122 - 97) % 26 and (26 + 79 - 80) % 26 both equal
 '''
+from collections import defaultdict
 class Solution:
     def groupStrings(self, strings: List[str]) -> List[List[str]]:
         hashmap = defaultdict(list)

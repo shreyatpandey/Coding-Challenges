@@ -13,6 +13,7 @@ Complexity
 Tc:- O(n)
 Sc:- O(sqrt(n))
 '''
+from collections import deque
 class Solution:
     def findDiagonalOrder(self, nums: List[List[int]]) -> List[int]:
         queue = deque([(0, 0)])

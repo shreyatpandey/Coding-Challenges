@@ -66,11 +66,12 @@ class Solution:
 
         return result
     
- '''
+'''
  Approach-2: Using Map
  TC:- O(n*m)
  SC:- O(n) for the map
- '''
+'''
+from collections import OrderedDict
 class Solution:
     def findDiagonalOrder(self, matrix: List[List[int]]) -> List[int]:
         if not matrix or not matrix[0]:
@@ -82,7 +83,7 @@ class Solution:
         Dict = OrderedDict() #here its Ordered and not UnOrdered as order for traverdsal has to be maintained
         for i in range(N):
             for j in range(M):
-                Sum=i+j;
+                Sum=i+j
                 if Sum not in Dict:
                     Dict[Sum] = []
                 Dict[Sum].append(matrix[i][j])

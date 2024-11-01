@@ -1,6 +1,10 @@
 '''
 It handles duplicates as well
 '''
+'''
+TC :- O(len(arr1) + len(arr2) + len(arr3))
+SC :- O(len(arr1) + len(arr2) + len(arr3))
+'''
 def mergeThreeSortedArrays(A,B,C):
     index1 = index2 = index3 = 0
     previous = float("-inf")

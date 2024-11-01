@@ -11,7 +11,7 @@ typedef struct Point {
 int main() {
     Point p1 = {
         .x = 13,
-        .y = -1
+        .y = 10
     };
     Point p2;
     
@@ -43,7 +43,7 @@ int main() {
         return -3;
     }
 
-    printf("Pont read from binary file : %d, %d \n", p2.x, p2.y);
+    printf("Point read from binary file : %d, %d \n", p2.x, p2.y);
 
     return 0;
 

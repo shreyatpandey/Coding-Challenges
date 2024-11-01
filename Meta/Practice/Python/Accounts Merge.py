@@ -72,7 +72,7 @@ class Solution:
                 ans.append([em_to_name[email]] + sorted(component))
         return ans
       
-  '''
+'''
   Approach-2: DFS Recursive
   Time-Complexity:- O(NKLog(NK)
   where N is the number of accounts and K is the maximum length of the account
@@ -80,8 +80,8 @@ class Solution:
   Adjacency List:- O(NK)
   Visited Set:- O(NK)
   Stack:- O(NK)
-  '''
-  class Solution:
+'''
+class Solution:
     def accountsMerge(self, accounts: List[List[str]]) -> List[List[str]]:        
         
         em_to_name = {}
@@ -106,7 +106,7 @@ class Solution:
                 
         # print(em_graph)
         # print(em_to_name)
-    
+
         seen = set()
         ans = []
         
@@ -139,6 +139,7 @@ Adjacency List:- O(NK)
 Visited Set:- O(NK)
 Stack:- O(NK)
 '''
+from collections import defaultdict
 class Solution:
     def accountsMerge(self, accounts: List[List[str]]) -> List[List[str]]:
         

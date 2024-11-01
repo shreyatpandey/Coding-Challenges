@@ -40,7 +40,7 @@ class Solution(object):
             left = max(A[i][0], B[j][0])
             right = min(A[i][1], B[j][1])
             if left <= right:
-                result.append([left,right]);
+                result.append([left,right])
             if A[i][1] < B[j][1]:
                 i += 1
             else:

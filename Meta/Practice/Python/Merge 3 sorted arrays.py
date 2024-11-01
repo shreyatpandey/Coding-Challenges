@@ -46,6 +46,9 @@ if __name__ == '__main__':
     C = [9,10,11]
     print(mergeThreeSortedArrays(A,B,C))
 
+    print("Test Case:-4")
+    print(mergeThreeSortedArrays([],[],[]))
+
 '''
 Test Case:-1
 [1, 2, 3, 4, 5, 6]

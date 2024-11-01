@@ -40,6 +40,12 @@ if __name__ == '__main__':
     C = [2,2,2]
     print(mergeThreeSortedArrays(A,B,C))
 
+    print("Test Case:-3")
+    A = [9,9,9,9,9]
+    B = [8,9,9,9]
+    C = [9,10,11]
+    print(mergeThreeSortedArrays(A,B,C))
+
 '''
 Test Case:-1
 [1, 2, 3, 4, 5, 6]

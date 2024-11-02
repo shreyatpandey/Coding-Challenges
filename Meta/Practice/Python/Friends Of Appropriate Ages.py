@@ -1,4 +1,4 @@
-''
+'''
 There are n persons on a social media website. You are given an integer array ages where ages[i] is the age of the ith person.
 
 A Person x will not send a friend request to a person y (x != y) if any of the following conditions is true:
@@ -33,6 +33,7 @@ Complexity:-
 TC:- O(n) which is time to find freqMap.
 There are max 120 different ages, so we can say two loops take up O(120) * O(120) => constant.
 '''
+from collections import Counter
 class Solution(object):
     def numFriendRequests(self, ages):
         """
@@ -40,7 +41,7 @@ class Solution(object):
         :rtype: int
         """
         ans = 0
-        cnt = collections.Counter(ages)
+        cnt = Counter(ages)
         for k1, v1 in cnt.items():
             for k2, v2 in cnt.items():
                 if (k2 > 0.5*k1 + 7 and

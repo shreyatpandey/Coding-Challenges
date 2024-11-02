@@ -28,9 +28,10 @@ Approach-1:- Preorder Iterative Traversal
 TC:- O(N)
 SC:- O(H) for Queue
 '''
+from collections import deque
 class Solution:
     def sumNumbers(self, root: Optional[TreeNode]) -> int:
-        deque, res = collections.deque(), 0
+        deque, res = deque(), 0
         if root:
             deque.append(root)
         while deque:
@@ -44,12 +45,13 @@ class Solution:
                 node.right.val += node.val*10
                 deque.append(node.right)
         return res
-  '''
-  Approach:- Morrison Preorder Traversal
-  TC:- O(N)
-  SC:- O(1)
-  '''
-  class Solution:
+
+'''
+Approach:- Morrison Preorder Traversal
+TC:- O(N)
+SC:- O(1)
+'''
+class Solution:
     def sumNumbers(self, root: TreeNode):
         root_to_leaf = curr_number = 0
         

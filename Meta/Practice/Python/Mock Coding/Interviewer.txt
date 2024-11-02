@@ -28,7 +28,7 @@ Question:-
 1. Valid Palindrome II
 2. Binary Tree Vertical Order Traversal
 
-Coding-2:- Nahari Totev
+Coding-2:- Zahari Totev
 Question:-
 1. Valid Palindrome II
 2. Variation of Account Merge

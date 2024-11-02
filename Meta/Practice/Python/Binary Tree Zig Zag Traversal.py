@@ -2,16 +2,17 @@
 Input: root = [3,9,20,null,null,15,7]
 Output: [[3],[20,9],[15,7]]
 '''
+from collections import deque
 class Solution(object):
     def zigzagLevelOrder(self, root):
         """
         :type root: TreeNode
         :rtype: List[List[int]]
         """
-        Queue = []
+        Queue = deque()
         ZigZagOrderTraversal = []
         if not root:
-            return ZigZagOrderTraversal;
+            return ZigZagOrderTraversal
         Queue.append(root)
         level = 0
         while len(Queue) != 0:
@@ -19,8 +20,7 @@ class Solution(object):
             ZigZagOrderTraversal.append([])
             i = 0
             while i<LenQueue :
-                node = Queue[0]
-                del Queue[0]
+                node = Queue.popleft()
                 ZigZagOrderTraversal[level].append(node.val)
                 if node.left:
                     Queue.append(node.left)

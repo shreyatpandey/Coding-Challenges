@@ -42,7 +42,7 @@ SC:- O(n)
 class Solution:
     def countAndSay(self, n: int) -> str:
         ret = "1"
-        for _ in range(n-1):
+        for i in range(n-1):
             ret = self.nextStep(ret)
         return ret
     

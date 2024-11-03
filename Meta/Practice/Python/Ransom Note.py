@@ -45,6 +45,7 @@ Approach-2:- One HashMap
 TC:- O(m) where m is the size of magazine
 SC:- O(k) or O(1) as only 26 letter are present, so counter would consists of 26 letter at the most
 '''
+from collections import Counter
 class Solution:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
         length1, length2 = len(ransomNote), len(magazine)

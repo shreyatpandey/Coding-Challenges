@@ -25,11 +25,11 @@ class Solution:
             else:
                 nums1[p] = nums2[p2]
                 p2 += 1
- '''
+'''
  Approach-2:- Three Pointers
  TC:- O(n+m)
  SC:- O(1)
- '''
+'''
 class Solution:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
         """
@@ -51,9 +51,9 @@ class Solution:
             else:
                 nums1[p] = nums2[p2]
                 p2 -= 1
-  '''
-  My Solution
-  '''
+'''
+My Solution
+ '''
 class Solution(object):
     def merge(self, nums1, m, nums2, n):
         """

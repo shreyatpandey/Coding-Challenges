@@ -45,7 +45,7 @@ class Solution:
                 
         return stringResult
 
- '''
+'''
  Approach:- 1
  Keep Track of Count and then write
  Get the frequency of each character in s 
@@ -53,7 +53,7 @@ class Solution:
  TC:- O(len(order) + O(len(s))
  SC:- O(len(s)) for the frequency count 
  Time:- 43 ms
- '''
+'''
 from collections import Counter
 class Solution:
     def customSortString(self, order: str, s: str) -> str:

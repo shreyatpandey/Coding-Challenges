@@ -36,7 +36,7 @@ def minAddToMakeValid(self, S):
         return left + right
      
     
- '''
+'''
  Explanation:-
 left records the number of ( we need to add on the left of S.
 right records the number of ) we need to add on the right of S,

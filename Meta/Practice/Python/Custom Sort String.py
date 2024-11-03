@@ -54,10 +54,11 @@ class Solution:
  SC:- O(len(s)) for the frequency count 
  Time:- 43 ms
  '''
+from collections import Counter
 class Solution:
     def customSortString(self, order: str, s: str) -> str:
         
-        countCharacters = collections.Counter(s)
+        countCharacters = Counter(s)
         result  = []
         for char in order:
             result.append(char*countCharacters[char])

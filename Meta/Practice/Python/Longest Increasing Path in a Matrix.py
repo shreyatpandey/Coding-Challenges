@@ -51,6 +51,7 @@ Approach:- Topological Sort
 TC:- O(m*n)
 SC:- O(m*n)
 '''
+from collections import deque
 class Solution:
     def longestIncreasingPath(self, matrix: List[List[int]]) -> int:
       DIR = [0, 1, 0, -1, 0]

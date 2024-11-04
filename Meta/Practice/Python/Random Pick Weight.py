@@ -100,6 +100,7 @@ class Solution:
         """
         target = self.total_sum * random.random()
         # run a binary search to find the target zone
+        # Another way , target = random.randint(1, self.total_sum)
         low, high = 0, len(self.prefix_sums)
         while low < high:
             mid = low + (high - low) // 2
@@ -108,3 +109,28 @@ class Solution:
             else:
                 high = mid
         return low
+'''
+Input
+["Solution","pickIndex","pickIndex","pickIndex","pickIndex","pickIndex"]
+[[[1,3]],[],[],[],[],[]]
+Output
+[null,1,1,1,1,0]
+
+Explanation
+Solution solution = new Solution([1, 3]);
+solution.pickIndex(); // return 1. It is returning the second element (index = 1) that has a probability of 3/4.
+solution.pickIndex(); // return 1
+solution.pickIndex(); // return 1
+solution.pickIndex(); // return 1
+solution.pickIndex(); // return 0. It is returning the first element (index = 0) that has a probability of 1/4.
+
+Since this is a randomization problem, multiple answers are allowed.
+All of the following outputs can be considered correct:
+[null,1,1,1,1,0]
+[null,1,1,1,1,1]
+[null,1,1,1,0,0]
+[null,1,1,1,0,1]
+[null,1,0,1,0,0]
+......
+and so on.
+'''

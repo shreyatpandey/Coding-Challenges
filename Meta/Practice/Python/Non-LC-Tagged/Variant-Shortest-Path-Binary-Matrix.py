@@ -1,7 +1,7 @@
 def shortest_path(graph):
     # go from top left to bottom right
     parents = [[0, 0]]
-    result = [[0, 0]]
+    result = [(0,0)]
     graph[0][0] = 1
     last_x = len(graph) - 1
     last_y = len(graph[0]) - 1
@@ -25,7 +25,7 @@ def shortest_path(graph):
                     
                     diff = ((n-1) - x1) + ((n-1) - y1)
                     if diff < best_diff:
-                        add_to_result = [x1, y1]
+                        add_to_result = (x1,y1)
                         best_diff = diff
 
         parents.extend(c)

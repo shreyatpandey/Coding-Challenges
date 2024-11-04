@@ -40,13 +40,14 @@ Sc:- O(S.P)
 The recursion call stack may exceed max(S, P) in cases such as (s, p) = (aaab, *a*b), however, it is bounded by O(S+P). 
 Lastly, the hashmap requires O(S⋅P) space to memoize the result of each call to helper.
 '''
+from functools import lru_cache
 class Solution:
     def isMatch(self, s: str, p: str) -> bool:
         # Init
         n = len(s)
         m = len(p)
        
-        @cache # memoization
+        @lru_cache # memoization
         def match(s_idx, p_idx) -> bool:
             
             # Wait for pattern to be exhausted

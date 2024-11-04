@@ -1,4 +1,6 @@
 '''
+Question Discription similar to LCA - 1
+
 Follow Up from LCA-I without checking the node existence
 TC:- O(N)
 SC:- O(N) for the stack 
@@ -27,11 +29,11 @@ class Solution:
             q = parents[q.val]
         return q
       
- '''
+'''
  Eulerian Path
  TC:- O(N)
  SC:- O(N)
- '''
+'''
 def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
 
 	def euler_tour(node, d):

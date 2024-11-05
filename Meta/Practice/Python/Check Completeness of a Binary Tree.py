@@ -33,6 +33,7 @@ TC:- O(n)
 SC:- O(N)
 where N is the number of nodes[or left compact tree]
 '''
+from collections import deque
 class Solution:
     def isCompleteTree(self, root: Optional[TreeNode]) -> bool:
         traversal_queue = deque( [ root ] )

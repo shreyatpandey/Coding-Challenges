@@ -138,3 +138,6 @@ https://leetcode.com/discuss/interview-question/671856/google-phone-pick-random-
 
 ** Non-sensical-Question **
 https://leetcode.com/discuss/interview-question/4801814/Meta-phone-screen/
+
+** All Questions Upto 2020 **
+https://leetcode.com/discuss/interview-question/675445/Facebook-interview-experiences-All-Combined-from-LC-Till-Date-07-Jun-2020

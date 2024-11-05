@@ -135,3 +135,6 @@ Did till 23 starting from last
 
 https://leetcode.com/discuss/interview-question/671856/google-phone-pick-random-country
 [2] https://leetcode.com/discuss/interview-question/338192/Facebook-or-Onsite-or-Word-Break-and-Working-and-MultiTasking-Intervals
+
+** Non-sensical-Question **
+https://leetcode.com/discuss/interview-question/4801814/Meta-phone-screen/

@@ -16,6 +16,10 @@ Input:
  [0, 2, 8]]
 Output:  0, 1, 2, 3, 4, 4, 4, 5, 6, 8, 8, 9
 '''
+'''
+TC :- O(n*k*log(k))
+SC :- O(k*logk)
+'''
 import heapq
 class SortedIterator:
     def __init__(self, lists):

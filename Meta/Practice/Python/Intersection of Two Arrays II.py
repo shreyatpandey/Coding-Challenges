@@ -12,11 +12,14 @@ Constraints:
 1 <= nums1.length, nums2.length <= 1000
 0 <= nums1[i], nums2[i] <= 1000
 '''
+''''
  Approach 1: HashMap
 
 Using HashMap to store occurrences of elements in the nums1 array.
 Iterate x in nums2 array, check if cnt[x] > 0 then append x to our answer and decrease cnt[x] by one.
 To optimize the space, we ensure len(nums1) <= len(nums2) by swapping nums1 with nums2 if len(nums1) > len(nums2).
+'''
+from collections import Counter
 class Solution:
     def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
         if len(nums1) > len(nums2): return self.intersect(nums2, nums1)
@@ -28,11 +31,15 @@ class Solution:
                 ans.append(x)
                 cnt[x] -= 1
         return ans
+''''
 Complexity:
 
 Time: O(M + N), where M <= 1000 is length of nums1 array, N <= 1000 is length of nums2 array.
 Space: O(min(M, N))
+'''
+'''
 ✔️ Approach 2: Sort then Two Pointers
+'''
 
 class Solution:
     def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
@@ -52,10 +59,13 @@ class Solution:
                 j += 1
         return ans
 
+'''
 Complexity:
 
 Time: O(MlogM + NlogN), where M <= 1000 is length of nums1 array, N <= 1000 is length of nums2 array.
 Extra Space (without counting output as space): O(sorting)
+'''
+'''
 ✔️ Follow-up Question 1: What if the given array is already sorted? How would you optimize your algorithm?
 
 Approach 2 is the best choice since we skip the cost of sorting.
@@ -79,3 +89,4 @@ Input constraint:
 Our memory can store up to 1000 elements.
 Then we split numeric range into numeric sub-ranges [0...999], [1000...1999], ..., [99000...99999],
 then call Approach 1 to process 100 numeric sub-ranges.
+'''

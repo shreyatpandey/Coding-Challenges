@@ -27,6 +27,8 @@ All the integers in s are in the range [1, 300].
 Complexity:-
 TC:- O(n)
 O(maxK^countK.n)
+where maxK is the max value of K
+countK is the count of nested K
 Sc:- O(n) for stack space
 '''
 class Solution:

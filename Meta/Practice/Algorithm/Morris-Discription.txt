@@ -1,0 +1,6 @@
+Algorithm:- 
+    1. Keep hold of current_root, and check if left child exists.
+        If Yes, then go to the right most node of left child and make it point to the current_root .
+            a. Make current_root’s left null.
+        If No, then print the value of node and move to right.
+    2. Follow this until current_root exists.

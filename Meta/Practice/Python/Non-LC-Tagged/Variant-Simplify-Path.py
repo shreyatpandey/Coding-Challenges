@@ -40,5 +40,4 @@ If you just apply Simplify Path on a concatenation of current and change you'll 
 If change starts with a / current has to be emptied.
 Linux will also take you to your home directory (aka ~) 
 if you use cd without an argument, but I'd consider that an optional point worth discussing with your interviewer.
-
 '''

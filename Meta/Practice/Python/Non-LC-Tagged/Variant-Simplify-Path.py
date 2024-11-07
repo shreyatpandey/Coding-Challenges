@@ -15,7 +15,7 @@ Curent                 Change            Output
 def change_path(current, changed):
     if not changed:
         return current
-    if changed[0] == "/":
+    if changed[0] == "/": #edge case
         current = ""
 
     path = []

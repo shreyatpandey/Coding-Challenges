@@ -53,6 +53,8 @@ graph and hence there will be at max (N−1) edges.
 In backtracking, stack space will be consumed which will be equal to the maximum number of active functions in the stack 
 which is equal to the N as the path can have all the words in the wordList. Hence space required is O(N).
 '''
+from collections import defaultdict
+from collections import deque
 class Solution:
     def findLadders(self, beginWord: str, endWord: str, wordList: List[str]) -> List[List[str]]:
         prefix_d = defaultdict(list)

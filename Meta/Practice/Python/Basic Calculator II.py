@@ -64,7 +64,7 @@ class Solution:
         num = 0
         op = "+"  # keep the last operator we have seen
         
-		    # append a "+" sign at the end because we can catch the very last item
+        # append a "+" sign at the end because we can catch the very last item
         for ch in s + "+":
             if ch.isdigit():
                 num = 10 * num + int(ch)

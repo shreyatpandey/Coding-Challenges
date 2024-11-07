@@ -28,13 +28,13 @@ Sc:- O(1)
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
         def search(x):
-            lo, hi = 0, len(nums)           
+            lo, hi = 0, len(nums)
             while lo < hi:
                 mid = (lo + hi) // 2
                 if nums[mid] < x:
                     lo = mid+1
                 else:
-                    hi = mid                    
+                    hi = mid
             return lo
         
         lo = search(target)

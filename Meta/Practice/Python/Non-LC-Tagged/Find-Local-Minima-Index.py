@@ -25,3 +25,13 @@ if __name__ == '__main__' :
 
     inputList = [6,7,5,1,8,9]
     print(localMinima(inputList))
+
+    inputList = [9,9,9,9]
+    print(localMinima(inputList))
+
+'''
+Index :
+2
+3
+0
+'''

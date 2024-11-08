@@ -28,7 +28,7 @@ def max_random_index(nums):
             _max = n
             count = 1
             max_i = i
-        elif n == _max:
+        elif n == _max:  # when _max value is reached at every index, 11,30,62
             count += 1
             r = random.randint(1, count)
             if r == 1:
@@ -38,3 +38,17 @@ def max_random_index(nums):
 
 if __name__ == '__main__':
     print(max_random_index([11, 30, 2, 30, 30, 30, 6, 2, 62, 62]))
+
+'''
+Output :-
+0 0
+1 1
+2 1
+3 3
+4 4
+5 4
+6 4
+7 4
+8 8
+9 9
+'''

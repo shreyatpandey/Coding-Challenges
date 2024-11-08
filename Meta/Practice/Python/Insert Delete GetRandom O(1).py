@@ -8,7 +8,13 @@ int getRandom() Returns a random element from the current set of elements (it's 
 one element exists when this method is called). Each element must have the same probability of being returned.
 You must implement the functions of the class such that each function works in average O(1) time complexity.
 '''
-
+'''
+Constraints:
+-2**31 <= val <= 2**31 - 1
+At most 2 * 10^5 calls will be made to insert, remove, and getRandom.
+There will be at least one element in the data structure when getRandom is called.
+'''
+import random
 class RandomizedSet:
 
     def __init__(self):
@@ -30,7 +36,7 @@ class RandomizedSet:
         self.data_map[val] = len(self.data)
 
         # add to the list
-        self.data.append(val)
+        self.data.append(val) # append in python is also O(1)
         
         return True
 
@@ -67,3 +73,10 @@ class RandomizedSet:
         # if running outside of leetcode, you need to `import random`.
         # random.choice will randomly select an element from the list of data.
         return random.choice(self.data)
+
+if __name__ == '__main__':
+    s = RandomizedSet()
+    print(s.insert(1))
+    print(s.remove(2))
+    print(s.insert(2))
+    print(s.getRandom())

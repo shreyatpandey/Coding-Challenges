@@ -17,7 +17,7 @@ SC :- O(1)
 '''
 Random Resvoir Sampling
 '''
-from collections import random
+import random
 def max_random_index(nums):
     _max = float('-inf')
     max_i = -1
@@ -35,3 +35,6 @@ def max_random_index(nums):
                 max_i = i
   
         print(i, max_i)
+
+if __name__ == '__main__':
+    print(max_random_index([11, 30, 2, 30, 30, 30, 6, 2, 62, 62]))

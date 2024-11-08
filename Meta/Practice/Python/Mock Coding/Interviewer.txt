@@ -41,3 +41,10 @@ Nov - 2023
 System Design:- Michael Douglas
 Question:- Design Real-Time Ad Aggregated Service
 
+2024:-
+Nov - 2024
+Interviewer :- Michael Neu
+Q1] Merge Two Sorted Arrays
+Q2] LCA III with parent pointer
+Follow-Up :-
+LCA III - List of parents instead of parent

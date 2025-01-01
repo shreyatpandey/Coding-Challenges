@@ -1,0 +1,27 @@
+/* Picked up from Arista Tag from LC */
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    int arr[] = {10, 20, 30, 40, 50};
+    int size = sizeof(arr) / sizeof(arr[0]); 
+
+    // Seed the random number generator
+    srand(time(NULL)); 
+
+    // Generate a random index within the array bounds
+    int randomIndex = rand() % size; 
+
+    // Calculate the address of the random element
+    int *ptr = arr; // Get the base address of the array
+    int offset = randomIndex * sizeof(int); // Calculate the offset
+    int *randomElementPtr = ptr + offset; 
+
+    printf("Base Address: %p\n", ptr);
+    printf("Offset: %d bytes\n", offset);
+    printf("Address of Random Element: %p\n", randomElementPtr);
+    printf("Value at Random Element: %d\n", *randomElementPtr);
+
+    return 0;
+}

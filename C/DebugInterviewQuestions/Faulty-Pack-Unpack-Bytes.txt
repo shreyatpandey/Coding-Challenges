@@ -1,0 +1,134 @@
+/* Failed attempt at xbyte */
+
+int xbyte(packed_t word, int bytenum)
+
+{
+
+return (word >> (bytenum << 3)) & 0xFF;
+
+}
+
+A. What is wrong with this code?
+
+B. Give a correct implementation of the function that uses only left and right shifts, along with one subtraction
+
+Answers:- 
+A. 
+The provided xbyte function has a critical flaw when word is a signed type.
+If the most significant bit of the extracted byte is 1 (meaning the byte represents a negative value in two's complement), 
+then the right shift (>>) on a signed word will perform an arithmetic right shift.
+This means the sign bit (the most significant bit) will be replicated during the shift, filling the higher bits with 1s.
+
+For example, if we're extracting a byte with the value -1 (0xFF) and the word is signed, 
+the right shift will result in a value with many leading 1s, not just the 0xFF we expect. 
+The subsequent & 0xFF will then correctly isolate the lower 8 bits, but the sign extension has already corrupted the intermediate result if the extracted byte was negative.
+
+If word is unsigned, then the code works correctly because the right shift is a logical right shift, filling the higher bits with 0s.
+
+B.
+#include <stdint.h>
+#include <stdio.h>
+
+typedef int32_t packed_t;
+
+int xbyte(packed_t word, int bytenum) {
+    int shift_amount = bytenum << 3;
+    int result = (word >> shift_amount) & 0xFF; // Extract the byte (unsigned behavior due to & 0xFF)
+
+    // Check if the MSB of the extracted byte is 1 (negative if interpreted as signed)
+    int sign_bit = result & 0x80; // Isolate the MSB
+
+    // If the MSB is 1, we need to sign extend.
+    // We do this by subtracting 256 if the MSB is set.
+    // If the MSB is 0, subtracting 0 has no effect.
+    return result - (sign_bit << 1); // Equivalent to sign_bit*2 or sign_bit + sign_bit
+}
+
+
+void test_xbyte(){
+    packed_t word = 0x010203FF;
+    printf("0x%x\n", xbyte(word, 0));
+    printf("0x%x\n", xbyte(word, 1));
+    printf("0x%x\n", xbyte(word, 2));
+    printf("0x%x\n", xbyte(word, 3));
+
+    word = 0x0102037F;
+    printf("0x%x\n", xbyte(word, 0));
+    printf("0x%x\n", xbyte(word, 1));
+    printf("0x%x\n", xbyte(word, 2));
+    printf("0x%x\n", xbyte(word, 3));
+}
+
+int main(){
+    test_xbyte();
+    return 0;
+}
+
+2.0 Flash Experimental. Might not work as expected.
+A. What is wrong with the code?
+
+The provided xbyte function has a critical flaw when word is a signed type. If the most significant bit of the extracted byte is 1 (meaning the byte represents a negative value in two's complement), then the right shift (>>) on a signed word will perform an arithmetic right shift. This means the sign bit (the most significant bit) will be replicated during the shift, filling the higher bits with 1s.
+
+For example, if we're extracting a byte with the value -1 (0xFF) and the word is signed, the right shift will result in a value with many leading 1s, not just the 0xFF we expect. The subsequent & 0xFF will then correctly isolate the lower 8 bits, but the sign extension has already corrupted the intermediate result if the extracted byte was negative.
+
+If word is unsigned, then the code works correctly because the right shift is a logical right shift, filling the higher bits with 0s.
+
+B. Correct Implementation using shifts and subtraction
+
+To avoid the sign extension issue, we need to ensure we're working with an unsigned value during the shift. We can achieve this by casting the word to unsigned. Then, after extracting the byte, we can cast it back to int if needed. However, the question asks for a solution without casts, using only shifts and one subtraction. This requires a more cunning approach.
+
+Here's the corrected implementation:
+
+C
+
+#include <stdint.h>
+#include <stdio.h>
+
+typedef int32_t packed_t;
+
+int xbyte(packed_t word, int bytenum) {
+    int shift_amount = bytenum << 3;
+    int result = (word >> shift_amount) & 0xFF; // Extract the byte (unsigned behavior due to & 0xFF)
+
+    // Check if the MSB of the extracted byte is 1 (negative if interpreted as signed)
+    int sign_bit = result & 0x80; // Isolate the MSB
+
+    // If the MSB is 1, we need to sign extend.
+    // We do this by subtracting 256 if the MSB is set.
+    // If the MSB is 0, subtracting 0 has no effect.
+    return result - (sign_bit << 1); // Equivalent to sign_bit*2 or sign_bit + sign_bit
+}
+
+
+void test_xbyte(){
+    packed_t word = 0x010203FF;
+    printf("0x%x\n", xbyte(word, 0));
+    printf("0x%x\n", xbyte(word, 1));
+    printf("0x%x\n", xbyte(word, 2));
+    printf("0x%x\n", xbyte(word, 3));
+
+    word = 0x0102037F;
+    printf("0x%x\n", xbyte(word, 0));
+    printf("0x%x\n", xbyte(word, 1));
+    printf("0x%x\n", xbyte(word, 2));
+    printf("0x%x\n", xbyte(word, 3));
+}
+
+int main(){
+    test_xbyte();
+    return 0;
+}
+Explanation:
+
+Extract the Byte (Unsigned): 
+(word >> shift_amount) & 0xFF extracts the byte. 
+The & 0xFF operation ensures that the result is treated as unsigned for this part, preventing immediate sign extension during the shift.
+
+Check the Sign Bit: 
+result & 0x80 isolates the most significant bit (MSB) of the extracted byte. 
+If this bit is 1, it indicates that the byte would be negative if interpreted as a signed value.
+
+Conditional Subtraction (Sign Extension): 
+result - (sign_bit << 1) performs the sign extension. 
+If sign_bit is 0 (MSB is 0), then sign_bit << 1 is 0, and the subtraction has no effect. If sign_bit is 0x80 (MSB is 1), then sign_bit << 1 is 0x100 (256). 
+Subtracting 256 from the unsigned byte value effectively performs the correct sign extension to a 32-bit integer.

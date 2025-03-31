@@ -12,6 +12,14 @@
 
 
 unsigned int _8bit_leftrotate(unsigned int word, unsigned int shift) {
+    if (word > 255) {
+        printf("Word should be less than 256\n");
+        return 0;
+    }
+    if (shift > 7) {
+        printf("Shift should be less than 8\n");
+        return 0;
+    }
     return ((word << (shift&7)) | ((word >> ((8-shift) & 7))));
 }
 

@@ -211,3 +211,20 @@ int main() {
 
     return 0;
 }
+/*
+Key Changes and Explanations:
+
+Headers: Included necessary C++ headers: <iostream>, <vector>, <string>, <deque>, <memory>, and <sstream>.
+std::unique_ptr and std::shared_ptr:
+std::shared_ptr is used for managing the File objects in the file system tree. This allows multiple parts of the code to safely refer to the same file object without worrying about premature deletion.
+std::unique_ptr is used for managing the Filter objects within the LinuxFind class. This ensures that the filters are properly deleted when the LinuxFind object goes out of scope and clearly indicates ownership.
+std::string: Used std::string for file names and extensions.
+std::deque: Used std::deque for the breadth-first search (BFS) queue.
+toString() Method: Added a toString() method to the File class for easy printing of file information.
+getChildren() Method: Added a getChildren() method to the File class to access its children.
+addChild() Method: Added an addChild() method to the File class to add child files/directories.
+Virtual Destructors: Added virtual destructors to the Filter base class to ensure proper cleanup of derived class objects when deleted through a base class pointer.
+addFilter() Method: The addFilter() method in LinuxFind now takes a std::unique_ptr<Filter>, transferring ownership of the filter to the LinuxFind object.
+BFS Implementation: The BFS logic in apply_OR_filtering and apply_AND_filtering is adapted to work with std::deque and std::shared_ptr.
+Output: The C++ code prints the found files to the console, similar to the Python version.
+*/

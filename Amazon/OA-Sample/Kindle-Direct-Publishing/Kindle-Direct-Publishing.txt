@@ -1,0 +1,13 @@
+Given a string that consists of the characters (,) , [,] and ? determine how many ways it can be split into two non-empty substrings such that the characters in each substring can be rearranged into a balanced string. A sequence of round and square brackets can be rearranged into a balanced sequence if and only if the number of opened and closed brackets is equal for both types of the brackets. The question marks can take the place of any needed character, and the substrings together must contain the entire string.
+
+Constraints:
+
+s contains (,), [,] and ? only
+
+4<= length of s <= 10^5
+
+// Example :-
+
+s = '(?]['
+
+Output = 1

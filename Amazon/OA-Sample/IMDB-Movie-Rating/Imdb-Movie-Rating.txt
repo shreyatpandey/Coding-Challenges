@@ -1,0 +1,14 @@
+IMDB, a subsidiary of Amazon, is a popular platform to find ratings on movies and TV shows.
+Data analysts are exploring user preferences by analyzing sequeneces
+of movie ratings. One metric they're interested in is the count of 
+positions where each rating is followed by a higher rating. They want
+to find the maximum possible value of this metric by rearranging the
+ratings in the most optimal way.
+
+Give array ratings of n integers, find the maximum possible number of indices i
+such that ratings[i] < ratings[i+1] after rearranging the array optimally.
+
+Example:
+n = 3
+ratings = [2,1,3]
+output = 2

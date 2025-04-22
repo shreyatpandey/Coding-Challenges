@@ -1,0 +1,11 @@
+words are similar if you can swap adjacent characters at once
+
+for example, "mono" is similiary to "moon" because you can swap "mono" to "moon"
+
+key="moon"
+
+text="monomon"
+
+find how many subsring in text that is similar to the key?
+
+2 is the answer

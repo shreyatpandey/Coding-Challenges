@@ -1,0 +1,2 @@
+Given a binary String, you can do an operation such that you have to move any character to the end of this String. 
+Find minimum number of such operations so that the string is reversed.

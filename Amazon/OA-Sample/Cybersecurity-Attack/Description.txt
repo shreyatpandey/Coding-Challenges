@@ -1,0 +1,36 @@
+The virus designed has an attacking rule defined by the attackOrder, which is a permutation string of length n. 
+In the ith second of the attack, the virus attacks at the attackOrder[i] the character of the password, replacing it with malicious character '*', i.e., password[attackOrder[i]] = '*' after the ith second
+
+function to perform :- findMinimumTime with the following input parameter
+
+[1] string password : the initial password
+
+[2] int arrackOrder[n]:- permutation array of integers [1,2,..n], the attack order of the virus
+
+[3] int m: the recoverability parameter
+
+The password is said to become irrecoverable when the number of substrings of the password containing at least one malicious character '*' becomes greater than or equal to m.
+
+Return: 
+
+int : the minimum time after which the password becomes irrecoverable
+
+// Sample Input:-
+
+string password : "abc"
+
+int attackOrder[n]: [1,2,3]
+
+m: 1
+
+Output :- 1
+
+// Sample Input:
+
+string password: "bcdb"
+
+int arrackOrder[n]: [2,4,1,3] 
+
+m:10
+
+Output:- 4

@@ -1,4 +1,4 @@
-# Amazon Drone Capacity - OA 2025
+# Amazon Drone Capacity
 
 ## Problem Description
 

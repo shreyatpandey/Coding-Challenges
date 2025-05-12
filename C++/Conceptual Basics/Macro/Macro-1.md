@@ -1,6 +1,6 @@
-# C++ Macro Examples (Asked in Qualcomm)
+# Macro Examples
 
-## Example 1: Square Macro with Increment Operator
+## Example 1: Square Macro with Increment Operator (Asked in Qualcomm)
 
 ```cpp
 #include<stdio.h>

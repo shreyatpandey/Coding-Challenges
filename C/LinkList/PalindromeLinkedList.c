@@ -37,13 +37,11 @@ int isPalindrome(Node* head) {
     while (second) {
         if (first->data != second->data) {
             palindrome = 0;
-            break;
+            return palindrome; // Not a palindrome
         }
         first = first->next;
         second = second->next;
     }
-    // Restore the list (optional)
-    slow->next = reverseList(copy_second);
     return palindrome;
 }
 
@@ -84,6 +82,19 @@ int main() {
         printf("The list is a palindrome.\n");
     else
         printf("The list is not a palindrome.\n");
+
+    // Example: 1->2->3 is not a palindrome
+    Node* head2 = NULL; 
+    appendNode(&head2, 1);
+    appendNode(&head2, 2);
+    appendNode(&head2, 3);
+    printf("List: ");
+    printList(head2);
+    if (isPalindrome(head2))
+        printf("The list is a palindrome.\n");
+    else
+        printf("The list is not a palindrome.\n");
+
     // Free the list
     while (head) {
         Node* tmp = head;

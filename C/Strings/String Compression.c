@@ -6,7 +6,7 @@
 char* encode(char* src) 
 { 
     
-    char count[MAX_RLEN]; 
+    char count[MAX_LEN]; 
     int len = strlen(src); 
     char* dest = (char*)malloc(sizeof(char) * (len * 2 + 1)); 
   

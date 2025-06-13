@@ -9,11 +9,12 @@ char* AddNewLineSpace(char* s)
 /* Correct Solution for this*/
 char* newString(char* s)
 {
-    char* newBuffer = (char*)malloc(sizeof(s));
+    char* newBuffer = (char*)malloc(strlen(s));
     if(s != NULL)
     {
         strncpy(newBuffer,s,strlen(s));
         newBuffer[strlen(s)] = '\n';
     }
+    newBuffer[strlen(s)+1] = '\0';
     return newBuffer;
 }

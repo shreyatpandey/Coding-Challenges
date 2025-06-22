@@ -1,5 +1,6 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
 
 
 #define EightBit 0x80

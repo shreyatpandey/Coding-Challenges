@@ -86,6 +86,10 @@ int main()
 	printf("|---Test-Case 3 ---|\n");
 	Myprintf("Hexadecimal Value:%x", 0xab);
 	printf("\n");
+
+	printf("|---Test-Case 4 ---|\n");
+	Myprintf("Character Value: %c", 'A');
+	printf("\n");
 	
 	return 0;
 } 

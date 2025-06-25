@@ -1,5 +1,11 @@
-void tail(FILE* in, int n)
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
+#define SIZE 1024
+
+// Function to print the last n lines of a file
+void tail(FILE* in, int n)
 {
 
     int count = 0;  // To count '\n' characters
@@ -72,3 +78,4 @@ void tail(FILE* in, int n)
     }
 
     printf("\n\n");
+}

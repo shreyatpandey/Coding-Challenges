@@ -3,6 +3,9 @@
  * They make callback mechanism easy as they point to the address of the function, once the call-flow passes to other control block.
  * Enhances the readability of the code
  * Helps run time execution and promotes polymorphism
+ * Function Arrrays
+ * Usage in state machines
+ * Usage in event handling systems
 
 # Function Pointer as an array
  *  **return_type (*function_name[SIZE])(parameter_type)**

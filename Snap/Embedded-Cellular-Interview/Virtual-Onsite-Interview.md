@@ -104,6 +104,7 @@ int read_packet_from_frame(uint32_t dest_port, void *buf, size_t buf_len) {
 ### Interviewer : Rui Ma [EM]
 
 ### Questions
+ - Give detail about important Wifi 7 feature
 
 #### Coding Question
 ```C
@@ -136,3 +137,10 @@ int read_packet_from_frame(uint32_t dest_port, void *buf, size_t buf_len) {
       return 0;
    }
 ```
+
+## Round 4
+### Interviewer : David Ng
+
+### Question
+ - Discussing about position , what product they are doing, team heirarchy
+ - How much experience I have in BL apart from BL Wifi Coex?

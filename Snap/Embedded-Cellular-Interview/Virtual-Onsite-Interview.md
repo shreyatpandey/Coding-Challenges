@@ -98,3 +98,42 @@ int read_packet_from_frame(uint32_t dest_port, void *buf, size_t buf_len) {
    /* It is given that frame would have at least one packet */
    /* To Do */
 }
+
+## Round 3
+
+### Interviewer : Rui Ma [EM]
+
+### Questions
+
+#### Coding Question
+```c
+  Merge Two Sorted Link List
+
+```
+```C+++
+   Use Template parameter to merge two sorted linked list
+   /*To Do*/
+   template<typename T>
+   class Node {
+      /* To Do*/
+   }
+
+   /*To Do*/
+   template<typename K>
+   Node<k>* mergeTwoSortedLinkList (Node<K>* head1, Node<K>* head2, Compare())
+   {
+      /* To Do */
+   }
+
+   /* To Do */
+   template<typename K>
+   void printList(Node<K>* head)
+
+
+   int main ()
+   {
+      /* Give Some Values */
+
+      return 0;
+   }
+```

@@ -47,13 +47,13 @@ char Input[] = "Jev";
 Input[1] = 'f' ; // this is possible
 ```
 
-### Q7. Program to find the number of set bits in an integer?
+**Q7.** Program to find the number of set bits in an integer?
 
-### Q8. Program to perform circular shift of an integer?
+**Q8.** Program to perform circular shift of an integer?
 
-### Q9. Program to define 2D array in C?
+**Q9.** Program to define 2D array in C?
 
-### Q10. Define a function pointer in C?
+**Q10.** Define a function pointer in C?
 
 ---
 

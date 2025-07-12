@@ -2,17 +2,18 @@
 
 ## Interviewer: Jeevan Varghese
 
-### Q1. What is void pointer?
+### Technical Questions
+**Q1.** What is void pointer?
 
-### Q2. Can you perform pointer arithmetic on void pointer?
+**Q2.** Can you perform pointer arithmetic on void pointer?
 
-### Q3. What is dangling pointer?
+**Q3.** What is dangling pointer?
 
-### Q4. What is an advantage of defining pointer to Null?
+**Q4.** What is an advantage of defining pointer to Null?
 
-### Q5. Are pointers and array same?
+**Q5.** Are pointers and array same?
 
-### Q6. Pointer and Array Comparison
+**Q6.** Pointer and Array Comparison
 
 ```c
 int arr[10] = {0}

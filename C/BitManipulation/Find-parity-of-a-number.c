@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdint.h>
 
+/* Definition of Parity*/
+/* Parity is a property of binary numbers that indicates whether the number of set bits (1s) is odd or even. */
+
 /*
     TC:- O(n)
     SC:- O(1)

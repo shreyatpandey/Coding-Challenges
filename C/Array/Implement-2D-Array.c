@@ -1,13 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 /* Easier Approach */
 int** my2DAllocEasy(int rows, int cols)
 {
   int **rowptr;
-  rowptr = (int**)malloc(sizeof(int*));
-  for(int i=0;i<rows;i++)
+  rowptr = (int**)malloc(rows * sizeof(int*));
+  if (rowptr == NULL) return NULL;  // Check for allocation failure
+  
+  for(int i = 0; i < rows; i++)
   {
-      rowptr[i] = (int*)malloc(sizeof(int)*cols); 
+      rowptr[i] = (int*)malloc(cols * sizeof(int));
+      if (rowptr[i] == NULL) {
+          // Clean up previously allocated memory if allocation fails
+          for(int j = 0; j < i; j++) {
+              free(rowptr[j]);
+          }
+          free(rowptr);
+          return NULL;
+      }
   }
-    return rowptr;
+  return rowptr;
 }
 
 /* Tricky */

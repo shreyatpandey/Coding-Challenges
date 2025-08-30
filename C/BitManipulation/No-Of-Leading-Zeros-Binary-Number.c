@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
 
 /* I assume it's 32-bit number */
 int countLeadingZeros(uint32_t n) {
@@ -27,3 +28,9 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
+/*
+ For example:
+ For binary number 00001000 (8 in decimal), it will return 28 (32 - 4 bits)
+ For binary number 01000000 (64 in decimal), it will return 25
+ For binary number 10000000 (128 in decimal), it will return 24
+*/

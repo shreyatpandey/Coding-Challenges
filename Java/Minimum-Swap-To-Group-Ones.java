@@ -43,7 +43,7 @@ class MinimumSwapToGroupOnes {
         
         // Test Case 2: Larger array with multiple ones
         int[] nums2 = {1, 1, 1, 2, 2, 3};
-        System.out.println("Test Case 2: " + solution.minSwaps(nums2)); // Expected: 5
+        System.out.println("Test Case 2: " + solution.minSwaps(nums2)); // Expected: 0
         
         // Test Case 3: Array with all ones
         int[] nums3 = {1, 1, 1, 1};

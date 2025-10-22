@@ -81,7 +81,7 @@ void *MyMalloc(size_t noOfBytes)
 
 void merge()
 {
-  struct block *curr,*prev;
+  struct block *curr;
   curr=freeList;
   while((curr->next)!=NULL)
   {
@@ -90,7 +90,6 @@ void merge()
         curr->size+=(curr->next->size)+sizeof(struct block);
         curr->next=curr->next->next;
     }
-  prev=curr;
   curr=curr->next;
   }
 }

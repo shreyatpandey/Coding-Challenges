@@ -11,7 +11,7 @@
 #include <string.h>
 
 
-unsigned int _8bit_leftrotate(unsigned int word, unsigned int shift) {
+unsigned int circular_shift_8bit(unsigned int word, unsigned int shift) {
     if (word > 255) {
         printf("Word should be less than 256\n");
         return 0;
@@ -40,12 +40,12 @@ void print(unsigned int value) {
 int main() {
     printf("Test-Case-1 : Word = 13\n");
     print(13);
-    int result = _8bit_leftrotate(13,3);
+    int result = circular_shift_8bit(13,3);
     print(result);
     printf("\n");
     printf("Test-Case-2: Word = 8\n");
     print(8);
-    result = _8bit_leftrotate(8,2);
+    result = circular_shift_8bit(8,2);
     print(result);
 
     return 0;

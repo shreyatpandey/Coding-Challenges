@@ -59,6 +59,8 @@
 #include <stdlib.h>
 #include <assert.h>
 
+#define READ4_BUF_SIZE 4
+
 // Global variables to simulate file reading
 static char* file_content = NULL;
 static int file_pointer = 0;
@@ -88,12 +90,12 @@ int read4(char *buf4) {
  * @return    The number of actual characters read
  */
 int read_n_chars(char *buf, int n) {
-    char temp_buffer[4];  // Temporary buffer for read4
+    char temp_buffer[READ4_BUF_SIZE];  // Temporary buffer for read4
     int total_chars_read = 0;
-    int chars_from_read4 = 4;  // Initialize to 4 to enter the loop
-    
+    int chars_from_read4 = READ4_BUF_SIZE;  // Initialize to 4 to enter the loop
+
     // Continue reading while we haven't read n characters and read4 returns 4 chars
-    while (total_chars_read < n && chars_from_read4 == 4) {
+    while (total_chars_read < n && chars_from_read4 == READ4_BUF_SIZE) {
         chars_from_read4 = read4(temp_buffer);
         
         // Copy characters from temp buffer to destination buffer

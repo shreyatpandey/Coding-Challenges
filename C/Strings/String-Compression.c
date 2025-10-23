@@ -14,7 +14,7 @@ char* encode(char* src)
     /* traverse the input string one by one */
     for (i = 0; i < len; i++) 
     { 
-         anchor++;
+        anchor++;
         if (i + 1 >=strlen(src) || src[i+1] != src[i])
         {
             dest[write++] = src[i];
@@ -84,10 +84,12 @@ int main()
     printf("Encoded String : %s\n", Result);
     printf("Encoded String Approach-2 : %s\n", ResultString);
 
+    free(Result);
     printf("Test Case-2:\n");
     char Input2[] = "a";
     char *Result2 = encode((char*)Input2);
     printf("Encoded String : %s\n", Result2);
+    free(Result2);
 
     return 0;
 }

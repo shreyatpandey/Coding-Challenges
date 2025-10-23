@@ -4,7 +4,7 @@
 
 void rotateArray(int* Input, int lengthOfArray, int k)
 {
-    int *rotateArray = (int*)malloc(lengthOfArray*sizeof(Input));
+    int *rotateArray = (int*)malloc(lengthOfArray*sizeof(int));
     int i;
     for(i=0;i<lengthOfArray;i++)
     {
@@ -14,6 +14,7 @@ void rotateArray(int* Input, int lengthOfArray, int k)
     {
         Input[i] = rotateArray[i];
     }
+    free(rotateArray);  // Free the allocated memory
 }
 int main()
 {
@@ -27,5 +28,6 @@ int main()
         printf("%d",Input[i]);
         printf(" ");
     }
+    printf("\n");
     return 0;
 }

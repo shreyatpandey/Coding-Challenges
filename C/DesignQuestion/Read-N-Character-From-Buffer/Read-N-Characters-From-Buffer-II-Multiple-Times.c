@@ -41,13 +41,15 @@
 #include <stdlib.h>
 #include <assert.h>
 
+#define READ4_BUF_SIZE 4
+
 // Global variables to simulate file reading
 static char* file_content = NULL;
 static int file_pointer = 0;
 static int file_length = 0;
 
 // State variables for maintaining leftover characters between calls
-static char leftover_buffer[4];  // Buffer to store leftover characters from previous read4 calls
+static char leftover_buffer[READ4_BUF_SIZE];  // Buffer to store leftover characters from previous read4 calls
 static int leftover_count = 0;   // Number of characters in leftover buffer
 static int leftover_index = 0;   // Current index in leftover buffer
 
@@ -60,7 +62,7 @@ int read4(char *buf4) {
     int chars_read = 0;
     
     // Read up to 4 characters from the file
-    while (chars_read < 4 && file_pointer < file_length) {
+    while (chars_read < READ4_BUF_SIZE && file_pointer < file_length) {
         buf4[chars_read] = file_content[file_pointer];
         chars_read++;
         file_pointer++;
@@ -92,7 +94,7 @@ int read_multiple_times(char *buf, int n) {
     
     // Continue reading from file if we need more characters
     while (total_chars_read < n) {
-        char temp_buffer[4];
+        char temp_buffer[READ4_BUF_SIZE];  // Temporary buffer for read4
         int chars_from_read4 = read4(temp_buffer);
         
         // If no more characters available, break

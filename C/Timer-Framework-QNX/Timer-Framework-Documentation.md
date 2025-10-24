@@ -86,17 +86,21 @@ struct timer_node {
 
 #### `free_timer(struct timer_node *timer)`
 **Purpose**: Return a timer to the free pool
+
 **Operation**: Inserts timer at head of free list
 
 #### `set_timer(struct timer_node* timer, enum timer_type tt, uint64_t fire, int (*cb)(void*), void* user_data)`
 **Purpose**: Configure timer attributes
+
 **Parameters**:
 - `timer`: Timer node to configure
 - `tt`: Timer type (relative/absolute)
 - `fire`: Fire time (relative offset or absolute tick count)
 - `cb`: Callback function pointer
 - `user_data`: Data to pass to callback
+
 **Returns**: 0 on success, -1 on invalid timer type
+
 **Operation**: 
 - For relative timers: adds current tick count to fire time
 - For absolute timers: uses fire time as-is
@@ -104,19 +108,25 @@ struct timer_node {
 
 #### `arm_timer(struct timer_node* timer)`
 **Purpose**: Add timer to active queue in sorted order
+
 **Operation**: Inserts timer in active list sorted by fire time (earliest first)
+
 **Algorithm**: Linear search to find correct insertion point
 
 #### `disarm_timer(struct timer_node* timer)`
 **Purpose**: Remove timer from active queue
+
 **Operation**: Removes specified timer from active list
 
 ### Clock System Functions
 
 #### `init_ticker(unsigned ms)`
 **Purpose**: Initialize the simulated clock tick system
+
 **Parameters**: `ms` - tick interval in milliseconds
+
 **Returns**: Result of `setitimer()` call
+
 **Operation**:
 1. Sets up interval timer using `ITIMER_REAL`
 2. Registers `clock_tick()` as SIGALRM signal handler
@@ -124,6 +134,7 @@ struct timer_node {
 
 #### `clock_tick(int signo)`
 **Purpose**: Signal handler for timer ticks (simulates hardware interrupt)
+
 **Operation**:
 1. Increment global tick counter
 2. Process all expired timers:
@@ -137,12 +148,14 @@ struct timer_node {
 
 #### `print_list(struct timer_list *list)` (DEBUG only)
 **Purpose**: Debug function to print timer fire times in a list
+
 **Operation**: Iterates through list and prints each timer's fire time
 
 ### Demo Functions
 
 #### `tcb(void *data)`
 **Purpose**: Example timer callback function
+
 **Operation**: Prints timer fire time and returns `CB_RETURN_FREE_TIMER`
 
 ## Program Flow

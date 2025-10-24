@@ -97,6 +97,33 @@ void init() {
 int read_packet_from_frame(uint32_t dest_port, void *buf, size_t buf_len) {
    /* It is given that frame would have at least one packet */
    /* To Do */
+   /* I had tried to implement something similar to this */
+    if (!buf || buf_len == 0) return 0;
+
+    int idx = read_offset;
+    int end = write_offset;
+
+    // If empty
+    if (idx == end) return 0;
+
+    while (idx != end) {
+        struct frame *f = ring_buffer_frame[idx];
+        if (f && f->frame && f->buffer_len >= sizeof(struct packet)) {
+            struct packet *hdr = (struct packet *)f->frame;
+            if (hdr->dest_port == dest_port) {
+                size_t payload_len = f->buffer_len - sizeof(struct packet);
+                size_t to_copy = payload_len < buf_len ? payload_len : buf_len;
+                memcpy(buf, (char *)f->frame + sizeof(struct packet), to_copy);
+
+                // Advance read_offset to one past the consumed frame.
+                // This will drop frames between original read_offset and idx.
+                read_offset = (idx + 1) % RING_SIZE;
+                return (int)to_copy;
+            }
+        }
+        idx = (idx + 1) % RING_SIZE;
+    }
+    return 0; // no matching packet found
 }
 ```
 

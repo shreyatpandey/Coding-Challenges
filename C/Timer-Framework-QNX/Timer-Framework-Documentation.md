@@ -75,6 +75,7 @@ struct timer_node {
 1. Initialize active and free timer queues
 2. Allocate memory for `NUM_TIMERS` timer nodes
 3. Add all allocated timers to the free list
+
 **Error Handling**: Exits program if memory allocation fails
 
 #### `alloc_timer()`

@@ -53,7 +53,7 @@ struct ListNode* findMiddle(struct ListNode* head) {
 void mergeLists(struct ListNode* l1, struct ListNode* l2) {
     struct ListNode *temp1, *temp2;
     
-    while (l2 != NULL) {
+    while (l1 != NULL && l2 != NULL) {
         temp1 = l1->next;
         temp2 = l2->next;
         
@@ -107,6 +107,13 @@ int main() {
     
     printf("Reordered List: ");
     printList(head);
+    /* Free head*/
+    struct ListNode* current = head;
+    while (current != NULL) {
+        struct ListNode *temp = current;
+        current = current->next;
+        free(temp);
+    }
     
     return 0;
 }

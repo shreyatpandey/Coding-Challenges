@@ -79,7 +79,9 @@ struct timer_node {
 
 #### `alloc_timer()`
 **Purpose**: Allocate a timer from the free pool
+
 **Returns**: Pointer to available timer node or NULL if pool is empty
+
 **Operation**: Removes first timer from free list and returns it
 
 #### `free_timer(struct timer_node *timer)`

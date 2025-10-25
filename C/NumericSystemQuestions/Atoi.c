@@ -6,6 +6,8 @@
 #include <assert.h>
 
 
+// TC: O(n) - where n is length of input string (single pass through string)
+// SC: O(1) - only uses constant extra space for local variables
 // Corrected function with overflow handling
 int myAtoi_corrected(char* s) {
     if (s == NULL) return 0;

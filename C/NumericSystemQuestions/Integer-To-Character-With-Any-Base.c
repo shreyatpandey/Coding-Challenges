@@ -28,6 +28,11 @@ void strev(char *str)
  
 // Function to convert a given decimal number
 // to a base 'base' and
+/*
+ n - number of digits in the input number
+ TC:- O(log n)
+ SC:- O(1) or O(log n) depending on the size of the output string
+*/
 char* fromDeci(char res[], int base, int inputNum)
 {
     int index = 0;  // Initialize index of result

@@ -4,6 +4,8 @@
 #include<stdlib.h>
 #include<string.h>
 
+// TC: O(1) - constant time character conversion
+// SC: O(1) - no extra space used
 int val(char c)
 {
     if (c >= '0' && c <= '9')
@@ -12,6 +14,8 @@ int val(char c)
         return (int)c - 'A' + 10;
 }
  
+// TC: O(n) - where n is length of input string (strlen + loop through all characters)
+// SC: O(1) - only uses constant extra space for local variables
 // Function to convert a number from given base 'b'
 // to decimal
 int toDeci(char *str, int base)

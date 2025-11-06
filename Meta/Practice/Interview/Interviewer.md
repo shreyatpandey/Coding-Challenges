@@ -56,3 +56,14 @@
 2. LCA III with parent pointer
 #### Follow-Up:
 - LCA III - List of parents instead of parent
+
+## November 2025
+**Interviewer:** Lubo S
+#### Questions:
+1. 32-bit byte swap (uint32_t word)
+2. Implement software timer with single hardware timer
+
+```c
+1. void timerRequestCallback(unsigned int interval_ms, void (*callbackFn()));
+2. void HwTimerExpiry()
+```

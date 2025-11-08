@@ -2,15 +2,15 @@
 Given two nodes of a binary tree p and q, return their lowest common ancestor (LCA).
 
 Each node will have a reference to its parent node. The definition for Node is below:
-
-class Node {
-    public int val;
-    public Node left;
-    public Node right;
-    public Node parent;
-}
-
 '''
+
+class Node:
+    def __init__(self, val=0, left=None, right=None, parent=None):
+        self.val = val
+        self.left = left
+        self.right = right
+        self.parent = parent
+
 '''
 TC:- O(n) where n is the height of the tree
 SC:- O(1) 

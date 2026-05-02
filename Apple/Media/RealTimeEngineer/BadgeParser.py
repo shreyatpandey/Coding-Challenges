@@ -16,9 +16,9 @@ with open(fileName,'r') as file:
             buildingMaxTime[buildingName] = time
             buildingCounter[buildingName] = 1
         else:
-            if buildingMinTime[buildingName]< time:
+            if buildingMinTime[buildingName] > time:
                 buildingMinTime[buildingName] = time
-            if buildingMaxTime[buildingName] > time:
+            if buildingMaxTime[buildingName] < time:
                 buildingMaxTime[buildingName] = time
             buildingCounter[buildingName] += 1
         print(buildingMinTime[buildingName], buildingMaxTime[buildingName] )

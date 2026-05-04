@@ -1,4 +1,4 @@
-int* twoSum(int* nums, int numsSize, int target, int* returnSize){    
+int* twoSum(int* nums, int numsSize, int target, int* returnSize){
     *returnSize = 2;
     int* element = (int*)malloc(2*sizeof(int));
 
@@ -8,7 +8,7 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize){
             {
                 element[0] = i;
                 element[1] = j;
-                return element;                
+                return element;
             }
     element[0] = -1;
     element[1] = -1;

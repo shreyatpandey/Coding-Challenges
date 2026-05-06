@@ -1,5 +1,10 @@
-## Interviewer: Stephen Holten
-## Date of Interview: 4th May, 2026
+# Phone Interview - Cellular Application Engineer
+
+## Interviewer
+Stephen Holten
+
+## Date of Interview
+4th May, 2026
 
 ## Process
 1. Gave introduction about role
@@ -10,3 +15,7 @@
 1. Do you have any experience in using test equipment for calibration?
 2. Why Munich?
 3. Why Apple?
+
+## Recollecting Answers
+1. Test automation: Running CI/CD
+2. Used equipment in Cellular domain for measuring signal strength

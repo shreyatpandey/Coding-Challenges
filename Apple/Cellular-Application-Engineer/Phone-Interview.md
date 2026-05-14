@@ -22,3 +22,49 @@ Stephen Holten
 2. Used equipment in Cellular domain for measuring signal strength
 3. Talked about Coex between Wifi and 6G
 4. For learning new technology [6G - Cellular], academician + training + overiew by directors
+
+## Interviewer
+Robert Pitchford
+
+## Date of Interview
+13th May, 2026
+
+## Questions
+
+``` python
+# Given a string 'word', implement a function to
+# reverse the string without relying upon Python's
+# built-in 'reverse' method
+def reverse_string(word):
+    pass
+
+
+# Given a string 'sentence', reverse all words in the
+# sentence while keeping the order of the words consistent,
+# use the 'reverse' method implemented above
+def reverse_words_in_sentence(sentence):
+    pass
+
+# Given the following data
+
+dataFile=""""entry",2,3,6
+"boots",5,1,7
+"slack",1,2.6
+"triffid",11,-1.5
+"""
+f = StringIO(datafile)
+data = list(csv.reader(f, delimiter=','))
+
+# The data needs to be sorted *numerically* in ascening order by the
+# second column
+# Complete the following function so that it returns a list containing
+# the sorted entries
+
+def sort_fn(unsorted_data):
+    #Your code goes here
+    return sorted_data
+
+print()
+print("Q3:", sort_fn(data)== [['slack','1','2.6'], ['entry','2','3.6'],
+['boots', '5', '6'], ['triffid', '11', '-1.5']])
+```

@@ -1,7 +1,7 @@
 # Phone Interview - Cellular Application Engineer
 
 ## Interviewer
-Stephen Holten
+Steve Holten
 
 ## Date of Interview
 4th May, 2026

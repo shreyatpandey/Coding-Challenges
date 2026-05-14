@@ -1,6 +1,6 @@
 # Test Equipment Experience
 
-## 18. Spectrum Analyzer: Identifying Interference
+## 1. Spectrum Analyzer: Identifying Interference
 
 ### How to Use a Spectrum Analyzer:
 
@@ -41,7 +41,7 @@ A device shows degraded LTE performance. Using spectrum analyzer:
 
 ---
 
-## 19. Network Emulator: Testing Handover Scenarios
+## 2. Network Emulator: Testing Handover Scenarios
 
 ### Network Emulator Setup for Handover Testing:
 
@@ -99,7 +99,7 @@ Testing 5G handover from LTE to 5G NR:
 
 ---
 
-## 20. Signal Generator: Multi-Carrier Signal Testing
+## 3. Signal Generator: Multi-Carrier Signal Testing
 
 ### Generating Multi-Carrier Signals for Receiver Testing:
 
@@ -151,7 +151,7 @@ Testing dual-carrier LTE device:
 
 ---
 
-## 21. Vector Signal Analyzer (VSA): Measurements and Analysis
+## 4. Vector Signal Analyzer (VSA): Measurements and Analysis
 
 ### VSA Capabilities and Measurements:
 
@@ -219,7 +219,7 @@ Testing LTE device transmission quality:
 
 ---
 
-## 22. Protocol Tester: Validating RRC Messages
+## 4. Protocol Tester: Validating RRC Messages
 
 ### Protocol Tester Setup for RRC Validation:
 

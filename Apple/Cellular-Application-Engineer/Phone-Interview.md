@@ -41,14 +41,27 @@ import re
 # reverse the string without relying upon Python's
 # built-in 'reverse' method
 def reverse_string(word):
-    pass
+    #Your code goes here
+    reverse_string = ""
+    for char in word:
+        reverse_string = char + reverse_string
+    return revese_string
+    #pass
 
 
 # Given a string 'sentence', reverse all words in the
 # sentence while keeping the order of the words consistent,
 # use the 'reverse' method implemented above
 def reverse_words_in_sentence(sentence):
-    pass
+    #Your code goes here
+    word_list = sentence.split()
+    result_string = []
+    for i range (0,len(word_list)):
+        reverse_word = reverse_string(word_list[i])
+        result_string.append(reverse_word)
+    result = " ".join(result_string)
+    return result
+    #pass
 
 # Given the following data
 
@@ -67,6 +80,7 @@ data = list(csv.reader(f, delimiter=','))
 
 def sort_fn(unsorted_data):
     #Your code goes here
+    sorted_data = sorted(unsorted_data, key=lambda row:int(row[1]))
     return sorted_data
 
 print()

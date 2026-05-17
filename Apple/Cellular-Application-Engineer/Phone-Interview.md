@@ -32,6 +32,11 @@ Robert Pitchford
 ## Questions
 
 ``` python
+import csv
+from io import StringIO
+import re
+# you may import other packages, if desired, but it may not be required
+
 # Given a string 'word', implement a function to
 # reverse the string without relying upon Python's
 # built-in 'reverse' method
